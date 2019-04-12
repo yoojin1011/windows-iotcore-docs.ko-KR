@@ -1,76 +1,71 @@
-## Microsoft Open Source Code of Conduct
+## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft 오픈 소스 준수 사항
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+이 프로젝트에 도입 된 [Microsoft 오픈 소스 준수 사항](https://opensource.microsoft.com/codeofconduct/)합니다.
+자세한 내용은 참조는 [준수 사항 FAQ](https://opensource.microsoft.com/codeofconduct/faq/) 에 문의 하거나 [ opencode@microsoft.com ](mailto:opencode@microsoft.com) 추가 질문이 나 의견을 사용 하 여 합니다.
 
-# How to contribute to Windows 10 IoTCore documentation
+# <a name="how-to-contribute-to-windows-10-iotcore-documentation"></a>Windows 10 IoTCore 설명서에 기여 하는 방법
 
-## Legal Notices
-Microsoft and any contributors grant you a license to the Microsoft documentation and other content
-in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode),
-see the [LICENSE](LICENSE) file, and grant you a license to any code in the repository under the [MIT License](https://opensource.org/licenses/MIT), see the
-[LICENSE-CODE](LICENSE-CODE) file.
+## <a name="legal-notices"></a>법적 고지 사항
+Microsoft와 모든 기여자는 [Creative Commons Attribution 4.0 국제 공개 라이선스](https://creativecommons.org/licenses/by/4.0/legalcode)에 따라 귀하에게 이 리포지토리의 Microsoft 설명서 및 기타 콘텐츠에 대한 라이선스([LICENSE](LICENSE) 파일 참조)를 부여하고, [MIT 라이선스](https://opensource.org/licenses/MIT)에 따라 귀하에게 리포지토리의 모든 코드에 대한 라이선스([LICENSE-CODE](LICENSE-CODE) 파일 참조)를 부여합니다.
 
-Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation
-may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.
-The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks.
-Microsoft's general trademark guidelines can be found at http://go.microsoft.com/fwlink/?LinkID=254653.
+Microsoft, Windows, Microsoft Azure 및/또는 기타 이 설명서에 언급된 Microsoft 제품 및 서비스는 미국 및/또는 기타 국가에서 Microsoft의 상표 또는 등록 상표일 수 있습니다.
+이 프로젝트에 대한 라이선스는 귀하에게 Microsoft 이름, 로고 또는 상표를 사용할 권한을 부여하지 않습니다.
+Microsoft의 일반 상표 지침은에서 찾을 수 있습니다 http://go.microsoft.com/fwlink/?LinkID=254653합니다.
 
-Privacy information can be found at https://privacy.microsoft.com/en-us/
+개인 정보 취급 방침에서 찾을 수 있습니다. https://privacy.microsoft.com/en-us/
 
-Microsoft and any contributors reserve all others rights, whether under their respective copyrights, patents,
-or trademarks, whether by implication, estoppel or otherwise.
+Microsoft와 모든 기여자는 관련 저작권, 특허 또는 상표에 따라 묵시적, 금반언적 또는 다른 방식으로 다른 모든 권리를 보유합니다.
 
-## Contributing
+## <a name="contributing"></a>영향을 주는
 
-This is the repository for Windows 10 IoT **documentation** hosted at [https://docs.microsoft.com/windows/iot-core](https://docs.microsoft.com/windows/iot-core).
+이 Windows 10 IoT를 위한 리포지토리입니다 **설명서** 에서 호스트 [ https://docs.microsoft.com/windows/iot-core ](https://docs.microsoft.com/windows/iot-core)합니다.
 
-If you would like to see new coverage or have feedback, please consider [**contributing**](/CONTRIBUTING.md).  You can edit the existing content, add new content, or simply create new [issues](https://github.com/MicrosoftDocs/windows-iotcore-docs/issues). We’ll take a look at your suggestions and will work together to incorporate them into the docs.
+새 범위를 참조 하세요. 또는 의견이, 보세요 싶다면 [ **영향을 주는**](/CONTRIBUTING.md)합니다.  기존 콘텐츠 편집, 새 콘텐츠를 추가 하거나 단순히 새를 만들 수 있습니다 [문제](https://github.com/MicrosoftDocs/windows-iotcore-docs/issues)합니다. 의견을 확인 하 고 문서를 통합 하 여 하기 위해 함께 작업 합니다.
 
-To edit content, just click edit on the article you want to make changes to:
+콘텐츠를 편집 하려면 변경 하려는 문서 편집 클릭 합니다.
 
-![Gif on how to edit docs](windows-iotcore/media/edit-doc.gif)
+![문서를 편집 하는 방법에 대 한 Gif](windows-iotcore/media/edit-doc.gif)
 
 
-You can also clone or download the repo to make changes:
+복제 또는 변경 하려면 리포지토리를 다운로드 수도 있습니다.
 
-![Gif on how to clone or download repo](windows-iotcore/media/download-repo.gif)
+![다운로드 리포지토리를 복제 하는 방법에 대 한 Gif](windows-iotcore/media/download-repo.gif)
 
-You will also need to add a reviewer or reviews to your pull requests to get them approved:
+승인를 끌어오기 요청에 검토자 또는 검토를 추가 하려면 해야 합니다.
 
-![Adding reviewers to your pull request](windows-iotcore/media/reviewers.gif)
+![끌어오기 요청에 검토자 추가](windows-iotcore/media/reviewers.gif)
 
-# Conventions
-  - When adding a page, you must add an entry for it in [toc.md](windows-iotcore/TOC.md) for it to appear.
-  - A folder can contain more folders or `readme.md`s
-  - Folder/directory names are dash-separated (e.g., `f12-tools`) and lowercase. They are used in URLs on the docs.microsoft.com site. Don't use underscores or PascalCase/camelCase.
+# <a name="conventions"></a>규칙
+  - 항목을 추가 해야 페이지에 추가할 때는 [toc.md](windows-iotcore/TOC.md) 나타나도록 합니다.
+  - 폴더 추가 폴더를 포함할 수 있습니다 또는 `readme.md`s
+  - 폴더/디렉터리 이름을 대시로 구분 됩니다 (예를 들어 `f12-tools`) 대 / 소문자입니다. Docs.microsoft.com 사이트의 Url에 사용 됩니다. 밑줄 또는 PascalCase/camelCase를 사용 하지 마세요.
 
 
-## Other text elements
+## <a name="other-text-elements"></a>다른 텍스트 요소
 
-These other text elements have styling available:
+이러한 텍스트 요소 스타일 지정에 사용할 수 있습니다.
 
-* Unordered lists
-* Have regular bullets
-   * You can also nest bullets
-   * Bullets lists should have more than one entry.
-* Pretty standard
+* 순서가 지정 되지 않은 목록
+* 가 일반 글머리 기호
+   * 글머리 기호를 중첩할 수도 있습니다.
+   * 글머리 기호 목록에 항목이 둘 이상 있어야 합니다.
+* 멋진 표준
 
-1. Ordered lists
-2. Use regular ol' western-style numbering.
-3. Should be used only when a list truly has order.
+1. 정렬 된 목록
+2. 일반 자리잡은 western 스타일 번호 매기기를 사용 합니다.
+3. 목록에는 실제로 순서는 경우에 사용 해야 합니다.
 
 _________________________
 
-Horizontal rules are available. We suggest using them sparingly to reduce clutter.
-Do not combine horizontal rules with heading tags; some already used line styles for visual hierarchy.
-Also, do not combine notes (see below) in the middle of numbered lists. This messes with the numbering order.
+수평선 사용할 수 있습니다. 간단 하 게 제한적으로 사용 하는 것이 좋습니다.
+제목 태그를 사용 하 여 수평선을 결합 하지 마십시오 일부는 이미 시각적 계층에 대 한 선 스타일을 사용 합니다.
+또한 중간 번호 매기기 목록 (아래 참조) 정보를 결합 하지 마십시오. 이 번호 매기기 순서를 사용 하 여 디자인이 바뀝니다.
 
-## Displaying code
+## <a name="displaying-code"></a>코드 표시
 
-You can use inline `code` Markdown syntax (with the backticks).
+인라인을 사용할 수 있습니다 `code` Markdown 구문 (backtick) 포함 합니다.
 
-Or you can display blocks of code like so:
+코드 블록을 표시할 수 있습니다 또는 다음과 같이 합니다.
 
 ```css
 body {
@@ -78,32 +73,32 @@ body {
 }
 ```
 
-## Tables
+## <a name="tables"></a>테이블
 
-| You can     | use headers | on tables    |
+| 이 경우     | 헤더 사용 | 테이블에    |
 |-------------|-------------|-------------:|
-| Left-aligned| Unless a #  | 456          |
-| Text value  | More text   | $0.00        |
+| 왼쪽 맞춤| 경우가 아니면 #  | 456          |
+| 텍스트 값  | 자세한 텍스트   | $0.00        |
 
-## Notes
+## <a name="notes"></a>참고
 
-Use notes sparingly. They are blocks designed to highlight "don't-miss-it" information.
+메모를 제한적으로 사용 합니다. 블록 "하지 누락-it" 정보를 강조 표시 하도록 설계 됩니다.
 
-We have four different versions of notes currently styled:
-- NOTE
-- WARNING
-- TIP
-- IMPORTANT
+네 개의 서로 다른 버전의 현재 스타일 정보 있습니다.
+- 참고
+- 경고
+- 팁
+- 중요
 
 
-For multi-line blockquote notes, use a > in front of each line of the notes as seen in the example below.
+여러 줄 블록 따옴표 정보에 대 한 사용을 > 아래 예에서 볼 수 있듯이 노트의 각 줄 앞에 있습니다.
 
-## Images
+## <a name="images"></a>이미지
 
-Images should be stored in a `media` folder and referenced with a relative path:
+이미지에 저장 되어야 합니다는 `media` 폴더 및 상대 경로 사용 하 여 참조 합니다.
 
 `![Note patterns](media/notes.png)`
 
 
-## Code of Conduct
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+## <a name="code-of-conduct"></a>사용 규정
+이 프로젝트에 도입 된 [Microsoft 오픈 소스 준수 사항](https://opensource.microsoft.com/codeofconduct/)합니다. 자세한 내용은 참조는 [준수 사항 FAQ](https://opensource.microsoft.com/codeofconduct/faq/) 에 문의 하거나 [ opencode@microsoft.com ](mailto:opencode@microsoft.com) 추가 질문이 나 의견을 사용 하 여 합니다.

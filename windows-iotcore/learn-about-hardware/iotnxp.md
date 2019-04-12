@@ -1,0 +1,119 @@
+---
+title: Windows IoT 및 NXP i.MX
+author: chsha
+ms.author: chsha
+ms.date: 02/22/2019
+ms.topic: article
+description: 및 NXP i.MX Soc Windows 10 IoT Core 알아봅니다
+keywords: Windows 10 IoT Core 시작 i.MX, NXP
+ms.openlocfilehash: 2dc212fa403e2d8d4c32bffbae3c8bcd97b5b022
+ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59512661"
+---
+# <a name="window-10-iot-core-and-nxp-imx-socs"></a>Window 10 IoT Core 및 NXP i.MX Soc
+
+2018 년 5 월에서 Microsoft NXP NXP i.MX 6 및 7 i.MX 실리콘에서 Windows 10 IoT Core 비공개 미리 보기를 발표 하 고 8m i.MX 작업 시작 Soc 합니다. 수백 개의 상업용 제품 개발자, 연구원 및 결정권자 10 년 동안 Windows 보안 업데이트 및 유연성 및 안정성 NXP 실리콘의 조합에서 자신의 관심사를 표현 됩니다. 
+ 
+미리 보기에서 Microsoft 및 NXP 엔지니어 수천 개의 솔루션 평가에서 입력을 기반으로 튜닝 하 고 BSP 향상 시간 소요 합니다. 레거시 산업 현대화에 관심이 있는 고객 들과 협력 컨트롤러 자동화 솔루션을 구축 하는 연결 된 새 클라우드 개발 및 사용 하 여 게이트웨이 선행 보안 클래스 [I/O를 신뢰할 수 있는](https://blogs.windows.com/windowsexperience/2018/04/24/trusted-cyber-physical-systems-looks-to-protect-your-critical-infrastructure-from-modern-threats-in-the-world-of-iot/#A0WkfgLBpgbLaFe3.97)합니다.
+ 
+매우 많은 관심이 솔루션에 따라 Microsoft 및 NXP 이제 중인 Bsp i.MX 6, 7, i.MX 및 Soc i.MX 8m 제품군에 대 한 비 상업적 공개 미리 보기로 사용할 수 있습니다. 긴 기록으로 인해 Microsoft 및 NXP에 포함 및 IoT 시장, 디자인 유연성에 대 한 필요성을 이해 했습니다. 따라서, 외에도 여러 단일 보드 컴퓨터 및 시스템 모듈 솔루션 Microsoft NXP, 파트너 사용 하도록 설정 하는 하드웨어, 고 i.MX 6, 7, i.MX i.MX 8m Bsp 나와 오픈 소스 라이선스 아래 있습니다. 이제 everyone i.MX 6, 7, i.MX 및 i.MX 8m 기술 제품군의 2018 년 10 월 릴리스의 Windows 10 IoT Core 함께 해당 하드웨어에서 평가 사용에 대 한 전체 BSP 내용에 액세스할 수 없게 됩니다.
+
+
+## <a name="bsp-access"></a>BSP 액세스
+
+사용자 고유의 i.MX 하드웨어에 대 한 지원을 사용 하도록 설정 하려면 BSP 소스 및 설명서에 액세스 하세요 관심이 있다면 [Github]( https://github.com/ms-iot/imx-iotcore)합니다. 설명이 없는 한, 대부분의 원본 MIT 라이선스로 제공 됩니다. 아직 개발 중인 코드가입니다. 모든 플랫폼 기능을 활성화 하거나 액세스에 최적화 된 완벽 하 게 합니다. 현재 코드를 시간에만 비 상업적 개발을 위한 것입니다. 상용 품질 릴리스 2019 뒷부분에서 필요 합니다.
+
+NXP 하드웨어/BSP 관련 질문이 나 BSP 대상된 솔루션 더 잘 지 원하는 방법에 대 한 피드백 경우 포럼에 [NXP 커뮤니티](https://community.nxp.com/community/imx/content?filterID=contentstatus%5Bpublished%5D%7Ecategory%5Bwindows%5D)합니다. Windows 관련된 질문을 사용 합니다 [Microsoft 커뮤니티](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT)합니다.
+
+
+## <a name="ecosystem-resources"></a>에코 시스템 리소스
+
+여러 Microsoft 및 NXP 파트너 상용 i.MX 6, 7, i.MX 사용 하도록 설정 하 고 i.MX 8m 장치를 Windows 10 IoT Core 대 한 지원. 하드웨어 및 플랫폼 이미지를 직접 파트너에 문의 하세요.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">장치</th>
+<th align="left">연락처</th>
+</tr>
+</thead>
+<tbody>
+
+<tr class="odd">
+<td align="left"><p><a href="https://www.aaeon.com/en/p/pico-itx-boards-pico-imx6/">Aaeon PICO IMX6</a></p></td>
+<td align="left"><p><p><a href="mailto:davidhung@aaeon.com.tw">David 여 닫</a></p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858">Advantech RSB-4411</a></p></td>
+<td align="left"><p><p><a href="mailto:buy@advantech.com">buy@advantech.com</a></p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://www.compulab.com/products/iot-gateways/iot-gate-imx7-nxp-i-mx-7-internet-of-things-gateway/">Compulab IoT-Gate</a></p></td>
+<td align="left"><p><p><a href="mailto:igor@compulab.co.il">Igor Vaisbein</a></p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://www.geniatech.com/product/som-imx6q-q7/">Geniatech SoM-iMX6Q-Q7</a></p></td>
+<td align="left"><p><p><a href="mailto:mike.decker@geniatech.com">Mike Decker</a> 또는 <a href="mailto:Fjj@geniatech.com">팡 Jijun</a></p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://www.geniatech.com/product/som-imx7d/">Geniatech SoM-iMX7D</a></p></td>
+<td align="left"><p><p><a href="mailto:mike.decker@geniatech.com">Mike Decker</a> 또는 <a href="mailto:Fjj@geniatech.com">팡 Jijun</a></p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://www.karo-electronics.de/tx-standard.html?&L=1">Ka-Ro Electronics TX6UL, TX6S, TX6DL, 및 TX6Q</a></p></td>
+<td align="left"><p><p><a href="mailto:us@karo-electronics.de">Uwe Steinkohl</a></p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="http://wce.keith-koep.com/en/products/pconxs-ff/">Keith & Koep pConXS</a> 사용 하 여 <a href="http://wce.keith-koep.com/en/products/trizeps7-i.MX6/">Trizeps VII</a></p></td>
+<td align="left"><p><p><a href="mailto:contact@keith-koep.com">contact@keith-koep.com</a></p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html">Kontron SMARC sAMX6i</a></p></td>
+<td align="left"><p><p><a href="mailto:martin.unverdorben@kontron.com">Martin Unverdorben</a></p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://phytec.com/product/phyboard-imx7-development-kit/">phyBOARD-i.MX 7 개발 키트</a></p></td>
+<td align="left"><p><p><a href="mailto:sales@phytec.com">Fernando Benitez</a></p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://www.solid-run.com/imx6-win-10-iot-core/">Solid Run Hummingboard Edge</a></p></td>
+<td align="left"><p><p><a href="mailto:ilya@solid-run.com">Ilya Viten</a></p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://www.viaembeddedstore.com/shop/boards/vab-820/">VIA VAB-820</a></p></td>
+<td align="left"><p><p><a href="mailto:MichaelFox@via.com.tw">Michael Fox</a> 또는 <a href="mailto:dreamku@via.com.tw">ku가 Dream</p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/i.mx-applications-processors/i.mx-6-processors/evaluation-kit-for-the-i.mx-6ull-and-6ulz-applications-processor:MCIMX6ULL-EVK">MCIMX6ULL-EVK</a></p></td>
+<td align="left"><p><p><a href="mailto:Wei.A.Wang@nxp.com">Wei Wang</a></p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://www.nxp.com/support/developer-resources/software-development-tools/i.mx-developer-resources/evaluation-kit-for-the-i.mx-8m-applications-processor:MCIMX8M-EVK">MCIMX8M-EVK</a></p></td>
+<td align="left"></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="http://www.nxp.com/imx8mminievk">MCIMX8MMINI-EVK</a></p></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
