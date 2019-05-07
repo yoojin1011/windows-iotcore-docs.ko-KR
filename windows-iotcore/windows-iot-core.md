@@ -6,14 +6,17 @@ ms.date: 01/18/2018
 ms.topic: article
 description: Windows 10 IoT Core 란 무엇 이며이 사용 하 여 수행할 수 있는 작업에 대해 알아봅니다.
 keywords: Windows 10 IoT Core 헤드리스 작은 공간
-ms.openlocfilehash: 1be159b685ffed30effbb2ae8abc80ded8edd879
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: d5b9c59ad735d66b4812e6303f6298a33da44d33
+ms.sourcegitcommit: 1f6afcfee0cb5557dc21c7b15e199bc557d8eedb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59512294"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65171355"
 ---
 # <a name="windows-10-iot-core"></a>Windows 10 IoT Core K
+
+> [!NOTE]
+> 만 Windows 10 컨테이너 Microsoft Azure IoT Edge를 활용 하는 상업용 배포에 대 한 Windows IoT Core 및 Windows IoT Enterprise를 사용 하 여 사용할 수 있습니다.
 
 ## <a name="what-is-windows-10-iot-core"></a>Windows 10 IoT Core 란?
 Windows 10 IoT Core 모두 ARM에서 실행 되는 작은 장치 디스플레이 유무 및 x86 x64 장치에 최적화 된 Windows 10의 버전. Windows IoT Core 설명서에서 연결, 관리, 업데이트, 장치 및 기타 보안 정보를 제공 합니다. 

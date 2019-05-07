@@ -6,12 +6,12 @@ ms.date: 09/07/18
 ms.topic: article
 description: 모든 Windows 10 IoT 커뮤니티에서 리소스를 활용 합니다.
 keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, 리소스, 가장 중요 한 사람, 비디오, 블로그 게시물
-ms.openlocfilehash: a5ef340af33f014dc7212e719a042d97a3cd8c30
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 5d2c90d20da8d44155a0bf0250a4cfd2ce55d4ac
+ms.sourcegitcommit: 3eacb968296e79e7e981fdc2a6f7f4f69c0920d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59513702"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65040166"
 ---
 # <a name="windows-10-iot-resources"></a>Windows 10 IoT 리소스
 
@@ -46,9 +46,9 @@ ms.locfileid: "59513702"
 ## <a name="learning-resources"></a>학습 리소스
 
 * [Microsoft MVP 커뮤니티](https://mvp.microsoft.com/)
-* [Microsoft IoT Tech Community](https://techcommunity.microsoft.com/t5/Internet-of-Things-IoT/ct-p/IoT)
+* [Microsoft IoT 기술 커뮤니티](https://techcommunity.microsoft.com/t5/Internet-of-Things-IoT/ct-p/IoT)
 * [Windows 10 IoT MSDN 포럼](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT)
-* [Windows 10 IoT Core Lynda Course](https://www.lynda.com/Windows-tutorials/IoT-Development-Windows-10-IoT-Core-1-Installation-Basic-Connection/556513-2.html)
+* [Windows 10 IoT Core Lynda 과정](https://www.lynda.com/Windows-tutorials/IoT-Development-Windows-10-IoT-Core-1-Installation-Basic-Connection/556513-2.html)
 * [교육 Annabooks 사용 하 여](http://www.annabooks.com/training.html)
 * [Hackster.io에서 Windows 10 IoT Core 시작](http://www.hackster.io/KiwiBryn)
 * [Window 10 IoT Core HATs](https://www.turta.io/iothat)
@@ -58,6 +58,7 @@ ms.locfileid: "59513702"
 * [미스 로봇 공학](https://customers.microsoft.com/en-us/story/misty-robotics)
 * [Askey Turbomate](https://customers.microsoft.com/en-us/story/askey)
 * [Johnson GLAS 제어](https://customers.microsoft.com/en-us/story/johnson-controls)
+* [Keith & Koep 칵테일 부스터](https://customers.microsoft.com/de-de/story/keith-koep)
 * [Kodisoft](https://customers.microsoft.com/en-us/story/kodisoft)
 * [Redback 기술](https://customers.microsoft.com/en-us/story/redback-technologies)
 

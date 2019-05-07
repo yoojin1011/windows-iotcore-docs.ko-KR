@@ -6,21 +6,26 @@ ms.date: 01/18/2018
 ms.topic: article
 description: Windows 10 IoT Enterprise 이란 무엇 이며이 사용 하 여 수행할 수 있는 작업에 대해 알아봅니다.
 keywords: Windows 10 IoT Enterprise, Enterprise, 이진, Windows
-ms.openlocfilehash: 029c98dc7652269aceaa97b820f2a190850eb1d3
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
-ms.translationtype: HT
+ms.openlocfilehash: c8e9eed02a9ae3010ceb10c78bd8a01c4535e383
+ms.sourcegitcommit: 1f6afcfee0cb5557dc21c7b15e199bc557d8eedb
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59512958"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65171336"
 ---
 # <a name="an-overview-of-windows-10-iot-enterprise"></a>Windows 10 IoT Enterprise 개요
+
+> [!NOTE]
+> 만 Windows 10 컨테이너 Microsoft Azure IoT Edge를 활용 하는 상업용 배포에 대 한 Windows IoT Core 및 Windows IoT Enterprise를 사용 하 여 사용할 수 있습니다.
 
 ## <a name="what-is-windows-10-iot-enterprise"></a>Windows 10 IoT Enterprise 란?
 Windows 10 IoT Enterprise는 정식 버전의 Windows 10 IoT 솔루션을 기업 관리 효율성 및 보안을 제공 하는 경우 Windows 10 IoT Enterprise는 전 세계 Windows 에코 시스템의 모든 혜택을 공유합니다. 이므로 Windows 10 Enterprise 해당 하는 이진 파일을 같은 친숙 한 개발 및 클라이언트로 Pc 관리 도구 및 랩톱을 사용할 수 있습니다.  그러나 라이선스 및 배포 하더라도 데스크톱 버전 및 IoT 버전과 다릅니다. 장기 서비스 채널 LTSC () 및 반기 채널 (SAC) 옵션을 제공 하는 Windows 10 IoT Enterprise note 합니다. Oem 해당 장치에 대 한 필요한 버전을 선택할 수 있습니다.
 
 ## <a name="getting-started"></a>시작 
 
-Windows 10 IoT Enterprise를 제조 하는 방법에 대 한 자세한 읽어 보시기 바랍니다 [Windows 10 IoT Enterprise 제조 가이드](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview)합니다.  
+를 Windows 10 IoT Enterprise를 사용 하 여 제조에서 과정을 시작 하려면 배포자에서 연락 해야 [이 목록](https://go.microsoft.com/fwlink/p/?linkid=2069623)합니다.
+
+여기에서 사용 하 여 Windows 10 IoT Enterprise를 사용 하 여 제조 하는 방법을 알아볼 수 있습니다 우리의 [Windows 10 IoT Enterprise 제조 가이드](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview)합니다. 
 
 ## <a name="fixed-purpose-devices"></a>고정된 용도 장치 
 
@@ -44,7 +49,7 @@ Windows는 랩톱 및 데스크톱 소비자와 기업에서는 전세계에서 
 
 ## <a name="long-term-support-silicon-details"></a>장기 지원 실리콘 세부 정보
 
-Windows 10 IoT enterprise Fall 2018 릴리스는 LTSC 릴리스도 됩니다. 아래 목록 Fall 2018 릴리스에서 지원 되는 데 필요한 모든 프로세서를 포함 합니다. Windows 10 IoT Enterprise의 이전 릴리스를 사용 하려는 경우 프로세서 지원 세부 정보를 찾을 수 있습니다 [여기](https://docs.microsoft.com/windows-hardware/design/minimum/windows-processor-requirements#windows-iot-enterprise--embedded-processor-table)합니다.
+Windows 10 IoT Enterprise 2019 릴리스 LTSC 릴리스가 됩니다. 아래 목록이이 릴리스에 대 한 지원 되는 데 필요한 모든 프로세서를 포함 합니다. Windows 10 IoT Enterprise의 이전 릴리스를 사용 하려는 경우 프로세서 지원 세부 정보를 찾을 수 있습니다 [여기](https://docs.microsoft.com/windows-hardware/design/minimum/windows-processor-requirements#windows-iot-enterprise--embedded-processor-table)합니다.
 
 > | Windows 10 IoT Enterprise  |
 > |-------------|
@@ -77,5 +82,5 @@ Windows 10 IoT enterprise Fall 2018 릴리스는 LTSC 릴리스도 됩니다. �
 * [잠금 리소스](https://docs.microsoft.com/windows-hardware/customize/enterprise/create-a-kiosk-image) 
 * [포함 된 모드를 사용 하도록 설정 하 고 백그라운드 작업을 사용 하 여 Windows IoT enterprise](https://docs.microsoft.com/windows/iot-core/develop-your-app/embeddedmode)
 * [조직에서 Windows 원격 분석 구성](https://docs.microsoft.com/windows/configuration/configure-windows-telemetry-in-your-organization )
-* [Windows 데스크톱 버전을 실행하는 키오스크 및 공유 장치 구성](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc)
+* [키오스크 및 데스크톱 버전의 Windows를 실행 하는 공유 장치 구성](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc)
 * [데스크톱 제조](https://docs.microsoft.com/windows-hardware/manufacture/desktop/)

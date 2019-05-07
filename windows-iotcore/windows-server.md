@@ -6,14 +6,17 @@ ms.date: 02/07/2019
 ms.topic: article
 description: Windows Server IoT 2019 이란 무엇 이며이 사용 하 여 수행할 수 있는 작업에 대해 알아봅니다.
 keywords: Windows Server IoT 2019, 엔터프라이즈 관리 효율성, Windows 에코 시스템, IoT
-ms.openlocfilehash: d3e172aa4073e0c0e853d31b2d50fb83d588dd00
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 07c361d2b34aebe645659900587c25b92de442be
+ms.sourcegitcommit: f447681d9a73ebdec97a3da973bd798a02df975d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59512285"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65197660"
 ---
 # <a name="an-overview-of-windows-server-iot-2019"></a>Windows Server IoT 2019 개요
+
+> [!NOTE]
+> Windows 10 컨테이너는 Windows IoT 서버와 Windows Server 2019 상업용 배포에 대 한 지원.
 
 ## <a name="what-is-windows-server-iot-2019"></a>Windows Server IoT 2019 란?
 Windows Server IoT 2019 IoT 솔루션을 기업 관리 효율성 및 보안을 제공 하는 Windows Server 2019의 전체 버전이 있습니다. Windows Server IoT 2019 전 세계 Windows 에코 시스템의 모든 혜택을 공유합니다. 이므로 Windows Server 2019에 해당 하는 이진 파일을 같은 친숙 한 개발 및 범용 서버에서 사용 하는 관리 도구를 사용할 수 있습니다. 그러나 라이선스 및 배포 하더라도 범용 버전 및 IoT 버전과 다릅니다.  Windows Server IoT 2019만 특수 전용된 사용 권한 아래에서 OEM 채널을 통해 사용이 허가 됩니다.

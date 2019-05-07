@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 주변 인터페이스 및 Windows 10 IoT Core 모범 지 원하는 프로토콜에 알아봅니다.
 keywords: windows iot, 주변 장치, 프로토콜, 호환성, 버스, 하드웨어
-ms.openlocfilehash: 819414db94d01e826fbcf721c911fff9d02f6c94
-ms.sourcegitcommit: b79c2b74968e552bee664ecc886725754d183657
+ms.openlocfilehash: 54ca0f706033a8a3eef0704534805d0d6b379083
+ms.sourcegitcommit: 77caab0cfa47c74c66777c3cf5eeaa0ec9ac5784
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59515266"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "64981938"
 ---
 # <a name="hardware-compatibility-list"></a>하드웨어 호환성 목록
 
@@ -74,16 +74,16 @@ Windows 10 IoT Core 다양 한 주변 인터페이스 및 프로토콜, I2C, UAR
 > | Vodafone (Huawei) K5150 | ARM32, x64, x86 | Vodafone (Huawei) K5150 150Mbps 4G LTE FDD USB Mobile Broadband Modem |  | &#10004;  |
 > | Vodafone (Huawei) K5160 | ARM32, x64, x86 | (Huawei) Vodafone K5160 150Mbps GSM/EDGE/3g/HSPA + LTE CAT4 USB 모바일 광대역 모뎀 |  | |
 > | Sierra 무선 보 (340U 항목) | x64, x86 |    Sierra 무선 보 (항목 340U) 4g LTE USB 모바일 광대역 모뎀 |  |&#10004; |
-> | Microsoft Xbox 360 Controller | ARM32 | Microsoft의 Xbox 360는 HID 호환 USB gamepad | [로봇 키트](https://microsoft.hackster.io/en-US/windowsiot/robot-kit-6dd474) |  &#10004; |
+> | Microsoft Xbox 360 Controller | ARM32 | Microsoft의 Xbox 360는 HID 호환 USB gamepad | [Robot Kit](https://microsoft.hackster.io/en-US/windowsiot/robot-kit-6dd474) |  &#10004; |
 > | [MyTeletouch](http://www.myteletouch.com/) | ARM, x32 | USB HID 호환 무선 마우스, 키보드 및 gamepad |  | &#10004; |
 
 ## <a name="other-hardware-peripherals"></a>다른 하드웨어 주변 장치
 
-### <a name="storage-media"></a>저장소 미디어
-> | 이름 부 / 아니요 | 호환 아키텍처 | 설명 | 관련 링크 | Microsoft Verified  | 
+### <a name="nfcrfidproximity"></a>NFC/RFID/근접
+> | 이름 부 / 아니요 | 호환 아키텍처 | 설명 | 관련 링크 | Microsoft Verified |
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | [Samsung 32GB EVO 클래스 10 마이크로 SDHC](https://www.amazon.com/gp/product/B00IVPU786) | AARM32, x64, x86 | Windows 10 IoT Core 플래시 됨을 가질 수 있는 장치에 대 한 권장된 SD 카드. | | &#10004;|
-> | [SanDisk Ultra Micro SDHC 16GB](https://www.amazon.com/SanDisk-Ultra-Micro-SDHC-16GB/dp/9966573445) | ARM32, x64, x86 | Windows 10 IoT Core 플래시 됨을 가질 수 있는 장치에 대 한 권장된 SD 카드. | | &#10004; |
+> | NXP OM5577 데모 보드 | ARM32 | NXP PN7120 NFC 칩에 대 한 데모 보드입니다. | [ProximityDevice 설명서](https://docs.microsoft.com/uwp/api/Windows.Networking.Proximity.ProximityDevice) | &#10004; |
+> | NXP PN547/PN548/PN7120 | ARM32, x64, x86 | NXP NFC 칩을 지원 합니다. | | &#10004; |
 
 ### <a name="pi-hats"></a>Pi Hats
 > | 이름 부 / 아니요 | 호환 아키텍처 | 설명 | 관련 링크 | Microsoft Verified  | 
@@ -92,12 +92,24 @@ Windows 10 IoT Core 다양 한 주변 인터페이스 및 프로토콜, I2C, UAR
 > | [Dexter 산업 GrovePi](https://www.dexterindustries.com/shop/grovepi-board/) | ARM32 | 를 모니터링 하려면 프로그래밍할 수 있도록 컨트롤 용접 없이 수백 개의 다양 한 센서를 연결 하 고 업무에 장치를 자동화할 수 있습니다. | [GrovePi 샘플](https://github.com/DexterInd/GrovePi/) | |
 > | Dexter 산업 GoPiGo | ARM, x32 | GoPiGo 로봇을 완벽 하 게 운영에 Pi를 설정 하는 Raspberry Pi에 대 한 매력적인 및 전체 로봇입니다. GoPiGo는 Dexter 산업에서 개발한 Raspberry Pi에 대 한 모바일 로봇 플랫폼. | [GoPiGo 샘플](https://github.com/DexterInd/GoPiGo/tree/master/Software/CSharp) | |
 
+### <a name="port-expanders"></a>포트 확장기
+> | 이름 부 / 아니요 | 호환 아키텍처 | 설명 | 관련 링크 | Microsoft Verified  | 
+> |----------------|-------------------|-------------|--------|------------------------------|
+> | MCP23008 8 비트 I/O 포트 확장기 | ARM32, x64, x86 | GPIO 포트 확장기 I2C 인터페이스 칩입니다. 8 개 포트, 18 PDIP 패키지 | [SPI 포트 Explander 샘플](https://www.hackster.io/4803/i2c-port-expander-sample-0a6d4f) | &#10004; |
+> | MCP23S17 16 비트 I/O 포트 확장기 | ARM32, x64, x86 | GPIO 포트 확장기 I2C 인터페이스 칩입니다. 16 포트, 28 SPDIP 패키지 | [대화형 피아노 샘플](https://www.hackster.io/windowsiot/build-2014-piano-3b449c) | &#10004; |
+
+### <a name="storage-media"></a>저장소 미디어
+> | 이름 부 / 아니요 | 호환 아키텍처 | 설명 | 관련 링크 | Microsoft Verified  | 
+> |----------------|-------------------|-------------|--------|------------------------------|
+> | [Samsung 32GB EVO 클래스 10 마이크로 SDHC](https://www.amazon.com/gp/product/B00IVPU786) | AARM32, x64, x86 | Windows 10 IoT Core 플래시 됨을 가질 수 있는 장치에 대 한 권장된 SD 카드. | | &#10004;|
+> | [SanDisk Ultra Micro SDHC 16GB](https://www.amazon.com/SanDisk-Ultra-Micro-SDHC-16GB/dp/9966573445) | ARM32, x64, x86 | Windows 10 IoT Core 플래시 됨을 가질 수 있는 장치에 대 한 권장된 SD 카드. | | &#10004; |
+
 ### <a name="sensors"></a>센서
 > | 이름 부 / 아니요 | 호환 아키텍처 | 설명 | 관련 링크 | Microsoft Verified  | 
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | DHT11 기본 온도 습도 센서 | ARM32, x64, x86 | Basic, 울트라 저렴 한 비용 디지털 온도 및 습도 센서. 및 사용 하 여 용량 습도 센서를 서미스터 주변 공중에 측정 하 고 데이터 pin (아날로그 입력된 핀 없음 필요)에서 디지털 신호를 산출 합니다.  | [GpioOneWireSample (DHT11)](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/GpioOneWire)| &#10004; |
 > | DHT22 온도 습도 센서 | ARM32, x64, x86 | Basic, 울트라 저렴 한 비용 디지털 온도 및 습도 센서. 및 사용 하 여 용량 습도 센서를 서미스터 주변 공중에 측정 하 고 데이터 pin (아날로그 입력된 핀 없음 필요)에서 디지털 신호를 산출 합니다.  | [GpioOneWireSample (DHT11)](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/GpioOneWire) | &#10004; |
-> | SparkFun Triple 축이 속도계 혁신-ADXL345 | ARM32, x64, x86 | 작고 씬, 전원, 3 축 MEMS가 속도계 ±16 g까지에서 고해상도 (13 비트) 측정으로 부족 합니다. 디지털 출력 데이터 서식이 지정 된 16 비트 두 개씩 짝을 보완 하 고 SPI (3 또는 4-실시간) 또는 I2C 디지털 인터페이스를 통해 액세스할 수 있습니다. |[가속도계 샘플](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/Accelerometer) | &#10004; |
+> | SparkFun Triple 축이 속도계 혁신-ADXL345 | ARM32, x64, x86 | 작고 씬, 전원, 3 축 MEMS가 속도계 ±16 g까지에서 고해상도 (13 비트) 측정으로 부족 합니다. 디지털 출력 데이터 서식이 지정 된 16 비트 두 개씩 짝을 보완 하 고 SPI (3 또는 4-실시간) 또는 I2C 디지털 인터페이스를 통해 액세스할 수 있습니다. |[가 속도계 샘플](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/Accelerometer) | &#10004; |
 > | Adafruit BMP280 온도 및 Barometric 센서 | ARM32 | Bosch 환경 압 온도 센서 | |   &#10004; |
 > | [Adafruit TCS34725 색 센서](http://www.adafruit.com/products/1334) | ARM, x32 | IR 필터와 흰색 LED-TCS34725 RGB 색 센서 | | &#10004; |
 > | Rohm BH1750FVI 주변 광원 센서 | ARM32 | 앰비언트 조명 측정에 대 한 작은 I2C 센서 | [I2C 샘플](https://github.com/mickut/Win10-IoT-Sensors) | |
@@ -105,18 +117,10 @@ Windows 10 IoT Core 다양 한 주변 인터페이스 및 프로토콜, I2C, UAR
 > | Dorji DSTH01 상대 습도 센서 | ARM32 | I2C 상대 습도 센서 | [I2C 샘플](https://github.com/mickut/Win10-IoT-Sensors)| |
 > | Honeywell HMC5883L 디지털 3 축의 나침반/지자기 센터 | ARM32 | 디지털 나침반 사용 및 자기 필드가 측정에는 작은 3 축 지자기 센터 | [I2C 샘플](https://github.com/mickut/Win10-IoT-Sensors) | |
 
-
-### <a name="port-expanders"></a>포트 확장기
-> | 이름 부 / 아니요 | 호환 아키텍처 | 설명 | 관련 링크 | Microsoft Verified  | 
+### <a name="touchpanel-solutions"></a>Touchpanel 솔루션
+> | 이름 부 / 아니요 | 호환 아키텍처 | 설명 | 관련 링크 | Microsoft Verified | 
 > |----------------|-------------------|-------------|--------|------------------------------|
-> | MCP23008 8 비트 I/O 포트 확장기 | ARM32, x64, x86 | GPIO 포트 확장기 I2C 인터페이스 칩입니다. 8 개 포트, 18 PDIP 패키지 | [SPI 포트 Explander 샘플](https://www.hackster.io/4803/i2c-port-expander-sample-0a6d4f) | &#10004; |
-> | MCP23S17 16 비트 I/O 포트 확장기 | ARM32, x64, x86 | GPIO 포트 확장기 I2C 인터페이스 칩입니다. 16 포트, 28 SPDIP 패키지 | [대화형 피아노 샘플](https://www.hackster.io/windowsiot/build-2014-piano-3b449c) | &#10004; |
-
-### <a name="nfcrfidproximity"></a>NFC/RFID/근접
-> | 이름 부 / 아니요 | 호환 아키텍처 | 설명 | 관련 링크 | Microsoft Verified |
-> |----------------|-------------------|-------------|--------|------------------------------|
-> | NXP OM5577 데모 보드 | ARM32 | NXP PN7120 NFC 칩에 대 한 데모 보드입니다. | [ProximityDevice 설명서](https://docs.microsoft.com/uwp/api/Windows.Networking.Proximity.ProximityDevice) | &#10004; |
-> | NXP PN547/PN548/PN7120 | ARM32, x64, x86 | NXP NFC 칩을 지원 합니다. | | &#10004; |
+> | Keith & Koep i 팬 M7 CoverLens | ARM32 | 7.0 산업 사용 Qualcomm Snapdragon 410E CPU, 해결 800x480px qm/밝기 850 cd, USB 2.0, SD 카드 POE Touchpanel 컴퓨터 인치 | [i-팬 M7 정보](https://keith-koep.com/en/products/products-hmi/i-pan-m7-coverlens-arm-touch-panel-computer-technical-data/) | &#10004; |
 
 ### <a name="miscellaneous"></a>기타
 > | 이름 부 / 아니요 | 호환 아키텍처 | 설명 | 관련 링크 | Microsoft Verified | 

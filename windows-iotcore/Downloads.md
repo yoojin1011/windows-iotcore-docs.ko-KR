@@ -7,12 +7,12 @@ ms.date: 10/05/18
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: IoT
-ms.openlocfilehash: c471c0da9219ed3a2254f523e3907e1431700831
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 2a89c9dd15f793861a647028a5184a2c5a7553ba
+ms.sourcegitcommit: 9d2134b61848575d0bd5fcc23403ebda92ca6573
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59512309"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "64953359"
 ---
 # <a name="downloads"></a>다운로드
 도구 및 Windows 10 IoT Core 사용 하 여 시작 하는 데 필요한 소프트웨어를 다운로드 합니다.
@@ -21,7 +21,8 @@ ms.locfileid: "59512309"
 
 Windows 10 IoT Core 대시보드를 사용 하면 Windows 10 IoT Core 탐색 가능한 인터페이스를 사용 하 여 간단한 장치에 깜박이 있습니다. 다운로드 한 후에 대시보드를 사용 하 여 장치를 설정 하는 방법을 알아봅니다 [여기](https://docs.microsoft.com/en-gb/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-raspberry-pi-minnowboard-nxp)합니다.
 
-[Windows 10 IoT Core 대시보드를 다운로드 합니다.](http://go.microsoft.com/fwlink/?LinkID=708576)
+> [!div class="nextstepaction"]
+> [Windows 10 IoT Core 대시보드를 다운로드 합니다.](http://go.microsoft.com/fwlink/?LinkID=708576)
 
 _다운로드 하 고 Windows 10 IoT Core 대시보드를 사용 하 여에 동의 합니다 [사용 조건](http://go.microsoft.com/fwlink/?LinkID=703960&clcid=0x4809) 및 [개인정보취급방침](http://go.microsoft.com/fwlink/?LinkId=521839) 대시보드를 Windows 10 IoT Core 대 한 합니다._
 
@@ -61,17 +62,17 @@ _다운로드 하 고 Windows 10 IoT Core 대시보드를 사용 하 여에 동�
 
 ## <a name="other-downloads"></a>기타 다운로드
 
-### [<a name="mdns-responder"></a>Mdn 응답자](https://go.microsoft.com/fwlink/?linkid=2077676)
+### <a name="mdns-responderhttpsgomicrosoftcomfwlinklinkid2077676"></a>[Mdn 응답자](https://go.microsoft.com/fwlink/?linkid=2077676)
 Bonjour 호환 Mdn 응답자에 대 한 Windows IoT (샘플 원본)를 다운로드 합니다. [여기](mDNS.md)에서 자세한 내용을 알아보세요.
 
-### [<a name="firmware-update"></a>펌웨어 업데이트](http://firmware.intel.com/projects/minnowboard-max)
+### <a name="firmware-updatehttpfirmwareintelcomprojectsminnowboard-max"></a>[펌웨어 업데이트](http://firmware.intel.com/projects/minnowboard-max)
 Intel에서 펌웨어 구성 요소 및 MinnowBoard 최대 참조 보드에 대 한 업데이트를 다운로드 합니다.
 
-### [<a name="visual-studio-2017"></a>Visual Studio 2017](https://www.visualstudio.com/downloads/)
+### <a name="visual-studio-2017httpswwwvisualstudiocomdownloads"></a>[Visual Studio 2017](https://www.visualstudio.com/downloads/)
 첨단 IDE, 도구 및 유용한 IoT 앱을 만드는 데 사용할 수 있는 서비스입니다.
 
-### [<a name="windows-driver-kit-2017"></a>Windows Driver Kit 2017](https://msdn.microsoft.com/windows/hardware/hh852365.aspx)
+### <a name="windows-driver-kit-2017httpsmsdnmicrosoftcomwindowshardwarehh852365aspx"></a>[Windows Driver Kit 2017](https://msdn.microsoft.com/windows/hardware/hh852365.aspx)
 Windows 10을 실행 하는 장치에 대 한 효율적인 고품질 드라이버를 만들기 위한 통합된 개발 환경을 제공 합니다.
 
-### [<a name="windows-developer-tools-for-visual-studio"></a>Windows Developer Tools for Visual Studio](https://dev.windows.com/en-us/downloads)
+### <a name="windows-developer-tools-for-visual-studiohttpsdevwindowscomen-usdownloads"></a>[Windows Developer Tools for Visual Studio](https://dev.windows.com/en-us/downloads)
 Visual Studio 2017을 사용 하 여 통합 하는 유니버설 Windows 앱 플랫폼을 개발 하기 위한 필수 도구입니다. 

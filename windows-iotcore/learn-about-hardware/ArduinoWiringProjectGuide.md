@@ -6,20 +6,26 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 만들기, 설정 및 Windows IoT Core를 사용 하 여 Arduino 연결 프로젝트의 배포에 알아봅니다.
 keywords: windows iot에 Arduino, Arduino 연결, 번개 성능, Visual Studio
-ms.openlocfilehash: baa904d1d5f23db15fd1dacd05c749449dc91213
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 7c5e51efd20de014af4533587fbe6f210140b793
+ms.sourcegitcommit: cbea9d713986fbe8b85e1bba1561a000188bd91c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59512870"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64744811"
 ---
 # <a name="arduino-wiring-project-guide"></a>Arduino 배선 프로젝트 가이드
+
+> [!IMPORTANT]
+> Windows 10 IoT 팀은 더 이상 적극적으로 Arduino 유지 관리 합니다.
 
 이 가이드는 만들기, 설정 및 Windows IoT Core를 사용 하 여 Arduino 연결 프로젝트의 배포를 단계별로 안내 합니다.
 
 프로젝트 Arduino 연결, 친숙 하 고 사용 하기 쉬운 Arduino 연결 API 활용 Windows IoT 번개 DMAP 드라이버로: 중요 한 있도록 직접 메모리 매핑을 사용 하 여 드라이버 [성능 속도](../develop-your-app/LightningPerformance.md)합니다. 복사 하 & IoT Core Arduino 연결 프로젝트로 Arduino 스케치 및 라이브러리를 붙여, 3 및 Minnowboard Max Raspberry Pi2를 비롯 한 장치를 지원 되는 IoT Core에서 실행할 수 있습니다! 자세한 내용은이 페이지의 개발 섹션을 참조 하세요.
 
 ## <a name="install-the-microsoft-iot-templates"></a>Microsoft IoT 템플릿 설치
+
+> [!NOTE]
+> 템플릿 Arduino 연결-이러한 템플릿에 액세스 하려면 VS 2015 다운로드는 VS 2017 이상 지원 되지 않습니다 loner입니다.
 
 Arduino 연결 프로젝트 뿐만 아니라 다른 Microsoft IoT 프로젝트 형식에 대 한 VS 템플릿을 자동으로 설치 하는 Visual Studio 확장을 제공 했습니다. 
 

@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 다양 한 제안 된 보드 및 커뮤니티 장치 하드웨어 기능에 알아봅니다.
 keywords: windows iot, 개발 장치, SOC, SOM 칩을 DragonBoard, Minnowboard 최대, Raspberry Pi 3, Raspberry Pi 2에는 시스템 보드
-ms.openlocfilehash: 7b3839a222c8e15e006f03ca5d125d81f175b46e
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: b4225937fef1338182c77baa0fd288b7ed597d45
+ms.sourcegitcommit: 3eacb968296e79e7e981fdc2a6f7f4f69c0920d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59513245"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65040190"
 ---
 # <a name="socs-and-custom-boards"></a>Soc 및 사용자 지정 보드
 
@@ -21,8 +21,8 @@ Microsoft는 Broadcom, Intel, NXP, 및 Qualcomm 칩 (Soc)의 여러 공급 업�
 
 | Broadcom | Intel | Qualcomm | NXP |
 |----------|-------|----------|-----|
-| BCM2837 | [Intel® Atom 프로세서 E3900 시리즈 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                | [Snapdragon 410 (APQ8016)](https://www.qualcomm.com/products/snapdragon/processors/410) | [i.MX 6 제품군](http://aka.ms/iotnxp) |
-| BCM2836 | [Intel® Celeron® 프로세서 N3350 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                    | [Snapdragon 212 (APQ8009)](https://www.qualcomm.com/products/snapdragon/processors/212) | [i.MX 7 제품군](http://aka.ms/iotnxp)     |
+| BCM2837 | [Intel® Atom 프로세서 E3900 시리즈 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                | [Snapdragon 410 (APQ8016)](https://www.qualcomm.com/products/snapdragon/processors/410) | [i.MX 6 Family](http://aka.ms/iotnxp) |
+| BCM2836 | [Intel® Celeron® 프로세서 N3350 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                    | [Snapdragon 212 (APQ8009)](https://www.qualcomm.com/products/snapdragon/processors/212) | [i.MX 7 Family](http://aka.ms/iotnxp)     |
 |         | [Intel® Pentium® N4200 프로세서 플랫폼 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                           |                                                                                         | [i.MX 8m 제품군](http://aka.ms/iotnxp) |
 |         | [Intel® Pentium® 및 Celeron® 프로세서 N3000 시리즈 (Braswell)](http://ark.intel.com/products/codename/66094/#@embedded)                    |                                                                                         |      |
 |         | [Intel® Atom® x5 E8000 프로세서 (Braswell)](http://ark.intel.com/products/codename/66094/#@embedded)                                        |                                                                                         |  |
@@ -83,11 +83,11 @@ Microsoft는 Broadcom, Intel, NXP, 및 Qualcomm 칩 (Soc)의 여러 공급 업�
 
 *여기에 나열 된 대부분의 회사는 크고 복잡 한 됩니다.  적합 한 사람에 도달 하는 데 문제가 있으면 전자 메일 [ winiotsomhelp@microsoft.com ](mailto:winiotsomhelp@microsoft.com) 것이 가장 권한이 있는 사용자에 연결 합니다.*
 
-### **<a name="raspberry-pi-derived-custom-design"></a>Raspberry Pi에서 파생 된 사용자 지정 디자인**
+### <a name="raspberry-pi-derived-custom-design"></a>**Raspberry Pi에서 파생 된 사용자 지정 디자인**
 
 [요소 14](https://www.element14.com/community/docs/DOC-76955/l/raspberry-pi-customization-service) 제품 보드 사용자 지정 서비스 연결 옵션을 추가 또는 제거할 수 있도록 Raspberry Pi에 대 한 합니다. 활용할 수 있습니다 BSP를 사용자 지정을 수행 해야 하는 경우는 [Github의 소스 BSP 코드를 열고](https://github.com/ms-iot/rpi-iotcore)합니다.
 
-### **<a name="intel-based-custom-design"></a>Intel 기반 사용자 지정 디자인**
+### <a name="intel-based-custom-design"></a>**Intel 기반 사용자 지정 디자인**
 
 활발 한 에코 시스템을 방법이 [Intel 장치 작성기 발생](https://solutionsdirectory.intel.com/solutions-directory/processors/278/processors/309/processors/402/processors/782/processors/788/processors/1103/processors/1107/processors/1110/processors/1175/processors/1344/processors/1348/processors/1349) 작업할 수 있는 Windows에 대 한 합니다. Windows 10 IoT Core 실행 하도록 설계 된 Intel 장치에는 몇 가지 일반적인 Pc에서 차이가 있습니다.
 
@@ -96,14 +96,14 @@ Microsoft는 Broadcom, Intel, NXP, 및 Qualcomm 칩 (Soc)의 여러 공급 업�
 
 사용자 고유의 보드를 작성 하는 경우 ACPI 또는 SMBIOS 변경에 대 한 지침을 사용 해야 하는 경우 BIOS 공급 업체를 문의 하십시오.
 
-#### *<a name="experienced-partners"></a>숙련 된 파트너*
+#### <a name="experienced-partners"></a>*숙련 된 파트너*
 
 * [Aaeon](http://www.aaeon.com/en/)
 * [Advantech](http://www.advantech.com/) - buy@advantech.tw
 * [Kontron](http://www.kontron.com/) - martin.unverdorben@kontron.com
 * [Nexcom](http://www.nexcom.com/)
 
-### **<a name="qualcomm-dragonboard-410c-apq8016-based-custom-design"></a>Qualcomm DragonBoard 410 c (APQ8016)-기반 사용자 지정 디자인**
+### <a name="qualcomm-dragonboard-410c-apq8016-based-custom-design"></a>**Qualcomm DragonBoard 410 c (APQ8016)-기반 사용자 지정 디자인**
 
 DragonBoard 410 c (Qualcomm AQP8016 SoC에 기반)에 대 한 이진 BSP에서 다운로드할 수 있습니다 [Qualcomm Developer Network](https://developer.qualcomm.com/hardware/dragonboard-410c/software)합니다.
 
@@ -118,21 +118,21 @@ BSP 패키지에만 ACPI 변경 해야 하는 간단한 하드웨어 사용자 �
 2. 사용자 지정 보드를 작성 하는 경우 작업할 SoM 공급 업체 또는 숙련 된 Qualcomm BSP의 사용자 지정 서비스 공급자와 같은 [Intrinsyc](https://www.intrinsyc.com/) 또는 [Thundersoft](http://www.thundersoft.com/) BSP 사용자 지정 및 설계 지원 합니다.
 3. 매우 높은 볼륨 (수백만 개)를 갖는 경우 [Qualcomm 문의](https://assets.qualcomm.com/contact-sales-iot.html)합니다.
 
-#### *<a name="experienced-partners"></a>숙련 된 파트너*
+#### <a name="experienced-partners"></a>*숙련 된 파트너*
 
 * [Intrinsyc](https://www.intrinsyc.com/computing-platforms/410-som/) -표시 Waldenberg (mwaldenberg@intrinsyc.com)
 * [Keith & Koep](https://keith-koep.com/en/products/products-som/myon-1-features-snapdragon-410/) - contact@keith-koep.com
 * [Reycom](http://www.reycom.swiss/en/home-swiss.html) - welcome@reycom.swiss
 * [Unitech](http://ute.com/products_info.php?pc1=4&pc2=461&rbu=0&pid=2395) -Sam (saml@tw.ute.com); Perry (perryt@te.ute.com)
 
-### **<a name="nxp-preview"></a>NXP 미리 보기**
+### <a name="nxp-preview"></a>**NXP 미리 보기**
 
 Windows 10 IoT Core 대 한 NXP 지원 공개 미리 보기입니다. 자세한 내용은 액세스는 BSP 또는 하드웨어 파트너를 찾아야로 이동 하십시오 합니다 [NXP SoC 페이지](http://aka.ms/iotnxp)합니다.
 
 연결할 수도 있습니다 아웃 파트너에 게 협력 하 고 있습니다.
 
 * Advantech [RSB-4411](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858) - buy@advantech.tw
-* Keith & Koep [pConXS](http://wce.keith-koep.com/en/products/pconxs-ff/) 사용 하 여 [Trizeps VII](http://wce.keith-koep.com/en/products/trizeps7-i.MX6/) - contact@keith-koep.com
+* Keith & Koep [pConXS](https://keith-koep.com/de/produkte/produkte-baseboards/pconxs-baseboard-vollausstattung-technische-daten/) 사용 하 여 [Trizeps VII](https://keith-koep.com/de/produkte/produkte-trizeps/trizeps-vii-technische-daten-imx6/) - contact@keith-koep.com
 * Kontron [SMARC sAMX6i](https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html) -Martin Unverdorben (martin.unverdorben@kontron.com)
 * Solid 실행 [Hummingboard Edge](https://www.solid-run.com/imx6-win-10-iot-core/ )-Ilya Viten (ilya@solid-run.com)
 * Geniatech [Q7-iMX6Q-SoM](https://www.geniatech.com/product/som-imx6q-q7/) & [SoM iMX7D](https://www.geniatech.com/product/som-imx7d/) -Mike Decker (mike.decker@geniatech.com) 또는 팡 Jijun (Fjj@geniatech.com)

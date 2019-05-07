@@ -6,14 +6,17 @@ ms.date: 09/06/17
 ms.topic: article
 description: 만들기, 배포 및 지원 되는 Windows IoT Core 장치에 연결 하는 Arduino 스케치를 디버그 하는 방법에 알아봅니다.
 keywords: windows iot에 Arduino, Arduino 연결, 템플릿, IoT Core, UWP
-ms.openlocfilehash: 212e69360e89daafe08c58a7b8bced94ea4410f2
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: ee6c64bdfd01e79d26bfa0a6c5f88f7735150393
+ms.sourcegitcommit: cbea9d713986fbe8b85e1bba1561a000188bd91c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59513333"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64744791"
 ---
 # <a name="arduino-wiring-for-windows-iot-core-devices"></a>Windows IoT Core 장치에 대 한 Arduino 연결
+
+> [!IMPORTANT]
+> Windows 10 IoT 팀은 더 이상 적극적으로 Arduino 유지 관리 합니다.
 
 개발 및 친숙 한 다시 사용할 수 있도록 [Arduino 연결](https://www.arduino.cc/en/Reference/HomePage) IoT Core 장치에서 스케치, Arduino 연결에 대 한 Visual Studio 프로젝트 템플릿을의 일부로 제공 되는 [Windows IoT Core 프로젝트 템플릿 확장](https://go.microsoft.com/fwlink/?linkid=847472)합니다.
 

@@ -6,14 +6,17 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 다양 한 플랫폼과 언어에 대 한 Windows IoT 번개 기능 및 설정/해제 빈도에 대해 알아봅니다.
 keywords: windows iot, 번개 성능, 기능 번개 GPIO
-ms.openlocfilehash: 65f6732dd945b199902bb7eb4a9e0cc41aac2131
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: e7d57f72f6db85fbb8e453943c87e8ee31ef8a40
+ms.sourcegitcommit: cbea9d713986fbe8b85e1bba1561a000188bd91c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59513589"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64744785"
 ---
 # <a name="windows-iot-lightning-performance-testing"></a>Windows IoT 번개 성능 테스트
+
+> [!IMPORTANT]
+> Windows 10 IoT 팀 Arduino 지 원하는 더 이상 적극적으로 합니다.
 
 GPIO 성능 간단한 GPIO 토글 앱을 사용 하 여 Windows IoT 번개 기능에 대해 테스트 되었습니다 [사용 가능한 여기](https://github.com/ms-iot/lightning/tree/develop/PerformanceTestSuite)합니다. 테스트는 0-1 가능한 가장 빠른 속도로 GPIO 5로 전환 하 여 수행 되었습니다. 각 사례에 대 한 토글 빈도 Tektronix TP 2024 Oscilloscope를 사용 하 여 측정 되었습니다.
 

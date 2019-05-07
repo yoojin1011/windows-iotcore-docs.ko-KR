@@ -6,12 +6,12 @@ ms.date: 02/22/2019
 ms.topic: article
 description: 및 NXP i.MX Soc Windows 10 IoT Core 알아봅니다
 keywords: Windows 10 IoT Core 시작 i.MX, NXP
-ms.openlocfilehash: 2dc212fa403e2d8d4c32bffbae3c8bcd97b5b022
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: a6331b8f5695c2a432e1b22f1ba275cd48c549e4
+ms.sourcegitcommit: 3eacb968296e79e7e981fdc2a6f7f4f69c0920d1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59512661"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65040188"
 ---
 # <a name="window-10-iot-core-and-nxp-imx-socs"></a>Window 10 IoT Core 및 NXP i.MX Soc
 
@@ -47,7 +47,7 @@ NXP 하드웨어/BSP 관련 질문이 나 BSP 대상된 솔루션 더 잘 지 �
 <tbody>
 
 <tr class="odd">
-<td align="left"><p><a href="https://www.aaeon.com/en/p/pico-itx-boards-pico-imx6/">Aaeon PICO IMX6</a></p></td>
+<td align="left"><p><a href="https://www.aaeon.com/en/p/pico-itx-boards-pico-imx6/">Aaeon PICO-IMX6</a></p></td>
 <td align="left"><p><p><a href="mailto:davidhung@aaeon.com.tw">David 여 닫</a></p></td>
 </tr>
 
@@ -72,17 +72,17 @@ NXP 하드웨어/BSP 관련 질문이 나 BSP 대상된 솔루션 더 잘 지 �
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://www.karo-electronics.de/tx-standard.html?&L=1">Ka-Ro Electronics TX6UL, TX6S, TX6DL, 및 TX6Q</a></p></td>
+<td align="left"><p><a href="https://www.karo-electronics.de/tx-standard.html?&L=1">Ka-Ro Electronics TX6UL, TX6S, TX6DL, and TX6Q</a></p></td>
 <td align="left"><p><p><a href="mailto:us@karo-electronics.de">Uwe Steinkohl</a></p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="http://wce.keith-koep.com/en/products/pconxs-ff/">Keith & Koep pConXS</a> 사용 하 여 <a href="http://wce.keith-koep.com/en/products/trizeps7-i.MX6/">Trizeps VII</a></p></td>
+<td align="left"><p><a href="https://keith-koep.com/de/produkte/produkte-baseboards/pconxs-baseboard-vollausstattung-technische-daten/">Keith & Koep pConXS</a> 사용 하 여 <a href="https://keith-koep.com/de/produkte/produkte-trizeps/trizeps-vii-technische-daten-imx6/">Trizeps VII</a></p></td>
 <td align="left"><p><p><a href="mailto:contact@keith-koep.com">contact@keith-koep.com</a></p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html">Kontron SMARC sAMX6i</a></p></td>
+<td align="left"><p><a href="https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html">Kontron SMARC-sAMX6i</a></p></td>
 <td align="left"><p><p><a href="mailto:martin.unverdorben@kontron.com">Martin Unverdorben</a></p></td>
 </tr>
 

@@ -6,14 +6,18 @@ ms.date: 08/28/2017
 ms.topic: article
 description: Arduino 및 Remote Arduino 연결 등에서 Windows 10을 사용 하는 방법에 알아봅니다.
 keywords: windows iot에 Arduino, Arduino 연결, Windows Remote Arduino
-ms.openlocfilehash: 0b221e88ccd19c9fdad412b1ff83d1fae5c6145f
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 79201f2f85f84783838b1de7c28031863d948d5e
+ms.sourcegitcommit: cbea9d713986fbe8b85e1bba1561a000188bd91c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59513189"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64744807"
 ---
 # <a name="arduino-and-windows-10"></a>Arduino 및 Windows 10
+
+> [!IMPORTANT]
+> Windows 10 IoT 팀은 더 이상 적극적으로 Arduino 유지 관리 합니다.
+
 Arduino 및 Windows 10 멋진 프로젝트를 만들어-아래 링크 중 하나를 클릭 하 여 시작 하는 데 함께 작동 합니다. 이 기술은 Arduino Uno, 메가 제공할 뿐만 아니라 새 Arduino 101을 지원합니다.
 
 ## <a name="arduino-wiring-for-windows-10-iot-core-devices"></a>Windows 10 IoT Core 장치에 대 한 Arduino 연결

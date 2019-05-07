@@ -6,14 +6,17 @@ ms.date: 01/30/2018
 ms.topic: article
 description: Windows 10 IoT 란 무엇 이며이 사용 하 여 수행할 수 있는 작업에 대해 알아봅니다.
 keywords: Windows 10 IoT Enterprise, Windows 10 IoT Core 헤드리스, 음성, 기능, 이진 버전, 버전
-ms.openlocfilehash: ecfb80049b4fe1dd5437faf6bce410f9fcb3c528
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: f1ff68d1efe967eee0472eec54b5354d47c9447a
+ms.sourcegitcommit: 1f6afcfee0cb5557dc21c7b15e199bc557d8eedb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59512317"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65171343"
 ---
 # <a name="an-overview-of-windows-10-iot"></a>Windows 10 IoT 개요 
+
+> [!NOTE]
+> 만 Windows 10 컨테이너 Microsoft Azure IoT Edge를 활용 하는 상업용 배포에 대 한 Windows IoT Core 및 Windows IoT Enterprise를 사용 하 여 사용할 수 있습니다.
 
 ## <a name="what-is-windows-10-iot"></a>Windows 10 IoT 란?
 Windows 10 IoT Internet of Things에 엔터프라이즈급 성능, 보안 및 관리 효율성을 제공 하는 Windows 10 제품군의 멤버 임  Windows의 포함 된 환경, 에코 시스템 및 클라우드 연결을 신속 하 게 프로 비전, 쉽게 관리 및 전체 클라우드 전략을 원활 하 게 연결할 수 있는 보안 장치를 사용 하 여 해당 Internet of Things을 만들려는 조직 허용을 활용 합니다.  
@@ -87,7 +90,10 @@ REG ADD "HKCU\Control Panel\Accessibility" /v DynamicScrollbars /t REG_DWORD \d 
 
 Windows 10 IoT Core 유지 되므로 시간이 지남에 따라이 게시물에 표시 된 모든 차이 사라질 수를 업데이트 합니다.
 
+## <a name="iot-edge-support-for-windows-10-iot"></a>Windows 10 IoT에 대 한 IoT Edge 지원
+Azure IoT Edge 문서에 Windows 10 IoT를 위한 하세요 "운영 체제"에 대 한 자세한 내용은 지원 IoT Edge에 대 한 자세한 내용을 알아보려면 [여기](https://docs.microsoft.com/en-us/azure/iot-edge/support#operating-systems)합니다.
+
 
 ## <a name="helpful-resources"></a>유용한 리소스
 * [Windows 10 IoT Enterprise](windows-iot-enterprise.md)
-* [Windows 10 IoT Core K](windows-iot-core.md)
+* [Windows 10 IoT Core](windows-iot-core.md)

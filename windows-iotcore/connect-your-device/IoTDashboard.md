@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: Windows 10 IoT Core 대시보드 기능에 대해 알아봅니다 및 시작 방법입니다.
 keywords: windows iot, windows 10 iot core 대시보드, windows iot 대시보드, 장치
-ms.openlocfilehash: d21b67dad15d510564ec7fae28a2431d28faf8be
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: af87ff8224cf77b567b1dd96e6de2297b4752530
+ms.sourcegitcommit: f447681d9a73ebdec97a3da973bd798a02df975d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59513718"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65197674"
 ---
 # <a name="windows-10-iot-core-dashboard"></a>Windows 10 IoT Core 대시보드
 
