@@ -6,30 +6,30 @@ ms.date: 09/07/18
 ms.topic: article
 description: 모든 Windows 10 IoT 커뮤니티에서 리소스를 활용 합니다.
 keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, 리소스, 가장 중요 한 사람, 비디오, 블로그 게시물
-ms.openlocfilehash: 5d2c90d20da8d44155a0bf0250a4cfd2ce55d4ac
-ms.sourcegitcommit: 3eacb968296e79e7e981fdc2a6f7f4f69c0920d1
+ms.openlocfilehash: c144aabe4662deba7efa990a5af3d59ffe1531b8
+ms.sourcegitcommit: 0f46b7b5c15906a6c82b847ffcd9f4d2674f9fd0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65040166"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226821"
 ---
 # <a name="windows-10-iot-resources"></a>Windows 10 IoT 리소스
 
 ## <a name="blog-posts"></a>블로그 게시물
 
+* [Windows 10 IoT를 사용 하 여 Windows CE 시스템을 현대화](https://blogs.windows.com/buildingapps/2019/05/07/modernizing-windows-ce-systems-with-windows-10-iot/#oHzjguRIlWV0ryo6.97)
+* [로봇 공학 열고 Microsoft Windows 10 IoT enterprise ROS 릴리스](https://blogs.windows.com/buildingapps/2019/05/07/open-robotics-and-microsoft-release-ros-on-windows-10-iot-enterprise/#Y86A6YUJELKDoRJJ.97)
+* [Microsoft Azure IoT 장치 에이전트 V2 일반 공급](https://blogs.windows.com/buildingapps/2019/05/07/microsoft-azure-iot-device-agent-v2-general-availability/#BwOSxBSymeJqU34K.97)
 * [Windows IoT의 진화: 지능형에 지에 대 한 기초](https://blogs.windows.com/windowsexperience/2019/04/03/evolution-of-windows-iot-the-foundation-for-your-intelligent-edge/)
-* [Microsoft Azure IoT 장치 에이전트 V2 공개 미리 보기 이용 가능](https://blogs.windows.com/windowsexperience/2019/01/15/microsoft-azure-iot-device-agent-v2-public-preview-now-available/#fB07iWklwq1Ro8dk.97)
 * [Windows 10 IoT 제공 혁신 및 업데이트는 10 월 2018에 지에 인텔리전스](https://blogs.windows.com/windowsexperience/2018/10/04/windows-10-iot-delivers-innovation-and-intelligence-at-the-edge-with-the-october-2018-update/#9g9hmmO2AdUB1C6F.97) 
-* [Windows 10의 거듭제곱 로봇 운영 체제에 가져오기](https://blogs.windows.com/windowsexperience/2018/09/28/bringing-the-power-of-windows-10-to-the-robot-operating-system/#pqcOPjyO74t65LGb.97)
-* [IoT in Action: 전 세계를 변경 하는 지능형 솔루션 개발](https://blogs.windows.com/windowsexperience/2018/09/05/iot-in-action-developing-intelligent-solutions-that-change-the-world/#GHq5SrW6ffImgLgv.97)
 * [Windows 10 IoT-내일의 IoT 오늘](https://blogs.windows.com/windowsexperience/2018/06/05/windows-10-iot-tomorrows-iot-today/#wl3TcsFseJ6XROUZ.97)
 * [수행 보다는 지능형에 지 Windows 10 IoT를 사용 하 여](https://blogs.windows.com/windowsexperience/2018/05/07/do-more-at-the-intelligent-edge-with-windows-10-iot/#uDVaAtoBvz7BGrTf.97)
-* [Windows 10 IoT Core, UWP 및 VSTS를 사용 하 여 IoT 용 DevOps](https://blogs.msdn.microsoft.com/devops/2018/03/07/devops-for-iot-with-win10-iot-core-uwp-and-vsts/)
 * [Microsoft double 아래로 Windows 10 iot에 지원이 추가 됨된](https://blogs.windows.com/windowsexperience/2018/02/27/microsoft-doubles-down-on-windows-10-iot-with-added-support/#DJaDiKX0bYJ1JDHD.97)
 
 ## <a name="videos"></a>비디오
 
 >[!Video https://www.youtube.com/embed/Cmj0sxBRofs]
+* [Windows CE 장치를 현대화](https://www.youtube.com/watch?time_continue=1&v=5iUZkZmgmJA)
 * [Windows Server IoT 2019 소개](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Introduction-to-Windows-Server-IoT-2019)
 * [Windows에서 ROS 시작](https://www.youtube.com/watch?v=nZSjwMLi3jQ)
 * [Windows 용 azure IoT 장치 에이전트](https://www.youtube.com/watch?v=DZn6diOn7uI)

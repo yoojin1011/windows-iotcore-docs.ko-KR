@@ -8,15 +8,15 @@ ms.prod: windows-iot
 ms.technology: IoT
 description: AllJoyn, IoT 장치에 대 한 일반적인 프로토콜 및 기타 확장 및 Windows IoT를 사용 하 여 기능을 사용 하는 방법을 알아봅니다.
 keywords: windows iot, AllJoyn
-ms.openlocfilehash: 6655cf5e8584a9c7046301cda24b10348a704d6e
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 6b558680d479c71b6b8a22d34d03b04e5cbdbd76
+ms.sourcegitcommit: 0f46b7b5c15906a6c82b847ffcd9f4d2674f9fd0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59512381"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226832"
 ---
 > [!NOTE]
-> 보관 된 설명서가 표시 됩니다. Windows 10 IoT에서 더 이상 AllJoyn 사용할 수 없습니다. 질문에 대 한 GitHub에서 문제를 제기 하거나 아래 설명에 의견을 남길 하세요.
+> 보관 된 설명서가 표시 됩니다. Windows 10 IoT에서 더 이상 AllJoyn 사용할 수 없습니다. 질문에 대 한 대체 AllJoyn에 사용 되는 앱 계층 IoT 프로토콜은는 [열린 연결 Foundation](https://openconnectivity.org)합니다. OCF 사양의 표준 구현은 Iotivity-Iotivity에 대 한 Windows 지원을 확인할 수 있습니다 [여기](https://wiki.iotivity.org/windows)합니다.
 
 # <a name="alljoyn"></a>AllJoyn
 
