@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 암호화 기능을 더 잘 보호 장치로 사용할 수 있도록 신뢰할 수 있는 플랫폼 모듈을 사용 하는 방법에 알아봅니다.
 keywords: windows iot, 보안, 키, 암호화, TPM, 신뢰할 수 있는 플랫폼 모듈
-ms.openlocfilehash: cf22811cbf45b5c715a19b8e12d7b00c2afaa9b8
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 70552a5f98891281879f1d45cbdbd671b56dd902
+ms.sourcegitcommit: 77b86eee2bba3844e87f9d3dbef816761ddf0dd9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59512829"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65533315"
 ---
 # <a name="trusted-platform-module-tpm-on-windows-10-iot-core"></a>Windows 10 IoT Core 신뢰할 수 있는 플랫폼 모듈 (TPM)
 
@@ -38,7 +38,8 @@ TPM 사양 두 번 개발 되었습니다. 처음으로이에서 개발 1.1b 1.2
 * 간소화 된 TPM 관리
 * 플랫폼 서비스의 보안을 강화 하기 위해 추가 기능
 
-Windows IoT Core는 TPM 2.0만 지원 하 고 오래 된 TPM 1.2를 지원 하지 않습니다 note 합니다.
+> [!NOTE] 
+> Windows IoT Core는 TPM 2.0만 지원 및 오래 된 TPM 1.2를 지원 하지 않습니다.
 
 ## <a name="what-is-tbs"></a>TB 란? 
 TPM 기본 서비스 (TB) 기능은 TPM 리소스의 투명 하 게 공유할 수 있도록 하는 시스템 서비스입니다. 원격 프로시저 호출 (RPC)을 통해 동일한 물리적 컴퓨터에서 여러 응용 프로그램에서 TPM 리소스를 공유 합니다. 이 호출 응용 프로그램에서 지정 된 우선 순위를 사용 하 여 응용 프로그램에서 TPM 액세스를 중앙 집중화 합니다.  

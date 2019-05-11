@@ -6,49 +6,90 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 보안 부팅, BitLocker 및 Windows 10 IoT Core Device Guard를 사용 하도록 설정 하는 방법 알아보기
 keywords: windows iot, 보안 부팅, BitLocker, 턴키 보안 장치 가드, 보안
-ms.openlocfilehash: 68698a1b440b297eb9bfa9223bd324ce330386b9
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 957b81a0a5bc032c62fa75598418778862fdf76d
+ms.sourcegitcommit: 77b86eee2bba3844e87f9d3dbef816761ddf0dd9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59513598"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65533349"
 ---
 # <a name="enabling-secure-boot-bitlocker-and-device-guard-on-windows-10-iot-core"></a>보안 부팅, BitLocker 및 Windows 10 IoT Core Device Guard를 사용 하도록 설정
 
-## <a name="introduction"></a>소개
+Windows 10 IoT Core는 UEFI 보안 부팅, BitLocker 장치 암호화 및 Device Guard와 같은 보안 기능 제공 되었습니다.  다양 한 유형의 공격에 복원 력 있는 Windows IoT 장치로 완벽 하 게 잠겨 만드는 이러한 장치 작성기 데 도움이 됩니다.  함께 이러한 기능은 플랫폼을 알 수 없는 이진 파일을 잠그지 및 장치 암호화를 사용 하 여 사용자 데이터를 보호 하는 동안 정의 된 방식으로 시작 됩니다 보장 하는 최적의 보호를 제공 합니다.
 
-크리에이터 업데이트의 릴리스부터 Windows 10 IoT Core UEFI 보안 부팅, BitLocker 장치 암호화 및 Device Guard를 포함 하는 보안 기능 제품을 개선 합니다.  다양 한 유형의 공격에 복원 력 있는 Windows IoT 장치로 완벽 하 게 잠겨 만드는 장치 작성기 수는 있습니다.  함께 이러한 기능은 플랫폼을 알 수 없는 이진 파일을 잠그지 및 장치 암호화를 사용 하 여 사용자 데이터를 보호 하는 동안 정의 된 방식으로 시작 됩니다 보장 하는 최적의 보호를 제공 합니다.
+## <a name="boot-order"></a>부팅 순서
 
-### <a name="secure-boot"></a>보안 부팅
+IoT 장치에 대 한 안전한 플랫폼을 제공 하는 개별 구성 요소 자세히 살펴 보겠습니다 수 전에 부팅 순서를 Windows 10 IoT Core 장치에 대 한 이해가 필요 합니다.
 
-UEFI 보안 부팅은 UEFI에 있는 첫 번째 정책 적용 지점입니다.  지정 된 인증 기관에서 서명 된 바이너리만 실행할 수만 있도록 시스템을 제한 합니다. 이 기능은 플랫폼에서 실행 되 고 잠재적으로의 보안 상태가 약화 되 알 수 없는 코드를 방지 합니다.
+다음 세 가지 주요 영역에서 IoT 장치를 때 발생 하는 OS 커널 로드 하 고 설치 된 응용 프로그램을 실행 하려면까지 기반 합니다.
 
-### <a name="bitlocker-device-encryption"></a>BitLocker 장치 암호화
+* 플랫폼 보안 부팅
+* Unified Extensible Firmware (UEFI) 인터페이스 보안 부팅
+* Windows 코드 무결성
 
-Windows 10 IoT Core 경량 버전의 BitLocker 장치 암호화를 오프 라인 공격 으로부터 IoT 장치가 보호도 구현 합니다.  이 기능은 preOS 프로토콜을 포함 하 여 필요한 측정을 수행 하는 UEFI의 플랫폼에서 TPM의 존재에 강력한 종속성을 갖습니다. 이러한 preOS 측정을 갖도록 OS 나중에 OS가 시작 하는 방법을; 한 명확한 기록이 그러나 실행 제한을 적용 하지 않습니다.
+![대시보드 스크린샷](../media/SecureBootAndBitLocker/BootOrder.jpg)
 
-> [!TIP]
-> Windows 10 IoT Core 대 한 BitLocker 기능을 사용할 수 있는 모든 NTFS 데이터 볼륨을 바인딩하는 동안 자동 NTFS 기반 OS 볼륨 암호화를 위한 수 있습니다.  이 위해 EFIESP 볼륨 GUID로 설정 되어 있는지 확인 하는 데 필요한 것 _C12A7328-F81F-11D2-BA4B-00A0C93EC93B_합니다.
-
-### <a name="device-guard-on-windows-iot-core"></a>Windows IoT Core에서 device Guard
-
-대부분의 IoT 장치는 고정 함수 장치로 빌드됩니다.  이 장치 작성기는 펌웨어, 운영 체제, 드라이버 및 응용 프로그램 특정된 장치에서 실행 되어야 합니다 정확히 알고 있는 것을 의미 합니다.  이 정보를 수 있습니다만 알려져 있고 신뢰할 수 있는 코드의 실행을 허용 하 여 IoT 장치를 완벽 하 게 잠금에 사용 합니다.  Windows 10 IoT Core device Guard는 잠긴 장치에서 알 수 없거나 신뢰할 수 없는 실행 코드를 실행할 수 없음을 확인 하 여 IoT 장치를 보호할 수 있습니다.
+Windows 10 부팅 프로세스에 대 한 추가 정보를 찾을 수 있습니다 [여기](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process)합니다.
 
 ## <a name="locking-down-iot-devices"></a>잠금 다운 IoT 장치
 
-Windows IoT 장치를 잠그고 순서로 다음 고려 사항은 만들어야 하는 중...
+Windows IoT 장치를 잠그고 순서로 다음과 같은 고려 사항이 수행 되어야 합니다.
 
-### <a name="uefi-platform--secure-boot"></a>보안 부팅 및 UEFI 플랫폼
+### <a name="platform-secure-boot"></a>플랫폼 보안 부팅
 
-Device Guard 기능을 활용 하기 위해 부팅 이진 파일 및 UEFI 펌웨어 서명 되 고 변조 될 수 없음을 확인 하는 데 필요한 됩니다.  UEFI 보안 부팅은 UEFI에 있는 첫 번째 정책 적용 지점입니다.  지정된 된 권한으로 로그인 하는 부팅 이진 파일의 실행만 사용할 수 있도록 시스템을 제한 하 여 변조를 방지 합니다. 키 생성 및 관리 지침, 보안 부팅에 대 한 추가 정보를 사용할 수 [여기](https://technet.microsoft.com/library/dn747883.aspx)합니다.
+전체 부팅 프로세스의 첫 번째 단계는 로드 하 고 펌웨어에 하드웨어를 초기화 하는 부팅 로더를 실행 하는 장치를 처음 켤 때의 devies 및 응급 깜박이 기능을 제공 합니다. UEFI 환경을 로드 하 고 컨트롤을 통해 전달 됩니다.
 
-### <a name="configurable-code-integrity-cci"></a>구성 가능한 코드 무결성 (CCI)
+이러한 펌웨어 부팅 로더 SoC 관련 되므로 적절 한 장치 제조업체에 있는 장치에 만들어진 이러한 부팅 로더를 사용 해야 합니다.
 
-응용 프로그램 메모리에 로드 될 때마다 드라이버의 무결성을 확인 하 여 운영 체제의 보안을 강화 하는 코드 무결성 (CI). CI는 두 개의 주요 구성-커널 모드 코드 무결성 (KMCI) 및 사용자 모드 코드 무결성 (UMCI)를 포함합니다.
+### <a name="uefi-secure-boot"></a>UEFI 보안 부팅
+
+UEFI 보안 부팅 지점인 첫 번째 정책 적용, 및 UEFI에 있습니다.  시스템 펌웨어 드라이버, 옵션 rom을 보유, UEFI 드라이버 또는 응용 프로그램 및 UEFI 부팅 로더 같은 지정된 된 권한으로 서명 된 바이너리만 실행할 수만 있도록 제한 합니다. 이 기능은 플랫폼에서 실행 되 고 잠재적으로의 보안 상태가 약화 되 알 수 없는 코드를 방지 합니다. 보안 부팅 루트킷과 같은 장치에 사전 부팅 맬웨어 공격의 위험을 줄입니다. 
+
+OEM,으로 UEFI 보안 부팅 제조 시간에 IoT 장치에서 데이터베이스를 저장 해야 합니다. 이러한 데이터베이스 서명이 데이터베이스 (db), 서명을 해지 데이터베이스 (dbx) 및 등록 키 (KEK) 데이터베이스에 포함 됩니다. 이러한 데이터베이스는 장치의 펌웨어 비휘발성 RAM (RAM NV)에 저장 됩니다.
+
+* **서명 데이터베이스 (db):** 서명자 또는 운영 체제 로더, UEFI 응용 프로그램 및 장치에서 로드할 수 있는 UEFI 드라이버의 이미지 해시 나열
+
+* **해지 된 서명을 데이터베이스 (dbx):** 서명자 또는 운영 체제 로더, UEFI 응용 프로그램 및 UEFI 드라이버와 더 이상 신뢰할 수 있는 이미지 해시 나열 *되지* 장치에서 로드 되도록 허용 
+
+* **등록 키 (KEK)를 데이터베이스:** 서명 서명 업데이트를 사용할 수 있으며 서명 데이터베이스를 해지 하는 키의 목록을 포함 합니다.
+
+이러한 데이터베이스를 만들고 장치에 추가 되 면 OEM 편집에서 펌웨어를 잠그고 서명 키 (PK) 플랫폼을 생성 합니다. KEK에 대 한 업데이트에 서명 하거나 UEFI 보안 부팅을 사용 하지 않도록 설정 하려면이 키를 사용할 수 있습니다.
+
+UEFI 보안 부팅을 수행한 단계는 다음과 같습니다.
+
+1. 장치 전원이 켜지 면 서명을 데이터베이스 각각 서명 키 (PK) 플랫폼에 대해 확인 됩니다.
+2. 펌웨어를 신뢰할 수 없는 경우 UEFI 펌웨어는 신뢰할 수 있는 펌웨어를 복원 하려면 OEM 특정 복구를 시작 합니다.
+3. Windows 부팅 관리자를 로드할 수 없는 경우 펌웨어가 Windows 부팅 관리자의 백업 복사본을 부팅 하려고 합니다. 또한 실패 하면 UEFI 펌웨어 OEM 전용 업데이트 관리를 시작 합니다.
+4. Windows 부팅 관리자 실행 되며 Windows 커널 디지털 서명을 확인 합니다. 신뢰할 수 있는 경우 Windows 부팅 관리자는 Windows 커널에 제어를 전달 합니다.
+
+
+키 생성 및 관리 지침, 보안 부팅에 대 한 추가 정보를 사용할 수 [여기](https://technet.microsoft.com/library/dn747883.aspx)합니다.
+
+### <a name="windows-code-integrity"></a>Windows 코드 무결성
+
+Windows 코드 무결성 (WCI) 드라이버 또는 메모리에 로드 될 때마다 응용 프로그램의 무결성을 검사 하 여 운영 체제의 보안을 개선 합니다. CI는 두 개의 주요 구성-커널 모드 코드 무결성 (KMCI) 및 사용자 모드 코드 무결성 (UMCI)를 포함합니다.
 
 구성 가능한 코드 무결성 (CCI)는 Windows 10 장치를 잠그고 장치 작성기를 사용 하면만 실행 하 고 서명 되 고 신뢰할 수 있는 코드를 실행할 수 있도록 하는 기능입니다.  이렇게 하려면 장치 작성기 수 코드 무결성 정책을 'golden' 장치 (하드웨어 및 소프트웨어의 최종 릴리스 버전)에 다음 보안 만들고 공장 현장에서 모든 장치에서이 정책을 적용 합니다.
 
 코드 무결성 정책을 배포 하는 방법에 대 한 자세한 내용은 감사 및 적용, 설명서를 확인해 최신 technet [여기](https://technet.microsoft.com/itpro/windows/keep-secure/deploy-code-integrity-policies-steps)합니다.
+
+Windows 코드 무결성을 수행한 단계는 다음과 같습니다.
+
+1. Windows 커널에 로드 하기 전에 서명 데이터베이스에 대해 다른 모든 구성 요소 확인 합니다. 시작 파일, 드라이버 및 ELAM (맬웨어 방지 조기 실행-)이 포함 됩니다.
+2. Windows 커널 시작 프로세스의 신뢰할 수 있는 구성 요소를 로드 하 고 신뢰할 수 없는 구성 요소 로드 금지 됩니다.
+3. Windows 10 IoT Core 운영 체제 설치 된 모든 응용 프로그램과 함께 로드합니다.
+
+### <a name="bitlocker-device-encryption"></a>BitLocker 장치 암호화
+
+Windows 10 IoT Core 경량 버전의 BitLocker 장치 암호화를 오프 라인 공격 으로부터 IoT 장치가 보호도 구현 합니다. 이 기능은 필요한 os 시작 전 프로토콜을 포함 하 여 필요한 측정을 수행 하는 UEFI의 플랫폼에서 TPM의 존재에 강력한 종속성을 갖습니다. 이러한 os 시작 전 측정 OS 나중에 OS가 시작 하는 방법을; 한 명확한 기록이 확인 그러나 실행 제한을 적용 하지 않습니다.
+
+> [!TIP]
+> Windows 10 IoT Core 대 한 BitLocker 기능을 사용할 수 있는 모든 NTFS 데이터 볼륨을 바인딩하는 동안 자동 NTFS 기반 OS 볼륨 암호화를 위한 수 있습니다. 이 위해 EFIESP 볼륨 GUID로 설정 되어 있는지 확인 하는 데 필요한 것 _C12A7328-F81F-11D2-BA4B-00A0C93EC93B_합니다.
+
+### <a name="device-guard-on-windows-iot-core"></a>Windows IoT Core에서 device Guard
+
+대부분의 IoT 장치는 고정 함수 장치로 빌드됩니다. 이 장치 작성기는 펌웨어, 운영 체제, 드라이버 및 응용 프로그램 특정된 장치에서 실행 되어야 합니다 정확히 알고 있는 것을 의미 합니다. 이 정보를 수 있습니다만 알려져 있고 신뢰할 수 있는 코드의 실행을 허용 하 여 IoT 장치를 완벽 하 게 잠금에 사용 합니다. Windows 10 IoT Core device Guard는 잠긴 장치에서 알 수 없거나 신뢰할 수 없는 실행 코드를 실행할 수 없음을 확인 하 여 IoT 장치를 보호할 수 있습니다.
+
 
 ## <a name="turnkey-security-on-iot-core"></a>IoT Core에 대 한 턴키 보안
 
@@ -58,7 +99,7 @@ Microsoft는 턴키 ' 보안 패키지 '을 제공 하는 데 쉽게 사용 IoT 
 * BitLocker를 사용 하 여 장치 암호화의 설정 및 구성 
 * 시작만 서명 된 응용 프로그램 및 드라이버를 실행할 수 있도록 장치 잠금
 
-### <a name="pre-requisites"></a>필수 구성 요소
+### <a name="prerequisites"></a>사전 요구 사항
 
 * Windows 10 Enterprise 실행 하는 PC
 * [Windows 10 SDK](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk) -인증서 생성에 대 한 필수
@@ -100,13 +141,7 @@ Windows 10 IoT Core 수백 대의 장치에서 사용 되는 다양 한 silicons
     * **생성 된 키를 보호할** 장치는 이진 파일을 신뢰 하는 대로 잠금 후에 이러한 키를 사용 하 여 서명 합니다.
     * 이 단계를 건너뛸 수 있습니다를 미리 생성 된 키를 사용 하 여 테스트 전용
 
-5. Pfx 파일에서 직접 클릭 하거나 사용 하 여 생성 된.pfx 인증서를 설치할는 아래 powershell 명령을
-
-    ```powershell
-    Import-PfxCertificate -FilePath $pfxfile -CertStoreLocation Cert:\CurrentUser\My
-    ```
-
-6. 구성 _settings.xml_
+5. 구성 _settings.xml_
 
     * 일반 섹션: 패키지 디렉터리를 지정 합니다.
     * 도구 섹션: 도구에 대 한 경로 설정 합니다.
@@ -124,12 +159,6 @@ Windows 10 IoT Core 수백 대의 장치에서 사용 되는 다양 한 silicons
 
 > [!IMPORTANT]
 > 초기 개발 주기 동안 테스트를 지원 하기 위해 Microsoft에 제공 미리 생성 된 키 및 인증서 적절 한 경우.  즉, 신뢰할 수 있는 Microsoft 테스트, 개발 및 시험판 버전 이진 파일 간주 됩니다.  최종 제품 만들기 및 이미지를 생성 하는 동안 사용할 이러한 인증서를 제거 하 고 사용자 고유의 키를 사용 하 여 장치를 완벽 하 게 잠겨 있는지 확인 해야 합니다.
-
-> [!TIP]
-> Microsoft 앱 스토어에서 앱 구성에서 Microsoft Marketplace PCA 2011 인증서를 포함 하 여 허용 될 수 있습니다 _settings.xml_: 
-    ```xml
-    <Cert>db\MicrosoftMarketPlacePCA2011.cer</Cert>              <!-- Microsoft MarketPlace PCA 2011 -->
-    ```
 
 6. 필요한 패키지를 생성 하려면 다음 명령을 실행 합니다.
 
@@ -173,36 +202,24 @@ Windows 10 IoT Core 수백 대의 장치에서 사용 되는 다양 한 silicons
 6. 장치가는 업데이트 패키지를 설치 하려면 OS (보여 주는 gears)으로 다시 부팅 됩니다 하 고 기본 OS를 다시 부팅 됩니다.  장치를 MainOS 되돌려 다시 부팅 보안 부팅을 사용할 및 SIPolicy 참여 해야 합니다.
 7. Bitlocker 암호화를 활성화 하려면 다시 장치를 다시 부팅 합니다.
 8. 보안 기능 테스트
-    * **SecureBoot** : 시도 `bcdedit /debug on` , 값 보안 부팅 정책에 의해 보호 되는 내용의 오류가 표시 됩니다.
-   * **BitLocker** : 유효성을 검사할 해당 bitlocker 암호화 완료 되 면 실행<p>
-        `sectask.exe -waitenableforcompletion 1`<p>
-        0을 반환 하는 경우 시스템의 모든 드라이브를 만들었습니다. bitlockered 의미 합니다.  다른 모든 반환 코드는 오류입니다.<p>
-        *추가 구문*<p>
-         `-waitenableforcompletion [timeout]` <p>
-        = > 모든 NTFS 볼륨에서 BitLocker 암호화 완료 될 때까지 대기 합니다.<p>
-        = >는 데 사용 될 때까지 기다리는 시간 (초) 시간 제한입니다.<p>
-        = > 경우 제한 시간 지정 하지 않으면 활성화가 완료 될 때까지 또는 무기한 대기 합니다.<p>
-        이 반환 됩니다. <p>
-        0 : 성공적으로 완료 되는 BitLocker 암호화를 볼륨은 Bitlocker로 암호화 됨입니다.<p>
-        ERROR_TIMEOUT: 완료 되 면 암호화 진행에서 될 때까지 기다리는 동안 시간이 초과 됩니다.<p>
-        오류 / 기타 코드: 비트 보관 서비스를 반환한 실패 오류 코드를 반환 합니다.
-
-    * **DeviceGuard** : 모든 부호 없는 이진 또는 SIPolicy 목록에 없는 인증서로 서명 된 이진 파일을 실행 하 고 실행 해 서 실패 하는지를 확인 합니다.
+    * SecureBoot: 시도 `bcdedit /debug on` , 값 보안 부팅 정책에 의해 보호 되는 내용의 오류가 표시 됩니다
+    * BitLocker: 실행할 `fvecon -status c:`, 상태 언급 하면 *에 암호화가 복구 데이터 (외부 키), TPM 데이터에, 보안, 부팅 파티션, 사용 중인 공간만*
+    * DeviceGuard: 모든 부호 없는 이진 또는 SIPolicy 목록에 없는 인증서로 서명 된 이진 파일을 실행 하 고 실행 해 서 실패 하는지를 확인 합니다.
 
 ### <a name="generate-lockdown-image"></a>잠금 이미지 생성
 
-앞에서 정의한 설정에 따라 작업 하는 잠금 패키지 유효성 검사 후 포함할 수 있습니다 이러한 패키지를 이미지에 따라는 아래 단계를 제공 합니다. 읽기 [IoT 제조 가이드](https://aka.ms/iotcoreguide) 사용자 지정 이미지 만들기 지침에 대 한 합니다.
+앞에서 정의한 설정에 따라 작업 하는 잠금 패키지 유효성 검사 후 포함할 수 있습니다 이러한 패키지를 이미지에 따라는 아래 단계를 제공 합니다. 읽기를 [IoT 제조 가이드](https://aka.ms/iotcoreguide) 사용자 지정 이미지 만들기 지침에 대 한 합니다.
 
 1. 작업 영역 디렉터리에 생성 된 출력 디렉터리에서 다음 파일 업데이트
-    * SecureBoot: `Copy ..\Output\SecureBoot\*.bin  ..\Workspace\Common\Packages\Security.SecureBoot`
+    * SecureBoot : `Copy ..\Output\SecureBoot\*.bin  ..\Workspace\Common\Packages\Security.SecureBoot`
       * SetVariable_db.bin
       * SetVariable_kek.bin
       * SetVariable_pk.bin
-    * BitLocker: `Copy ..\Output\Bitlocker\*.* ..\Workspace\Common\Packages\Security.Bitlocker`
+    * BitLocker : `Copy ..\Output\Bitlocker\*.* ..\Workspace\Common\Packages\Security.Bitlocker`
       * DETask.xml
       * Security.Bitlocker.wm.xml
       * setup.bitlocker.cmd
-    * DeviceGuard: `Copy ..\Output\DeviceGuard\*.*  ..\Workspace\Common\Packages\Security.DeviceGuard`
+    * DeviceGuard : `Copy ..\Output\DeviceGuard\*.*  ..\Workspace\Common\Packages\Security.DeviceGuard`
       * SIPolicyOn.p7b
       * SIPolicyOff.p7b
   
@@ -240,29 +257,8 @@ Windows 10 IoT Core 수백 대의 장치에서 사용 되는 다양 한 silicons
 ### <a name="disabling-bitlocker"></a>BitLocker를 사용 하지 않도록 설정
 
 일시적으로 BitLocker를 사용 하지 않도록 설정 해야 발생할 수 있습니다는 다음 명령 실행 하 고 IoT 장치를 사용 하 여 원격 PowerShell 세션을 시작할: `sectask.exe -disable`합니다.  
-**참고:** 예약 된 암호화 작업이 비활성화 되어 있지 않으면 장치 암호화 후속 장치 부팅 시 다시 활성화 됩니다.
 
-### <a name="disabling-device-guard"></a>Device Guard를 사용 하지 않도록 설정
-
-턴키 보안 스크립트 폴더에 SIPolicyOn.p7b 및 SIPolicyOff.p7b 파일을 생성합니다.
-wm.xml는 SIPolicyOn.p7b 패키지 및 SIPolicy.p7b으로 시스템에 배치 합니다.
-
-예를 들어 다음과 같은 가치를 제공해야 합니다.
-
-```
-C:\src\iot-adk-addonkit.db410c\TurnkeySecurity\QCDB\Output\DeviceGuard\Security.DeviceGuard.wm.xml
-…
-    <files>
-        <file
-            destinationDir="$(runtime.bootDrive)\efi\microsoft\boot"
-            source="SIPolicyOn.p7b"
-            name="SIPolicy.p7b" />
-    </files>
-..
-
-```
-
-SIPolicyOff.p7b 파일을 사용 하는 SIPolicy.p7b으로 배치 하는 패키지를 만든 경우이 패키지를 적용 및 Device Guard가 해제 됩니다.
-
+> [!NOTE]
+> 예약 된 암호화 작업이 비활성화 되어 있지 않으면 장치 암호화 후속 장치 부팅 시 다시 활성화 됩니다.
 
 
