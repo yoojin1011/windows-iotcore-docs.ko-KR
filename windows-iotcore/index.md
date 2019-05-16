@@ -7,12 +7,12 @@ ms.date: 08/28/2017
 ms.topic: landing page
 description: Windows 10 IoT Core 개발자 설명서에 대한 방문 페이지입니다.
 keywords: Windows IoT, 개발자 설명서, Docs, IoT Core
-ms.openlocfilehash: 2d8f8e2e578721edc4f22264e4e3b89f1018bce2
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 42f24fcd8e1c305f815181bb81b8ee2d299265f8
+ms.sourcegitcommit: dc4dfc41419104e2f54b63b931168176dc4f2e9e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59510032"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65706049"
 ---
 # <a name="windows-10-iot-documentation"></a>Windows 10 IoT 설명서
 
@@ -131,13 +131,7 @@ Windows 10 IoT는 Windows 10 IoT Core 및 Windows 10 IoT Enterprise의 두 가�
 
 ---
 
-<h2>버그가 있나요? 제안 사항은?</h2>
-<p>버그를 보고하려면 <a href="https://social.msdn.microsoft.com/Forums/en-US/fad1c6a0-e578-44a7-8e8d-95cc28c06ccd/need-logs-if-your-device-hasnt-updated-to-the-latest-iotcore-version?forum=WindowsIoT">피드백 허브 앱</a>을 사용해 주세요. 제안 사항과 같이 설명서와 관련된 다른 사항은 <a href="https://github.com/MicrosoftDocs/windows-iotcore-docs">GitHub</a>에 문제를 제출해 주세요. 
+<h2>버그는? 제안 사항은?</h2>
+<p>Windows 10 IoT Core를 사용하면서 발생하는 모든 문제점이나 버그는 <a href="https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=WindowsIoT">여기</a> MSDN 포럼에 게시하세요. 
 <br><br>
-기여하거나 편집할 항목이 표시되면 설명서 페이지의 오른쪽 위에 있는 "편집"을 클릭하여 끌어오기 요청을 엽니다. 문제 채널에 대한 지원 관련 문의에는 응답하지 않습니다. 대신 이에 대한 포럼을 참조해 주세요. 
-
----
-
-<h2>질문이 있나요? 문제는?</h2>
-<p>설명서에서 답변하지 않는 내용이 있으면 <a href="https://techcommunity.microsoft.com/t5/Windows-10-IoT/bd-p/Windows10IoT">기술 커뮤니티</a> 또는 <a href="https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT">MSDN 포럼</a>에 질문을 제출할 수 있습니다.</p>
-
+설명서에 문제 또는 버그를 보고하려면 <a href="https://github.com/MicrosoftDocs/windows-iotcore-docs">GitHub</a>에 문제를 제기하세요. GitHub 문제 채널에 대한 지원 관련 문의에는 응답하지 않습니다.
