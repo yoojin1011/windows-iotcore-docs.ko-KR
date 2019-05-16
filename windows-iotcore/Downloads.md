@@ -7,12 +7,12 @@ ms.date: 10/05/18
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: IoT
-ms.openlocfilehash: 2a89c9dd15f793861a647028a5184a2c5a7553ba
-ms.sourcegitcommit: 9d2134b61848575d0bd5fcc23403ebda92ca6573
+ms.openlocfilehash: 85c56a53839f74b02dddf2d094d2b07e4d8d635d
+ms.sourcegitcommit: dc4dfc41419104e2f54b63b931168176dc4f2e9e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "64953359"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65706085"
 ---
 # <a name="downloads"></a>다운로드
 도구 및 Windows 10 IoT Core 사용 하 여 시작 하는 데 필요한 소프트웨어를 다운로드 합니다.
@@ -30,9 +30,10 @@ _다운로드 하 고 Windows 10 IoT Core 대시보드를 사용 하 여에 동�
 
 ## <a name="latest-windows-10-iot-core-builds"></a>최신 Windows 10 IoT Core 빌드
 
-> [!IMPORTANT]
+> [!WARNING]
 > 상용화에 대 한 작성자 이미지를 사용 하지 마세요. 장치 상용화 되, 사용자 지정 FFU 최적의 보안을 위해 사용 해야 합니다. [여기](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)에서 자세한 내용을 알아보세요.
 
+IoT 솔루션을 상용화, 빌드를 다운로드 해야 합니다에서 합니다 [Microsoft 소프트웨어 다운로드 사이트](https://www.microsoft.com/en-us/software-download/windows10IoTCore#!)합니다. 릴리스 아래 과거 로부터의 완벽 한 장치에 대 한 Windows 10 IoT Core 이전 빌드를 사용 하 여 작업 해야 할 경우에 포함 했습니다. 
 
 ### <a name="october-2018-release"></a>2018 년 10 월 릴리스
 

@@ -6,12 +6,12 @@ ms.date: 09/07/18
 ms.topic: article
 description: 모든 Windows 10 IoT 커뮤니티에서 리소스를 활용 합니다.
 keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, 리소스, 가장 중요 한 사람, 비디오, 블로그 게시물
-ms.openlocfilehash: c144aabe4662deba7efa990a5af3d59ffe1531b8
-ms.sourcegitcommit: 0f46b7b5c15906a6c82b847ffcd9f4d2674f9fd0
+ms.openlocfilehash: 338f30bdfb87f5626cd1300a630529b1ed5b16a8
+ms.sourcegitcommit: dc4dfc41419104e2f54b63b931168176dc4f2e9e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226821"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65706060"
 ---
 # <a name="windows-10-iot-resources"></a>Windows 10 IoT 리소스
 
@@ -47,8 +47,8 @@ ms.locfileid: "65226821"
 
 * [Microsoft MVP 커뮤니티](https://mvp.microsoft.com/)
 * [Microsoft IoT 기술 커뮤니티](https://techcommunity.microsoft.com/t5/Internet-of-Things-IoT/ct-p/IoT)
+* [Microsoft Insider Labs](https://www.microsoftiotinsiderlabs.com/)
 * [Windows 10 IoT MSDN 포럼](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT)
-* [Windows 10 IoT Core Lynda 과정](https://www.lynda.com/Windows-tutorials/IoT-Development-Windows-10-IoT-Core-1-Installation-Basic-Connection/556513-2.html)
 * [교육 Annabooks 사용 하 여](http://www.annabooks.com/training.html)
 * [Hackster.io에서 Windows 10 IoT Core 시작](http://www.hackster.io/KiwiBryn)
 * [Window 10 IoT Core HATs](https://www.turta.io/iothat)

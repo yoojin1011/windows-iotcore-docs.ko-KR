@@ -6,12 +6,12 @@ ms.date: 01/18/2018
 ms.topic: article
 description: Windows 10 IoT Core 란 무엇 이며이 사용 하 여 수행할 수 있는 작업에 대해 알아봅니다.
 keywords: Windows 10 IoT Core 헤드리스 작은 공간
-ms.openlocfilehash: d5b9c59ad735d66b4812e6303f6298a33da44d33
-ms.sourcegitcommit: 1f6afcfee0cb5557dc21c7b15e199bc557d8eedb
+ms.openlocfilehash: a4ffa21b9e6fd0e539b1ede4810437990212015b
+ms.sourcegitcommit: dc4dfc41419104e2f54b63b931168176dc4f2e9e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65171355"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65706071"
 ---
 # <a name="windows-10-iot-core"></a>Windows 10 IoT Core K
 
@@ -24,7 +24,7 @@ Windows 10 IoT Core 모두 ARM에서 실행 되는 작은 장치 디스플레이
 ## <a name="getting-started"></a>시작
 Windows 10 IoT Core 사용 하 여 시작 하려면 만들었습니다를 [Windows 10 IoT Core Quickstarter](tutorials/Tutorials.md) 플랫폼을 사용 하 여 친숙 한 신속 하 게 볼 수 있습니다. 
 
-여기에서 사용자 고유의 응용 프로그램을 개발 하 여 플랫폼을 사용 하 여 실험을 시장에 장치를 적용할 계획 시작 또는 장치의 상용화할 계속 수 있습니다. 참조 섹션에서 출시 Bring 장치 상용화 사용을 시작 합니다 [시작된 문서](https://docs.microsoft.com/windows/iot-core/getstarted)합니다.
+사용 하 여 Windows 10 IoT Core 사용 하 여 제조 하는 방법을 알아보십시오 솔루션이 상용화 시작 확인 하 고 다음 수준으로 이동할 준비가 우리의 [Windows 10 IoT Core 제조 가이드](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)합니다. 
 
 ## <a name="differences-between-windows-10-desktop-and-windows-10-iot-core"></a>Windows 10 Desktop 및 Windows 10 IoT Core 차이점
 
