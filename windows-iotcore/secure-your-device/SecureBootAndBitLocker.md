@@ -6,18 +6,40 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 보안 부팅, BitLocker 및 Windows 10 IoT Core Device Guard를 사용 하도록 설정 하는 방법 알아보기
 keywords: windows iot, 보안 부팅, BitLocker, 턴키 보안 장치 가드, 보안
-ms.openlocfilehash: 957b81a0a5bc032c62fa75598418778862fdf76d
-ms.sourcegitcommit: 77b86eee2bba3844e87f9d3dbef816761ddf0dd9
+ms.openlocfilehash: 092be64210f651c25156e93885a63f35c22d4791
+ms.sourcegitcommit: fcc0c6add468040e2f676893b44b260e3ddc3c52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "65533349"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65779399"
 ---
 # <a name="enabling-secure-boot-bitlocker-and-device-guard-on-windows-10-iot-core"></a>보안 부팅, BitLocker 및 Windows 10 IoT Core Device Guard를 사용 하도록 설정
 
-Windows 10 IoT Core는 UEFI 보안 부팅, BitLocker 장치 암호화 및 Device Guard와 같은 보안 기능 제공 되었습니다.  다양 한 유형의 공격에 복원 력 있는 Windows IoT 장치로 완벽 하 게 잠겨 만드는 이러한 장치 작성기 데 도움이 됩니다.  함께 이러한 기능은 플랫폼을 알 수 없는 이진 파일을 잠그지 및 장치 암호화를 사용 하 여 사용자 데이터를 보호 하는 동안 정의 된 방식으로 시작 됩니다 보장 하는 최적의 보호를 제공 합니다.
+Windows 10 IoT Core UEFI 보안 부팅, BitLocker 장치 암호화 및 Device Guard와 같은 보안 기능 제공을 포함합니다.  다양 한 유형의 공격에 복원 력 있는 Windows IoT 장치로 완벽 하 게 잠겨 만드는 이러한 장치 작성기 데 도움이 됩니다.  함께 이러한 기능은 플랫폼을 알 수 없는 이진 파일을 잠그지 및 장치 암호화를 사용 하 여 사용자 데이터를 보호 하는 동안 정의 된 방식으로 시작 됩니다 보장 하는 최적의 보호를 제공 합니다.
 
 ## <a name="boot-order"></a>부팅 순서
+
+IoT 장치에 대 한 안전한 플랫폼을 제공 하는 개별 구성 요소 자세히 살펴 보겠습니다 수 전에 부팅 순서를 Windows 10 IoT Core 장치에 대 한 이해가 필요 합니다.
+
+다음 세 가지 주요 영역에서 IoT 장치를 때 발생 하는 OS 커널 로드 하 고 설치 된 응용 프로그램을 실행 하려면까지 기반 합니다.
+
+* 플랫폼 보안 부팅
+* Unified Extensible Firmware (UEFI) 인터페이스 보안 부팅
+* Windows 코드 무결성
+
+![부팅 순서](../media/SecureBootAndBitLocker/BootOrder.jpg)
+
+Windows 10 부팅 프로세스에 대 한 추가 정보를 찾을 수 있습니다 [여기](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process)합니다.
+
+## <a name="locking-down-iot-devices"></a>잠금 다운 IoT 장치
+
+Windows IoT 장치를 잠그고 순서로 다음과 같은 고려 사항이 수행 되어야 합니다.
+
+### <a name="platform-secure-boot"></a>플랫폼 보안 부팅
+
+전체 부팅 프로세스의 첫 번째 단계는 로드 하 고 펌웨어에 하드웨어를 초기화 하는 부팅 로더를 실행 하는 장치를 처음 켤 때의 devies 및 응급 깜박이 기능을 제공 합니다. UEFI 환경을 로드 하 고 컨트롤을 통해 전달 됩니다.
+
+이러한 펌웨어 부팅 로더 SoC 관련 되므로 적절 한 장치 제조업체에 있는 장치에 만들어진 이러한 부팅 로더를 사용 해야 합니다.
 
 IoT 장치에 대 한 안전한 플랫폼을 제공 하는 개별 구성 요소 자세히 살펴 보겠습니다 수 전에 부팅 순서를 Windows 10 IoT Core 장치에 대 한 이해가 필요 합니다.
 
@@ -31,7 +53,19 @@ IoT 장치에 대 한 안전한 플랫폼을 제공 하는 개별 구성 요소 
 
 Windows 10 부팅 프로세스에 대 한 추가 정보를 찾을 수 있습니다 [여기](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process)합니다.
 
-## <a name="locking-down-iot-devices"></a>잠금 다운 IoT 장치
+Windows IoT 장치를 잠그고 순서로 다음과 같은 고려 사항이 수행 되어야 합니다.
+
+### <a name="platform-secure-boot"></a>플랫폼 보안 부팅
+
+전체 부팅 프로세스의 첫 번째 단계는 로드 하 고 펌웨어에 하드웨어를 초기화 하는 부팅 로더를 실행 하는 장치를 처음 켤 때의 devies 및 응급 깜박이 기능을 제공 합니다. UEFI 환경을 로드 하 고 컨트롤을 통해 전달 됩니다.
+
+이러한 펌웨어 부팅 로더 SoC 관련 되므로 적절 한 장치 제조업체에 있는 장치에 만들어진 이러한 부팅 로더를 사용 해야 합니다.
+
+### <a name="uefi-secure-boot"></a>UEFI 보안 부팅
+
+UEFI 보안 부팅 지점인 첫 번째 정책 적용, 및 UEFI에 있습니다.  시스템 펌웨어 드라이버, 옵션 rom을 보유, UEFI 드라이버 또는 응용 프로그램 및 UEFI 부팅 로더 같은 지정된 된 권한으로 서명 된 바이너리만 실행할 수만 있도록 제한 합니다. 이 기능은 플랫폼에서 실행 되 고 잠재적으로의 보안 상태가 약화 되 알 수 없는 코드를 방지 합니다. 보안 부팅 루트킷과 같은 장치에 사전 부팅 맬웨어 공격의 위험을 줄입니다. 
+
+OEM,으로 UEFI 보안 부팅 제조 시간에 IoT 장치에서 데이터베이스를 저장 해야 합니다. 이러한 데이터베이스 서명이 데이터베이스 (db), 서명을 해지 데이터베이스 (dbx) 및 등록 키 (KEK) 데이터베이스에 포함 됩니다. 이러한 데이터베이스는 장치의 펌웨어 비휘발성 RAM (RAM NV)에 저장 됩니다.
 
 Windows IoT 장치를 잠그고 순서로 다음과 같은 고려 사항이 수행 되어야 합니다.
 
@@ -61,7 +95,6 @@ UEFI 보안 부팅을 수행한 단계는 다음과 같습니다.
 2. 펌웨어를 신뢰할 수 없는 경우 UEFI 펌웨어는 신뢰할 수 있는 펌웨어를 복원 하려면 OEM 특정 복구를 시작 합니다.
 3. Windows 부팅 관리자를 로드할 수 없는 경우 펌웨어가 Windows 부팅 관리자의 백업 복사본을 부팅 하려고 합니다. 또한 실패 하면 UEFI 펌웨어 OEM 전용 업데이트 관리를 시작 합니다.
 4. Windows 부팅 관리자 실행 되며 Windows 커널 디지털 서명을 확인 합니다. 신뢰할 수 있는 경우 Windows 부팅 관리자는 Windows 커널에 제어를 전달 합니다.
-
 
 키 생성 및 관리 지침, 보안 부팅에 대 한 추가 정보를 사용할 수 [여기](https://technet.microsoft.com/library/dn747883.aspx)합니다.
 
@@ -93,11 +126,15 @@ Windows 10 IoT Core 경량 버전의 BitLocker 장치 암호화를 오프 라인
 
 ## <a name="turnkey-security-on-iot-core"></a>IoT Core에 대 한 턴키 보안
 
-Microsoft는 턴키 ' 보안 패키지 '을 제공 하는 데 쉽게 사용 IoT Core 장치에서 주요 보안 기능을 위해 장치 작성기 빌드할 수 있는 IoT 장치를 완벽 하 게 잠겨 있습니다.  이 패키지에 도움이 됩니다.
+IoT Core 장치에 대 한 주요 보안 기능의 간편한 사용을 위해 Microsoft는 제공 하는 [턴키 보안 패키지]( https://github.com/ms-iot/security/tree/master/TurnkeySecurity) 장치 작성기 빌드할 수 있는 완벽 하 게 IoT 장치를 잠글 합니다. 이 패키지에 도움이 됩니다.
 
 * 보안 부팅 키 프로 비전 하 고 지원 되는 IoT 플랫폼에서이 기능을 사용 하도록 설정
-* BitLocker를 사용 하 여 장치 암호화의 설정 및 구성 
+* BitLocker를 사용 하 여 장치 암호화의 설정 및 구성
 * 시작만 서명 된 응용 프로그램 및 드라이버를 실행할 수 있도록 장치 잠금
+
+다음 단계를 사용 하 여 잠금 이미지를 만드는 프로세스를 통해 이어질는 [턴키 보안 패키지]( https://github.com/ms-iot/security/tree/master/TurnkeySecurity)
+
+![잠금 이미지 만들기](../media/SecurityFlowAndCertificates/ImageLockDown.png)
 
 ### <a name="prerequisites"></a>사전 요구 사항
 

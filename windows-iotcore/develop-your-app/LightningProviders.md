@@ -1,17 +1,17 @@
 ---
-title: 번개 공급자
+title: Lightning 공급자
 author: msalehmsft
 ms.author: msaleh
 ms.date: 08/28/2017
 ms.topic: article
 description: Microosft 번개 공급자 라이브러리를 사용 하는 방법을 자세히 알아봅니다.
 keywords: windows iot, 번개 공급자 번개 성능 테스트, 버스
-ms.openlocfilehash: 8f290bf741f64e07b7b048287128e1ae42ef6b9e
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 50cbf4f9940538da1570cebb6cc142e7fbe06588
+ms.sourcegitcommit: fcc0c6add468040e2f676893b44b260e3ddc3c52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59513622"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65779381"
 ---
 # <a name="working-with-lightning-providers"></a>번개 공급자 작업
 Microsoft.IoT.Lightning.Providers 라이브러리 집합에 포함 된의 공급자에서 보드를 사용 하 여 인터페이스를 통해 번개 컨트롤러 버스 직접 메모리 매핑된 드라이버 (DMAP).
@@ -42,7 +42,8 @@ DMAP 드라이버 제품 GPIO 성능 향상 드라이버를 하는 동안 컨트
 
 또한 쉽습니다 필요한 번개 공급자 Nuget 참조를 추가 하 고 새 또는 기존 응용 프로그램을 지원 합니다. 아래의 단계를 수행합니다.
 
-1. 응용 프로그램에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 "NuGet 패키지 관리..."를 클릭 합니다. 메뉴 항목 ![UWP 프로젝트](../media/LightningProviders/manage-nuget-project.png)
+1. 응용 프로그램에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 "NuGet 패키지 관리..."를 클릭 합니다. 메뉴 항목  
+![UWP 프로젝트](../media/LightningProviders/manage-nuget-project.png)
 
 2. NuGet 패키지 관리자가 열립니다. 찾아보기 탭에서 "번개 SDK", "시험판 포함" 확인란을 선택 하 여 검색 합니다.
 
