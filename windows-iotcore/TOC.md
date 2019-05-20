@@ -22,6 +22,7 @@
 ## [드라이버 지침]()
 ### [드라이버 배포](learn-about-hardware/DriverDeployment.md)
 ### [범용 드라이버 만들기](learn-about-hardware/DriverCreation.md)
+### [USB 지원](learn-about-hardware/usb-support.md)
 ### [USB 주변 장치 드라이버 설치](learn-about-hardware/PeripheralDrivers.md) 
 ## [애플리케이션 개발]()
 ### [포그라운드 애플리케이션](develop-your-app/BuildingAppsForIoTCore.md)
