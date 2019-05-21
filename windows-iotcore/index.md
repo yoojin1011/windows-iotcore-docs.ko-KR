@@ -7,12 +7,12 @@ ms.date: 08/28/2017
 ms.topic: landing page
 description: Windows 10 IoT Core 개발자 설명서에 대한 방문 페이지입니다.
 keywords: Windows IoT, 개발자 설명서, Docs, IoT Core
-ms.openlocfilehash: 42f24fcd8e1c305f815181bb81b8ee2d299265f8
-ms.sourcegitcommit: dc4dfc41419104e2f54b63b931168176dc4f2e9e
+ms.openlocfilehash: 6c4066472322bf6b1c61fd85f26fe99e9629573c
+ms.sourcegitcommit: 87c60bb857cb025255f4f06094c888384a0bb562
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65706049"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65940679"
 ---
 # <a name="windows-10-iot-documentation"></a>Windows 10 IoT 설명서
 
@@ -133,5 +133,3 @@ Windows 10 IoT는 Windows 10 IoT Core 및 Windows 10 IoT Enterprise의 두 가�
 
 <h2>버그는? 제안 사항은?</h2>
 <p>Windows 10 IoT Core를 사용하면서 발생하는 모든 문제점이나 버그는 <a href="https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=WindowsIoT">여기</a> MSDN 포럼에 게시하세요. 
-<br><br>
-설명서에 문제 또는 버그를 보고하려면 <a href="https://github.com/MicrosoftDocs/windows-iotcore-docs">GitHub</a>에 문제를 제기하세요. GitHub 문제 채널에 대한 지원 관련 문의에는 응답하지 않습니다.
