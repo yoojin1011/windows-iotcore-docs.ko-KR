@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 보안 부팅, Tpm, 등을 구현 함으로써 보안 장치를 빌드하는 방법에 알아봅니다.
 keywords: windows iot, 보안, 펌웨어, 보안 부팅, TPM, Bitlocker, 암호화
-ms.openlocfilehash: 4170b2819606b3862bb7fabfc62f73be0351cccf
-ms.sourcegitcommit: fcc0c6add468040e2f676893b44b260e3ddc3c52
+ms.openlocfilehash: 611d82af25d9c4959335aa208e0d06b49daa5f9f
+ms.sourcegitcommit: c4232e384e7347f97477e5cd3cc941de492f6a64
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65779403"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65986480"
 ---
 # <a name="building-secure-devices-with-windows-10-iot-core"></a>Windows 10 IoT Core 사용 하 여 보안 장치 구성
 
@@ -25,10 +25,6 @@ Windows 10 IoT Core 사용 하 여 Microsoft 가져오는 강력한 엔터프라
 
 ![장치 빌드 프로세스](../media/SecurityFlowAndCertificates/DeviceBuildProcess.png)
 
-## <a name="firmware"></a>펌웨어  
-범용 컴퓨팅 "열려 있는" Pc와 같은 장치의 사용자 펌웨어 설정 (예: F2가 UEFI 설치 대부분의 Pc에서 지금) 다양 한 키 조합을 통해 장치 부팅 하는 동안 액세스할 수 있습니다. 이 사용자가 플랫폼을 부팅 뿐만 아니라 사용 및 다양 한 장치 포트, 함수 및 장치에서 사용할 수 있는 기타 잠재적인 보안 기능을 사용 하지 않도록 설정 하는 방법을 변경할 수 있습니다.  
-
-이와 같은 수정의 중요 한 특성에 지정 된 IoT 장치 작동 하지는 "장치"를 열려면 등의 "잠긴" 장치를 휴대 전화, 펌웨어에 대 한 액세스는 일반적으로 허용 되지 위치 비슷합니다와 비슷하게 작동 해야 합니다.  이 잠긴 펌웨어를 사용 하는 프로덕션 장치의 함으로써 정상적으로 수행할 수 있습니다. 잠긴 펌웨어 펌웨어 공급자를 통해 사용할 수 있습니다.  여기서 잠긴 펌웨어 없거나 사용할 수 있는 잠재적으로 적합 하지 않은, 같은 결정권자 사용에 대 한 장치에서 최소한 강력한 관리자 암호를 통해 펌웨어 설정 액세스를 보호 하는 것이 좋습니다.
 
 ## <a name="choosing-security-enabled-hardware"></a>사용 하도록 설정 하는 보안 하드웨어 선택
 Windows IoT Core에 고객 데이터를 보호 하기 위해 플랫폼에서 작성 하는 보안 기능을 완벽 하 게 이러한 기능을 활용 하는 하드웨어 보안 기능이 의존 합니다. 사실, 소프트웨어 메모리를 조작할 수 있습니다 하 고 트러스트 앵커 또는 변경할 수 없는 장치 id만 소프트웨어를 통해 제공 될 수 있는 없을 자체적으로 보호할 수 없습니다. 플랫폼 모듈 (TPM)을 신뢰할 수 있는 하드웨어 기반 보안, 예: 스마트 카드 또는 보안 기능을 내장할 SoC.를 제공 하는 방법은 여러 가지가 있습니다. 
@@ -59,3 +55,6 @@ Microsoft는 제공 하는 [턴키 보안 패키지](https://github.com/ms-iot/s
 * 시작만 서명 된 응용 프로그램 및 드라이버를 실행할 수 있도록 장치 잠금
 
 단계별 지침에 설명 되어는 [를 사용 하도록 설정 하는 보안 부팅, BitLocker, 및 Device Guard](https://docs.microsoft.com/en-us/windows/iot-core/secure-your-device/securebootandbitlocker) 섹션입니다.
+
+## <a name="device-production"></a>장치 프로덕션
+잠금 이미지 유효성이 검사 되 면 제조에 사용할 수 있습니다. 자세한 내용은 참조 [제조 IoT Core](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/)합니다.
