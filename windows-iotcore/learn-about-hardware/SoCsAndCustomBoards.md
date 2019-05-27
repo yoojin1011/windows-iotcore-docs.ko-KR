@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 다양 한 제안 된 보드 및 커뮤니티 장치 하드웨어 기능에 알아봅니다.
 keywords: windows iot, 개발 장치, SOC, SOM 칩을 DragonBoard, Minnowboard 최대, Raspberry Pi 3, Raspberry Pi 2에는 시스템 보드
-ms.openlocfilehash: b4225937fef1338182c77baa0fd288b7ed597d45
-ms.sourcegitcommit: 3eacb968296e79e7e981fdc2a6f7f4f69c0920d1
+ms.openlocfilehash: 55e7192a53197623ca47ff8186630a691749c026
+ms.sourcegitcommit: 8aadc776da7b473159f9023cd555145819e7e952
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65040190"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66174031"
 ---
 # <a name="socs-and-custom-boards"></a>Soc 및 사용자 지정 보드
 
@@ -132,7 +132,8 @@ Windows 10 IoT Core 대 한 NXP 지원 공개 미리 보기입니다. 자세한 
 연결할 수도 있습니다 아웃 파트너에 게 협력 하 고 있습니다.
 
 * Advantech [RSB-4411](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858) - buy@advantech.tw
-* Keith & Koep [pConXS](https://keith-koep.com/de/produkte/produkte-baseboards/pconxs-baseboard-vollausstattung-technische-daten/) 사용 하 여 [Trizeps VII](https://keith-koep.com/de/produkte/produkte-trizeps/trizeps-vii-technische-daten-imx6/) - contact@keith-koep.com
+* Keith & Koep [pConXS](https://keith-koep.com/de/produkte/produkte-baseboards/pconxs-baseboard-vollausstattung-technische-daten/
+) 사용 하 여 [Trizeps VII](https://keith-koep.com/de/produkte/produkte-trizeps/trizeps-vii-technische-daten-imx6/) - contact@keith-koep.com
 * Kontron [SMARC sAMX6i](https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html) -Martin Unverdorben (martin.unverdorben@kontron.com)
 * Solid 실행 [Hummingboard Edge](https://www.solid-run.com/imx6-win-10-iot-core/ )-Ilya Viten (ilya@solid-run.com)
 * Geniatech [Q7-iMX6Q-SoM](https://www.geniatech.com/product/som-imx6q-q7/) & [SoM iMX7D](https://www.geniatech.com/product/som-imx7d/) -Mike Decker (mike.decker@geniatech.com) 또는 팡 Jijun (Fjj@geniatech.com)

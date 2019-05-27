@@ -6,12 +6,12 @@ ms.date: 04/10/2018
 ms.topic: article
 description: Windows 10 IoT Core 사용 하 여 시작 하는 방법을 알아봅니다.
 keywords: Windows 10 IoT Core, 시작 이미지
-ms.openlocfilehash: 7fa6012cf6d3261e52c5040eafd6cfeaede55d41
-ms.sourcegitcommit: dc4dfc41419104e2f54b63b931168176dc4f2e9e
+ms.openlocfilehash: d52fbf7efe5f61e99910d26a02304dc16fabb683
+ms.sourcegitcommit: 8aadc776da7b473159f9023cd555145819e7e952
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65706037"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66174012"
 ---
 # <a name="get-started-with-windows-10-iot-core"></a>Windows 10 IoT Core 시작
 
@@ -59,10 +59,6 @@ ms.locfileid: "65706037"
 </tbody>
 </table>
 
-## <a name="build-a-prototype"></a>프로토타입 빌드
-
-Windows 10 IoT의 새로운 기능 사용 하 여 쉽고 빠르게 시작 하세요 [Windows 10 IoT Core Quickstarter](tutorials/Tutorials.md)합니다. 
-
 ## <a name="windows-10-iot-pricing"></a>Windows 10 IoT 가격 책정
 
 <table>
@@ -97,6 +93,47 @@ Windows 10 IoT의 새로운 기능 사용 하 여 쉽고 빠르게 시작 하세
 </table>
 
 <i>자세한 지원 기간 정보에 자세히 알아보려면 [같습니다](https://support.microsoft.com/en-us/lifecycle/search?alpha=IoT%20Core)</i>합니다.
+
+## <a name="prototype-a-device"></a>디바이스 프로토타입
+
+장치 제조 하기 전에 첫 번째 시도 및 Windows 10 IoT Core 사용 하 여 장치 프로토타입 하는 것이 좋습니다. 이렇게 하면 기능을 이해할 수 있습니다 및 구성 하는 것이 좋습니다 제조 하는 때가 되었을 때 필요 합니다.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">항목</th>
+<th align="left">설명</th>
+</tr>
+</thead>
+<tbody>
+
+<tr class="odd">
+<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/tutorials/quickstarter/PrototypeBoards"
+>1. 프로토타입 보드를 선택 합니다.</a></p></td>
+<td align="left"><p>일반적인 프로토타입 보드 살펴봅니다 및로 프로토타입 만들기를 시작 하려면 하나를 선택 합니다.</p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p>2. 프로토타입 이미지가 플래시</p></td>
+<td align="left"><p>선택한 장치에 대 한 프로토타입 이미지를 플래시 하는 방법을 알아보려면이 자습서 섹션으로 이동 합니다. </p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appinstaller">3. 앱 설치</a></p></td>
+<td align="left"><p>다양 한 도구를 사용 하 여 앱을 설치 하는 방법에 알아봅니다.</p></td>
+</tr>
+
+<tr class="odd">
+<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appdeployment">4. 앱 배포</a></p></td>
+<td align="left"><p>Visual Studio를 사용 하 여 앱을 배포 하는 방법에 알아봅니다.</p></td>
+</tr>
+
+</tbody>
+</table>
 
 ## <a name="bring-a-device-to-market"></a>장치 시장 출시 기간
 
