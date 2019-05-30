@@ -6,12 +6,12 @@ ms.date: 01/18/2018
 ms.topic: article
 description: Windows 10 IoT Core 란 무엇 이며이 사용 하 여 수행할 수 있는 작업에 대해 알아봅니다.
 keywords: Windows 10 IoT Core 헤드리스 작은 공간
-ms.openlocfilehash: 0fbcc6a96f8e35227acf32a9507ed3c7a038a83d
-ms.sourcegitcommit: 8aadc776da7b473159f9023cd555145819e7e952
+ms.openlocfilehash: 15a3d3e5f1703f87b0f0a0c782bb4cab9b99557f
+ms.sourcegitcommit: 0a4039d333dc3d1ed79de9300c094eb3f57dd8ed
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174052"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263863"
 ---
 # <a name="an-overview-of-windows-10-iot-core"></a>Windows 10 IoT Core 개요
 
@@ -70,7 +70,7 @@ Windows 10 IoT Core 모두 ARM에서 실행 되는 작은 장치 디스플레이
 
 * 받은 편지함 Cortana를 더 이상 1809 (17763) 버전부터 Windows 10 IoT Core 사용할 수 없습니다. 빠르게 시장에 음성 기능을 사용할 장치를 찾으려는 경우 Cortana 지원을 사용 하 여 장치에 통합할 수 있습니다 합니다 [Cortana 디바이스 SDK의 미리 보기](https://developer.microsoft.com/en-us/cortana/devices)합니다.
 * 합니다 [FileOpenPicker API](https://docs.microsoft.com/en-us/uwp/api/windows.storage.pickers.fileopenpicker) Windows 10 IoT Core 지원 되지 않습니다. 로컬 드라이브 또는 이동식 저장소에 액세스 하려면 사용자 고유의 응용 프로그램에서이 구현할 수 있습니다.
-* Windows 10 IoT Core 장치로 부팅 합니다 [기본 앱](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoredefaultapp) 같은 데스크톱 PC 대신 합니다. 이 응용 프로그램의 목적은 최초 부팅 시 상호 작용할 수 있지만 사용할 수 있도록 하는 친숙 한 셸을 제공 합니다 [오픈 소스 코드](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp) 이 응용 프로그램에 대 한 플러그 앤 플레이에 이러한 기능을 사용할 수 있도록 사용자 고유의 사용자 지정 응용 프로그램입니다.
+* 기본적으로 Windows 10 IoT Core 장치로 부팅 합니다 [기본 앱](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoredefaultapp) 같은 데스크톱 PC 대신 합니다. 그러나 상업화,이 기본 앱에 대 한 **해야** 사용자 지정 앱 또는 수정할 수 있는 기본 앱을 교체 합니다. 이 응용 프로그램의 목적은 최초 부팅 시 상호 작용할 수 있지만 사용할 수 있도록 하는 친숙 한 셸을 제공 합니다 [오픈 소스 코드](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp) 이 응용 프로그램에 대 한 플러그 앤 플레이에 이러한 기능을 사용할 수 있도록 사용자 고유의 사용자 지정 응용 프로그램입니다.
 
 ### <a name="differences-in-driver-supported-areas"></a>드라이버에서 지 원하는 영역의 차이점
 

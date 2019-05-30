@@ -1,19 +1,19 @@
 ---
-title: 포함 된 모드
+title: Embedded(포함) 모드
 author: lilyhou
 ms.author: lihou
 ms.date: 11/10/2017
 ms.topic: article
 description: 백그라운드 응용 프로그램 및 기타 기능을 사용 하도록 설정 하는 포함 된 모드를 허용 하도록 Windows를 구성 하는 방법에 알아봅니다.
 keywords: windows iot, 포함 된 모드, 백그라운드 응용 프로그램
-ms.openlocfilehash: 1944cec09400cff4d895bb9e55b89b3b19a3f5f5
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: ca8124d97a9161a1539eff92c55cf3630cf0a049
+ms.sourcegitcommit: b719e66699372e1339c2316cab45df2a474d09a0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59512318"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66252173"
 ---
-# <a name="embedded-mode"></a>포함 된 모드
+# <a name="embedded-mode"></a>Embedded(포함) 모드
 
 Windows IoT Core 및 Windows IoT Enterprise에 포함 된 모드는 지원 됩니다. 포함 된 모드를 사용 하면:
 
@@ -33,12 +33,16 @@ Windows IoT Enterprise에서 아래 단계에 따라 포함된 모드를 사용�
 
 시스템 자동 백그라운드 응용 프로그램으로 시작 하는 동안 사용자가 중지 하거나 백그라운드 응용 프로그램의 작업을 방해 하지 못하도록 시스템 잠금 기능을 활성화 되어야 합니다.
 
-## <a name="lowleveldevice-capability"></a>lowLevelDevice 기능
+## <a name="lowlevel-device-capability-and-lowleveldevice-capability"></a>lowLevel 장치 기능 및 lowLevelDevice 기능
 
-기능 lowLevelDevice I2C, SPI, GPIO 같은 하위 수준의 하드웨어 인터페이스에 액세스할 수 있습니다.
+합니다 **lowLevel** 장치 기능 I2C, SPI, GPIO 같은 하위 수준의 하드웨어 인터페이스에 액세스를 제공 합니다.
 
 * [쳐다 Sample(GPIO)](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinky)
-* [가속도계 샘플](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/Accelerometer)
+* [가 속도계 샘플](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/Accelerometer)
+
+합니다 **lowLevelDevices** 기능 많은 추가 요구 사항이 충족 되 면 사용자 지정 장치에 액세스 하는 앱을 허용 합니다. 이 기능은 GPIO, I2C, SPI, 및 PWM 장치에 대 한 액세스를 허용 하는 lowLevel 장치 기능을 혼동 해서는 안됩니다.
+
+가리킵니다 [앱 기능 선언](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations) 세부 정보에 대 한 합니다.
 
 ## <a name="systemmanagment-capability"></a>systemManagment 기능
 
@@ -68,10 +72,10 @@ Windows IoT Core를 실행 하지 않는 장치에서 디버깅 하는 경우 �
     ![WICD 아이콘](../media/EmbeddedMode/WICD_Icon.png)
 
 3. **Advanced provisioning**(고급 프로비전)을 클릭합니다.  프로젝트 이름을 **AllowEmbeddedMode** 누릅니다 **다음**합니다.
-    ![3 단계](../media/EmbeddedMode/Step3.png)
+    ![Step3](../media/EmbeddedMode/Step3.png)
 
 4. 선택할 **모든 Windows 버전에 공통적으로 적용** 한 다음 **다음**합니다.
-    ![4 단계](../media/EmbeddedMode/Step4.png)
+    ![Step4](../media/EmbeddedMode/Step4.png)
 
 5. **마침**을 클릭합니다.
 

@@ -6,17 +6,18 @@ ms.date: 09/07/18
 ms.topic: article
 description: 모든 Windows 10 IoT 커뮤니티에서 리소스를 활용 합니다.
 keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, 리소스, 가장 중요 한 사람, 비디오, 블로그 게시물
-ms.openlocfilehash: 338f30bdfb87f5626cd1300a630529b1ed5b16a8
-ms.sourcegitcommit: dc4dfc41419104e2f54b63b931168176dc4f2e9e
+ms.openlocfilehash: d7fdc6423212a387a62fe0dca89dc94792c9909d
+ms.sourcegitcommit: bcc4cf5a25841f499a1de71c463f34e47e9811d5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65706060"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319838"
 ---
 # <a name="windows-10-iot-resources"></a>Windows 10 IoT 리소스
 
 ## <a name="blog-posts"></a>블로그 게시물
 
+* [Computex에서 새로운 Windows IoT 솔루션 지능형에 지에서의 창의성만 발휘를 보여 줍니다.](https://blogs.windows.com/windowsexperience/2019/05/28/new-windows-iot-solutions-at-computex-show-ingenuity-at-the-intelligent-edge/#U3yYXu1rq054ljuk.97)
 * [Windows 10 IoT를 사용 하 여 Windows CE 시스템을 현대화](https://blogs.windows.com/buildingapps/2019/05/07/modernizing-windows-ce-systems-with-windows-10-iot/#oHzjguRIlWV0ryo6.97)
 * [로봇 공학 열고 Microsoft Windows 10 IoT enterprise ROS 릴리스](https://blogs.windows.com/buildingapps/2019/05/07/open-robotics-and-microsoft-release-ros-on-windows-10-iot-enterprise/#Y86A6YUJELKDoRJJ.97)
 * [Microsoft Azure IoT 장치 에이전트 V2 일반 공급](https://blogs.windows.com/buildingapps/2019/05/07/microsoft-azure-iot-device-agent-v2-general-availability/#BwOSxBSymeJqU34K.97)

@@ -6,12 +6,12 @@ ms.date: 04/10/2018
 ms.topic: article
 description: Windows 10 IoT Core 사용 하 여 시작 하는 방법을 알아봅니다.
 keywords: Windows 10 IoT Core, 시작 이미지
-ms.openlocfilehash: d52fbf7efe5f61e99910d26a02304dc16fabb683
-ms.sourcegitcommit: 8aadc776da7b473159f9023cd555145819e7e952
+ms.openlocfilehash: c11e37c982c1e38ec270527d54127013b8df7515
+ms.sourcegitcommit: 3cab433275b07093efd1c6cfbfd7eb71c08bbd36
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174012"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373147"
 ---
 # <a name="get-started-with-windows-10-iot-core"></a>Windows 10 IoT Core 시작
 
@@ -52,7 +52,7 @@ ms.locfileid: "66174012"
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="windows-iot-core.md" data-raw-source="[Windows 10 IoT Core Overview](windows-server.md)">Windows Server IoT 2019 개요</a></p></td>
+  <td align="left"><p><a href="windows-server.md" data-raw-source="[Windows Server IoT 2019](https://docs.microsoft.com/en-us/windows/iot-core/windows-server)">Windows Server IoT 2019</a></p></td>
 <td align="left"><p>Windows Server IoT 2019 시작 하는 방법을 자세히 알아봅니다.</p></td>
 </tr>
 
@@ -138,7 +138,7 @@ ms.locfileid: "66174012"
 ## <a name="bring-a-device-to-market"></a>장치 시장 출시 기간
 
 상업화, 또는을 시장에 장치를 전환 하는 프로세스 개인 시간에 더 이동 부분 및만 프로토타입 장치 보다는 사용자를 포함 합니다. 상용화 최대한 안전 하다 고 및 준수를 다양 한 장치, 전 세계 어디서 나 업데이트를 받을 수 있는지 확인 하는 단계에 필요 합니다. 
-<br>
+
 적합 한 Windows 10 IoT의 버전에 따라 사용 하려는 경우는 제조 지침을 사용 하 여 시작 합니다.
 
 <table>
