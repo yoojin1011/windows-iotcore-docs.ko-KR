@@ -6,12 +6,12 @@ ms.date: 09/07/18
 ms.topic: article
 description: 모든 Windows 10 IoT 커뮤니티에서 리소스를 활용 합니다.
 keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, 리소스, 가장 중요 한 사람, 비디오, 블로그 게시물
-ms.openlocfilehash: d7fdc6423212a387a62fe0dca89dc94792c9909d
-ms.sourcegitcommit: bcc4cf5a25841f499a1de71c463f34e47e9811d5
+ms.openlocfilehash: ba3fb673c12849e9b3cfb48ae9215f3ec85992eb
+ms.sourcegitcommit: 65900a35a0811b8510f3b7f53c8256b4dcc29d1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319838"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66499342"
 ---
 # <a name="windows-10-iot-resources"></a>Windows 10 IoT 리소스
 
@@ -43,6 +43,7 @@ ms.locfileid: "66319838"
 ## <a name="whitepapers"></a>백서
 * [Azure IoT Edge + Windows IoT: 에 지에서 인공 지능을 지 원하는](https://aka.ms/IoT-Edge-WP)
 * [Windows 기계 학습: Windows 앱에 AI를 구현 합니다.](https://aka.ms/Windows-ML-WP)
+* [Windows IoT를 사용 하 여 더 안전한 IoT 솔루션 만들기](https://aka.ms/secure-windowsiot)
 
 ## <a name="learning-resources"></a>학습 리소스
 

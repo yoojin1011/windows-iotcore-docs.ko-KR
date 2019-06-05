@@ -5,12 +5,12 @@ title: 문제 해결
 ms.author: saclayt
 ms.date: 08/28/18
 ms.topic: article
-ms.openlocfilehash: 00c748e4ce06e960dbc2a4250fb3cb279f4d092a
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 8b93ad987c27e1123d68c4d22148447ccc99e37d
+ms.sourcegitcommit: 2e7e9555fe71ca60b5f41dbf06051a50520a368a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59513293"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66491705"
 ---
 # <a name="troubleshooting"></a>문제 해결
 사람들이에서 일반적인 문제를 포함 하는 문서입니다. 특정 항목을 찾으려면 단어 또는 문구 검색 하려면 Ctrl + F를 사용 합니다. 예정인 추가 하 시겠습니까? 이 설명서 또는 아래 provident 콘텐츠 사용자 의견에 대 한 PR을 만듭니다.
@@ -88,7 +88,7 @@ ASU Tinkerboard 및 Rockchip 우리 공식적으로 지원 되지 않으며는 R
 
 Raspberry Pi 3 모델 B +는 최신 제품 Raspberry Pi 3 범위의 1.4 GHz, 이중 밴드 2.4ghz 및 5ghz 무선 LAN, Bluetooth 4.2/BLE 빠르고 이더넷에서 실행 되는 64 비트 쿼드 코어 프로세서를 자랑 하 고는 별도 PoE HA를 통해 PoE 기능입니다.
 
-최근 Windows 10 IoT Core 관심이 많은 고객에는 Windows 10 IoT Core 플러시한 후 장치가 정상적으로 부팅 되지 않습니다 하지만 여 Raspbian에 정상적으로 위치는 문제가 발생 했습니다. 다음은 부팅 문제를 해결 하는 방법에 몇 가지 제안 합니다.
+최근 Windows 10 IoT Core 관심이 많은 고객이 여기서 깜박이 Windows 10 IoT Core 후 장치가 정상적으로 부팅 되지 않을 수 있지만 Raspbian에 정상적으로 문제가 발생 했습니다. 다음은 부팅 문제를 해결 하는 방법에 몇 가지 제안 합니다.
 
 이 Insider Preview 이미지에서 몇 가지 알려진된 문제가 있습니다. note 하십시오.
 * 이 이미지는 Raspberry Pi 3B + 기능만 및 Raspbierry Pi 2에서 부팅 되지 않습니다.
