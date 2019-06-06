@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 보안 부팅, BitLocker 및 Windows 10 IoT Core Device Guard를 사용 하도록 설정 하는 방법 알아보기
 keywords: windows iot, 보안 부팅, BitLocker, 턴키 보안 장치 가드, 보안
-ms.openlocfilehash: 092be64210f651c25156e93885a63f35c22d4791
-ms.sourcegitcommit: fcc0c6add468040e2f676893b44b260e3ddc3c52
+ms.openlocfilehash: 300f47ecb3d6c67f467174c230c56a15a1d0f4a1
+ms.sourcegitcommit: 5a103405cbc5c61101139aff6aaa709bd4ef9582
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65779399"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66694145"
 ---
 # <a name="enabling-secure-boot-bitlocker-and-device-guard-on-windows-10-iot-core"></a>보안 부팅, BitLocker 및 Windows 10 IoT Core Device Guard를 사용 하도록 설정
 
@@ -32,40 +32,6 @@ IoT 장치에 대 한 안전한 플랫폼을 제공 하는 개별 구성 요소 
 Windows 10 부팅 프로세스에 대 한 추가 정보를 찾을 수 있습니다 [여기](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process)합니다.
 
 ## <a name="locking-down-iot-devices"></a>잠금 다운 IoT 장치
-
-Windows IoT 장치를 잠그고 순서로 다음과 같은 고려 사항이 수행 되어야 합니다.
-
-### <a name="platform-secure-boot"></a>플랫폼 보안 부팅
-
-전체 부팅 프로세스의 첫 번째 단계는 로드 하 고 펌웨어에 하드웨어를 초기화 하는 부팅 로더를 실행 하는 장치를 처음 켤 때의 devies 및 응급 깜박이 기능을 제공 합니다. UEFI 환경을 로드 하 고 컨트롤을 통해 전달 됩니다.
-
-이러한 펌웨어 부팅 로더 SoC 관련 되므로 적절 한 장치 제조업체에 있는 장치에 만들어진 이러한 부팅 로더를 사용 해야 합니다.
-
-IoT 장치에 대 한 안전한 플랫폼을 제공 하는 개별 구성 요소 자세히 살펴 보겠습니다 수 전에 부팅 순서를 Windows 10 IoT Core 장치에 대 한 이해가 필요 합니다.
-
-다음 세 가지 주요 영역에서 IoT 장치를 때 발생 하는 OS 커널 로드 하 고 설치 된 응용 프로그램을 실행 하려면까지 기반 합니다.
-
-* 플랫폼 보안 부팅
-* Unified Extensible Firmware (UEFI) 인터페이스 보안 부팅
-* Windows 코드 무결성
-
-![대시보드 스크린샷](../media/SecureBootAndBitLocker/BootOrder.jpg)
-
-Windows 10 부팅 프로세스에 대 한 추가 정보를 찾을 수 있습니다 [여기](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process)합니다.
-
-Windows IoT 장치를 잠그고 순서로 다음과 같은 고려 사항이 수행 되어야 합니다.
-
-### <a name="platform-secure-boot"></a>플랫폼 보안 부팅
-
-전체 부팅 프로세스의 첫 번째 단계는 로드 하 고 펌웨어에 하드웨어를 초기화 하는 부팅 로더를 실행 하는 장치를 처음 켤 때의 devies 및 응급 깜박이 기능을 제공 합니다. UEFI 환경을 로드 하 고 컨트롤을 통해 전달 됩니다.
-
-이러한 펌웨어 부팅 로더 SoC 관련 되므로 적절 한 장치 제조업체에 있는 장치에 만들어진 이러한 부팅 로더를 사용 해야 합니다.
-
-### <a name="uefi-secure-boot"></a>UEFI 보안 부팅
-
-UEFI 보안 부팅 지점인 첫 번째 정책 적용, 및 UEFI에 있습니다.  시스템 펌웨어 드라이버, 옵션 rom을 보유, UEFI 드라이버 또는 응용 프로그램 및 UEFI 부팅 로더 같은 지정된 된 권한으로 서명 된 바이너리만 실행할 수만 있도록 제한 합니다. 이 기능은 플랫폼에서 실행 되 고 잠재적으로의 보안 상태가 약화 되 알 수 없는 코드를 방지 합니다. 보안 부팅 루트킷과 같은 장치에 사전 부팅 맬웨어 공격의 위험을 줄입니다. 
-
-OEM,으로 UEFI 보안 부팅 제조 시간에 IoT 장치에서 데이터베이스를 저장 해야 합니다. 이러한 데이터베이스 서명이 데이터베이스 (db), 서명을 해지 데이터베이스 (dbx) 및 등록 키 (KEK) 데이터베이스에 포함 됩니다. 이러한 데이터베이스는 장치의 펌웨어 비휘발성 RAM (RAM NV)에 저장 됩니다.
 
 Windows IoT 장치를 잠그고 순서로 다음과 같은 고려 사항이 수행 되어야 합니다.
 

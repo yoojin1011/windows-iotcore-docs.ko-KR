@@ -6,12 +6,12 @@ ms.date: 01/30/2018
 ms.topic: article
 description: Windows 10 IoT 란 무엇 이며이 사용 하 여 수행할 수 있는 작업에 대해 알아봅니다.
 keywords: Windows 10 IoT Enterprise, Windows 10 IoT Core 헤드리스, 음성, 기능, 이진 버전, 버전
-ms.openlocfilehash: f1ff68d1efe967eee0472eec54b5354d47c9447a
-ms.sourcegitcommit: 1f6afcfee0cb5557dc21c7b15e199bc557d8eedb
+ms.openlocfilehash: b5c729344f3c805deeecb0a04c0c696c8fd7b51e
+ms.sourcegitcommit: 5a103405cbc5c61101139aff6aaa709bd4ef9582
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65171343"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66694116"
 ---
 # <a name="an-overview-of-windows-10-iot"></a>Windows 10 IoT 개요 
 
@@ -39,9 +39,11 @@ Windows 10 IoT Core 및 Windows 10 IoT Enterprise를 이름에 유사한 가지 
 > | 장치 보안 기술 | [TPM](https://docs.microsoft.com/windows/iot-core/secure-your-device/tpm)하십시오 [부팅, BitLocker, Device Guard Secure](https://docs.microsoft.com/windows/iot-core/secure-your-device/securebootandbitlocker), 및 장치 상태 증명 | [TPM](https://docs.microsoft.com/windows/iot-core/secure-your-device/tpm)하십시오 [부팅, BitLocker, Device Guard Secure](https://docs.microsoft.com/windows/iot-core/secure-your-device/securebootandbitlocker) 및 장치 상태 증명 |
 > | CPU 아키텍처 지원 | x86, x64 및 ARM | x86 및 x64 |
 > | 라이선싱 | 온라인 라이선스 규약 및 포함 된 OEM 계약 무료 | 직접 및 간접 Embedded OEM 계약 |
-> | 사용 시나리오 | [디지털 간판](https://www.microsoft.com/en-us/windowsforbusiness/digital-signage), Smart Building, IoT 게이트웨이, HMI, 스마트 홈, 착용 식 장치 | 업계 태블릿, 키오스크, POS [디지털 간판](https://www.microsoft.com/en-us/windowsforbusiness/digital-signage), ATM, 의료 장치, 제조 장치를 씬 클라이언트 |
+> | 사용 시나리오 | [디지털 간판](https://www.microsoft.com/en-us/windowsforbusiness/digital-signage), Smart Building, IoT 게이트웨이, HMI, 스마트 홈, 착용 식 장치 | 업계 태블릿 Point of Service, 키오스크 소매 [디지털 간판](https://www.microsoft.com/en-us/windowsforbusiness/digital-signage), ATM, 의료 장치, 제조 장치를 씬 클라이언트 |
 
 최소 요구 사항 세부 정보를 참조 하세요 [Windows 하드웨어 사이트](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview)합니다.
+
+서비스 지점에 대 한 더 자세히 알고 싶은 경우 방문 하십시오 합니다 [이 항목의 UWP 문서](https://aka.ms/pointofservice)합니다.
 
 ## <a name="differences-between-windows-10-desktop-and-windows-10-iot-core"></a>Windows 10 Desktop 및 Windows 10 IoT Core 차이점
 
@@ -96,4 +98,4 @@ Azure IoT Edge 문서에 Windows 10 IoT를 위한 하세요 "운영 체제"에 �
 
 ## <a name="helpful-resources"></a>유용한 리소스
 * [Windows 10 IoT Enterprise](windows-iot-enterprise.md)
-* [Windows 10 IoT Core](windows-iot-core.md)
+* [Windows 10 IoT Core](windows-iot-core.md)
