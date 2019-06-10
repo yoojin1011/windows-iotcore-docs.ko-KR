@@ -6,12 +6,12 @@ ms.date: 01/30/2018
 ms.topic: article
 description: Windows 10 IoT 란 무엇 이며이 사용 하 여 수행할 수 있는 작업에 대해 알아봅니다.
 keywords: Windows 10 IoT Enterprise, Windows 10 IoT Core 헤드리스, 음성, 기능, 이진 버전, 버전
-ms.openlocfilehash: b5c729344f3c805deeecb0a04c0c696c8fd7b51e
-ms.sourcegitcommit: 5a103405cbc5c61101139aff6aaa709bd4ef9582
+ms.openlocfilehash: 1e1d2769513005a705c48522d4dc7dc034f5d7b9
+ms.sourcegitcommit: dcaeaa6c5e84dd6a4974a56098f3bab151209e41
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66694116"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66760395"
 ---
 # <a name="an-overview-of-windows-10-iot"></a>Windows 10 IoT 개요 
 
@@ -73,7 +73,7 @@ HKEY_CURRENTUSER\Control Panel\Accessibility
 REG ADD "HKCU\Control Panel\Accessibility" /v DynamicScrollbars /t REG_DWORD \d "1"
 ```
 
-* 기본 계정에서 레지스트리 키를 설정 해야 합니다. ScrollViewer의 XAML 설정이 "Visible" 인 경우 0 nthe 레지스트리 설정을 스크롤 막대 표시 여부 regardlss를 강제로 스크롤 UI에 표시 하도록 충분 한 콘텐츠가 있습니다. 레지스트리 설정을 1은 충분 한 콘텐츠가 있을 때까지 숨겨진 스크롤 막대를 유지 합니다.
+* 기본 계정에서 레지스트리 키를 설정 해야 합니다. 0의 레지스트리 설정을 스크롤 막대 표시 여부 regardlss를 강제로 ScrollViewer의 XAML 설정이 "Visible" 이면 충분 한 콘텐츠가 스크롤 UI에 표시 해야 합니다. 레지스트리 설정을 1은 충분 한 콘텐츠가 있을 때까지 숨겨진 스크롤 막대를 유지 합니다.
 
 ```
 <TextBox Height="200" Width="100" IsEnabled="True" FontSize="50" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Visible" Text="..."/>
@@ -90,7 +90,7 @@ REG ADD "HKCU\Control Panel\Accessibility" /v DynamicScrollbars /t REG_DWORD \d 
 * 제거-AppxPackage PowerShell 명령에는 Windows 10 IoT Core는 없지만 데스크톱에서 작동합니다.
 * 장치에서 일부 폴더 유니버설 Windows 앱에서 액세스할 수 있습니다. Windows 10 IoT Core는 폴더에 UWP 앱에 액세스할 수 있도록 FolderPermissions 도구를 사용할 수 있습니다. 예를 들어 c:\test 폴더에 UWP 앱 액세스 권한을 부여 하려면 FolderPermissions c:\test-e를 실행 합니다. 그러나, 바탕 화면에서 가능 하지 않습니다.
 
-Windows 10 IoT Core 유지 되므로 시간이 지남에 따라이 게시물에 표시 된 모든 차이 사라질 수를 업데이트 합니다.
+이 게시물에 표시 된 명령을 Windows 10 IoT Core 계속 업데이트 되므로 시간이 지남에 따라 변경 될 수 있습니다.
 
 ## <a name="iot-edge-support-for-windows-10-iot"></a>Windows 10 IoT에 대 한 IoT Edge 지원
 Azure IoT Edge 문서에 Windows 10 IoT를 위한 하세요 "운영 체제"에 대 한 자세한 내용은 지원 IoT Edge에 대 한 자세한 내용을 알아보려면 [여기](https://docs.microsoft.com/en-us/azure/iot-edge/support#operating-systems)합니다.

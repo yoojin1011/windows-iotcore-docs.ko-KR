@@ -6,12 +6,12 @@ ms.topic: article
 description: Windows 10 IoT Core 사용 하 여 Qualcomm 장치를 설정 하는 방법에 알아봅니다.
 keywords: Windows 10 IoT Core, Qualcomm
 ms.custom: RS5
-ms.openlocfilehash: 949c5af00f48b4c2049e711d4e18385fe9f3c18e
-ms.sourcegitcommit: 8aadc776da7b473159f9023cd555145819e7e952
+ms.openlocfilehash: 42ccf65023b2742fc584760d09f679c4f6a5b197
+ms.sourcegitcommit: dcaeaa6c5e84dd6a4974a56098f3bab151209e41
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66182205"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66760376"
 ---
 # <a name="setting-up-a-qualcomm-device"></a>Qualcomm 장치 설정
 
@@ -23,7 +23,7 @@ Qualcomm 장치를 사용 하 여 제조 하려는 경우 참조 하는 [IoT Cor
 ## <a name="using-emmc"></a>EMMC를 사용 하 여
 
 1. 에 대 한 DragonBoard 업데이트 도구 다운로드 및 설치 프로그램 [x86](https://developer.qualcomm.com/download/db410c/windows-10-iot-update-tool-dragonboard-410c-x86.zip) 하거나 [x64](https://developer.qualcomm.com/download/db410c/windows-10-iot-update-tool-dragonboard-410c-x64.zip) 컴퓨터.
-2. 다운로드 합니다 [Windows 10 IoT Core DragonBoard FFU](https://developer.microsoft.com/en-us/windows/iot/Downloads)합니다.
+2. 다운로드 합니다 [Windows 10 IoT Core DragonBoard FFU](https://docs.microsoft.com/en-us/windows/iot-core/downloads)합니다.
 3. 다운로드 한 ISO 파일을 두 번 누릅니다 하 고 탑재 된 가상 CD 드라이브를 찾습니다. 이 드라이브는 설치 관리자 파일 (.msi);에 포함 됩니다. 두 번 클릭 합니다. 새 디렉터리 아래에 있는 PC에 이렇게 `C:\Program Files (x86)\Microsoft IoT\FFU\` 에서 표시 하는 이미지 파일을 "flash.ffu"입니다.
 4. 아래와 같이 프로그램 DragonBoard가 다운로드 모드를 첫 번째 부팅 전환할 보드의 USB 부팅 설정 확인 합니다. 그런 다음 DragonBoard microUSB 케이블을 통해 호스트 PC 연결한 후에 12V DragonBoard 플러그 인 (> 1A) 전원 공급 장치.
 5. DragonBoard 녹색 원을 사용 하 여 사용자 PC에 연결 되어 있는지 검색 해야 하는 DragonBoard 업데이트 도구를 시작 합니다. "찾아보기" DragonBoard의를 다운로드 한 FFU 클릭 합니다 _프로그램_ 단추입니다.
