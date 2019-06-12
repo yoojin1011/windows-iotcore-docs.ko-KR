@@ -6,12 +6,12 @@ ms.date: 02/22/2019
 ms.topic: article
 description: 및 NXP i.MX Soc Windows 10 IoT Core 알아봅니다
 keywords: Windows 10 IoT Core 시작 i.MX, NXP
-ms.openlocfilehash: 7b78aee0e67e481de38ade9b3fd6007baa8b0c9b
-ms.sourcegitcommit: 87c60bb857cb025255f4f06094c888384a0bb562
+ms.openlocfilehash: b27589d574db0f459e42d4a8170defa2689fa001
+ms.sourcegitcommit: fa4a29fcd5af464924a0a5ab581f08f631a3ad72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65940662"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835589"
 ---
 # <a name="window-10-iot-core-and-nxp-imx-socs"></a>Window 10 IoT Core 및 NXP i.MX Soc
 
@@ -24,7 +24,7 @@ ms.locfileid: "65940662"
 
 ## <a name="bsp-access"></a>BSP 액세스
 
-사용자 고유의 i.MX 하드웨어에 대 한 지원을 사용 하도록 설정 하려면 BSP 소스 및 설명서에 액세스 하세요 관심이 있다면 [Github]( https://github.com/ms-iot/imx-iotcore)합니다. 설명이 없는 한, 대부분의 원본 MIT 라이선스로 제공 됩니다. 아직 개발 중인 코드가입니다. 모든 플랫폼 기능을 활성화 하거나 액세스에 최적화 된 완벽 하 게 합니다. 현재 코드를 시간에만 비 상업적 개발을 위한 것입니다. 상용 품질 릴리스 2019 뒷부분에서 필요 합니다.
+사용자 고유의 i.MX 하드웨어에 대 한 지원을 사용 하도록 설정 하려면 BSP 소스 및 설명서에 액세스 하세요 관심이 있다면 [Github]( https://github.com/ms-iot/imx-iotcore)합니다. 설명이 없는 한, 대부분의 원본 MIT 라이선스로 제공 됩니다. 코드 NXP 제공 지원을 통해 상업적 사용에 대 한 해제 되 고 있습니다 [여기](https://www.nxp.com/support/developer-resources/evaluation-and-development-boards/i.mx-evaluation-and-development-boards/i.mx-software-and-development-tool:IMX-SW)합니다.
 
 NXP 하드웨어/BSP 관련 질문이 나 BSP 대상된 솔루션 더 잘 지 원하는 방법에 대 한 피드백 경우 포럼에 [NXP 커뮤니티](https://community.nxp.com/community/imx/content?filterID=contentstatus%5Bpublished%5D%7Ecategory%5Bwindows%5D)합니다. Windows 관련된 질문을 사용 합니다 [Microsoft 커뮤니티](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT)합니다.
 
@@ -34,7 +34,7 @@ NXP 하드웨어/BSP 관련 질문이 나 BSP 대상된 솔루션 더 잘 지 �
 여러 Microsoft 및 NXP 파트너 상용 i.MX 6, 7, i.MX 사용 하도록 설정 하 고 i.MX 8m 장치를 Windows 10 IoT Core 대 한 지원. 하드웨어 및 플랫폼 이미지를 직접 파트너에 문의 하세요.
 
 
-> | 장치 | 연락처 |
+> | 장치 | Contact |
 > |-------|------|
 > | [Aaeon PICO-IMX6](https://www.aaeon.com/en/p/pico-itx-boards-pico-imx6/) | [David 여 닫](mailto:davidhung@aaeon.com.tw) |
 > | [Advantech RSB-4411](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858) | [buy@advantech.com](mailto:buy@advantech.com) |

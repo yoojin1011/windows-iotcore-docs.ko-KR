@@ -6,12 +6,12 @@ ms.topic: article
 description: Windows 10 IoT Core 사용 하 여 Qualcomm 장치를 설정 하는 방법에 알아봅니다.
 keywords: Windows 10 IoT Core, Qualcomm
 ms.custom: RS5
-ms.openlocfilehash: 42ccf65023b2742fc584760d09f679c4f6a5b197
-ms.sourcegitcommit: dcaeaa6c5e84dd6a4974a56098f3bab151209e41
+ms.openlocfilehash: 02f6c013c428a271d3b3956c88edc1ce8f4fdbf2
+ms.sourcegitcommit: fa4a29fcd5af464924a0a5ab581f08f631a3ad72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66760376"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835608"
 ---
 # <a name="setting-up-a-qualcomm-device"></a>Qualcomm 장치 설정
 
@@ -25,10 +25,10 @@ Qualcomm 장치를 사용 하 여 제조 하려는 경우 참조 하는 [IoT Cor
 1. 에 대 한 DragonBoard 업데이트 도구 다운로드 및 설치 프로그램 [x86](https://developer.qualcomm.com/download/db410c/windows-10-iot-update-tool-dragonboard-410c-x86.zip) 하거나 [x64](https://developer.qualcomm.com/download/db410c/windows-10-iot-update-tool-dragonboard-410c-x64.zip) 컴퓨터.
 2. 다운로드 합니다 [Windows 10 IoT Core DragonBoard FFU](https://docs.microsoft.com/en-us/windows/iot-core/downloads)합니다.
 3. 다운로드 한 ISO 파일을 두 번 누릅니다 하 고 탑재 된 가상 CD 드라이브를 찾습니다. 이 드라이브는 설치 관리자 파일 (.msi);에 포함 됩니다. 두 번 클릭 합니다. 새 디렉터리 아래에 있는 PC에 이렇게 `C:\Program Files (x86)\Microsoft IoT\FFU\` 에서 표시 하는 이미지 파일을 "flash.ffu"입니다.
-4. 아래와 같이 프로그램 DragonBoard가 다운로드 모드를 첫 번째 부팅 전환할 보드의 USB 부팅 설정 확인 합니다. 그런 다음 DragonBoard microUSB 케이블을 통해 호스트 PC 연결한 후에 12V DragonBoard 플러그 인 (> 1A) 전원 공급 장치.
+4. 아래와 같이 프로그램 DragonBoard가 다운로드 모드를 첫 번째 부팅 전환할 보드의 USB 부팅 설정 확인 합니다. 그런 다음는 DragonBoard microUSB 케이블을 통해 호스트 PC에 연결 합니다. 다음에 12V DragonBoard 플러그 인 (> 1A) 전원 공급 장치.
 5. DragonBoard 녹색 원을 사용 하 여 사용자 PC에 연결 되어 있는지 검색 해야 하는 DragonBoard 업데이트 도구를 시작 합니다. "찾아보기" DragonBoard의를 다운로드 한 FFU 클릭 합니다 _프로그램_ 단추입니다.
 6. "찾아보기"를 다시 클릭 하 고 5 단계에서 생성 된 "rawprogram0.xml"를 선택 합니다. "프로그램" 단추를 클릭 합니다.
-7. 다운로드가 완료 되 면 전원 공급 장치 및 microUSB 케이블 다시 USB 부팅 스위치 보드 및 설정/해제에서 연결 끊기 _OFF_합니다. HDMI 디스플레이, 마우스 및 키보드 DragonBoard 및 rec-끊기 전원 공급 장치에 연결 합니다. 몇 분 후 Windows 10 IoT Core 기본 응용 프로그램이 표시 됩니다. 
+7. 다운로드가 완료 되 면 전원 공급 장치 및 microUSB 케이블 다시 USB 부팅 스위치 보드 및 설정/해제에서 연결 끊기 _OFF_합니다. HDMI 디스플레이, 마우스 및 키보드를 DragonBoard 연결한 전원 공급 장치를 다시 연결 합니다. 몇 분 후 Windows 10 IoT Core 기본 응용 프로그램이 표시 됩니다. 
 
 ![DragonBoard 다운로드 모드](../media/DeviceSetup/db1.png)
 

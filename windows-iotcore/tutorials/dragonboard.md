@@ -6,12 +6,12 @@ ms.topic: article
 description: Windows 10 IoT Core 사용 하 여 프로그램 Dragonboard를 설정 하는 방법에 알아봅니다.
 keywords: Windows 10 IoT Core, Dragonboard
 ms.custom: RS5
-ms.openlocfilehash: 3630ddad61ac34feeed3bf3c5b602c6c39245151
-ms.sourcegitcommit: dcaeaa6c5e84dd6a4974a56098f3bab151209e41
+ms.openlocfilehash: 6488237a41f42c7acbe9e5e1c68466548577ab38
+ms.sourcegitcommit: fa4a29fcd5af464924a0a5ab581f08f631a3ad72
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66760383"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835605"
 ---
 # <a name="setting-up-a-dragonboard"></a>Dragonboard 설정
 
@@ -42,7 +42,7 @@ Flash를 또는 MinnowBoard에 IoT Core를 다운로드 해야 합니다.
 4. 프로그램 DragongBoard 외부 디스플레이에 연결 합니다.
 5. 전원 켜기 12V를 사용 하 여 Dragonboard (> 1A) 전원 공급 장치 볼륨 크게 (+)를 누른 채 단추입니다. 장치--디스플레이에 연결 하는 경우 망치, 번개, 및는 코그의 이미지가 표시 됩니다.
 6. 이제 장치 대시보드에서 아래와 같이 표시 됩니다. 적절 한 장치를 선택 합니다.
-7. 소프트웨어 licnse 조건에 동의 하 고 클릭 **다운로드 및 설치**합니다. Windows 10 IoT Core 이제 장치에 깜박이 볼 수 있습니다.
+7. 소프트웨어 사용 조건에 동의 하 고 클릭 **다운로드 및 설치**합니다. Windows 10 IoT Core 이제 장치에 깜박이 볼 수 있습니다.
 
 ![플래시 모드로 DragonBoard](../media/DeviceSetup/db4.png)
 
