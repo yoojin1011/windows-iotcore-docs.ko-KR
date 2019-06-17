@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 보안 부팅, BitLocker 및 Windows 10 IoT Core Device Guard를 사용 하도록 설정 하는 방법 알아보기
 keywords: windows iot, 보안 부팅, BitLocker, 턴키 보안 장치 가드, 보안
-ms.openlocfilehash: 300f47ecb3d6c67f467174c230c56a15a1d0f4a1
-ms.sourcegitcommit: 5a103405cbc5c61101139aff6aaa709bd4ef9582
+ms.openlocfilehash: 26e0949dd8ee0a8cfec8aeafee3908a3ade86293
+ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66694145"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67142358"
 ---
 # <a name="enabling-secure-boot-bitlocker-and-device-guard-on-windows-10-iot-core"></a>보안 부팅, BitLocker 및 Windows 10 IoT Core Device Guard를 사용 하도록 설정
 
@@ -206,7 +206,7 @@ Windows 10 IoT Core 수백 대의 장치에서 사용 되는 다양 한 silicons
 7. Bitlocker 암호화를 활성화 하려면 다시 장치를 다시 부팅 합니다.
 8. 보안 기능 테스트
     * SecureBoot: 시도 `bcdedit /debug on` , 값 보안 부팅 정책에 의해 보호 되는 내용의 오류가 표시 됩니다
-    * BitLocker: 실행할 `fvecon -status c:`, 상태 언급 하면 *에 암호화가 복구 데이터 (외부 키), TPM 데이터에, 보안, 부팅 파티션, 사용 중인 공간만*
+    * BitLocker: 실행할 `start /wait sectask.exe -waitencryptcomplete:1`ERRORLEVEL 있으면 `-2147023436` (ERROR_TIMEOUT) 한 다음 암호화가 완료 되지 않습니다. Sectask.exe.cmd 파일에서 실행 하는 경우 생략 된 `start /wait`합니다.
     * DeviceGuard: 모든 부호 없는 이진 또는 SIPolicy 목록에 없는 인증서로 서명 된 이진 파일을 실행 하 고 실행 해 서 실패 하는지를 확인 합니다.
 
 ### <a name="generate-lockdown-image"></a>잠금 이미지 생성
