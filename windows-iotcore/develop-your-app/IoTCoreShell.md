@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 장치에 대 한 탐색을 탐색할 수 있도록 IoT Shell을 활용 하는 방법에 알아봅니다.
 keywords: windows iot, IoT core 셸, 응용 프로그램, 포그라운드 응용 프로그램, 백그라운드 응용 프로그램
-ms.openlocfilehash: be72fabc91fc5748a029b61ebd9a306deb23f726
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 74d8406036aa18dc5f8dcaa871e116eb7f8ec29b
+ms.sourcegitcommit: beed912a2266d6dbc06a8a26b85ff49f1feffd69
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59513326"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67316626"
 ---
 # <a name="iot-shell-overview"></a>IoT Shell 개요
 
@@ -31,7 +31,7 @@ IoT Core 장치에 IoT 셸에서 실행 됩니다. 여러 책임을 갖지만 �
 
 지금은 시작 앱을 사용 하면 다른 포그라운드 응용 프로그램 간에 전환할 수 있는 Windows 10 IoT Core 대 한 홈 앱을 만들 수 있습니다. 
 
-합니다 **IoT 시작 앱** ([샘플](https://developer.microsoft.com/en-us/windows/iot/samples/iotstartapp) PackageManager Api를 사용 하 여 시작 한 후 사용자의 장치에 설치 된 앱을 나열 하는 간단한 시작 앱을 나타냅니다.
+합니다 **IoT 시작 앱** ([샘플](https://github.com/microsoft/Windows-iotcore-samples/tree/master/Samples/IoTStartApp) PackageManager Api를 사용 하 여 시작 한 후 사용자의 장치에 설치 된 앱을 나열 하는 간단한 시작 앱을 나타냅니다.
 
 ## <a name="switching-between-apps-with-hid-injection-keys"></a>HID 삽입 키를 사용 하 여 앱 간 전환
 
@@ -66,8 +66,7 @@ REG 파일로이 모양은 다음과 같습니다.
 “NEXT” QWORD 0x00020000 00050009 
 ``
 
-REG 파일로이 모양은 다음과 같습니다.
-``
+REG 파일로이 모양은 다음과 같습니다. ``
 [HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\HotKeys]
 "Prev"=hex(b):09,00,01,00,00,00,01,00
 "Next"=hex(b):09,00,05,00,00,00,02,00
