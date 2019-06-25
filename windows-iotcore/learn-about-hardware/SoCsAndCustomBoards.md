@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 다양 한 제안 된 보드 및 커뮤니티 장치 하드웨어 기능에 알아봅니다.
 keywords: windows iot, 개발 장치, SOC, SOM 칩을 DragonBoard, Minnowboard 최대, Raspberry Pi 3, Raspberry Pi 2에는 시스템 보드
-ms.openlocfilehash: 55e7192a53197623ca47ff8186630a691749c026
-ms.sourcegitcommit: 8aadc776da7b473159f9023cd555145819e7e952
+ms.openlocfilehash: 85625926a5aaa474ba2ea86ff6c2890553669131
+ms.sourcegitcommit: 8bb162cbfa286107e243a0286fe53b3b9cc3f359
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174031"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67345112"
 ---
 # <a name="socs-and-custom-boards"></a>Soc 및 사용자 지정 보드
 
@@ -23,7 +23,7 @@ Microsoft는 Broadcom, Intel, NXP, 및 Qualcomm 칩 (Soc)의 여러 공급 업�
 |----------|-------|----------|-----|
 | BCM2837 | [Intel® Atom 프로세서 E3900 시리즈 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                | [Snapdragon 410 (APQ8016)](https://www.qualcomm.com/products/snapdragon/processors/410) | [i.MX 6 Family](http://aka.ms/iotnxp) |
 | BCM2836 | [Intel® Celeron® 프로세서 N3350 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                    | [Snapdragon 212 (APQ8009)](https://www.qualcomm.com/products/snapdragon/processors/212) | [i.MX 7 Family](http://aka.ms/iotnxp)     |
-|         | [Intel® Pentium® N4200 프로세서 플랫폼 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                           |                                                                                         | [i.MX 8m 제품군](http://aka.ms/iotnxp) |
+|         | [Intel® Pentium® N4200 프로세서 플랫폼 (Apollo Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                           |                                                                                         | [i.MX 8m 및 8m 미니 제품군](http://aka.ms/iotnxp) |
 |         | [Intel® Pentium® 및 Celeron® 프로세서 N3000 시리즈 (Braswell)](http://ark.intel.com/products/codename/66094/#@embedded)                    |                                                                                         |      |
 |         | [Intel® Atom® x5 E8000 프로세서 (Braswell)](http://ark.intel.com/products/codename/66094/#@embedded)                                        |                                                                                         |  |
 |         | [Intel® Atom® x5 Z8350 프로세서 (Cherry 내역)](https://ark.intel.com/products/93361/Intel-Atom-x5-Z8350-Processor-2M-Cache-up-to-1_92-GHz) |                                                                                         |     |
