@@ -1,27 +1,27 @@
 ---
-title: 가져오기 시작 개요
+title: 시작 개요
 author: saraclay
 ms.author: saclayt
 ms.date: 04/10/2018
 ms.topic: article
-description: Windows 10 IoT Core 사용 하 여 시작 하는 방법을 알아봅니다.
-keywords: Windows 10 IoT Core, 시작 이미지
+description: Windows 10 IoT Core를 시작하는 방법을 알아봅니다.
+keywords: Windows 10 IoT Core, 시작, 이미지
 ms.openlocfilehash: c11e37c982c1e38ec270527d54127013b8df7515
-ms.sourcegitcommit: 3cab433275b07093efd1c6cfbfd7eb71c08bbd36
-ms.translationtype: MT
+ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 06/17/2019
 ms.locfileid: "66373147"
 ---
 # <a name="get-started-with-windows-10-iot-core"></a>Windows 10 IoT Core 시작
 
-고유한 장치를 만드는 흥미로운 부분 이지만 이해 하는 위협적일 수도 있습니다. 아래 리소스 도움이 프로토타입 또는 상용화 경험 합니다. 
+어떤 도움도 받지 않고 혼자 디바이스를 만드는 것은 재미있기도 하지만, 매우 버거운 일일 수도 있습니다. 아래는 프로토타입 제작 또는 상용화를 도와주는 리소스입니다. 
 
-이 과정에서 질문이 있나요? Microsoft 담당자와 함께 또는에 질문을 게시 하세요. 당사의 [Windows 10 IoT 포럼](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT)합니다.
+이 과정에서 궁금한 점이 있나요? Microsoft 담당자와 협력하거나 [Windows 10 IoT 포럼](https://social.msdn.microsoft.com/forums/en-US/home?forum=WindowsIoT)에 질문을 게시하세요.
 
-## <a name="what-is-windows-10-iot"></a>Windows 10 IoT 란?
+## <a name="what-is-windows-10-iot"></a>Windows 10 IoT란?
 
-이 제품에 대 한 자세한 내용은 자세히 알아보려면 아래 설명서를 참조 하세요. 
+제품에 대한 자세한 내용은 아래 설명서를 참조하세요. 
 
 <table>
 <colgroup>
@@ -38,22 +38,22 @@ ms.locfileid: "66373147"
 
 <tr class="odd">
 <td align="left"><p><a href="windows-iot.md" data-raw-source="[Windows IoT Overview](windows-iot.md)">Windows IoT 개요</a></p></td>
-<td align="left"><p>두 개의 Windows 10 IoT 제품을 비교 하 고 적합 하는 방법은 참조 하세요.</p></td>
+<td align="left"><p>두 Windows 10 IoT 제품을 비교하여 어떤 솔루션이 더 적합한지 알아보세요.</p></td>
 </tr>
 
 <tr class="odd">
 <td align="left"><p><a href="windows-iot-enterprise.md" data-raw-source="[Windows 10 IoT Enterprise Overview](windows-iot-enterprise.md)">Windows 10 IoT Enterprise 개요</a></p></td>
-<td align="left"><p>Windows 10 IoT Enterprise를 사용 하 여 시작 하는 방법을 자세히 알아봅니다.</p></td>
+<td align="left"><p>Windows 10 IoT Enterprise를 시작하는 방법을 자세히 알아보세요.</p></td>
 </tr>
 
 <tr class="odd">
 <td align="left"><p><a href="windows-iot-core.md" data-raw-source="[Windows 10 IoT Core Overview](windows-iot-core.md)">Windows 10 IoT Core 개요</a></p></td>
-<td align="left"><p>Windows 10 IoT Core 사용 하 여 시작 하는 방법을 자세히 알아봅니다.</p></td>
+<td align="left"><p>Windows 10 IoT Core를 시작하는 방법을 자세히 알아보세요.</p></td>
 </tr>
 
 <tr class="odd">
   <td align="left"><p><a href="windows-server.md" data-raw-source="[Windows Server IoT 2019](https://docs.microsoft.com/en-us/windows/iot-core/windows-server)">Windows Server IoT 2019</a></p></td>
-<td align="left"><p>Windows Server IoT 2019 시작 하는 방법을 자세히 알아봅니다.</p></td>
+<td align="left"><p>Windows Server IoT 2019를 시작하는 방법을 자세히 알아보세요.</p></td>
 </tr>
 
 </tbody>
@@ -75,28 +75,28 @@ ms.locfileid: "66373147"
 <tbody>
 
 <tr class="odd">
-<td align="left"><p>프로토타입</p></td>
+<td align="left"><p>프로토타입 제작</p></td>
 <td align="left"><p>무료</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p>장기 서비스 채널 (LTSC) 상용화에 대 한</p></td>
-<td align="left"><p>작은 장치당 10 년에 대 한 액세스를 사용 하 여 지원, 제어 및 상태 증명 DHA (장치)를 업데이트 합니다. <a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview" data-raw-source="[here](https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview)">여기</a>에서 자세한 내용을 알아보세요.</p></td>
+<td align="left"><p>상용화를 위한 LTSC(장기 서비스 채널)</p></td>
+<td align="left"><p>소액의 디바이스당 요금을 지불하면 10년 지원, 업데이트 제어 및 DHA(디바이스 상태 증명)를 사용할 수 있습니다. <a href="https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview" data-raw-source="[here](https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview)">여기</a>에서 자세한 내용을 알아보세요.</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p>반기 채널 (SAC) 상용화에 대 한</p></td>
-<td align="left"><p>무료 이지만 10 년 동안 지원 이용할 수, 컨트롤 또는 DHA 업데이트 됩니다. 또한이 상용화 계약에 서명 해야 합니다. 요청할 <a href="https://www.aka.ms/SAC-agreement">여기</a>합니다.</p></td>
+<td align="left"><p>상용화를 위한 SAC(반기 채널)</p></td>
+<td align="left"><p>무료지만 10년 지원, 업데이트 제어 및 DHA를 사용할 수 없습니다. 또한 상용화 계약에 서명해야 합니다. <a href="https://www.aka.ms/SAC-agreement">여기</a>서 요청하세요.</p></td>
 </tr>
 
 </tbody>
 </table>
 
-<i>자세한 지원 기간 정보에 자세히 알아보려면 [같습니다](https://support.microsoft.com/en-us/lifecycle/search?alpha=IoT%20Core)</i>합니다.
+<i>[여기](https://support.microsoft.com/en-us/lifecycle/search?alpha=IoT%20Core)서 자세한 수명 주기 정보를 알아보세요</i>.
 
 ## <a name="prototype-a-device"></a>디바이스 프로토타입
 
-장치 제조 하기 전에 첫 번째 시도 및 Windows 10 IoT Core 사용 하 여 장치 프로토타입 하는 것이 좋습니다. 이렇게 하면 기능을 이해할 수 있습니다 및 구성 하는 것이 좋습니다 제조 하는 때가 되었을 때 필요 합니다.
+디바이스를 제작하기 전에, 먼저 Windows 10 IoT Core를 사용하여 디바이스의 프로토타입을 만드는 것이 좋습니다. 이렇게 하면 디바이스를 만들 때 어떤 기능이 필요하고 어떤 구성을 원하는지 알아볼 수 있습니다.
 
 <table>
 <colgroup>
@@ -113,33 +113,33 @@ ms.locfileid: "66373147"
 
 <tr class="odd">
 <td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/tutorials/quickstarter/PrototypeBoards"
->1. 프로토타입 보드를 선택 합니다.</a></p></td>
-<td align="left"><p>일반적인 프로토타입 보드 살펴봅니다 및로 프로토타입 만들기를 시작 하려면 하나를 선택 합니다.</p></td>
+>1. 프로토타입 보드 선택</a></p></td>
+<td align="left"><p>일반 프로토타입 보드를 살펴보고 프로토타입 제작에 사용할 프로토타입 보드를 선택합니다.</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p>2. 프로토타입 이미지가 플래시</p></td>
-<td align="left"><p>선택한 장치에 대 한 프로토타입 이미지를 플래시 하는 방법을 알아보려면이 자습서 섹션으로 이동 합니다. </p></td>
+<td align="left"><p>2. 프로토타입 이미지 플래시</p></td>
+<td align="left"><p>선택한 디바이스에 프로토타입 이미지를 플래시하는 방법을 알아보려면 자습서 섹션으로 이동합니다. </p></td>
 </tr>
 
 <tr class="odd">
 <td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appinstaller">3. 앱 설치</a></p></td>
-<td align="left"><p>다양 한 도구를 사용 하 여 앱을 설치 하는 방법에 알아봅니다.</p></td>
+<td align="left"><p>다양한 도구를 사용하여 앱을 설치하는 방법을 알아봅니다.</p></td>
 </tr>
 
 <tr class="odd">
 <td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appdeployment">4. 앱 배포</a></p></td>
-<td align="left"><p>Visual Studio를 사용 하 여 앱을 배포 하는 방법에 알아봅니다.</p></td>
+<td align="left"><p>Visual Studio를 사용하여 앱을 배포하는 방법을 알아봅니다.</p></td>
 </tr>
 
 </tbody>
 </table>
 
-## <a name="bring-a-device-to-market"></a>장치 시장 출시 기간
+## <a name="bring-a-device-to-market"></a>디바이스 출시
 
-상업화, 또는을 시장에 장치를 전환 하는 프로세스 개인 시간에 더 이동 부분 및만 프로토타입 장치 보다는 사용자를 포함 합니다. 상용화 최대한 안전 하다 고 및 준수를 다양 한 장치, 전 세계 어디서 나 업데이트를 받을 수 있는지 확인 하는 단계에 필요 합니다. 
+디바이스를 상용화 또는 출시하려면 한가한 시간에 디바이스의 프로토타입을 제작하는 것보다 훨씬 많은 과정과 인력이 필요합니다. 디바이스가 전 세계 어디에 있든, 디바이스를 상용화하려면 디바이스의 보안과 규정 준수를 보장하기 위한 수많은 단계가 필요합니다. 
 
-적합 한 Windows 10 IoT의 버전에 따라 사용 하려는 경우는 제조 지침을 사용 하 여 시작 합니다.
+현재 사용하는 Windows 10 IoT 버전에 가장 적합한 제작 가이드에 따라 시작하세요.
 
 <table>
 <colgroup>
@@ -156,13 +156,13 @@ ms.locfileid: "66373147"
 
 <tr class="odd">
 <td align="left"><p><a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide"
->가이드를 제조 하는 Windows 10 IoT Core</a></p></td>
-<td align="left"><p>여기에서 시작 하 고 사용자 지정 테스트 및 상용 Windows 10 IoT Core 솔루션에 대 한 일반 정품 이미지를 만드는 방법을 알아봅니다.</p></td>
+>Windows 10 IoT Core 제작 가이드</a></p></td>
+<td align="left"><p>이 가이드로 시작하여 상용 Windows 10 IoT Core 솔루션의 사용자 지정 테스트 및 정품 이미지를 만드는 방법을 알아보세요.</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview">가이드를 제조 하는 Windows 10 IoT Enterprise</a></p></td>
-<td align="left"><p>여기에서 시작 하 고 상용 Windows 10 IoT Enterprise 솔루션에 대 한 이미지를 만드는 방법을 알아봅니다.</p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview">Windows 10 IoT Enterprise 제작 가이드</a></p></td>
+<td align="left"><p>이 가이드로 시작하여 상용 Windows 10 IoT Enterprise 솔루션의 이미지를 만드는 방법을 알아보세요.</p></td>
 </tr>
 
 </tbody>

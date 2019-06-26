@@ -3,71 +3,71 @@ title: Dragonboard 설정
 ms.author: saclayt
 ms.date: 05/22/2019
 ms.topic: article
-description: Windows 10 IoT Core 사용 하 여 프로그램 Dragonboard를 설정 하는 방법에 알아봅니다.
+description: Windows 10 IoT Core를 사용하여 Dragonboard를 설정하는 방법을 알아봅니다.
 keywords: Windows 10 IoT Core, Dragonboard
 ms.custom: RS5
 ms.openlocfilehash: 6488237a41f42c7acbe9e5e1c68466548577ab38
-ms.sourcegitcommit: fa4a29fcd5af464924a0a5ab581f08f631a3ad72
-ms.translationtype: MT
+ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2019
+ms.lasthandoff: 06/17/2019
 ms.locfileid: "66835605"
 ---
 # <a name="setting-up-a-dragonboard"></a>Dragonboard 설정
 
 > [!IMPORTANT]
-> 새 Dragonboard을 사용 하는 경우 설치 하는 Android를 사용 하 여 제공 됩니다. 초기화 및 메서드를 깜박이 eMMC를 사용 하 여 장치를 로드 해야 합니다 [여기](https://docs.microsoft.com/en-us/windows/iot-core/tutorials/qualcomm)합니다.
+> 새 Dragonboard를 사용하는 경우 Android가 설치된 상태로 제공됩니다. [여기](https://docs.microsoft.com/en-us/windows/iot-core/tutorials/qualcomm)서 eMMC 플래시 메서드를 사용하여 디바이스의 데이터를 지우고 다시 로드해야 합니다.
 
 > [!NOTE]
-> 프로그램 DragonBoard를 사용 하 여 오디오 관련 문제를 실행 하는 경우 Qualcomm의 수동를 읽는 것이 좋습니다 [여기](https://developer.qualcomm.com/download/db410c/stereo-connector-and-audio-routing-application-note.pdf)합니다. 
+> DragonBoard에서 오디오 관련 이슈가 발생하는 경우 [여기서](https://developer.qualcomm.com/download/db410c/stereo-connector-and-audio-routing-application-note.pdf) Qualcomm의 설명서를 읽어보시기를 권장합니다. 
 
-프로토타입 제작 Dragonboard를 설정할 때 Windows 10 IoT Core 대시보드를 사용 하는 것이 좋습니다. 그러나는 Dragonboard를 사용 하 여 제조 하려는 경우를 참조 하십시오 합니다 [IoT Core 제조 가이드](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)합니다. 제조를 위한 작성자 이미지를 사용할 수 없습니다.
+프로토타입 제작용 Dragonboard를 설정할 때 Windows 10 IoT Core 대시보드를 사용하는 것이 좋습니다. 그러나 Dragonboard를 사용하여 제작하려는 경우에는 [IoT Core 제작 가이드](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)를 참조하세요. 제조사 이미지는 제작에 사용할 수 없습니다.
 <br>
 > [!Video https://www.youtube.com/embed/iPm57hGq-Q8]
 
 ## <a name="using-the-dashboard"></a>대시보드 사용
 
-Flash를 또는 MinnowBoard에 IoT Core를 다운로드 해야 합니다.
-* Windows 10을 실행 하는 컴퓨터 
+IoT Core를 MinnowBoard에 플래시 또는 다운로드하려면 다음이 필요합니다.
+* Windows 10을 실행하는 컴퓨터 
 * [Windows 10 IoT Core 대시보드](https://docs.microsoft.com/windows/iot-core/downloads)
 * MicroUSB 케이블
 * 외부 디스플레이
-* 모든 기타 주변 장치 (예: 마우스, 키보드 등)
+* 그 외 주변 기기(예: 마우스, 키보드 등)
 
 ### <a name="instructions"></a>지침
 
-1. Windows 10 IoT Core 대시보드를 실행 하 고 클릭 *새 장치 설정*합니다.
-2. 장치 유형으로 "Qualcomm [DragonBoard 410 c]"를 선택 합니다.
-3. DragonBoard microUSB 케이블을 사용 하 여 compuetr에 연결 합니다.
-4. 프로그램 DragongBoard 외부 디스플레이에 연결 합니다.
-5. 전원 켜기 12V를 사용 하 여 Dragonboard (> 1A) 전원 공급 장치 볼륨 크게 (+)를 누른 채 단추입니다. 장치--디스플레이에 연결 하는 경우 망치, 번개, 및는 코그의 이미지가 표시 됩니다.
-6. 이제 장치 대시보드에서 아래와 같이 표시 됩니다. 적절 한 장치를 선택 합니다.
-7. 소프트웨어 사용 조건에 동의 하 고 클릭 **다운로드 및 설치**합니다. Windows 10 IoT Core 이제 장치에 깜박이 볼 수 있습니다.
+1. Windows 10 IoT Core 대시보드를 실행하고 *새 디바이스 설정*을 클릭합니다.
+2. 디바이스 유형으로 "Qualcomm [DragonBoard 410c]"를 선택합니다.
+3. microUSB 케이블을 사용하여 DragonBoard를 컴퓨터에 연결합니다.
+4. DragongBoard를 외부 디스플레이에 연결합니다.
+5. 볼륨 크게(+) 단추를 누른 상태에서 12V(>1A) 전원 공급 장치를 사용하여 Dragonboard를 켭니다. 디바이스를 디스플레이에 연결하면 망치, 번개 및 톱니 이미지가 표시됩니다.
+6. 이제 디바이스가 대시보드에 아래와 같이 표시됩니다. 적절한 디바이스를 선택합니다.
+7. 소프트웨어 사용 조건에 동의하고 **다운로드 및 설치**를 클릭합니다. Windows 10 IoT Core가 디바이스에 플래시되는 것을 볼 수 있습니다.
 
-![플래시 모드로 DragonBoard](../media/DeviceSetup/db4.png)
+![플래시 모드의 DragonBoard](../media/DeviceSetup/db4.png)
 
 ## <a name="connect-to-a-network"></a>네트워크에 연결
-### <a name="wired-connection"></a>유선된으로 연결
-이더넷 포트 또는 유선된 연결을 사용 하려면 USB 이더넷 어댑터에서 지 원하는 장치의 상태가 되 면 네트워크에 연결할 이더넷 케이블을 연결 합니다.
+### <a name="wired-connection"></a>유선 연결
+디바이스에 유선 연결을 지원하는 이더넷 포트 또는 USB 이더넷 어댑터가 있는 경우 이더넷 케이블을 연결하여 네트워크에 연결합니다.
 
 ### <a name="wireless-connection"></a>무선 연결
-장치에서 Wi-fi 연결을 지 원하는 경우 디스플레이에 연결 해야 합니다.
+디바이스에서 Wi-Fi 연결이 지원되고 디바이스를 디스플레이에 연결한 경우 다음 단계를 수행해야 합니다.
 
-1. 기본 응용 프로그램으로 이동한 다음 클록 옆에 있는 설정 단추를 클릭 합니다.
-2. 설정 페이지에서 선택 _네트워크 및 Wi-fi_합니다.
-3. 장치의 무선 네트워크에 대 한 검색을 시작 합니다.
-4. 이 목록에 표시 되는 네트워크를 선택 하 고 클릭 _Connect_합니다.
+1. 기본 애플리케이션으로 이동하여 시계 옆에 있는 설정 단추를 클릭합니다.
+2. 설정 페이지에서 _네트워크 및 Wi-Fi_를 선택합니다.
+3. 디바이스가 무선 네트워크 검색을 시작합니다.
+4. 이 목록에 네트워크가 나타나면 네트워크를 선택하고 _연결_을 클릭합니다.
 
-디스플레이 연결 하지 않은 하 고 Wi-fi를 통해 연결 하려는 경우을 해야 합니다.
+디스플레이를 연결하지 않았으며 Wi-Fi를 통해 연결하려는 경우에는 다음 단계를 수행해야 합니다.
 
-1. IoT 대시보드로 이동 하 고 클릭 _내 장치_합니다.
-2. 목록에서 구성 되지 않은 보드를 찾습니다. 이름과 "AJ_"로 시작 됩니다... (예:: AJ_58EA6C68)입니다. 몇 분 정도 지나면 보드 표시 되지 않는 경우 보드를 다시 부팅 하십시오.
-3. 클릭할 _장치 구성_ 네트워크 자격 증명을 입력 합니다. 그러면 네트워크에 보드를 연결 됩니다.
+1. IoT 대시보드로 이동하여 _내 디바이스_를 클릭합니다.
+2. 목록에서 구성되지 않은 보드를 찾습니다. 보드 이름은 "AJ_"로 시작합니다(예: AJ_58EA6C68). 몇 분이 지나도 보드가 보이지 않으면 보드를 다시 부팅합니다.
+3. _디바이스 구성_을 클릭하고 네트워크 자격 증명을 입력합니다. 그러면 보드가 네트워크에 연결됩니다.
 
 > [!NOTE]
-> Wifi를 컴퓨터에 다른 네트워크를 찾을 수 있도록 설정 해야 합니다.
+> 다른 네트워크를 찾으려면 컴퓨터의 Wifi를 켜야 합니다.
 
-## <a name="connect-to-windows-device-portal"></a>Windows Device Portal 연결
+## <a name="connect-to-windows-device-portal"></a>Windows 디바이스 포털에 연결
 
-사용 합니다 [Windows Device Portal](../manage-your-device/DevicePortal.md) 웹 브라우저를 통해 장치를 연결 합니다. 장치 포털 중요 한 구성 및 장치 관리 기능을 사용할 수 있게 합니다. 
+[Windows 디바이스 포털](../manage-your-device/DevicePortal.md)을 사용하여 웹 브라우저를 통해 디바이스를 연결합니다. 디바이스 포털에서는 중요한 구성과 디바이스 관리 기능을 사용할 수 있습니다. 
 
