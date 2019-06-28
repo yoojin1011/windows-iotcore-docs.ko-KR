@@ -8,12 +8,12 @@ ms.prod: windows-iot
 ms.technology: IoT
 description: Windows Device Portal 사용 하 여 구성 하 고 장치를 원격으로 관리 하는 방법에 알아봅니다.
 keywords: windows iot, Windows Device Portal, 원격 장치 포털
-ms.openlocfilehash: 715e9c138e86efcd82b485d832c5fbdd536398dd
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: 8e430365ea09509f5638d86ac77b151226df488f
+ms.sourcegitcommit: 8932969dc50805113c330bc2ba6ec9003d067b3c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59512413"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67412157"
 ---
 # <a name="windows-device-portal"></a>Windows Device Portal
    Windows Device Portal (WDP)를 사용 하 여 구성 하 고 로컬 네트워크를 통해 장치를 원격으로 관리할 수 있습니다.
@@ -22,7 +22,7 @@ ms.locfileid: "59512413"
 ![장치 포털 홈](../media/deviceportal/deviceportal.png)
 
 > [!IMPORTANT]
-> 상용화에 대 한 작성자 이미지를 사용 하지 마세요. 장치 상용화 되, 사용자 지정 FFU 최적의 보안을 위해 사용 해야 합니다. [여기](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)에서 자세한 내용을 알아보세요.
+> 상용화에 제조사 이미지를 사용하지 마세요. 디바이스를 상용화하려는 경우 최적의 보안을 위해 사용자 지정 FFU를 사용해야 합니다. [여기](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)에서 자세한 내용을 알아보세요.
 
 > [!WARNING]
 > 현재 라이브 커널 디버그 ARM 장치에 대 한 실패 합니다. 고정이 노력 합니다.
@@ -188,6 +188,23 @@ HTTPS를 사용 하려는 경우 먼저 이전 섹션에 설명 된 대로 레�
 Windows 10 크리에이터 업데이트 Windows Device Portal HTTPS 통신에 사용 하기 위해 사용자 지정 인증서를 설치 하려면 장치 관리자를 추가 합니다.
 
 자세한 내용은 [Windows Device Portal 문서에 있는 설명서를 읽을](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-ssl)합니다. 
+
+### <a name="crash-dump-settings-for-capturing-memory-dump"></a>덤프 설정은 메모리 덤프 캡처에 대 한 충돌 합니다.
+
+전체 메모리 덤프를 캡처하려면 다음을 수행 합니다.
+
+1. WDP 통해 IoT 장치에 연결 합니다.
+
+2. 디버그에서 설정-> 디버그-> 커널 크래시 설정-크래시 덤프 유형 >입니다. 
+
+3. 선택: 사용 하 여 메모리의 메모리 덤프를 완료 합니다.
+    장치 설정을 적용 하려면 다시 부팅 해야 합니다. 
+    
+4. 확인 `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CrashControl\CrashDumpEnabled` 0x1로 설정 됩니다.
+
+5. 업데이트 `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CrashControl\DumpFileSize` 0x0을 합니다.
+
+6. 이 덤프 생성에 대 한 장치에 충분 한 공간이 있는지 확인 합니다. 여기에서 변경 된 덤프 파일 위치를 구성할 수 있습니다. `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CrashControl\DumpFile`
 
 
 ## <a name="additional-resources"></a>추가 리소스
