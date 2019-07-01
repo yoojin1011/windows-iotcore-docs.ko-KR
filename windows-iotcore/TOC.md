@@ -84,7 +84,7 @@
 ### [Azure IoT 개요](connect-to-cloud/Overview.md)
 ### [디바이스 연결](connect-to-cloud/ConnectDeviceToCloud.md)
 ### [앱 연결](connect-to-cloud/ConnectAppToCloud.md)
-### [Azure 디바이스 관리](manage-your-device/AzureIoTDM.md)
+### [Azure IoT 디바이스 에이전트](manage-your-device/AzureIoTDA.md)
 ## [릴리스 정보]()
 ### [Insider Preview](release-notes/CurrentInsider.md)
 #### [현재: 빌드 17744](release-notes/insider/17744.md)
