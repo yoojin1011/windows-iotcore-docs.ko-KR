@@ -1,34 +1,34 @@
 ---
-title: Mdn 응답 자가 샘플 소스 시작
+title: mDNS 응답기 샘플 소스 시작
 author: saraclay
 ms.author: saclayt
 ms.date: 02/26/2019
 ms.topic: article
-description: Mdn 응답 자가 샘플 소스를 사용 하 여 시작 하는 방법에 알아봅니다.
-keywords: Windows 10 IoT Core, Mdn 응답자 샘플 소스
+description: mDNS 응답기 샘플 소스를 시작하는 방법에 대해 알아봅니다.
+keywords: Windows 10 IoT Core, mDNS 응답기 샘플 소스
 ms.openlocfilehash: eacd22bf4d8a93948706e214fd48262c61c59a08
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
-ms.translationtype: MT
+ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59512278"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "60170613"
 ---
-# <a name="getting-started-with-mdns-responder-sample-source"></a>Mdn 응답 자가 샘플 소스 시작
+# <a name="getting-started-with-mdns-responder-sample-source"></a>mDNS 응답기 샘플 소스 시작
 
 ## <a name="getting-started"></a>시작
 
-1.  프로젝트를 컴파일할 *mDNSResponder* 서비스인 get mDNSResponder.exe 하 합니다. .Exe 대상 컴퓨터에 복사 하 고 서비스 등록을 실행 합니다.
-2. Run “mDNSResponder.exe /?” 인쇄 사용
-3.  프로젝트를 컴파일할 *dnssd*, dnssd.dll 생성 됩니다
-4.  프로젝트를 컴파일할 *mDNSUWP*합니다. 이 UWP broker dnssd.dll에 설명 하는 자체 dll 및 winmd 생성
-5.  프로젝트를 컴파일할 *mDNSTest*, mDNSUWP를 사용 하는 UWP 앱 샘플은 있으며 결국 mDNSResponder 서비스에 설명 합니다.
-6.  UWP 앱이 dnssd.dll와 UWP broker에 따라 달라 집니다 (모든 UWP appx 폴더에 복사 하도록 구성 하는 스크립트는)
-7.  MDNSTest 배포/시작, ID를 설정 하 고 등록를 클릭 합니다. 응답 코드에는 0 (성공)를 사용 해야 합니다.
-8.  동시에 모든 Bonjour 브라우저를 실행 하는 경우 새 가짜 장치 나열 되어야 합니다.
+1.  프로젝트 *mDNSResponder*를 컴파일하여 서비스인 mDNSResponder.exe를 가져옵니다. .exe를 대상 머신에 복사한 다음, 서비스를 등록하고 실행합니다.
+2. "mDNSResponder.exe /?" 실행 사용법 인쇄하기
+3.  프로젝트 *dnssd*를 컴파일하면 dnssd.dll이 생성됩니다
+4.  *mDNSUWP* 프로젝트를 컴파일합니다. dnssd.dll과 대화하고 자체 dll 및 winmd를 생성하는 UWP 브로커
+5.  mDNSUWP를 사용하기 위한 샘플 UWP 앱인 프로젝트 *mDNSTest*를 컴파일하고 종국적으로 mDNSResponder 서비스로 대화합니다.
+6.  이 UWP 앱은 dnssd.dll 및 UWP 브로커에 따라 달라집니다(모든 항목을 UWP appx 폴더에 복사하도록 구성된 스크립트가 있음).
+7.  mDNSTest 배포/시작, ID 설정 및 등록을 클릭하면 응답 코드는 0(SUCCESS)이어야 합니다.
+8.  Bonjour 브라우저를 동시에 실행하면 새(가짜) 디바이스가 나열되어야 합니다.
 
-![Mdn에 대 한 등록](media/mDNS/mDNS1.png)
+![mDNS 등록](media/mDNS/mDNS1.png)
 
 ## <a name="resources"></a>리소스
 
-* Bonjour 호환 Mdn 응답자에 대 한 Windows IoT (샘플 원본)를 다운로드 [여기](https://go.microsoft.com/fwlink/?linkid=2077676)합니다.
+* [여기에서](https://go.microsoft.com/fwlink/?linkid=2077676) Windows IoT용 Bonjour 호환 mDNS Responder를 다운로드하세요(샘플 소스).
 

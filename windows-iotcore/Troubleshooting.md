@@ -1,33 +1,33 @@
 ---
 author: saraclay
-Description: 다른 개발 관련 문제를 해결 합니다.
+Description: 다양한 개발 관련 문제 해결.
 title: 문제 해결
 ms.author: saclayt
 ms.date: 08/28/18
 ms.topic: article
 ms.openlocfilehash: 8b93ad987c27e1123d68c4d22148447ccc99e37d
-ms.sourcegitcommit: 2e7e9555fe71ca60b5f41dbf06051a50520a368a
-ms.translationtype: MT
+ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2019
+ms.lasthandoff: 06/17/2019
 ms.locfileid: "66491705"
 ---
 # <a name="troubleshooting"></a>문제 해결
-사람들이에서 일반적인 문제를 포함 하는 문서입니다. 특정 항목을 찾으려면 단어 또는 문구 검색 하려면 Ctrl + F를 사용 합니다. 예정인 추가 하 시겠습니까? 이 설명서 또는 아래 provident 콘텐츠 사용자 의견에 대 한 PR을 만듭니다.
+이 문서에는 사용자에게 일반적으로 발생하는 문제 해결 이슈가 포함되어 있습니다. Ctrl+F를 사용하여 단어 또는 구문을 입력하면 특정 항목을 찾을 수 있습니다. 추가하려는 인사이트가 있나요? 그렇다면 이 설명서 또는 아래 제공된 콘텐츠 피드백에 대한 PR를 생성하세요.
 
 > [!TIP]
-> 제조와 관련 된 문제 문제 해결을 위해 읽어보세요 합니다 [문제 해결 문서](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/troubleshooting) 있는 제조 지침.
+> 제조와 관련된 문제 해결 이슈의 경우 제조 가이드의 [문제 해결 문서](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/troubleshooting)를 읽어 주세요.
 
-## <a name="asus-tinkerboard-and-rockchip-support"></a>ASU Tinkerboard 및 Rockchip 지원
+## <a name="asus-tinkerboard-and-rockchip-support"></a>ASUS Tinkerboard 및 Rockchip 지원
 
-ASU Tinkerboard 및 Rockchip 우리 공식적으로 지원 되지 않으며는 Rockchip SoC Windows 10 IoT Core 작업을 가져올 다른 제 3 자에 협력 하는 경우가 있습니다.
+ASUS Tinkerboard 및 Rockchip은 공식적으로 지원되지 않지만, SoC가 Windows 10 IoT Core에서 작동할 수 있도록 Rockchip이 다른 타사와 협업한 사례가 있습니다.
 
-## <a name="issue-when-connecting-a-mbm-device-when-roaming"></a>로밍 시 MBM 장치를 연결 하는 문제
+## <a name="issue-when-connecting-a-mbm-device-when-roaming"></a>로밍 시 MBM 디바이스를 연결할 때 발생하는 문제
 
-두 가지 방법으로 로밍 사용 하도록 설정할 때 고려해 야 할 수 있습니다.
+로밍을 사용 설정할 때 고려해야 할 두 가지 사항이 있습니다.
 
-1. profile.xml 로밍 구성 및 셀룰러 네트워크에 대 한 연결을 자동으로 설정 하 고 동작을 설정 합니다.
-설정 로밍 프로필을 참조 하세요 [이 문서에서는](https://docs.microsoft.com/windows/desktop/mbn/schema-root)합니다.
+1. profile.xml은 셀룰러 네트워크에 자동 연결하도록 로밍을 구성하고 동작을 설정합니다.
+로밍에 사용할 프로필을 설정하려면 [이 문서](https://docs.microsoft.com/windows/desktop/mbn/schema-root)를 참조하고
 
 ```
   <!-- applicability to any combination of home carrier, partner MOs and non-partner MOs, except for HomeAndNonPartner -->
@@ -51,7 +51,7 @@ ASU Tinkerboard 및 Rockchip 우리 공식적으로 지원 되지 않으며는 R
   </xs:simpleType>
 ``` 
 
-자동 연결에 대 한 프로필을 설정 하려면 "auto"를 선택 합니다.
+자동 연결에 사용할 프로필을 설정하려면 "auto"를 선택하세요.
 
 ```  
 <!-- Connection Mode, default is "manual" -->
@@ -69,9 +69,9 @@ ASU Tinkerboard 및 Rockchip 우리 공식적으로 지원 되지 않으며는 R
     </xs:element>
 ```
 
-2. 다른 요소 인터페이스별 로밍 정책을 충족 해야 하는입니다. 기본적으로 해당 정책 ("홈 운송 업체만") FALSE로 설정 됩니다. 쿼리 및 명령줄을 통해 변경할 수 있습니다이 `netsh mbn get/set dataroamcontrol.`
+2. 다른 요소로는, 인터페이스 특정 로밍 정책을 충족해야 한다는 것이 있습니다. 기본값으로 이 정책은 FALSE(“홈 통신 회사만")로 설정되어 있습니다. 이 항목은 `netsh mbn get/set dataroamcontrol.`을 통해 쿼리하여 명령줄에서 변경할 수 있습니다.
 
-예:
+예제:
 
 ```
     netsh mbn show dataroamcontrol int=*
@@ -79,66 +79,66 @@ ASU Tinkerboard 및 Rockchip 우리 공식적으로 지원 되지 않으며는 R
     netsh mbn set dataroamcontrol help
 ```
 
-오류가 발생할 수 있습니다 **0x139f (ERROR_INVALID_STATE)** 경우에서 장치를 로밍 중일 때 데이터 로밍-로밍 정책에 따라 연결 요청에 대 한 오류 전송 wwansvc 합니다.
+디바이스가 로밍 중이지만, 로밍 정책에서 데이터 로밍을 허용하지 않는 경우에 **0x139f (ERROR_INVALID_STATE)** 오류가 표시될 수 있습니다. 즉, wwansvc로 전송된 연결 요청에 대한 오류입니다.
 
 ## <a name="raspberry-pi-3b-booting-issues"></a>Raspberry Pi 3B + 부팅 문제
 
 > [!NOTE]
-> Raspberry Pi 3B +이 릴리스에서 지원 되지 않는 기술 미리 보기를 합니다. 제한 된 유효성 검사 및 활성화가 완료 되었습니다. 더 나은 평가판 환경과 모든 상용 제품을 사용 하세요 Raspberry Pi 3B 또는 기타 장치 지원 되는 Intel, Qualcomm, 또는 NXP Soc를 사용 하 여 합니다. Raspberry Pi 3B +를 사용 하 여 문제를 해결, 문제 해결 가이드를 참조 하세요 [여기](https://docs.microsoft.com/en-us/windows/iot-core/troubleshooting?branch=master#raspberry-pi-3b-booting-issues)합니다. 
+> 이번 Raspberry Pi 3B용 릴리스에서는 기술 미리 보기를 지원하지 않습니다. 유효성 검사 및 활성화가 제한적으로 완료되었습니다. 보다 나은 평가 환경은 물론, 상용 제품을 위해 Raspberry Pi 3B 또는 Intel, Qualcomm 또는 NXP SoC가 지원되는 기타 디바이스를 사용해 주세요. Raspberry Pi 3B+ 관련 문제 해결의 경우 문제 해결 가이드([여기](https://docs.microsoft.com/en-us/windows/iot-core/troubleshooting?branch=master#raspberry-pi-3b-booting-issues))를 참조해 주세요. 
 
-Raspberry Pi 3 모델 B +는 최신 제품 Raspberry Pi 3 범위의 1.4 GHz, 이중 밴드 2.4ghz 및 5ghz 무선 LAN, Bluetooth 4.2/BLE 빠르고 이더넷에서 실행 되는 64 비트 쿼드 코어 프로세서를 자랑 하 고는 별도 PoE HA를 통해 PoE 기능입니다.
+Raspberry Pi 3 모델 B+는 Raspberry Pi 3 제품군에서 최신 제품으로서, 1.4GHz에서 실행하는 64비트 쿼드 코어 프로세서, 듀얼 밴드 2.4GHz 및 5GHz 무선 LAN, Bluetooth 4.2/BLE, 더 빨라진 이더넷은 물론, 별도의 PoE HA를 통한 PoE 기능을 자랑합니다.
 
-최근 Windows 10 IoT Core 관심이 많은 고객이 여기서 깜박이 Windows 10 IoT Core 후 장치가 정상적으로 부팅 되지 않을 수 있지만 Raspbian에 정상적으로 문제가 발생 했습니다. 다음은 부팅 문제를 해결 하는 방법에 몇 가지 제안 합니다.
+최근 Windows 10 IoT Core에 관심이 있는 많은 고객이 Windows 10 IoT Core를 플래시한 후 디바이스는 제대로 부팅이 안되는데, Raspbian은 정상 작동하는 문제를 경험했습니다. 다음은 부팅 문제를 해결하는 방법에 대한 몇 가지 제안 사항입니다.
 
-이 Insider Preview 이미지에서 몇 가지 알려진된 문제가 있습니다. note 하십시오.
-* 이 이미지는 Raspberry Pi 3B + 기능만 및 Raspbierry Pi 2에서 부팅 되지 않습니다.
-* Visual Studio에서 F5 드라이버 배포 Windows 10 IoT Core 작동 하지 않습니다.
-* 온 보 딩 Wi-fi 및 Bluetooth Raspberry Pi 3B 이상에서 작동 하지 않습니다.
-* Ft5406 터치 화면 드라이버는 Raspberry Pi 3B 이상에서 사용할 수 없습니다.
-* SD 카드 활동 LED 비활성화 됩니다.
+이 Insider Preview 이미지에 몇 가지 알려진 문제가 있습니다. 참고:
+* 이 이미지는 Raspberry Pi 3B+에만 해당하며 Raspbierry Pi 2에서는 부팅되지 않습니다.
+* Visual Studio에서 배포하는 F5 드라이버는 Windows 10 IoT Core에서 작동하지 않습니다.
+* 온보드 Wi-Fi 및 Bluetooth는 Raspberry Pi 3B+에서 작동하지 않습니다.
+* Ft5406 터치 스크린 드라이버를 Raspberry Pi 3B+에서 사용할 수 없습니다.
+* SD 카드 활동 LED를 사용할 수 없습니다.
 
-Windows 10 IoT Core 사용 하는 SD 카드를 선택할 때 두 가지 요구 사항이 있습니다. 클래스 10 SD 카드를 사용 하 여 카드에 충분 한 공간-최소 8GB의 공간이 있는지 확인 해야 합니다. Windows 10 IoT Core 호환 되도록 하기 위해 Microsoft에서 확인 된 SD 카드의 몇 가지 있습니다.
-* Samsung EVO 32 GB 클래스 10 Micros SDHC 카드
+Windows 10 IoT Core에 사용할 SD 카드를 선택할 때 단 두 가지 요구 사항이 있습니다. 클래스 10 SD 카드를 사용하고 해당 카드에 충분한 공간(최소 8GB의 공간)이 있어야 합니다. Microsoft에서 Windows 10 IoT Core와 호환되는 것으로 검증한 두 어 개의 SD 카드가 있습니다.
+* Samsung EVO 32 GB 클래스 10 마이크로 SDHC 카드
 * SanDisk Ultra 마이크로 SDHC, 16GB 카드
 
-일반적으로 SD 카드가 위조 또는 손상 되거나 손상 될 경우를 확인 해야 합니다. SD 카드는 동일 하 게 발생 하기 쉬운 다양 한 전원 부족 또는 잘못 된 제거와 같은 요인으로 인해 손상입니다. 꺼냅니다 카드 손상 으로부터 보호 하는 것이 반드시 합니다.
+일반적으로 SD 카드가 위조 또는 손상되거나 훼손되지 않았는지 확인해야 합니다. SD 카드는 정전 또는 부적절한 분리 등, 다양한 요인으로 인해 손상되기 쉽습니다. 메모리 카드가 손상되지 않도록 보호하는 것이 중요합니다.
 
-SD 카드 이미지 flash를 사용할 수 있습니다 합니다 [Windows 10 IoT Core 대시보드](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/iotdashboard)합니다. OS 빌드 필드에 "Custom"를 선택 하 고 플래시 FFU 파일을 선택 해야 합니다. 
+이미지를 SD 카드로 플래시하기 위해 [Windows 10 IoT Core 대시보드](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/iotdashboard)를 사용할 수 있습니다. OS 빌드 필드에서 “사용자 지정"을 선택한 후 플래시할 FFU 파일을 선택해야 합니다. 
 
-장치에서 모든 하드웨어 오류가 있는지 확인 합니다. Raspberry Pi 3B + 보드에는 3B 동일 두 led가 있습니다. 한 동안 다른 스냅숏이 ACT에 대 한 전원입니다. 밝은 하면 개수는 보드 부팅 되 고 있는지 여부를 결정 합니다. Raspberry Pi 3B 이상에서 부팅 중 일부는 동안 SD 카드 활동 LED 플래시 되지 않습니다.
+디바이스에 하드웨어 오류가 있는지 확인하세요. Raspberry Pi 3B+ 보드에는 3B와 동일한 두 개의 LED가 있습니다. 하나는 PWR용이고, 다른 하나는 ACT용입니다. ACT 표시등이 깜박이는 횟수로 보드의 부팅 여부를 알 수 있습니다. SD 카드 활동 LED는 Raspberry Pi 3B+가 부팅되는 일부 부분에서는 깜박이지 않습니다.
 
-장치가 부팅 되 고 대기 중인 페이지를 표시 하는 장치를 있으므로 편안 하 게 기다려 주세요. 일반적으로이 값은 1 분까지 지속 됩니다. 하지만 경우에 따라 SD 카드 읽기 / 쓰기 속도, 인해 걸릴 수 있습니다.
+디바이스가 부팅 중이고 대기 페이지를 표시하면 잠시 기다려 주세요. 일반적으로 최대 1분이 걸립니다. 하지만 SD 카드 읽기-쓰기 속도로 인해 더 오래 걸리는 경우도 있습니다.
 
-장치는 Windows 10 IoT Core 사용 하 여 정상적으로 부팅할 수 없습니다, 하는 경우 하드웨어에서 문제가 발생 하는지 여부를 줄이기 위해 SD 카드에 (예: Raspbian) Linux OS를 시도할 수 있습니다. 
+Windows 10 IoT Core에서 디바이스가 정상적으로 부팅되지 않을 경우 Linux OS(Raspbian 등)를 SD 카드로 플래시하여 해당 이슈가 하드웨어에서 발생하는 것인지 한정해 볼 수 있습니다. 
 
-"Rainbow 화면" 보시기를 찾았으면 3B + 릴리스, 사용 가능한 버전을 업데이트 하는 있는지 확인 하십시오 [여기](https://www.microsoft.com/en-us/software-download/windowsiot)합니다. 자습서를 깜박이 커뮤니티 제공 3B +를 사용 하 여 프로세스를 확인할 수 있습니다 [여기](https://www.hackster.io/JiongShi/windows-10-iot-core-for-raspberry-pi-3-model-b-92b1a3)합니다.
+"레인보우 화면"이 표시되면 3B+ 릴리스 버전([여기](https://www.microsoft.com/en-us/software-download/windowsiot))을 플래시했는지 확인해 주세요. 커뮤니티에서 제출한 3B+ 플래싱 자습서([여기](https://www.hackster.io/JiongShi/windows-10-iot-core-for-raspberry-pi-3-model-b-92b1a3))로 프로세스를 확인할 수 있습니다.
 
-## <a name="serial-port-communication-on-windows-10-iot-core-for-raspberry-pi"></a>Raspberry Pi에 대 한 Windows 10 IoT Core 직렬 포트 통신 
+## <a name="serial-port-communication-on-windows-10-iot-core-for-raspberry-pi"></a>Raspberry Pi용 Windows 10 IoT Core의 직렬 포트 통신 
 
-Raspberry Pi에서 하드웨어 UART 및 USB UART 어댑터 모두 직렬 communicaiton 사용 하 여 응용 프로그램에 사용할 수 있습니다. 기본적으로 UART 전송 및 수신 하 여 pin은 pin 8 및 10 GPIO 헤더에 있습니다.
+Raspberry Pi에서 하드웨어 UART 및 USB UART 어댑터 모두 직렬 통신이 지원되는 애플리케이션에 사용 가능합니다. 기본값으로 UART 전송 및 수신 핀은 GPIO 헤더의 8 및 10 핀입니다.
 
 ![UART 및 USB UART 어댑터](media/Troubleshooting/adapters.png)
 
-읽어보세요 [이 문서에서는](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/pinmappings/pinmappingsrpi#serial-uart) UART0를 초기화 하 고 읽기 뒤 쓰기를 수행 하는 방법에 자세히 알아보려면 합니다.
+UART0을 초기화하고 읽기 후 쓰기를 수행하는 방법에 대해 자세히 알아보려면 [이 문서](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/pinmappings/pinmappingsrpi#serial-uart)를 읽어 보세요.
 
-또한 무선 주파수 통신 (RFCOMM)는 클래식 Bluetooth에 대 한 기본 직렬 통신 합니다. 가리킵니다 [이 GitHub 샘플](https://github.com/djaus2/iotbluetoothserial) Bluetooth 일련 번호를 가진 IoT 장치를 통해 연결 된 Windows 10 IoT Core UWP 앱 실행에 대해 자세히 알아보려면 합니다.
+또한 RFCOMM(무선 주파수 통신)은 클래식 Bluetooth의 기본 직렬 통신입니다. Bluetooth 직렬이 지원되는 IoT 디바이스를 통해 연결된 Windows 10 IoT Core에서 UWP 앱을 실행하는 방법을 알아 보려면 [이 GitHub 샘플](https://github.com/djaus2/iotbluetoothserial)을 참조하세요.
 
-장치 수 없습니다. 읽기/쓰기 직렬 포트를 통해 데이터에서 발견 되 면 문제를 해결 하려면 다음 단계를 수행 합니다.
+디바이스가 직렬 포트를 통한 데이터 읽기/쓰기를 수행할 수 없을 경우 아래 단계에 따라 문제를 해결하세요.
 
-1. 점퍼-아래-를 사용 하 여 RX에는 TX를 연결한 경우 앱 수 읽기/쓰기 데이터를 확인 하는 샘플 코드를 실행 합니다. 작동 하지 않는 경우 보드에서 IC 손상 될 수도 있습니다.
+1. 점퍼로 TX-RX를 연결(아래 표시)한 다음, 샘플 코드를 사용하여 해당 앱이 데이터 읽기/쓰기를 수행할 수 있는지 확인합니다. 작동하지 않는 경우 보드의 IC가 손상될 수 있습니다.
 
-![Raspberry Pi에서 RX에는 텍사스](media/Troubleshooting/txrx.png)
+![Raspberry Pi의 TX-RX](media/Troubleshooting/txrx.png)
 
-2. BaudRate, 핸드셰이킹 및 StopBits 올바르게 구성 되어 있는지 확인 합니다. 테스트할 직렬 포트에 RS232 인터페이스 (예: DB9)를 완료 하는 경우 일반적인 핸드셰이킹 crossovers 연결할 RxTx 교차 와이어를 사용 하 여 DB 플러그를 사용 합니다. 일부 RS232 포트 (또는 USB 어댑터)를 제대로 작동 하려면 먼저 평가할 운송 업체 DCD 및 DCE 준비 (DSR)와 같은 신호 필요 합니다.
+2. 전송 속도, 핸드셰이킹 및 정지 비트가 올바르게 구성되어 있는지 확인합니다. 테스트할 직렬 포트에 RS232 인터페이스(예: DB9)가 온전히 있는 경우 일반적인 핸드셰이킹 크로스오버로 연결된 RxTx 크로스오버 와이어를 사용하여 DB 플러그를 사용하세요. 일부 RS232 포트(또는 USB 어댑터)는 제대로 작동하려면 DCD(Carrier Detect) 및 DSR(DCE Ready) 등의 신호를 어설션해야 합니다.
 
-3. Windows 10 IoT Core USB UART 어댑터를 사용 하려는 경우 다음 지원 됩니다.
+3. Windows 10 IoT Core에서 USB UART 어댑터를 사용하려는 경우 다음이 지원됩니다.
 
 * CP2102 USB 2.0
-* TTL 모듈에 대 한 직렬 변환기
+* TTL 모듈 직렬 변환기
 * FTDI
-* 제네릭 usbser.sys
+* Generic usbser.sys
 
-Devcon.exe 스택 이용할 수 있습니다 * 및 devcon.exe 상태 * cmdlet에 필요한 드라이버 스택 및 Windows 10 IoT Core 드라이버 상태를 확인 합니다.
+또한 devcon.exe 스택 * 및 devcon.exe 상태* cmdlet을 사용하여 Windows 10 IoT Core의 예상 드라이버 스택 및 드라이버 상태를 확인할 수도 있습니다.
 
 ```
 USB\VID_10C4&PID_EA60\0001
@@ -147,12 +147,12 @@ USB\VID_10C4&PID_EA60\0001
     Controlling service:
         silabser
 ```
-[Mincomm](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/BusTools/MinComm) 는 직렬 포트 문제를 해결 하는 또 다른 유용한 도구입니다. 이 도구 수 포트 열거 장치 ID와 이름을 제공, 포트를 열어 구성 설정 (즉, 전송 속도, 비트의 정지 비트, 등) 및 데이터 전송 및 수신 합니다. 
+[Mincomm](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/BusTools/MinComm)은 직렬 포트 문제를 해결할 수 있는 또 하나의 유용한 도구입니다. 이 도구는 포트를 열거하고 식별 이름과 디바이스 ID를 지정하고 포트를 개방하며 설정을 구성(예: 전속 속도, 정지 비트 등)하고 데이터를 전송 및 수신할 수 있습니다. 
 
 ## <a name="sirep-test-service"></a>Sirep 테스트 서비스
-Sirep 테스트 서비스를 기본적으로 일반 정품 이미지에서 시작 시 Sirep를 사용 하지 않도록 설정 하려는 경우을 해제 하는 경우에에 로그인 하 고 자동 시작에서 Sirep를 사용 하지 않도록 설정할 수 있습니다. 
+Sirep 테스트 서비스가 리테일 이미지에서 기본값으로 활성화되어 있지 않더라도, 시작 시 Sirep 서비스를 비활성화하길 원한다면 로그인하여 Sirep이 자동 시작되지 않도록 설정할 수 있습니다. 
 
-아래와 같이를 위해 다음 PowerShell 명령을 사용할 수 있습니다.
+비활성화하려면 다음 PowerShell 명령을 사용하세요(아래 그림 참조).
 
 ```
 administrator@MINWINPC C:\Data\Users\administrator>sc stop TestSirepSvc
@@ -182,11 +182,11 @@ administrator@MINWINPC C:\Data\Users\administrator>sc config TestSirepSvc start=
 
 ## <a name="tablet-mode"></a>태블릿 모드
 
-"모드 tablet"는 데스크톱 셸 존재 하는 개념 및 IoT Core에 적용 되지 않습니다. 
+"태블릿 모드”는 데스크톱 셸에만 존재하는 개념으로, IoT Core에는 해당되지 않습니다. 
 
-장치 하드웨어 (두 통해 I2C 또는 USB HID touch) 지원 되는, 터치는 받은 편지함 클래스 드라이버를 사용 하 여 자동으로 작동 해야 합니다. 자세한 내용은이 대 한 [여기](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/touchscreen-device-bus-connectivity)합니다.
+디바이스에 지원되는 하드웨어(I2C 또는 USB HID 터치를 통해)가 있는 경우 터치는 인박스 클래스 드라이버를 사용하여 자동으로 작동해야 합니다. 자세한 내용은 [여기](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/touchscreen-device-bus-connectivity)를 참조하세요.
 
 
 ## <a name="yubikey-support"></a>Yubikey 지원
 
-Windows 10 IoT Core는 스마트 카드 지원은 없습니다. 그러나 스마트 카드는 장치 Pin을 사용 하 여 고 Yubikey, 단추를 누를 경우 보안이 유지 되는 때문에 사용자 id 및 장치 id 아닌에 사용 되는 일반적으로입니다. 이 IoT 장치를 사용 하 여는 조화 하지 않습니다. 대안을 찾고 있는 경우 장치에는 TPM 2.0 보다 Yubikey 또는 스마트 카드를 제공할 수 있습니다. Tpm에 대 한 전체 인증서 지원을 장치 뿐만 아니라 사용자 인증서를 저장 하 고 Azure IoT 액세스 (Limpets) 자격 증명입니다.
+Windows 10 IoT Core에는 스마트 카드 지원이 없습니다. 그러나 스마트 카드는 PIN, 그리고 Yubikey의 경우 누르는 버튼으로 보호되어 있으므로 일반적으로 사용자 ID가 아닌 디바이스 ID에 사용합니다. 따라서 IoT 디바이스와 조화를 이루지 않습니다. 대안을 찾고 있다면 디바이스의 TPM 2.0이 Yubikey 또는 스마트 카드보다 나을 것입니다. Microsoft는 TPM 인증서를 빠짐없이 지원합니다. TPM을 이용하면 사용자 인증서나 Azure IoT 액세스 자격 증명(Limpet)뿐만 아니라 디바이스도 저장할 수 있습니다.
