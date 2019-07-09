@@ -6,19 +6,19 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 언어 및 IoT Core에서 지원 되는 앱 형식에 알아봅니다.
 keywords: windows iot, 언어, 지 원하는 앱 유형, UWP,
-ms.openlocfilehash: 7d330ff2961ba83d969861bbecd1536b02a4833a
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: e0eb046ba874e8433e7632d3f88a63a90b88fa2b
+ms.sourcegitcommit: 8a197111b5b7814b924d77dfea5f9d38760d4288
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59513606"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67627398"
 ---
 # <a name="developing-foreground-applications"></a>포그라운드 응용 프로그램 개발
 UWP 뿐만 아니라 Windows 10 IoT Core 지원 되는 언어 및 IoT Core에서 지원 되는 비 UWP 앱 형식에 알아봅니다.
 
 
 > [!NOTE]
-> Visual Studio는 RS5를 배포 하는 경우 암호화 오류가 생성 됩니다 (또는 RS4 OpenSSH 사용 하 여 사용 하도록 설정) IoT 이미지에서 RS4 이상 SDK는 Visual Studio에 액세스할 수 있도록 설치 되어 있지 않으면입니다.
+> Visual Studio에서 액세스할 수 있는 RS4 이상의 SDK를 설치하지 않으면 RS5(또는 OpenSSH를 사용하는 RS4) IoT 이미지에 배포할 때 Visual Studio가 암호화 오류를 생성합니다.
 
 ## <a name="application-types"></a>응용 프로그램 유형
 ___
@@ -119,10 +119,9 @@ C#UWP 앱으로 모두 지원 되 VB 및.Net의 부분에 대 한 액세스 권�
 샘플:
 
 
-* [C#쳐다 전체 설명서를 사용 하 여 헤드리스](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground)
-* [C#쳐다 헤드리스 코드에만 해당](https://github.com/ms-iot/samples/tree/develop/HelloBlinkyBackground/CS)
-* [VB 쳐다 헤드리스 코드에만 해당](https://github.com/ms-iot/samples/tree/develop/HelloBlinkyBackground/VB)
-* [C#쳐다 UI 앱](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinky)
+* [C#쳐다 헤드리스](https://github.com/microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground/CS)
+* [VB 쳐다 헤드리스](https://github.com/microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground/VB)
+* [C#쳐다 UI 앱](https://github.com/microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinky/CS)
 
 
 ### <a name="javascript"></a>Javascript
@@ -145,7 +144,7 @@ UI 및 백그라운드 앱 빌드에 Javascript를 사용할 수 있습니다. U
 
 * [쳐다 헤드리스](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground/CPP)
 * [쳐다 지 향하는 방향](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinky/Cpp)
-* [콘솔 앱](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/MemoryStatus)
+* [콘솔 앱](https://github.com/microsoft/Windows-iotcore-samples/tree/develop/Samples/MemoryStatus/CPP)
 
 > [!NOTE]
 > 해당 앱을 작성 하려는 사용자에 게 C++, UWP 확인 해야 합니다. C++ 다운로드 시 확인란을 선택 합니다.
@@ -158,7 +157,7 @@ Arduino 연결 지원과 Arduino 여러 인기 있는 구성 요소에 대 한 �
 
 우리의 [Arduino 연결 Project 가이드](../learn-about-hardware/ArduinoWiringProjectGuide.md) 이러한 앱을 빌드를 설정 하는 방법에 대 한 전체 지침을 제공 합니다. 복사 하 고 아래 링크 된 샘플에서는 사용자 고유의 빌드를 시작 합니다.  수도 있습니다 [Arduino WinRT 구성 요소를 빌드](https://github.com/ms-iot/samples/tree/develop/ArduinoLibraryBlinky) 다른 언어에서 사용한 다음입니다. 
 
-*쳐다 샘플 코드* 전체 [샘플 코드 및 문서](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloBlinkyBackground/VB) 샘플에서 사용할 페이지 아래 전체 코드를 찾을 수 있습니다.
+*쳐다 샘플 코드* 전체 [샘플 코드 및 문서](https://github.com/ms-iot/samples/tree/develop/ArduinoLibraryBlinky) 샘플에서 사용할 페이지 아래 전체 코드를 찾을 수 있습니다.
 
 ```C++
 void setup()
