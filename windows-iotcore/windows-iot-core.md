@@ -6,12 +6,12 @@ ms.date: 01/18/2018
 ms.topic: article
 description: Windows 10 IoT Core가 무엇인지와 이를 통해 수행할 수 있는 작업에 대해 알아봅니다.
 keywords: Windows 10 IoT Core, 작은 사용 공간, 헤드리스
-ms.openlocfilehash: 15a3d3e5f1703f87b0f0a0c782bb4cab9b99557f
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 37bbf85028542573972f85954777b7ef26098ce9
+ms.sourcegitcommit: 8a197111b5b7814b924d77dfea5f9d38760d4288
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "66263863"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67627386"
 ---
 # <a name="an-overview-of-windows-10-iot-core"></a>Windows 10 IoT Core 개요
 
@@ -77,7 +77,7 @@ Windows 10 IoT Core는 ARM과 x86/x64 디바이스에서 실행되는 디스플�
 * Windows 10 Desktop에는 Windows 10 IoT Core보다 지원 드라이버가 많습니다. Windows 10 IoT Core에서 테스크톱에서와 동일한 디바이스를 작동시키려면 Windows 10 IoT Core 디바이스용 원본에서 드라이버를 빌드하거나, 특히 ARM 아키텍처에 대한 다른 해결 방법을 찾아야 합니다.
 * Windows 10 IoT Core(ARM)용 libusb에 대한 기본 제공 드라이버가 없습니다. ARM 아키텍처를 대상으로 하는 원본에서 빌드해야 합니다.
 
-### <a name="differences-in-available-registry-set"></a>사용 가능한 레지스트리 집합의 차이점
+### <a name="differences-in-available-registry-set"></a>사용 가능한 레지스트리 세트의 차이점
 
 * 데스크톱에서는 "Windows의 스크롤 막대를 자동으로 숨기기" 옵션을 off로 설정할 수 있습니다. 다음 레지스트리 항목에 의해 제어됩니다. 
 

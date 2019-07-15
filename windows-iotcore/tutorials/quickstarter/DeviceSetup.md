@@ -6,12 +6,12 @@ ms.topic: article
 description: SD 카드를 사용하여 Windows 10 IoT Core로 디바이스를 설정하는 방법을 알아보세요.
 keywords: Windows 10 IoT Core, SD 카드, Windows 10 IoT Core 대시보드
 ms.custom: RS5
-ms.openlocfilehash: ece83dcc7f6961a4614db2ee0c6a1331b009bb47
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 29332c99c9c2136ed8f62421972ee7fec184a9fd
+ms.sourcegitcommit: 8a197111b5b7814b924d77dfea5f9d38760d4288
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "60167731"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67627403"
 ---
 # <a name="setting-up-your-device"></a>디바이스 설정
 
@@ -97,10 +97,10 @@ ms.locfileid: "60167731"
 
 1. 실행 중인 Windows 10 버전과 관련된 [Windows 평가 및 배포 키트](https://docs.microsoft.com/windows-hardware/get-started/adk-install)를 다운로드하여 설치합니다.
 2. USB 드라이브를 머신에 삽입합니다.
-3. 다음과 같이 USB 부팅 가능 WinPE 이미지를 만듭니다.
+3. USB 부팅 가능 WinPE 이미지 만들기:
 4. 관리자로 배포 및 이미지 도구 환경 `(C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools)`를 시작합니다.
 5. Windows PE 파일의 작업 복사본을 만듭니다. x86, amd64 또는 ARM: `Copype amd64 C:\WINPE_amd64`를 지정합니다.
-6. USB 플래시 드라이브에 Windows PE를 설치하고 아래의 WinPE 드라이브 문자를 지정합니다. 자세한 내용은 [여기](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)서 찾을 수 있습니다. `MMakeWinPEMedia /UFD C:\WinPE_amd64 P:`
+6. 아래의 WinPE 드라이브 문자를 지정하여 USB 플래시 드라이브에 Windows PE를 설치합니다. 자세한 내용은 [여기](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)서 찾을 수 있습니다. `MMakeWinPEMedia /UFD C:\WinPE_amd64 P:`
 7. 다운로드한 ISO 파일을 두 번 클릭하고 탑재된 가상 CD 드라이브를 찾아 [Windows 10 IoT Core 이미지](https://downloads.up-community.org/?post_type=wpdmpro&p=204&preview=true)를 다운로드합니다.
 8. 이 드라이브에 포함된 설치 관리자 파일(.msi)을 두 번 클릭합니다. 그러면 PC의 C:\Program Files (x86)\Microsoft IoT\FFU\ 아래에 새 디렉터리가 생성됩니다. 이 디렉터리에 "flash.ffu" 이미지가 있습니다.
 9. 디바이스의 FFU와 함께 [eMMC 설치 관리자 스크립트](https://github.com/ms-iot/content/blob/develop/Resources/eMMCInstaller.zip)를 USB 디바이스의 루트 디렉터리에 다운로드하여 압축을 풀고 복사합니다.
