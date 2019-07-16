@@ -1,17 +1,17 @@
 ---
 title: 크리에이터 스 업데이트-빌드 15063
-author: zeeshanfurqan
-ms.author: zeeshanf
+author: saraclay
+ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: 읽기 및 크리에이터 업데이트의 새로운 기능에 대해 알아봅니다.
 keywords: windows iot, 크리에이터 업데이트 릴리스 정보
-ms.openlocfilehash: 73be3f48ce1051d98aa9ebce06dbdc4682fff0fa
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.openlocfilehash: a8b8fc93d8c079b1b57bbe18f48ea0bc7082dcbe
+ms.sourcegitcommit: 38de3aad11845248dac393ffc51b18c5596af4c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59513526"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68155400"
 ---
 # <a name="creators-update-release-notes-for-windows-10-iot-core"></a>크리에이터 업데이트는 Windows 10 IoT Core 대 한 릴리스 정보
 빌드 15063 번호입니다. 2017년 4월
@@ -26,7 +26,7 @@ Windows 10 IoT Core 장치 포함 또는 전용 용도의 개발 하며 Oem 및 
 
 ## <a name="privacy-statement"></a>개인정보취급방침
 
-이 버전의 Windows 운영 체제에 대 한 개인정보취급방침 볼 수 있습니다 [여기](http://go.microsoft.com/fwlink/?LinkId=506737)합니다.
+이 Windows 운영 체제 버전의 개인정보처리방침은 [여기](http://go.microsoft.com/fwlink/?LinkId=506737)서 볼 수 있습니다.
 
 ## <a name="whats-new"></a>새로운 기능
 * Windows 10 IoT Core 공개 릴리스입니다. 
@@ -65,36 +65,36 @@ Windows 10 IoT Core 장치 포함 또는 전용 용도의 개발 하며 Oem 및 
 
 ### <a name="raspberry-pi"></a>Raspberry Pi  
 
-#### <a name="raspberry-pi-display-resolution-if-monitor-is-disconnected"></a>Raspberry Pi 디스플레이 해상도 모니터 연결이 끊어진 경우 
-모니터의 연결이 끊어진 경우 Raspberry Pi 디스플레이 해상도 유지 하지 않을 수 있습니다. 모니터의 EDID가 연결 된 경우 시스템의 해상도 설정 하는 데 사용 됩니다.  
-연결이 끊긴 경우 Raspberry Pi 펌웨어 SD 카드의 루트에 config.txt의 기본값으로 사용 됩니다. 
+#### <a name="raspberry-pi-display-resolution-if-monitor-is-disconnected"></a>모니터 연결이 끊어진 경우 Raspberry Pi 디스플레이 해상도 
+모니터 연결이 끊어진 경우 Raspberry Pi가 디스플레이 해상도를 유지하지 않을 수 있습니다. 모니터의 EDID가 연결 된 경우 시스템의 해상도 설정 하는 데 사용 됩니다.  
+연결이 끊어지면 Raspberry Pi 펌웨어는 SD 카드의 루트에 있는 config.txt를 기본값으로 사용합니다. 
 
 #### <a name="raspberry-pi-video-performance"></a>Raspberry Pi 비디오 성능 
-Raspberry Pi 플랫폼에서 비디오 재생 성능이 최적화 되지 않았습니다.  XAML 기반 드롭다운 메뉴를 포함 하는 요소는 최상의 성능을 얻지 그러지 않을 사용자를 애니메이션 합니다. 
+Raspberry Pi 플랫폼에서 비디오 재생 성능이 최적화 되지 않았습니다.  XAML 기반 드롭다운 메뉴를 비롯한 애니메이션 사용자 요소가 최적화된 성능을 발휘하지 못할 수 있습니다. 
 
 #### <a name="raspberry-pi-camera-support"></a>Raspberry Pi 카메라 지원 
-Raspberry Pi 장치를 사용 하 여 주변 장치 카메라에 대 한 Windows 10 IoT Core 지원은 제한 됩니다. PiCam 장치 내장 카메라 버스에 직접 연결 된 현재 지원 되지 않습니다, DirectX 드라이버 구현 되지 않은 경우 Raspberry Pi에서 현재 사용할 수 없는 GPU 서비스 필요 하므로 합니다. 최신 USB 웹캠 매우 까다로운 USB 호스트 컨트롤러에는 데이터 스트림을 생성 합니다.  도 함께 사용할 경우 낮은 해상도 설정 웹캠 추가 USB 미세 하 게 조정 해야 및 제어 논리를 특수화 합니다.  
+Raspberry Pi 장치를 사용 하 여 주변 장치 카메라에 대 한 Windows 10 IoT Core 지원은 제한 됩니다. PiCam 장치 내장 카메라 버스에 직접 연결 된 현재 지원 되지 않습니다, DirectX 드라이버 구현 되지 않은 경우 Raspberry Pi에서 현재 사용할 수 없는 GPU 서비스 필요 하므로 합니다. 최신 USB 웹캠 매우 까다로운 USB 호스트 컨트롤러에는 데이터 스트림을 생성 합니다.  저해상도 설정으로 사용하더라도 웹캠에서 USB를 미세 조정해야 하며 특수한 제어 논리가 필요합니다.  
 
 #### <a name="raspberry-pi-3-bluetooth-support"></a>Raspberry Pi 3 Bluetooth 지원 
 Raspberry Pi3 기본 제공 Bluetooth 드라이버 저대역폭 장치만 지원  
 
 #### <a name="serial-port-usage-and-access-on-raspberry-pi-2"></a>Raspberry Pi 2에 대 한 액세스 및 직렬 포트 사용 
-Raspberry Pi 2 PL011 UART을 통한 통신에 대 한 직렬 전송을 지원합니다.  커널 디버깅 시나리오에서에서 기본적으로 설정 됩니다.  응용 프로그램 또는 장치 드라이버를 PL011 UART를 사용 하 여 다음 명령을 사용 하 여 디버거를 끄면 PL011 장치 드라이버를 사용 하 여 데이터를 주고받을 수 있습니다.   
+Raspberry Pi 2는 PL011 UART을 통해 통신에 대한 직렬 전송을 지원합니다.  이는 커널 디버깅 시나리오에서 기본적으로 설정됩니다.  응용 프로그램 또는 장치 드라이버를 PL011 UART를 사용 하 여 다음 명령을 사용 하 여 디버거를 끄면 PL011 장치 드라이버를 사용 하 여 데이터를 주고받을 수 있습니다.   
 `bcedit /set debug off` 
  
 ### <a name="dragon-board"></a>Dragon 보드 
 
-#### <a name="dragonboard-410c-shutdown"></a>Dragonboard 410 c 종료 
-DragonBoard에서 종료 명령을 전원이 꺼지지 않습니다 보드입니다. 시스템 다시 시작 됩니다. 전원 연결을 끊어 보드 끄지 하세요. 
+#### <a name="dragonboard-410c-shutdown"></a>Dragonboard 410c 종료 
+DragonBoard에서 종료 명령을 실행해도 보드 전원이 꺼지지 않습니다. 시스템이 다시 시작됩니다. 전원을 차단하여 보드를 끄세요. 
 
-#### <a name="dragon-board-headset--microphone-jack"></a>Dragon 보드 헤드셋 & 마이크 jack  
-Dragonboard BSP 헤드셋 잭이 및 마이크 jack 드라이버 갖지만 이러한 잭 등록 중 것은 아닙니다.  
+#### <a name="dragon-board-headset--microphone-jack"></a>DragonBoard 헤드셋 및 마이크 잭  
+Dragonboard BSP에는 헤드셋 잭과 마이크 잭의 드라이버가 있지만, 둘 중 어느 잭도 보드에 통합되어 있지 않습니다.  
 
 #### <a name="dragonboard-spi-runs-at-lock-speed"></a>Dragonboard SPI 잠금 속도로 실행 됩니다.  
 에 Dragonboard SPI 요청된 속도 무시 하 고 항상 미리 구성 된 속도로 실행 됩니다.  
 
-#### <a name="dragonboard-connected-standby"></a>Dragonboard 대기 연결 
-연결 된 대기 Qualcomm Dragonboard에서 기본적으로 사용 되지 않습니다.  DragonBoard에 연결 된 대기 상태를 사용 하도록 설정 하려면 다음 레지스트리 키 "1"로 설정 해야 
+#### <a name="dragonboard-connected-standby"></a>Dragonboard 연결된 대기 상태 
+연결된 대기 상태는 Qualcomm Dragonboard에서 기본적으로 사용되지 않습니다.  DragonBoard에 연결 된 대기 상태를 사용 하도록 설정 하려면 다음 레지스트리 키 "1"로 설정 해야 
 <br>
 `HKLM\System\Controlset001\Control\Power\CsEnabled=DWORD:1`
 <br>
@@ -120,10 +120,10 @@ MinnowBoard 최대 MBM () 펌웨어 버전이 0.93 네트워크 연결 오류 �
  
 ### <a name="all-platforms"></a>모든 플랫폼 
 
-#### <a name="mouse-pointer-disappears-while-debugging"></a>디버깅 하는 동안 마우스 포인터 사라집니다. 
+#### <a name="mouse-pointer-disappears-while-debugging"></a>디버깅하는 동안 사라지는 마우스 포인터 
 일부 경우에 배포 하거나 Visual Studio를 사용 하 여 앱을 디버깅 한 후 마우스 포인터를 보이지 않으면, 키보드 (탭)를 사용 하 여 포커스를 변경 하는 경우 마우스 포인터를 다시 표시 해야  
 
-#### <a name="server-applications-with-softap"></a>SoftAP 사용 하 여 서버 응용 프로그램  
+#### <a name="server-applications-with-softap"></a>SoftAP를 사용하는 서버 애플리케이션  
 클라이언트 UAP 앱에 의해 노출 되는 콘텐츠에 액세스할 수 없게 됩니다 SoftAP을 사용할 때  
 SoftAP 통해 UAP 응용 프로그램을 노출 하는 다음 변경 해야 장치 콘솔에서:  
 <br>
@@ -137,48 +137,48 @@ SoftAP 통해 UAP 응용 프로그램을 노출 하는 다음 변경 해야 장�
 <br>
 `Reboot`
 
-#### <a name="sensor-driver-conflict-in-pre-built-ffus"></a>미리 빌드된 FFUs 센서 드라이버 충돌 
-제공 된 FFUs에 충돌 하는 센서 드라이버가 없는 경우 원격 센서 Framework 나침반, 지자기 센터가 속도계 및이 컴 파스에 대 한 드라이버를 설치합니다. 응용 프로그램에서 이러한 액세스에 대 한 UWP Api만 1이 설치 된 것을 가정 합니다. 물리적으로 연결 된 장치 드라이버를 개발 하는 경우 microsoft 원격 드라이버 FFUs 충돌을 제공 합니다.  
-해결 방법: SSH 또는 PowerShell을 통해 장치에 연결 하 고 도구 devcon.exe를 사용 하 여 입력 하 여 원격 센서 드라이버를 제거 하 여 충돌 하는 드라이버를 제거할 수 있습니다 "devcon.exe 제거 @" ROOT\REMOTESENSORDRIVER * "입니다. 원격 센서 드라이버 FFUs를 생성 하는 OEM 영향을 주지 않습니다. 
+#### <a name="sensor-driver-conflict-in-pre-built-ffus"></a>미리 빌드된 FFU의 센서 드라이버 충돌 
+제공된 FFU의 센서 드라이버가 충돌합니다. 원격 센서 프레임워크는 나침반, 자력계, 가속도계 및 자이로스코프의 드라이버를 설치합니다. 애플리케이션에서 이러한 도구에 액세스하는 데 사용되는 UWP API는 1개만 설치된 것으로 가정합니다. 물리적으로 연결 된 장치 드라이버를 개발 하는 경우 microsoft 원격 드라이버 FFUs 충돌을 제공 합니다.  
+해결 방법: SSH 또는 PowerShell을 통해 장치에 연결 하 고 도구 devcon.exe를 사용 하 여 입력 하 여 원격 센서 드라이버를 제거 하 여 충돌 하는 드라이버를 제거할 수 있습니다 "devcon.exe 제거 @" ROOT\REMOTESENSORDRIVER * "입니다. 원격 센서 드라이버는 OEM에서 만든 FFU에 영향을 주지 않습니다. 
  
 #### <a name="default-administrator-user-name-and-password"></a>기본 관리자 사용자 이름 및 암호 
-기본 관리자 사용자 이름 및 암호를 하드 코딩 되어 Windows 10 IoT Core 이미지. 이 장치에 대 한 보안 위험 및 암호가 변경 될 때까지 열려 인터넷 연결으로 노출 되지 않아야 합니다. 
+기본 관리자 사용자 이름 및 암호는 Windows 10 IoT Core 이미지에 하드 코딩됩니다. 이는 디바이스의 보안에 위험 요소로 작동하며, 암호가 변경되기 전에는 열린 인터넷 연결에 노출되면 안 됩니다. 
  
 #### <a name="volume-controls"></a>볼륨 컨트롤 
-USB 마이크와 스피커 시스템 볼륨을 변경 하려면 Windows 시스템에 종속 된에 대 한 하드웨어 볼륨 컨트롤은 현재 Windows 10 IoT Core 지원 되지 않습니다. 
+Windows 시스템을 사용하여 시스템 볼륨을 변경하는 USB 마이크 및 스피커의 시스템 볼륨 컨트롤은 현재 Windows 10 IoT Core에서 지원되지 않습니다. 
  
 #### <a name="usb-keyboards"></a>USB 키보드  
-일부 USB 키보드 및 마우스 IoT Core에서 작동 하지 않을 수 있습니다. 다른 키보드 또는 마우스를 사용 합니다. 유효성이 검사 된 주변 장치 목록을 찾을 수 있습니다 [여기](../../learn-about-hardware/HardwareCompatList.md)합니다.  
+일부 USB 키보드 및 마우스는 IoT Core에서 작동하지 않을 수 있습니다. 다른 키보드 또는 마우스를 사용하세요. 유효성이 검사 된 주변 장치 목록을 찾을 수 있습니다 [여기](../../learn-about-hardware/HardwareCompatList.md)합니다.  
  
-#### <a name="screen-orientation"></a>화면 방향 
+#### <a name="screen-orientation"></a>화면 회전 
 "Portrait" 방향을 설정 수 적용 되지 않습니다 유니버설 앱에서 
  
-#### <a name="referencing-adapters-with-alljoyn-templates"></a>AllJoyn 템플릿 사용 하 여 어댑터 참조 
-특정 SDK 버전을 사용 하는 경우 AllJoyn 어댑터 프로젝트에 대 한 참조를 추가 하는 동안 오류가 발생할 수 있습니다.  이러한 오류를 해결 하려면 현재 SDK 버전에 맞게 Visual Studio의 대상 플랫폼을 변경 하 고 프로젝트를 다시 로드 합니다. 
+#### <a name="referencing-adapters-with-alljoyn-templates"></a>AllJoyn 템플릿을 사용하여 어댑터 참조 
+특정 SDK 버전을 사용하는 경우 AllJoyn 어댑터 프로젝트에 대한 참조를 추가하려고 하면 오류가 발생할 수 있습니다.  이 오류를 해결하려면 Visual Studio의 대상 플랫폼을 현재 SDK 버전에 맞게 변경한 다음, 프로젝트를 다시 로드합니다. 
 
 #### <a name="non-default-drive-mode"></a>기본이 아닌 드라이브 모드  
-Raspberry Pi에 Dragonboard 모드로 전환할 경우 기본이 아닌 드라이브 모드에서는 다른 기본이 아닌 드라이브 GPIO 핀에 결함이 발생할 수 있습니다. 해결 방법: 드라이브 모드 응용 프로그램의 시작 부분에 한 번 설정 합니다. 
+Raspberry Pi 및 Dragonboard에서, 기본이 아닌 드라이브 모드에서 기본이 아닌 다른 드라이브 모드로 전환하면 GPIO 핀에서 문제가 발생할 수 있습니다. 해결 방법: 애플리케이션을 시작할 때 드라이브 모드를 한 번 설정합니다. 
  
-#### <a name="application-already-running"></a>이미 실행 중인 응용 프로그램  
-또한 Visual Studio에서 배포 될 때 기본 시작 앱 자체와 충돌할 수 있습니다. 해결 방법: 배포 하려는 이외의 응용 프로그램에 기본 시작 앱을 변경 합니다. 
+#### <a name="application-already-running"></a>이미 실행 중인 애플리케이션  
+기본 시작 앱 역시 Visual Studio에서 배포하면 자체 앱과 충돌할 수 있습니다. 해결 방법: 기본 시작 앱을 배포하려는 앱이 아닌 다른 애플리케이션으로 변경합니다. 
  
-#### <a name="backgroundmediaplayermessagereceivedfromforeground-may-crash"></a>BackgroundMediaPlayer.MessageReceivedFromForeground 충돌이 발생할 수 있음  
+#### <a name="backgroundmediaplayermessagereceivedfromforeground-may-crash"></a>BackgroundMediaPlayer.MessageReceivedFromForeground가 충돌할 수 있음  
 다음 코드 줄에서 중단 될 수 있습니다: `BackgroundMediaPlayer.MessageReceivedFromForeground += OnMessageReceivedFromForeground;`합니다.
 <br>
 먼저 실행 되도록 크래시를 방지 하려면이 코드를 추가 `var player = BackgroundMediaPlayer.Current;` 
  
 #### <a name="azure-active-directory-authentication-support"></a>Azure Active Directory 인증 지원  
-Azure Active Directory 인증 라이브러리는 Windows 10 IoT Core 작동 하지 않습니다.  
+Azure Active Directory 인증 라이브러리는 Windows 10 IoT Core에서 작동하지 않습니다.  
  
-#### <a name="shell-management-of-application-crashes"></a>응용 프로그램 충돌의 셸 관리 
-IoT Core shell 인프라 APPX 형 응용 프로그램 충돌에 대 한 장치에서 실행을 모니터링 하 고 작동 중단 발생 시 해당 응용 프로그램을 다시 시작 합니다.  다시 시작된 응용 프로그램에 계속 셸에서 __failfast – 버그 검사를 발생 시키는 중요 한 시스템 프로세스를 적용할를 복구 하기 위해 다시 부팅 합니다.  비교할 수 있는 논리와 처리는 백그라운드 작업 및 헤드 구성에서 포그라운드 응용 프로그램에 사용 됩니다.   
+#### <a name="shell-management-of-application-crashes"></a>애플리케이션 충돌의 셸 관리 
+IoT Core의 셸 인프라는 디바이스에서 실행되는 APPX 형식 애플리케이션의 충돌을 모니터링하다가 충돌이 발생하면 해당 애플리케이션을 다시 시작합니다.  다시 시작된 응용 프로그램에 계속 셸에서 __failfast – 버그 검사를 발생 시키는 중요 한 시스템 프로세스를 적용할를 복구 하기 위해 다시 부팅 합니다.  헤드 구성의 백그라운드 작업과 포그라운드 애플리케이션에 비슷한 논리와 처리 방법이 사용됩니다.   
 
-충돌 처리 및 재시도 논리는 아래 캡처됩니다. 
+충돌 처리 및 재시도 논리는 아래에 캡처되어 있습니다. 
 
 Software\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\CBTConfig (또는 지 향하는 방향에 대 한 ForegroundAppConfig) 
 * Qword: "FailureResetIntervalMs" – 앱의 길이 0으로 표시 하는 오류를 다시 설정 하려면 성공적으로 실행 합니다. – 기본값은 0x00000000000493E0 5 분 = =. 
-* Qword:"BaseRetryDelayMs"  -- wait time coefficient.  기본값은 0xa입니다.
-* Dword:"MaxFailureCount". 기본값은 10입니다.
+* Qword: "BaseRetryDelayMs"-대기 시간 계수입니다.  기본값은 0xa입니다.
+* Dword: "MaxFailureCount"입니다. 기본값은 10입니다.
 * DWord: "FallbackExponentNumerator" 기본값은 31입니다.
 * Dword: "FallbackExponentDenominator" 기본값은 20입니다.
  
@@ -198,21 +198,20 @@ delay = (dword) ((float)BaseRetryDelayMs * (crashes_seen ** Fallback_exponent))
 ```
  
 #### <a name="time-synchronization"></a>시간 동기화  
-시간 동기화 실패 하거나 시간 초과이 연결할 수 없는 때문일 수 있습니다 또는 먼 시간 서버를 다음 수행할 수 있는 시간을 추가 또는 로컬 서버를 추가 합니다. 
+시간 동기화가 실패하거나 시간이 초과되면 시간 서버가 멀리 떨어져 있거나 연결할 수 없는 것이 원인일 수 있습니다. 다음을 수행하여 추가 또는 로컬 시간 서버를 추가할 수 있습니다. 
  
-* (예: 장치의 명령줄에서 SSH, PowerShell)  w32tm /config /syncfromflags:manual /manualpeerlist:"0.windows.time.com 1.pool.ntp.org 2. 다른 무언가..." 
+* 디바이스의 명령줄(예: SSH, PowerShell)  w32tm /config /syncfromflags:manual /manualpeerlist:"0.windows.time.com 1.pool.ntp.org 2. 다른 무언가..." 
 * 부팅 스크립트를 통해 레지스트리에 이러한 추가 기능을 만들 수 있습니다 하거나 필요한 경우 이미지 만들기 프로세스의 일부분으로 사용자 지정 런타임을 구성 패키지를 포함 합니다. 
-자세한 내용은 다음을 참조 하세요. 
+자세한 내용은 다음 항목을 참조하세요. 
 * [이미지 파일 및 레지스트리 설정을 추가합니다](https://msdn.microsoft.com/library/windows/hardware/mt670641(v=vs.85).aspx)
 * [Windows 10 IoT Core 이미지 만들기](https://blogs.msdn.microsoft.com/iot/2015/12/14/windows-10-iot-core-image-creation/)
 
-#### <a name="starting-the-ftp-server"></a>FTP 서버를 시작합니다. 
+#### <a name="starting-the-ftp-server"></a>FTP 서버 시작 
 FTP 서버가 더 이상 실행 되는 기본적으로 시작 시 
 <br>
 한 번만 실행 합니다. 
 `Login with SSH\PS` FTP를 시작 하려면이 명령을 실행 합니다.  
-`start ftpd.exe` 
-  
+`start ftpd.exe`    
 모든 부팅 시 실행 하려면 사용자가 스케줄러 작업을 만들어야 합니다. 
 
     Login with SSH\PS and create a scheduler task:       
@@ -221,7 +220,7 @@ FTP 서버가 더 이상 실행 되는 기본적으로 시작 시 
 
 ## <a name="copyright-information"></a>저작권 정보 
 
-© Microsoft. All rights reserved. 
+© Microsoft입니다. All rights reserved. 
  
 이 설명서는 "있는 그대로" 제공됩니다.  정보 및 견해 URL 및 기타 인터넷 웹 사이트 참조를 포함 하 여이 문서의 예 고 없이 변경 될 수 있습니다. 
 
