@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: Windows 10 IoT Core에서 가장 잘 지 원하는 주변 장치 인터페이스 및 프로토콜에 대해 알아봅니다.
 keywords: windows iot, 주변 장치, 프로토콜, 호환성, 버스, 하드웨어
-ms.openlocfilehash: 6e30dd487e86c5e512e156fc47ce795e6830f50a
-ms.sourcegitcommit: 3bfdf0bead481053edaabc1f9de97ffc3fc787cd
+ms.openlocfilehash: d1d97c3bff2fe843216410d07530f4866136bc63
+ms.sourcegitcommit: c5552007f5456e57512307f51b146406a23fa723
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68409370"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68739825"
 ---
 # <a name="hardware-compatibility-list"></a>하드웨어 호환성 목록
 
@@ -94,6 +94,29 @@ Windows 10 IoT Core는 I2C, UART, USB 등과 같은 일반적인 버스에 대 �
 > | [Raspberry PI 용 SeeedStudio Grove Base Hat](https://www.seeedstudio.com/Grove-Base-Hat-for-Raspberry-Pi.html) |ARM| RPI에 대 한 Grove Base Hat는 Raspbery PI 플랫폼의 Seeedstudio Grove 시스템에 대 한 지원을 제공 합니다.| [라이브러리 및 샘플](https://github.com/KiwiBryn/GroveBaseHatWindows10IoTCore) | |
 > | [SeeedStudio Grove Base Hat for Raspberry PI 0](https://www.seeedstudio.com/Grove-Base-Hat-for-Raspberry-Pi-Zero-p-3187.html) |ARM| RPI 0 용 Grove Base Hat는 Raspbery PI 플랫폼의 Seeedstudio Grove 시스템에 대 한 지원을 제공 합니다.| [라이브러리 및 샘플](https://github.com/KiwiBryn/GroveBaseHatWindows10IoTCore) | |
 
+### <a name="semtech-sx127x-based-lora-pi-hatshttpswwwsemtechcomproductswireless-rflora-transceivers"></a>[Semtech SX127X based LoRa® Pi 모자](https://www.semtech.com/products/wireless-rf/lora-transceivers)
+Semtech 's LoRa® 매우 긴 범위 (100M-10KM)의 분산 스펙트럼 통신 기술은 높은 간섭 면역을가지고 있으며, 배터리/e m p 장치를 기존 네트워크 인프라에 연결 하기 위한 저렴 한 솔루션을 제공 합니다.
+
+> | 파트 이름/아니요입니다. | 호환 아키텍처 | 설명 | 관련 링크 | Microsoft 검증  | 
+> |----------------|-------------------|-------------|--------|------------------------------|
+> | [Adafruit LoRa 라디오 Bonnet 433MHz](https://www.adafruit.com/product/4075) | ARM32 | 433MHz LoRa connectivity, 3 개의 단추 및 OLED 디스플레이입니다. | [라이브러리 및 샘플](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+> | [Adafruit LoRa 라디오 Bonnet 868/915MHz](https://www.adafruit.com/product/4074) | ARM32 | 868/915MHz LoRa 연결, 3 개의 단추 및 OLED 디스플레이입니다. | [라이브러리 및 샘플](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+> | [Dragino LoRa GPS Hat for RaspberryPI 433/868/915MHz](http://www.dragino.com/products/lora/item/106-lora-gps-hat.html) | ARM32 | 433/868/915MHz LoRa 연결 옵션 및 GPS. | [라이브러리 및 샘플](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+> | [RPI 915MHz 용 elecrow LoRa RFM95 IoT 보드](https://www.elecrow.com/lora-rfm95-iot-board-for-rpi.html) | ARM32 | 915MHz LoRa 연결 및 Grove 소켓입니다. | [라이브러리 및 샘플](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+> | [Raspberry Pi 0 및 PI3에 대 한 Electronic 트릭 Lora/LoraWan 방패](https://www.tindie.com/products/electronictrik/loralorawan-shield-for-raspberry-pi-zero-and-pi3/) | ARM32 | 868/915MHz LoRa 연결 및 선택적 OLED 디스플레이입니다. | [라이브러리 및 샘플](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+> | [M2M 1 Channel LoRaWan Gateway 방패 for Raspberry Pi](https://www.tindie.com/products/m2m/1-channel-lorawan-gateway-shield-for-raspberry-pi/) | ARM32 | 868/915/923MHz LoRa 연결 옵션입니다. | [라이브러리 및 샘플](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+> | [uputronics Raspberry Pi + LoRa (TM) 확장 보드](https://store.uputronics.com/index.php?route=product/product&path=61&product_id=68) | ARM32 | 433/868/915MHz LoRa 연결 옵션입니다. | [라이브러리 및 샘플](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+> | [uputronics Raspberry PiZero LoRa (TM) 확장 보드](https://store.uputronics.com/index.php?route=product/product&path=61&product_id=99) | ARM32 | 이중 433/868/915MHz LoRa 연결 옵션입니다. | [라이브러리 및 샘플](https://github.com/KiwiBryn/RFM9XLoRa-Net) | |
+
+
+### <a name="nordic-semiconductor-nrf24l01-wireless-pi-hatshttpswwwnordicsemicomproductslow-power-short-range-wirelessnrf24-series"></a>[북유럽어 반도체 nRF24L01 무선 Pi 모자](https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF24-series)
+전 세계 2.5 GHz ISM 대역, 250Kbps, 1Mbps 및 2Mbps 데이터 요금. 낮은 파워 모듈 10의 미터 범위, 높은 전원 모듈 1KM
+
+> | 파트 이름/아니요입니다. | 호환 아키텍처 | 설명 | 관련 링크 | Microsoft 검증  | 
+> |----------------|-------------------|-------------|--------|------------------------------|
+> | [Ceech Raspberry Pi nRF24l01 + 방패](https://www.tindie.com/products/ceech/new-raspberry-pi-to-nrf24l01-shield/) |ARM| Raspberry Pi에 대 한 Raspberry Pi NRF24l01 + 방패 추가 기능에서는 단일 NRF24l01 + 모듈과 버저 및 프로토타입 영역을 지원 합니다.| [라이브러리](https://github.com/techfooninja/Radios.RF24), [샘플 응용 프로그램](https://github.com/KiwiBryn/nRF24L01Windows10IoTCoreDuinoDemo), [필요한 수정](https://blog.devmobile.co.nz/2017/07/31/nrf24-windows-10-iot-core-hardware/) | |
+> | [Boros Rf2-이중 nRF24L01 pHat](https://www.tindie.com/products/boros/borosrf2-dual-nrf24l01-phathat-rtc-for-pis/) |ARM| Boros RF2는 최대 2 개의 NRF24L01 + 라디오 및 선택적 RTC를 지원 합니다.| [라이브러리](https://github.com/techfooninja/Radios.RF24), [샘플 응용 프로그램](https://github.com/KiwiBryn/nRF24L01Windows10IoTCoreDuinoDemo) | |
+
 
 ### <a name="port-expanders"></a>포트 확장 기가
 > | 파트 이름/아니요입니다. | 호환 아키텍처 | 설명 | 관련 링크 | Microsoft 검증  | 
@@ -124,6 +147,7 @@ Windows 10 IoT Core는 I2C, UART, USB 등과 같은 일반적인 버스에 대 �
 > | 파트 이름/아니요입니다. | 호환 아키텍처 | 설명 | 관련 링크 | Microsoft 검증 | 
 > |----------------|-------------------|-------------|--------|------------------------------|
 > | Keith & Koep i-PAN M7 CoverLens | ARM32 | 7.0 인치 Touchpanel 컴퓨터 및 Qualcomm Snapdragon 410E CPU, 해결 방법, 밝기 850cd/qm, USB 2.0, SD 카드, POE와 함께 사용 | [M7 정보를 이동 합니다.](https://keith-koep.com/en/products/products-hmi/i-pan-m7-coverlens-arm-touch-panel-computer-technical-data/) | &#10004; |
+
 
 ### <a name="miscellaneous"></a>기타
 > | 파트 이름/아니요입니다. | 호환 아키텍처 | 설명 | 관련 링크 | Microsoft 검증 | 
