@@ -21,6 +21,7 @@
 #### [Minnowboard Max](learn-about-hardware/PinMappings/PinMappingsMBM.md)
 ### [헤드 및 헤드리스 디바이스](learn-about-hardware/HeadlessMode.md)
 ### [터치 입력 시 절전 모드 해제](learn-about-hardware/WakeOnTouch.md)
+### [UEFI 요구 사항](commercialize-your-device/uefirequirements.md)
 ## [드라이버 지침]()
 ### [드라이버 배포](learn-about-hardware/DriverDeployment.md)
 ### [범용 드라이버 만들기](learn-about-hardware/DriverCreation.md)
