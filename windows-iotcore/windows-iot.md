@@ -6,17 +6,17 @@ ms.date: 01/30/2018
 ms.topic: article
 description: Windows 10 IoT와 이를 통해 수행할 수 있는 작업을 알아봅니다.
 keywords: Windows 10 IoT Enterprise, Windows 10 IoT Core, 헤드리스, 음성, 기능, 이진 버전, 버전
-ms.openlocfilehash: 1e1d2769513005a705c48522d4dc7dc034f5d7b9
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 1c99541f3b52891d2510fa3fa05df68fac7ced14
+ms.sourcegitcommit: c5552007f5456e57512307f51b146406a23fa723
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "66760395"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68739801"
 ---
 # <a name="an-overview-of-windows-10-iot"></a>Windows 10 IoT 개요 
 
 > [!NOTE]
-> Windows 10 컨테이너는 Microsoft Azure IoT Edge를 활용하는 상업용 배포를 위해 Windows IoT Core 및 Windows IoT Enterprise에서만 사용할 수 있습니다.
+> Windows 컨테이너는 Windows Server, Windows IoT Server, Windows IoT Enterprise 및 Windows IoT Core에서 상업용으로 배포할 수 있습니다.  Windows 10월 업데이트 2018(빌드 17763)부터 Windows 컨테이너는 Windows Enterprise 및 Professional에서 개발/테스트 용도로만 사용할 수 있습니다.
 
 ## <a name="what-is-windows-10-iot"></a>Windows 10 IoT란?
 Windows 10 IoT는 사물 인터넷에 엔터프라이즈급 성능, 보안 및 관리 효율성을 제공하는 Windows 10 계열 제품입니다.  Windows의 포함된 환경, 에코시스템 및 클라우드 연결을 활용하여 조직에서 신속하게 프로비저닝되고, 쉽게 관리되며 전체 클라우드 전략에 원활하게 연결할 수 있는 보안 디바이스를 사용하여 해당 사물 인터넷을 만들 수 있도록 합니다.  
