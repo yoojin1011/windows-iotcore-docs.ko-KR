@@ -6,12 +6,12 @@ ms.topic: article
 description: Windows 10 IoT Core를 사용하여 NXP 디바이스를 설정하는 방법을 알아봅니다.
 keywords: Windows 10 IoT Core, NXP
 ms.custom: RS5
-ms.openlocfilehash: 58bed6c49a5a05afe0852572051132f8731dfcb1
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 4924d109ab6fce3b6794a996140364d2814aca23
+ms.sourcegitcommit: 4272081b5186dada1e61974193e41fcc1c42a1b9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "66182175"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69629395"
 ---
 # <a name="setting-up-a-nxp-device"></a>NXP 디바이스 설정
 
@@ -19,6 +19,9 @@ ms.locfileid: "66182175"
 
 > [!IMPORTANT]
 > "이 디스크 포맷" 팝업이 나타나면 디스크를 포맷하지 _마세요_. 이 이슈를 수정하기 위한 작업을 진행 중입니다.
+
+> [!NOTE]
+> NXP에 대한 설정은 Raspberry Pi를 설정하는 것과 거의 동일합니다.
 
 프로토타입 제작용 NXP 디바이스를 설정할 때 Windows 10 IoT Core 대시보드를 사용하는 것이 좋습니다. 그러나 NXP 디바이스를 사용하여 제작하려는 경우에는 [IoT Core 제작 가이드](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)를 참조하세요. 제조사 이미지는 제작에 사용할 수 없습니다.
 <br>
