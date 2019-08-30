@@ -1,17 +1,17 @@
 ---
 title: 17763.253 빌드의 릴리스 정보
-author: zeeshanfurqan
-ms.author: zeeshan.furqan
+ms.author: saclayt
+author: saraclay
 ms.date: 02/14/2019
 ms.topic: article
 description: Windows 참가자 빌드 번호 17763.253의 새로운 기능에 대해 알아봅니다.
 keywords: windows iot, Windows 참가자, 릴리스 정보
-ms.openlocfilehash: dde4089d16ff552e665d341b432f663293ede6b8
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 476efb3edb5a260a6366e92927ebd24a4e648a19
+ms.sourcegitcommit: 823a8f6967f74d71d5c61fe90f6b63ba79483479
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "60168991"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70159304"
 ---
 # <a name="release-notes-for-build-17763253"></a>17763.253 빌드의 릴리스 정보
 _빌드 번호 17763.253. 2019년 2월._
@@ -23,7 +23,7 @@ _빌드 번호 17763.253. 2019년 2월._
 Windows 10 IoT Core를 다운로드해 주셔서 감사합니다. Windows 10 IoT Core는 임베디드 또는 전용 디바이스 개발을 목적으로 설계된 Windows 10 버전으로 제조사 커뮤니티에 적합합니다. 이 릴리스의 패키지에는 Intel Atom 프로세서 기반의 Minnowboard Max 플랫폼, Broadcom 2836/2837 기반의 Raspberry Pi 2/3, Qualcomm Snapdragon 400 시리즈 프로세서 기반의 Dragonboard 410c에 Windows 10 IoT Core를 설치하는 데 필요한 도구 및 콘텐츠가 포함되어 있습니다.
 
 
-## <a name="privacy-statement"></a>개인정보처리방침
+## <a name="privacy-statement"></a>개인정보취급방침
 
 이 Windows 운영 체제 버전의 개인정보처리방침은 [여기](http://go.microsoft.com/fwlink/?LinkId=506737)서 볼 수 있습니다.
 

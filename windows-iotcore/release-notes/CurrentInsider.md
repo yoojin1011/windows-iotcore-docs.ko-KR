@@ -23,7 +23,7 @@ _빌드 번호 17744. 2018년 8월._
 Windows 10 IoT Core를 다운로드해 주셔서 감사합니다. Windows 10 IoT Core는 임베디드 또는 전용 디바이스 개발을 목적으로 설계된 Windows 10 버전으로 제조사 커뮤니티에 적합합니다. 이 릴리스의 패키지에는 Intel Atom 프로세서 기반의 Minnowboard Max 플랫폼, Broadcom 2836/2837 기반의 Raspberry Pi 2/3, Qualcomm Snapdragon 400 시리즈 프로세서 기반의 Dragonboard 410c에 Windows 10 IoT Core를 설치하는 데 필요한 도구 및 콘텐츠가 포함되어 있습니다.
 
 
-## <a name="privacy-statement"></a>개인정보처리방침
+## <a name="privacy-statement"></a>개인정보취급방침
 
 이 Windows 운영 체제 버전의 개인정보처리방침은 [여기](http://go.microsoft.com/fwlink/?LinkId=506737)서 볼 수 있습니다.
 
