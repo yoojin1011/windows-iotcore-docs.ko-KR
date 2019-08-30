@@ -4,80 +4,79 @@ author: bfjelds
 ms.author: bfjelds
 ms.date: 08/28/2017
 ms.topic: article
-description: Windows 디버거를 사용 하 여 Windows IoT Core 장치를 디버그 하는 방법에 알아봅니다.
+description: Windows 디버거를 사용 하 여 Windows IoT Core 장치를 디버그 하는 방법을 알아봅니다.
 keywords: windows iot, 디버거, 디버깅, Windows 디버거, 장치, 도구
 ms.openlocfilehash: e56f5ca837de79aaf0c36cf7d3c6ae6badf3fd16
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59513302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60170281"
 ---
 # <a name="windows-debugger-windbg"></a>Windows 디버거 (WinDbg)
-강력한 Windows 디버거, WinDbg를 사용 하 여 Windows 10 IoT Core 장치를 디버그 합니다.
+강력한 Windows 디버거 인 WinDbg를 사용 하 여 Windows 10 IoT Core 장치를 디버깅 합니다.
 
-다음 섹션에서는 WinDbg를 사용 하 여 디버깅을 위해 Windows 10 IoT Core 장치에 성공적으로 연결 하는 방법에 설명 합니다.  물리적 하드웨어 연결 뿐만 아니라 장치에 필요한 소프트웨어 설정에 대 한 설명을 포함 됩니다.  
+다음 섹션에서는 디버깅을 위해 WinDbg를 Windows 10 IoT Core 장치에 성공적으로 연결 하는 방법을 설명 합니다.  여기에는 장치에 대 한 필수 소프트웨어 설정 및 실제 하드웨어 연결에 대 한 설명이 포함 됩니다.  
 
-WinDbg는 대부분의 Windows 개발자는 잘 알고 있는 강력한 디버거를 합니다.  그러나 바로 시작 하 고 WinDbg에 대 한 자세한 정보를 알아보려면 다음 링크를
+WinDbg는 대부분의 Windows 개발자가 친숙 한 매우 강력한 디버거입니다.  그러나 처음 시작 하 고 WinDbg에 대해 자세히 알아보려면 다음 링크를 방문 하세요.
 
-* [Windows용 디버깅 도구](https://msdn.microsoft.com/library/windows/hardware/ff551063(v=vs.85).aspx) 
+* [Windows 용 디버깅 도구](https://msdn.microsoft.com/library/windows/hardware/ff551063(v=vs.85).aspx) 
 
-* [Windows 디버깅을 시작 하기](https://msdn.microsoft.com/library/windows/hardware/mt219729(v=vs.85).aspx) 
+* [Windows 디버깅 시작](https://msdn.microsoft.com/library/windows/hardware/mt219729(v=vs.85).aspx) 
 
-* [Crash Dump Analysis WinDbg를 사용 하 여](https://msdn.microsoft.com/library/windows/hardware/ff539316(v=vs.85).aspx) 
+* [WinDbg를 사용 하 여 크래시 덤프 분석](https://msdn.microsoft.com/library/windows/hardware/ff539316(v=vs.85).aspx) 
 
 
-## <a name="minnowboard-max-mbm"></a>MinnowBoard 최대 MBM) 
+## <a name="minnowboard-max-mbm"></a>MinnowBoard Max (MBM) 
 
-네트워크 연결을 사용 하 여 MinnowBoard 최대 장치로 WinDbg를 연결할 수 있습니다.
+네트워크 연결을 사용 하 여 WinDbg를 MinnowBoard Max 장치에 연결할 수 있습니다.
 
 ### <a name="setup-network-connection"></a>네트워크 연결 설정
 
-네트워크를 통해 WinDbg를 사용 하 여 커널 디버깅을 사용 하기 위해을 확인 합니다.
+네트워크를 통해 WinDbg에서 커널 디버깅을 사용 하도록 설정 하려면 다음을 확인 합니다.
 
-* 이더넷 케이블 MinnowBoard 최대 장치를 네트워크에 연결 되어 
+* 이더넷 케이블은 MinnowBoard Max 장치에 네트워크에 연결 됩니다. 
 
-* MinnowBoard 최대 장치가 네트워크에 대 한 유효한 IP 주소
+* MinnowBoard Max 장치는 네트워크에 유효한 IP 주소를 포함 합니다.
 
-* 활성 연결을 통해 MinnowBoard 최대 장치로 [PowerShell](../connect-your-device/PowerShell.md) 
+* [PowerShell](../connect-your-device/PowerShell.md) 을 통해 MinnowBoard Max 장치에 대 한 활성 연결 
 
-현재 PowerShell 연결을 사용 하 MinnowBoard 최대 네트워크를 통해 디버깅을 사용 하려면에서 다음 명령을 실행 합니다.
+활성 PowerShell 연결을 사용 하 여 MinnowBoard Max에서 다음 명령을 실행 하 여 네트워크를 통해 디버깅을 사용 하도록 설정 합니다.
 
 * `bcdedit -dbgsettings net hostip:<DEV_PC_IP_ADDRESS> port:<PORT_NUM> key:<KEY>` 
 
-    * 이 명령은 네트워크를 통해 디버깅할 수 있습니다.  또한 여기서 WinDbg 실행 됩니다 (DEV_PC_IP_ADDRESS) PC의 IP 주소를 지정 (PORT_NUM) 연결과 고유 키에 대 한 여러 연결 (키)를 구분 하는 데 사용 하는 네트워크 포트 번호 
+    * 이 명령은 네트워크를 통해 디버깅을 사용 하도록 설정 합니다.  또한 WinDbg를 실행 하는 PC의 IP 주소 (DEV_PC_IP_ADDRESS), 연결에 사용할 네트워크 포트 번호 (PORT_NUM) 및 여러 연결을 구분 하는 데 사용할 고유 키 (키)를 지정 합니다. 
 
-    * PORT_NUM와 키에 대 한 예제로 다음 값을 사용할 수 있습니다. 50045 및 1.2.3.4 각각 수는 있지만 가능 하다 면 이러한 변경
+    * PORT_NUM 및 키의 경우 다음 값을 예제로 사용할 수 있습니다. 50045 및 1.2.3.4 각각에 맞게 변경할 수 있습니다.
     
 * `bcdedit -debug on`
 
-    * 이 명령은 장치에서 디버깅 설정 
+    * 이 명령은 장치에서 디버깅을 설정 합니다. 
 
-* 개발자 PC에서 WinDbg를 PORT_NUM와 같이 이전 단계에서 제공 되는 키 값 시작: `"c:\Program Files (x86)\Debugging Tools for Windows (x86)\windbg.exe" -k net:port=<PORT_NUM>,key=<KEY>`
+* 개발자 PC에서 다음과 같이 이전 단계에서 제공 된 PORT_NUM 및 키 값을 사용 하 여 WinDbg를 시작 합니다.`"c:\Program Files (x86)\Debugging Tools for Windows (x86)\windbg.exe" -k net:port=<PORT_NUM>,key=<KEY>`
 
 > [!NOTE]
-> 설치 된 Windows 키트에 있는 경우에 WinDbg 아래을 알 수 있습니다.
-`C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\WinDbg.exe</code>`
+> Windows 키트가 설치 되어 있는 경우 다음 위치에서 WinDbg를 찾을 수 있습니다.`C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\WinDbg.exe</code>`
 
-* 디버거를 연결할 IoTCore 장치를 다시 부팅
+* 디버거를 다시 연결 하려면 IoTCore 장치를 다시 부팅 합니다.
 
 ## <a name="raspberry-pi-2-or-3-rpi2-or-rpi3"></a>Raspberry Pi 2 또는 3 (RPi2 또는 RPi3) 
 
-WinDbg는 Raspberry Pi 2 또는 3 대 한 직렬 연결을 사용 하 여 연결할 수 있습니다.
+직렬 연결을 사용 하 여 WinDbg를 Raspberry Pi 2 또는 3에 연결할 수 있습니다.
 
 ### <a name="setup-serial-connection"></a>직렬 연결 설정
 
-직렬 연결을 통해 WinDbg를 사용 하 여 커널 디버깅을 사용 하기 위해을 확인 합니다.
+직렬 연결을 통해 WinDbg에서 커널 디버깅을 사용 하도록 설정 하려면 다음을 확인 합니다.
 
-* USB-TTL 직렬 케이블을 같은 디버그 케이블이 [Adafruit](https://www.adafruit.com/product/954) 하거나 [FTDI](http://shop.clickandbuild.com/cnb/shop/ftdichip?productID=53&op=catalogue-product_info-null&prodCategoryID=105)합니다. 
+* [Adafruit](https://www.adafruit.com/product/954) 또는 [FTDI](http://shop.clickandbuild.com/cnb/shop/ftdichip?productID=53&op=catalogue-product_info-null&prodCategoryID=105)의 USB-TTL 직렬 케이블과 같은 디버그 케이블이 있습니다. 
 
-* 이더넷 케이블이 나 (SSH 또는 PowerShell과 같은 IP 연결)에 대 한 네트워크에 Raspberry Pi 2 또는 3 장치를 연결 하는 활성 WiFi를
+* Raspberry Pi 2 또는 3 장치를 네트워크에 연결 하는 이더넷 케이블 또는 활성 WiFi (SSH 또는 PowerShell과 같은 IP 연결의 경우)
 
-* Raspberry Pi 2 또는 3 장치에 올바른 IP 주소를 네트워크
+* Raspberry Pi 2 또는 3 장치는 네트워크에 유효한 IP 주소를 포함 합니다.
 
-* Raspberry Pi 2 또는 3 장치를 통해 활성 연결이 [PowerShell](../connect-your-device/PowerShell.md) 또는 [SSH](../connect-your-device/SSH.md)
+* [PowerShell](../connect-your-device/PowerShell.md) 또는 [SSH](../connect-your-device/SSH.md) 를 통해 Raspberry Pi 2 또는 3 장치에 대 한 활성 연결
 
-UART0은 Raspberry Pi 2 또는 3 장치 커널 디버깅 연결에 사용 됩니다.  다음은 직렬 케이블 뿐만 아니라 Raspberry Pi 2 또는 3 핀 매핑. 
+UART0은 커널 디버깅 연결을 위해 Raspberry Pi 2 또는 3 장치에서 사용 됩니다.  다음은 직렬 케이블 뿐만 아니라 Raspberry Pi 2 또는 3에 대 한 pin 매핑을 보여 줍니다. 
 
         Raspberry Pi 2 or 3 pins:
             Pin #6 : GND
@@ -98,7 +97,7 @@ UART0은 Raspberry Pi 2 또는 3 장치 커널 디버깅 연결에 사용 됩니
             Yellow : RX  (3.3V)
             Green  : RTS (NOT USED)
             
-올바른 직렬 연결에 대 한 기본 개념 하나의 장치에서는 해당 TX 데이터를 전송 하는 동안 다른 장치 데이터를 수신 하는 RX를 사용 해야 하는 것입니다.  연결 권장된 사항은 다음과 같습니다.
+올바른 직렬 연결을 설정 하는 기본적인 이유는 한 장치가 해당 TX를 사용 하 여 데이터를 전송 하는 동안 다른 장치는 해당 RX를 사용 하 여 데이터를 받는 것입니다.  권장 연결은 아래에 나열 되어 있습니다.
 
         If using Adafruit's serial cable:
             [RPi2 or RPi3] Pin #6  (GND) <-> [Adafruti] Black (GND)
@@ -111,53 +110,52 @@ UART0은 Raspberry Pi 2 또는 3 장치 커널 디버깅 연결에 사용 됩니
             [RPi2 or RPi3] Pin #10 (RX)  <-> [FTDI] ORange (TX)
 
 > [!NOTE] 
-> 더 이상 EFIESP 접합이 만들어집니다. 직접 탑재 해야, GUID를 가져올 mountvol 명령을 사용할 수 있습니다.
+> EFIESP 연결을 더 이상 만들지 않습니다. 직접 탑재 해야 합니다. 그러면 mountvol 명령을 사용 하 여 GUID를 가져올 수 있습니다.
 `mkdir C:\EFIESP` 
 `mountvol C:\EFIESP \?\Volume{ae420040-0000-0000-0000-200000000000}` 
 
-활성 PowerShell 연결을 사용 하 여, 직렬 연결을 통해 디버깅을 사용 하려면 Raspberry Pi 2 또는 3 장치에서 다음 명령을 실행 합니다.
+활성 PowerShell 연결을 사용 하 여 Raspberry Pi 2 또는 3 장치에서 다음 명령을 실행 하 여 직렬 연결을 통해 디버깅을 사용 하도록 설정 합니다.
 
 * `bcdedit /store c:\EFIESP\EFI\Microsoft\Boot\BCD -dbgsettings serial` 
 
-    * 위의 명령은 디버깅에 대 한 직렬 연결을 설정
-    * Raspberry Pi 2 또는 3에 대 한 전송 속도 이므로 921600,으로 하드 코딩 지정할 필요가 없습니다.
+    * 위의 명령은 디버깅을 위해 직렬 연결을 사용 하도록 설정 합니다.
+    * Raspberry Pi 2 또는 3의 전송 속도는 921600으로 하드 코딩 되므로 지정할 필요가 없습니다.
 
 * `bcdedit /store c:\EFIESP\EFI\Microsoft\Boot\BCD -debug on`
 
-    * 이 명령은 장치에서 디버깅 설정 
+    * 이 명령은 장치에서 디버깅을 설정 합니다. 
 
-개발자 PC에 USB-TTL 케이블 시스템의 할당 된 포트 번호 포트를 COM 가져옵니다. 이 장치 관리자에서 "포트 (COM 및 LPT)" 아래에서 사용할 수 있습니다.
+개발자 PC에서 USB-TTL 케이블로 시스템에 할당 된 COM 포트 번호 포트를 가져옵니다. 이는 "포트 (COM & LPT)" 아래 Device Manager에서 사용할 수 있습니다.
 
 * `"C:\Program Files (x86)\Debugging Tools for Windows (x86)\windbg.exe" -k com:port=<PORT>,baud=921600` 
 
     * 포트 번호를 사용 하 여 WinDbg 시작
     
 > [!NOTE]
-> 설치 된 Windows 키트에 있는 경우에 WinDbg 아래을 알 수 있습니다.
-`C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\WinDbg.exe`
+> Windows 키트가 설치 되어 있는 경우 다음 위치에서 WinDbg를 찾을 수 있습니다.`C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\WinDbg.exe`
 
-* 디버거를 연결할 IoTCore 장치를 다시 부팅
+* 디버거를 다시 연결 하려면 IoTCore 장치를 다시 부팅 합니다.
 
 
 ## <a name="dragonboard-db"></a>DragonBoard (DB) 
 ___
 
-WinDbg는 직렬 또는 USB 연결을 사용 하 여 DragonBoard 연결할 수 있습니다.
+직렬 또는 USB 연결을 사용 하 여 WinDbg를 DragonBoard에 연결할 수 있습니다.
 
-디버깅을 사용 하려면 다음 명령을 실행 하 여 DragonBoard 현재 PowerShell 또는 SSH 연결을 사용 하 합니다.
+활성 PowerShell 또는 DragonBoard에 대 한 SSH 연결을 사용 하 여 다음 명령을 실행 하 여 디버깅을 사용 하도록 설정 합니다.
 
 * `bcdedit /store c:\EFIESP\EFI\Microsoft\Boot\BCD /debug {default} ON`
-    * 디버거를 사용 하도록 설정
+    * 디버거를 사용 하도록 설정 합니다.
 
 ### <a name="setup-usb-connection"></a>USB 연결 설정
-기본적으로 USB 디버거 설정 테스트 이미지에서 구성 됩니다. 
+기본적으로 USB 디버거 설정은 테스트 이미지에 구성 됩니다. 
 
 > [!NOTE]
-> USB 커널 디버거를 DragonBoard 장치에서 USB 포트 (예:: 키보드, usb 이더넷 작동 하지 않을 수 있습니다) 작동 하지 않을 수 있습니다.
+> USB 커널 디버거가 켜져 있으면 DragonBoard 장치의 USB 포트가 작동 하지 않을 수 있습니다 (즉, 키보드, usb 이더넷이 작동 하지 않을 수 있음).
 
 ### <a name="setup-serial-connection"></a>직렬 연결 설정
 
 * `bcdedit /store c:\EFIESP\EFI\Microsoft\Boot\BCD /dbgsettings  Serial debugport:1 baudrate:115200`
-    * 직렬 포트를 구성합니다.
+    * 직렬 포트를 구성 합니다.
 
-* 디버거를 연결할 IoTCore 장치를 다시 부팅
+* 디버거를 다시 연결 하려면 IoTCore 장치를 다시 부팅 합니다.

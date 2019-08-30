@@ -4,52 +4,52 @@ author: bfjelds
 ms.author: bfjelds
 ms.date: 09/05/17
 ms.topic: article
-description: Windows Device Portal 이나 셸을 사용 하 여 기본 앱을 설정 하는 방법에 알아봅니다.
+description: Windows 장치 포털 또는 셸을 사용 하 여 기본 앱을 설정 하는 방법을 알아봅니다.
 keywords: windows iot, 기본 앱, PowerShell, iot
 ms.openlocfilehash: f3f7a5194491250a8a0b49e81e073282c8f5660b
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59513325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60170250"
 ---
 # <a name="setup-a-default-app"></a>기본 앱 설정
-여기에 기본 응용 프로그램으로 응용 프로그램을 설정 하는 방법을 배웁니다. 기본 응용 프로그램 시스템을 부팅할 때 실행 되는 것입니다.  
+여기서는 응용 프로그램을 기본 응용 프로그램으로 설정 하는 방법을 알아봅니다. 기본 응용 프로그램은 시스템이 부팅 될 때 실행 되는 응용 프로그램입니다.  
 
 > [!NOTE]
-> Visual Studio는 RS5를 배포 하는 경우 암호화 오류가 생성 됩니다 (또는 RS4 OpenSSH 사용 하 여 사용 하도록 설정) IoT 이미지에서 RS4 이상 SDK는 Visual Studio에 액세스할 수 있도록 설치 되어 있지 않으면입니다.
+> Visual Studio에서 액세스할 수 있는 RS4 이상의 SDK를 설치하지 않으면 RS5(또는 OpenSSH를 사용하는 RS4) IoT 이미지에 배포할 때 Visual Studio가 암호화 오류를 생성합니다.
 
 ## <a name="runtime-options"></a>런타임 옵션
 
-개발 중 / 실험적 단계로 다음과 같은 방법으로 기본 앱을 변경할 수 있습니다.
+개발/실험적 단계 중에 다음 방법으로 기본 앱을 변경할 수 있습니다.
 
-### <a name="using-windows-device-portal"></a>Windows Device Portal 사용 하 여
+### <a name="using-windows-device-portal"></a>Windows 장치 포털 사용
 
-클릭할 수 있습니다 **시작** 앱에 해당 하는 열입니다.
+앱에 해당 하는 **시작** 열을 클릭할 수 있습니다.
 ![SetupDefaultAppWDP](../media/SetupDefaultApp/DefaultAppWDP.png)
 
-### <a name="using-the-shell"></a>셸 사용
+### <a name="using-the-shell"></a>Shell 사용
 
 셸을 사용 하 여 기본 앱을 설정 하는 단계 
 
-1. 통해 장치를 연결할 [Powershell](../connect-your-device/PowerShell.md)
+1. [Powershell](../connect-your-device/PowerShell.md) 을 통해 장치에 연결
 
-2. 사용 하 여 설치할 응용 프로그램 나열 `iotstartup list`
+2. 을 사용 하 여 설치 된 응용 프로그램 나열`iotstartup list`
 
-3. 기본적으로 확인 하 여 설정 하려는 응용 프로그램에 대 한 appid 참고 `iotstartup add headed <appid>`합니다. 헤드리스 앱에 대 한 사용할지 `iotstartup add headless <appid>`합니다.
+3. 기본값으로 지정할 응용 프로그램의 appid를 확인 하 고을 사용 하 여 `iotstartup add headed <appid>`설정 합니다. 헤드리스 응용 프로그램의 경우를 사용 `iotstartup add headless <appid>`해야 합니다.
 
 
 ## <a name="build-time-option"></a>빌드 시간 옵션
 
-대규모 배포를 수행 하면 프로 비전 패키지를 사용 하 여
+대량 배포의 경우 프로 비전 패키지를 사용 하 여이를 달성할 수 있습니다.
 
-프로 비전 패키지를 만드는 동안 StartupApp/기본 설정 된 WCD에서 지정할 수 있습니다.
+프로 비전 패키지를 만드는 동안 WCD에서 StartupApp/Default 설정을 지정할 수 있습니다.
 ![SetupDefaultAppICD](../media/SetupDefaultApp/DefaultAppICD.png)
 
-참조 [Appx.IoTCoreDefaultApp](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Packages/Appx.IoTCoreDefaultApp/customizations.xml) 예입니다. 응용 프로그램 사용자 모델 ID ()의 AUMID를 사용 하 여 appx를 가져올 수 있습니다 [GetAppxInfo 도구](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/GetAppxInfo.exe)합니다.
+예를 들어 [IoTCoreDefaultApp](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Packages/Appx.IoTCoreDefaultApp/customizations.xml) 를 참조 하세요. [GetAppxInfo 도구](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/GetAppxInfo.exe)를 사용 하 여 Appx의 응용 프로그램 사용자 모델 ID (AUMID)를 가져올 수 있습니다.
 
 ## <a name="how-to-configure-home-key"></a>"홈" 키를 구성 하는 방법
 
-Windows 10 IoT 1 주년 업데이트 (1607) 다른 응용 프로그램에서 현재 실행 중인 경우 기본 응용 프로그램 창을 전경으로 가져오는 셸 지원을 제공 합니다.
+Windows 10 IoT 기념일 업데이트 (1607)는 다른 응용 프로그램이 현재 실행 중일 때 기본 응용 프로그램 창을 포그라운드로 가져오기 위한 셸을 지원 합니다.
 
-를 "홈" 키를 사용 하는 방법을 보려면 알아보려면 우리의 [IoT 셸 페이지](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoreshell#switching-between-apps-with-hid-injection-keys)
+"홈" 키를 사용 하도록 설정 하는 방법을 보려면 [IoT Shell 페이지](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoreshell#switching-between-apps-with-hid-injection-keys) 를 방문 하세요.

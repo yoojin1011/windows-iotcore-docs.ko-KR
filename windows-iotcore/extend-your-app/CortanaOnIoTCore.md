@@ -1,25 +1,25 @@
 ---
-title: IoT Core에 대 한 Cortana
+title: IoT Core의 Cortana
 author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-description: Windows IoT Core에서 Cortana에 대 한 업데이트를 설치 하 고 시작 하는 방법에 알아봅니다.
-keywords: windows iot, Cortana, 음성, AI, 디지털 도우미, 언어
+description: Windows IoT Core에서 Cortana에 대 한 업데이트를 시작 하 고 설치 하는 방법을 알아봅니다.
+keywords: windows iot, Cortana, 음성, AI, 디지털 길잡이, 언어
 ms.openlocfilehash: c18534a532b0588b54f377acf1092d6916e8a673
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59512366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60170511"
 ---
-# <a name="cortana-on-iot-core"></a>IoT Core에 대 한 Cortana
+# <a name="cortana-on-iot-core"></a>IoT Core의 Cortana
 
-Cortana는 일상 생활에 도움이 되도록 모든 장치에서 작업 하는 개인용 정보 단말기입니다. 에 대 한; 그녀 작업을 완료 하 여 작업을 완료를 표시 하는 데 도움이 됩니다. 자연어를 사용 하 여 일관 되 고 상황에 맞는 방식으로; 상호 작용 위치를 항상 찾습니다 아웃 있습니다. Cortana에 일관 된 시각적 id, 성격, 및 음성.
+Cortana는 매일의 일상 업무에 도움이 되도록 모든 장치에서 작동 하는 개인 디지털 길잡이입니다. 사용자를 학습 합니다. 작업을 완료 하 여 작업을 수행 하는 데 도움이 됩니다. 일관 된 상황별 방식으로 자연어를 사용 하 여 상호 작용 합니다. 및는 항상 사용자를 확인 합니다. Cortana에는 일관적인 시각적 id, 개성 및 음성이 있습니다.
 
-Cortana 장치 SDK를 사용 하 여 장치에서 지능형 핸 즈 프리 지원을 사용 하도록 설정할를 참조 하세요 [는 Cortana 개발자 센터](http://www.aka.ms/cortanadevices)합니다.
+Cortana 장치 SDK를 사용 하 여 장치에서 핸 즈 프리 인텔리전트 지원을 사용 하려면 [Cortana 개발자 센터](http://www.aka.ms/cortanadevices)를 방문 하세요.
 
-IoT Core에서 Cortana 중점적으로 상용 시나리오 나중에 있습니다. 업데이트가 곧 제공 됩니다. 
+IoT Core의 Cortana는 향후 상업적 시나리오에 중점을 둡니다. 업데이트가 곧 제공 될 예정입니다. 
 
 <!--
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Cortana-on-Windows-10-IoT-Core/player]

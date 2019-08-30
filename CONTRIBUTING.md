@@ -74,7 +74,7 @@ PR을 제출하면 Windows 10 IoT 문서 팀의 구성원이 요청을 검토할
 
 토픽 제목과 페이지 URL을 꼭 포함해야 합니다.
 
-## <a name="additional-resources"></a>추가 리소스
+## <a name="additional-resources"></a>추가 자료
 - [GitHub에서 작성 및 포맷 시작](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 
 ## <a name="additional-resources-for-microsoft-employees"></a>Microsoft 직원을 위한 추가 리소스

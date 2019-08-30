@@ -6,14 +6,14 @@ ms.date: 09/11/17
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: IoT
-description: Windows 10 IoT Core Pro에 대 한 가격 책정에 대 한 업데이트에 알아봅니다.
-keywords: windows iot core pro
+description: Windows 10 IoT Core Pro 가격 책정 업데이트에 대해 알아봅니다.
+keywords: windows iot, 코어 pro
 ms.openlocfilehash: 00e86ef3389b62212d35735d5614f1fa852a9184
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59513693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60169091"
 ---
 > [!NOTE]
-> Windows 10 IoT Core 버전 1607에서에서 무료입니다.
+> Windows 10 IoT Core는 버전 1607에서 무료로 제공 됩니다.

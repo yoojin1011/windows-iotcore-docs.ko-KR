@@ -1,31 +1,31 @@
 ---
-title: Arduino 포팅 가이드 연결
+title: Arduino 배선 포팅 가이드
 author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-description: 수정 및 Arduino 연결 하는 프로젝트를 배포할 때 발생 하는 일반적인 문제에 알아봅니다.
-keywords: windows iot에 Arduino 연결, Visual Studio에서 이식
+description: Arduino 배선 프로젝트를 배포할 때 발생 하는 수정 사항 및 일반적인 문제에 대해 알아봅니다.
+keywords: windows iot, Arduino, 배선, Visual Studio, 포팅
 ms.openlocfilehash: 9b1d54807c21a54d8186d7f7ddabc31f16d3dab3
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59512421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60170031"
 ---
-# <a name="arduino-wiring-porting-guide"></a>Arduino 포팅 가이드 연결
+# <a name="arduino-wiring-porting-guide"></a>Arduino 배선 포팅 가이드
 
-라이브러리 및 배선 Arduino 스케치 Visual Studio 내에서 Arduino 연결 프로젝트로 복사/붙여넣을 하 고 Minnowboard 최대, Raspberry Pi 2 및 Raspberry Pi 3에서 실행 될 수 있습니다. 경우에 따라 개 Windows 환경과 더 호환 되도록 하기 위해 이러한 파일에 대해 필요로 하는 약간의 수정을 작업할 보드입니다. 이 가이드에서는 Arduino 연결 하는 프로젝트를 배포할 때 발생할 수 있는 일반적인 문제 뿐만 아니라 이러한 수정 사항을 설명 합니다.
+Arduino 배선 스케치와 라이브러리를 Visual Studio 내부의 Arduino 배선 프로젝트에 복사/붙여 넣고 Raspberry Pi 2, Raspberry Pi 3 또는 Minnowboard Max에서 실행할 수 있습니다. Windows 환경 또는 작업 중인 보드와의 호환성을 위해 이러한 파일을 변경 해야 하는 경우가 가끔 있습니다. 이 가이드에서는 Arduino 배선 프로젝트를 배포할 때 발생할 수 있는 일반적인 문제 및 이러한 수정 사항을 다룹니다.
 
 ## <a name="porting"></a>포팅
 
 ### <a name="updating-pins"></a>Pin 업데이트
 
-언급 하지 않아도 당연 이동 수 있지만 많은 스케치 및 라이브러리 (특히 해당 arduino shields) Arduino 장치에 대 한 특정 커넥터 핀에 대 한 참조를 포함할 수 있습니다. 작업 중인 장치와 사용 하는 구성에 대 한 적절 한 커넥터 핀을 사용 하 여 스케치를 사용자 지정 해야 합니다.
+이 경우를 몰라도 되지만 많은 스케치와 라이브러리 (특히 arduino 실드의 경우)에는 Arduino 장치에 대 한 특정 커넥터 핀에 대 한 참조가 포함 될 수 있습니다. 작업 중인 장치와 사용 중인 구성에 적절 한 커넥터 pin을 사용 하도록 스케치를 사용자 지정할 수 있습니다.
 
-'Pin'를 참조 하는 모든 함수에 대 한 실제 커넥터 pin 번호를 필요 궁극적으로 Arduino 연결 합니다. 이러한 번호를 직접 사용할 수 있지만 특정 보드에서 커넥터 핀에 해당 하는 몇 가지 미리 정의 된 고정 이름이 제공 했습니다.
+Arduino 와이어링은 궁극적으로 ' 핀 '을 참조 하는 모든 함수에 대 한 실제 커넥터 pin 번호가 필요 합니다. 이러한 숫자를 직접 사용할 수 있지만 특정 보드의 커넥터 핀에 해당 하는 미리 정의 된 pin 이름을 제공 했습니다.
 
-예를 들어, Raspberry Pi 2 및 3에 있는 실제 커넥터 핀 29 라고도 `GPIO5`합니다. 다음 명령 중 하나를 사용 하 여 Raspberry Pi 2 및 3에서 높은 상태를 GPIO pin 5를 설정할 수 있습니다.
+예를 들어, Raspberry Pi 2 및 3 `GPIO5`에 대 한 실제 커넥터 29는 라고도 합니다. 다음 명령 중 하나를 사용 하 여 Raspberry Pi 2 및 3에서 GPIO pin 5를 높은 상태로 설정할 수 있습니다.
 ```
 pinMode( 29, OUTPUT );
 digitalWrite( 29, HIGH );
@@ -38,7 +38,7 @@ pinMode( GPIO5, OUTPUT );
 digitalWrite( GPIO5, HIGH );
 ```
 
-미리 정의 된 pin 이름을 찾을 수 있습니다 [pins_arduino.h](https://github.com/ms-iot/lightning/blob/develop/source/pins_arduino.h) 했습니다 Arduino 연결 모든 프로젝트에 있지만 사용할 수 있는 다른 물리적 커넥터 핀에 대 한 작성 하는 하드웨어 설정에 따라 이후를 포함 하 고 고정 이름은 각 장치에 사용할 수 있는 설명 하기 위해 여기에서 테이블도 포함 합니다.
+미리 정의 된 pin 이름은 pins_arduino에서 찾을 수 있으며 모든 Arduino 배선 프로젝트에 포함 될 수 있지만, 빌드 중인 하드웨어 설정에 따라 사용할 수 있는 다른 실제 커넥터 pin이 있으므로 테이블도 포함 되어 있습니다 [.](https://github.com/ms-iot/lightning/blob/develop/source/pins_arduino.h) 각 장치에 사용할 수 있는 pin 이름을 설명 합니다.
 
 #### <a name="raspberry-pi-2-and-3"></a>Raspberry Pi 2 및 3
 
@@ -48,29 +48,29 @@ digitalWrite( GPIO5, HIGH );
 > | Pin 정의 | 해당 Pin 번호|
 > |-------------|----------|
 > | LED_BUILTIN | *온보드 LED* |
-> | GPIO * _여기서 * 참조 [0, 27]_ | *핀아웃 다이어그램을 참조 하세요* |
+> | GPIO * _여기서 *는 [0, 27]을 참조 합니다_ . | *핀아웃 다이어그램 참조* |
 > | GCLK | 7 |
-> | 범용 * _여기서 * 참조 [0, 5]_ | * 핀아웃 다이어그램을 참조 하세요. |
+> | GEN * _여기서 *는 [0, 5]를 참조 합니다_ . | \* 핀아웃 다이어그램 참조 |
 > | SCL1 | 5 |
 > | SDA1 | 3 |
-> | CS0 (CE0 또는 SS) | 24 |
+> | CS0 (또는 CE0 또는 SS) | 24 |
 > | CS1 (또는 CE1) | 26 |
 > | SCLK (또는 SCK) | 23 |
 > | MISO | 21 |
 > | MOSI | 19 |
 > | RXD | 10 |
-> | TXD | 8 |
+> | 트랜잭션 | 8 |
 
-#### <a name="minnowboard-max"></a>Minnowboard 최대
+#### <a name="minnowboard-max"></a>Minnowboard Max
 
 ![핀아웃 다이어그램](../media/ArduinoWiringPortingGuide/MBM_Pinout.png)
 > [!div class="mx-tdBreakAll"]
 > | Pin 정의 | 해당 Pin 번호|
 > |-------------|----------|
-> | GPIO * _여기서 * 참조 [0, 9]_  | *핀아웃 다이어그램을 참조 하세요* |
+> | GPIO * _여기서 *은 [0, 9]를 참조 합니다_ .  | *핀아웃 다이어그램 참조* |
 > | SCL | 13 |
 > | SDA | 15 |
-> | CS0 (CE0 또는 SS) | 5 |
+> | CS0 (또는 CE0 또는 SS) | 5 |
 > | SCLK (또는 SCK)| 11 |
 > | MISO |7 |
 > | MOSI | 9 |
@@ -84,21 +84,21 @@ digitalWrite( GPIO5, HIGH );
 
 ## <a name="common-problems"></a>일반적인 문제
 
-### <a name="cant-find-arduino-wiring-application-visual-c-project-template-in-visual-studio"></a>"Arduino 응용 프로그램 연결" 시각적 개체를 찾을 수 없습니다 C++ Visual Studio에서 프로젝트 템플릿
+### <a name="cant-find-arduino-wiring-application-visual-c-project-template-in-visual-studio"></a>Visual Studio에서 "Arduino 배선 응용 프로그램 C++ " 시각적 프로젝트 템플릿을 찾을 수 없습니다.
 
-**원인**: Visual Studio 용 Windows IoT 프로젝트 템플릿 확장 설치 되지 않았습니다.
+**원인**: Visual Studio 용 Windows IoT 프로젝트 템플릿 확장이 설치 되어 있지 않습니다.
 
-**해결 방법**: Visual Studio 확장에 대 한 Windows IoT 프로젝트 템플릿을 설치 해야 Visual Studio에서 프로젝트 Arduino 연결을 만들 수 있습니다. 로 이동 [Windows IoT Core 프로젝트 템플릿에 확장 페이지](https://go.microsoft.com/fwlink/?linkid=847472) Visual Studio 갤러리에서 확장을 다운로드 하려면!
+**해결 방법**: Visual Studio에서 Arduino 배선 프로젝트를 만들려면 먼저 Windows IoT 용 Visual Studio 확장 프로젝트 템플릿을 설치 해야 합니다. [Windows IoT Core 프로젝트 템플릿 확장 페이지로](https://go.microsoft.com/fwlink/?linkid=847472) 이동 하 여 Visual Studio 갤러리에서 확장을 다운로드 합니다.
 
-### <a name="error-identifier-not-found-when-calling-a-function"></a>오류: 찾을 수 없음 "식별자" 함수를 호출 하는 경우
+### <a name="error-identifier-not-found-when-calling-a-function"></a>오류: 함수를 호출 하는 동안 "식별자를 찾을 수 없습니다."
 
-**원인**: 이 오류는 문서에 아직 선언 되지 않은 함수 호출 되 면 링커 프로세스 중에 발생 합니다.
+**원인**: 이 오류는 문서에서 아직 선언 되지 않은 함수를 호출할 때 링커 프로세스 중에 발생 합니다.
 
-**해결 방법**: C++에서 모든 함수 호출 전에 선언 되어야 합니다. 스케치 파일에서 새 함수를 정의한 경우 선언 또는 함수의 전체 구현 (일반적으로 문서 위쪽)에서 호출 하려는 모든 시도가 보다 커야 합니다.
+**해결 방법**: 에서는 C++모든 함수를 호출 하기 전에 선언 해야 합니다. 스케치 파일에 새 함수를 정의한 경우 함수를 호출 하는 데 필요한 선언 또는 전체 구현에서이 함수를 호출 해야 합니다 (일반적으로 문서 맨 위).
 
 **예**:
 
-다음 코드 블록은 오류 발생 "'myFunction': 식별자를 찾을 수 없습니다"
+다음 코드 블록은 "' myFunction ': 식별자를 찾을 수 없음" 오류를 발생 시킵니다.
 
 ```
 void setup()
@@ -117,7 +117,7 @@ void myFunction()
 }
 ```
 
-두 가지 솔루션이 있습니다. 첫째, 위의 모든 호출 함수를 선언할 수 있습니다. 일반적으로이 선언 파일의 맨 위에 있는 이루어집니다.
+두 가지 솔루션이 있습니다. 먼저 모든 호출 위에 함수를 선언할 수 있습니다. 일반적으로이 선언은 파일 위쪽에서 수행 됩니다.
 
 ```C++
 // Declare function here
@@ -140,7 +140,7 @@ void myFunction()
 }
 ```
 
-또는 전체 구현의 위의 모든 호출 함수를 이동할 수 있습니다. 이 선언와 동시에 함수 정의의 효과가 있습니다.
+또는 함수의 전체 구현을 모든 호출 위로 이동할 수 있습니다. 이 경우 함수를 동시에 선언 하 고 정의 하는 효과가 있습니다.
 
 ```C++
 void setup()
@@ -158,17 +158,17 @@ void loop()
 }
 ```
 
-### <a name="my-solution-hangs-infinitely-when-being-initialized"></a>필자의 솔루션 초기화 되는 경우에 무한 중단 됩니다.
+### <a name="my-solution-hangs-infinitely-when-being-initialized"></a>초기화 될 때 내 솔루션이 무한히 중단 됨
 
-알려진 문제가 발생할 수 있습니다는 C++ 무한 중단 솔루션 초기화 되는 (deadlock). 하면 영원히 중단 솔루션이 나타나고 디버거를 사용 하 여 '중단' 문에 Arduino 연결 응용 프로그램의 setup() 또는 loop () 섹션에서 수 없는 경우이 유형의 문제가 발생할 수 있습니다.
+초기화 될 때 C++ 솔루션이 무한히 중단 (교착 상태)을 일으킬 수 있는 알려진 문제가 있습니다. 솔루션이 중단 된 것 처럼 보이고 디버거를 사용 하 여 Arduino 배선 응용 프로그램의 setup () 또는 loop () 섹션에 있는 모든 문에 ' 중단 ' 하는 경우이 문제가 발생할 수 있습니다.
 
-**원인**: 개체를 만들 되 또는 솔루션 초기화 완료 되기 전에 비동기 작업을 이동 하는 함수 호출 되 고 있습니다. 와 같은 API 함수를 호출 하는 개체의 생성자에서 오류로 인 `pinMode`합니다.
+**원인**: 솔루션의 초기화가 완료 되기 전에 asyncronous 작업을 수행 하는 함수가 생성 되거나 함수가 호출 되 고 있습니다. 개체의 생성자가와 같은 `pinMode`API 함수를 호출 하는 경우에 발생할 수 있습니다.
 
-**해결 방법**: 개체 생성자를 이동 하 고 함수 및 코드의 초기화 섹션에서 호출 된 `setup()` 블록입니다.
+**해결 방법**: 모든 개체 생성자 및 함수 호출을 코드의 초기화 섹션과 `setup()` 블록으로 이동 합니다.
 
 **예 1**:
 
-호출 된 함수를 호출 하는이 스케치 실행 `setPinModes()` 솔루션 자체 초기화 되기 전에 합니다. 솔루션 실행 되지만를 표시 하는 무한 중단 합니다.
+이 스케치의 실행은 솔루션 자체가 초기화 되기 `setPinModes()` 전에 호출 되는 함수를 호출 합니다. 솔루션이 실행 되는 것 처럼 보이지만 무한히 중단 됩니다.
 
 ```C++
 bool setPinModes();
@@ -197,7 +197,7 @@ bool setPinModes()
 }
 ```
 
-아래 솔루션은를 실행 하기만 하면 옮겼습니다 `setPinModes()` 에 `setup()` 함수:
+이 솔루션은 아래와 같이 단순히 실행 `setPinModes()` `setup()` 을 함수로 이동 했습니다.
 
 ```C++
 bool setPinModes();
@@ -228,7 +228,7 @@ bool setPinModes()
 
 **예 2**:
 
-이 스케치를 실행 하기 전에 스택에서 개체를 만듭니다 `setup()` 가 호출 되었습니다. 개체 호출 이후 `pinMode` 생성자를 통해이 또한는 교착 상태가 발생 합니다. 일반적이 지 않은 문제가 이지만 특정 라이브러리에서 개체를 사용 하 여 발생할 수 있습니다 (에서 Arduino 같은 `LiquidCrystal` 라이브러리)입니다.
+이 스케치를 실행 하면가 호출 되기 전에 `setup()` 스택에서 개체가 만들어집니다. 개체는 생성자에서 `pinMode` 를 호출 하므로 교착 상태가 발생 하기도 합니다. 이러한 문제는 드문 경우 지만 특정 라이브러리 (예: Arduino `LiquidCrystal` 라이브러리)의 개체에 발생할 수 있습니다.
 
 ```C++
 class MyObject
@@ -257,7 +257,7 @@ void loop()
 }
 ```
 
-솔루션에는 다음과 같습니다. 개체는 개체 포인터에 대 한 변경 되 고 개체를 초기화 하는 이동 되었습니다 `setup()`합니다.
+해결 방법은 다음과 같습니다. 개체를 개체 포인터로 변경 하 고 개체 초기화를로 `setup()`이동 했습니다.
 
 ```C++
 class MyObject
@@ -287,30 +287,30 @@ void loop()
 }
 ```
 
-### <a name="using-serialprint-and-serialprintln"></a>사용 하 여 `Serial.print()` 및 `Serial.println()`
+### <a name="using-serialprint-and-serialprintln"></a>및 `Serial.print()` 사용`Serial.println()`
 
-많은 Arduino 스케치 사용 `Serial` (열) 하는 경우 직렬 콘솔에 데이터를 인쇄 하거나 (USB 또는 tx/rx) 직렬 회선에 쓸 수 있습니다. 하드웨어 번개 SDK의 이전 버전에서 `Serial` 지원의 제공 것 들이 포함 되지 않은 `Log()` 디버거를 인쇄 하는 함수 출력 Visual Studio의 창. `Serial.print*()` 또는 `Serial.write()` 제거 되었습니다.
+많은 Arduino 스케치는 `Serial` 데이터를 직렬 콘솔에 인쇄 하거나 (열려 있는 경우) 직렬 회선 (USB 또는 tx/rx)에 쓰는 데 사용 합니다. 이전 버전의 라이트닝 SDK에서는 하드웨어 `Serial` 지원이 포함 되지 않았기 때문에 Visual Studio의 디버거 출력 창에 인쇄 되는 `Log()` 함수를 제공 했습니다. `Serial.print*()`또는 `Serial.write()` 를 제거 해야 했습니다.
 
-그러나부터 _번개 SDK v1.1.0_를 추가 했습니다 `Hardware Serial` 지원과 둘 다 `Serial.print*()` 또는 `Serial.write()` 함수 완전히 지원 됩니다. 따라서 Arduino 용으로 빌드된 스케치를 복사 하는 경우 Windows IoT 버전 스케치에서 직렬 이러한 참조 중 하나를 바꿀 필요가 없습니다.
+그러나 _라이트닝 SDK v 1.1.0_부터 지원을 추가 `Hardware Serial` 하 고 또는 `Serial.write()` 함수를 모두 `Serial.print*()` 완전히 지원 합니다. 따라서 Arduino에 대해 빌드된 스케치를 복사 하는 경우에는 Windows IoT 버전의 스케치에서 이러한 직렬 참조를 바꿀 필요가 없습니다.
 
-또한의 기능을 확장 한 것 `Serial.print()` 및 `Serial.println()`, 하드웨어 직렬 핀에 작성 하는 것 외에도-는 디버거가 연결 될 때 디버거 창에 출력 합니다.
-디버그 인쇄 출력 집합 출력 때 사용할 대부분의 사용자는 읽기 이후 기본적으로 실행 중인 해당 스케치 합니다. 그러나 기능을 사용할 수도; 예: 성능 향상을 위해 호출 `Serial.enablePrintDebugOutput(false);` 스케치가 사용 하지 않도록 설정 합니다. 다시 사용 하려면 호출 `Serial.enablePrintDebugOutput(true);`합니다. 하드웨어 직렬 핀에 쓰기 호출을 받지 않습니다.
+또한 및의 `Serial.print()` 기능을 확장 하 고, `Serial.println()`디버거가 연결 될 때 디버거 창에 출력 하 고, 하드웨어 직렬 핀에 쓰기를 추가 합니다.
+디버그 출력은 해당 출력을 읽을 때 대부분의 사용자가 해당 스케치를 실행할 때 사용할 수 있는 것 이므로 기본값으로 설정 됩니다. 그러나이 기능을 사용 하지 않도록 설정할 수도 있습니다. 예를 들어 성능을 향상 시키려면를 호출 `Serial.enablePrintDebugOutput(false);` 하 여 스케치에서 사용 하지 않도록 설정 하면 됩니다. 다시 사용 하도록 설정 하려면를 호출 `Serial.enablePrintDebugOutput(true);`합니다. 하드웨어 직렬 pin에 대 한 쓰기는 해당 호출의 영향을 받지 않습니다.
 
-Note 출력이 디버거 창에 전송 하는 FTDI 같은 직렬 핀에는 모든 주변 장치를 연결할 필요가 없습니다. 그러나 응용 프로그램이 디버깅 되 고 하는 동안 디버거 창을 열려 있는지 확인 해야 합니다.
+디버거 창으로 전송 되는 출력을 가져오기 위해 FTDI와 같은 직렬 핀에는 주변 장치를 연결할 필요가 없습니다. 그러나 응용 프로그램을 디버깅 하는 동안 디버거 창이 열려 있는지 확인 해야 합니다.
 
 ![디버거 출력](../media/ArduinoWiringPortingGuide/debugger_output.png)
 
-업데이트 된 프로젝트 템플릿 합니다 [Windows IoT Core 프로젝트 템플릿에 확장 페이지](https://go.microsoft.com/fwlink/?linkid=847472) 하드웨어를 사용 하도록 설정 하려면 `Serial` 즉시 합니다. 그러나 Arduino 연결 응용 프로그램에 이미 생성 된 경우 이전 프로젝트 템플릿 버전을 사용 해야 1) 최신 번개 sdk 프로젝트를 업그레이드 하려면 v1.1.0 이상, 2)에 필요한 하드웨어 직렬 장치 기능이 추가 프로그램 사용할 수 있게 되기를 AppxManifest `Serial`합니다.
+기본 하드웨어 `Serial` 를 사용할 수 있도록 [Windows IoT Core 프로젝트 템플릿 확장 페이지](https://go.microsoft.com/fwlink/?linkid=847472) 에서 프로젝트 템플릿이 업데이트 되었습니다. 그러나 이전 프로젝트 템플릿 버전을 사용 하 여 Arduino 배선 응용 프로그램을 이미 만든 경우에는 1) 프로젝트를 최신 번개 SDK, v 1.1.0 이상으로 업그레이드 하 고 2) 필요한 하드웨어 직렬 장치 기능을에 추가 해야 합니다. 사용할 `Serial`수 있는 appxmanifest.xml입니다.
 
 ### <a name="hardware-serial-device-capability-requirements"></a>하드웨어 직렬 장치 기능 요구 사항
 
-Windows 10 IoT Core 하드웨어 직렬 기능 AppX 매니페스트에 추가 하는 장치 기능 선언에 필요 합니다.
+Windows 10 IoT Core의 하드웨어 직렬 기능을 사용 하려면 장치 기능 선언이 AppX 매니페스트에 추가 되어야 합니다.
 
-파일을 찾을 `Package.appxmanifest` 솔루션 탐색기에서 파일 이름을 입력 하 여 프로젝트에서. 그런 다음, 파일을 마우스 오른쪽 단추로 클릭 하 고 프로그램을 선택 '...'. 'XML (텍스트) 편집기'를 선택 하 고 [확인]을 클릭 합니다.
+솔루션 탐색기에서 `Package.appxmanifest` 파일 이름을 입력 하 여 프로젝트에서 파일을 찾습니다. 그런 다음 파일을 마우스 오른쪽 단추로 클릭 하 고 ' 연결 프로그램 ... '을 선택 합니다. ' XML (텍스트) 편집기 '를 선택 하 고 ' 확인 '을 클릭 합니다.
 
-![Package.appxmanifest를 업데이트 하는 중](../media/ArduinoWiringPortingGuide/appxmanifest_search.png)
+![Appxmanifest.xml를 업데이트 하는 중](../media/ArduinoWiringPortingGuide/appxmanifest_search.png)
 
-Appx 매니페스트 파일 편집기에서 추가 된 `serialcommunication` DeviceCapability 다음 XML 조각에서와 같이 프로젝트:
+Appx 매니페스트 파일 편집기에서 다음 XML 코드 조각과 `serialcommunication` 같이 DeviceCapability를 프로젝트에 추가 합니다.
 
 ```xml
 <Capabilities>
@@ -330,14 +330,14 @@ Appx 매니페스트 파일 편집기에서 추가 된 `serialcommunication` Dev
 </Capabilities>
 ```
 
-### <a name="upgrade-your-project-to-the-latest-lightning-sdk"></a>프로젝트가 최신 번개 SDK로 업그레이드
+### <a name="upgrade-your-project-to-the-latest-lightning-sdk"></a>프로젝트를 최신 번개 SDK로 업그레이드
 
-Arduino 연결 프로젝트에 따라 달라 집니다를 [번개 SDK Nuget 패키지](https://www.nuget.org/packages/Microsoft.IoT.Lightning/) 에서는 필요한 Arduino 연결 기능 및 선언으로 번개 드라이버를 사용 하 여 인터페이스를 구현 합니다. 최신 번개 SDK에는 최신 기능 향상 및 버그 수정 포함 됩니다. 최신 번개 SDK를 업그레이드 하려면 다음이 단계를 수행 합니다.
+Arduino 배선 프로젝트는 라이트닝 [SDK Nuget 패키지](https://www.nuget.org/packages/Microsoft.IoT.Lightning/) 를 사용 하 여 필요한 Arduino 배선 함수 및 선언 뿐만 아니라 번개 드라이버로의 인터페이스를 구현 합니다. 최신 라이트닝 SDK에는 최신 향상 된 기능 및 버그 수정이 포함 됩니다. 최신 라이트닝 SDK로 업그레이드 하려면 다음 단계를 수행 합니다.
 
-- 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 Nuget 패키지 관리 '를 클릭 합니다.
-- NuGet 패키지 관리자에서 '설치 됨' 탭으로 이동 합니다. 설치 Microsoft.IoT.Lightning 패키지 표시
-- 'Version' 콤보 상자 내에서 사용 가능한 버전에 나열 됩니다.
-- 최신 버전을 선택 하 고 패키지를 업데이트 하려면 ' 업데이트'를 클릭 합니다.
-- 시험판 버전으로 업그레이드 하 고 지 확인란 시험판 포함'도 해야 합니다.
+- 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 ' Nuget 패키지 관리 ... '를 클릭 합니다.
+- NuGet 패키지 관리자에서 ' 설치 됨 ' 탭으로 이동 합니다. 설치 된 Microsoft. a. a. a.
+- 사용 가능한 버전이 ' 버전 ' combobox 안에 나열 됩니다.
+- 최신 버전을 선택 하 고 ' 업데이트 '를 클릭 하 여 패키지를 업데이트 합니다.
+- 시험판 버전으로 업그레이드 하려면 ' 시험판 포함 ' 확인란을 선택 해야 합니다.
 
 ![NuGet 패키지 관리자](../media/ArduinoWiringPortingGuide/Nuget_PackageManager.png)

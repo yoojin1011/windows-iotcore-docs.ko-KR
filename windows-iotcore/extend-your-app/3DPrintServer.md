@@ -1,96 +1,96 @@
 ---
-title: Windows 10 IoT Core 사용 하 여 네트워크 3D 프린터
+title: Windows 10 IoT Core를 사용 하는 네트워크 3D 프린터
 author: saraclay
 ms.author: saclayt
 ms.date: 09/05/17
 ms.topic: article
-description: 인쇄 서버에 Windows 10 IoT Core 장치를 사용 하 여 3D 프린터에 연결 하는 방법을 알아봅니다.
+description: Windows 10 IoT Core 장치를 인쇄 서버로 전환 하 고 3D 프린터를 연결 하는 방법에 대해 알아봅니다.
 keywords: windows iot, 3D, 3D 프린터, 인쇄 서버, 네트워크 3D 프린터
 ms.openlocfilehash: 7a9bcc7871c62be5a73319ca284127ee4abc42f5
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59512374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60170485"
 ---
-# <a name="network-3d-printer-with-windows-10-iot-core"></a>Windows 10 IoT Core 사용 하 여 네트워크 3D 프린터
+# <a name="network-3d-printer-with-windows-10-iot-core"></a>Windows 10 IoT Core를 사용 하는 네트워크 3D 프린터
 
-인쇄 서버에 Windows 10 IoT Core 장치를 설정 하 고 3D 프린터 연결 합니다. 다른 장치에서 프린터를 무선으로 액세스할 수 없게 됩니다.
+Windows 10 IoT Core 장치를 인쇄 서버로 전환 하 고 3D 프린터를 연결 합니다. 다른 장치에서 무선으로 프린터에 액세스할 수 있습니다.
 
-## <a name="1-install-windows-10-iot-core-on-your-device"></a>1. Windows 10 IoT Core 장치에 설치
+## <a name="1-install-windows-10-iot-core-on-your-device"></a>1. 장치에 Windows 10 IoT Core 설치
 ___
-시작 하기 전에 해야 합니다.
+시작 하기 전에 다음이 필요 합니다.
 
-* 최신 버전의 Windows 10 IoT Core Insider Preview 설치를 사용 하 여 보드입니다. 에 따라 합니다 [시작 가이드](https://developer.microsoft.com/en-us/windows/iot/getstarted) IoT 대시보드 앱 및 Windows 10 IoT Core 설치 합니다.
-* 네트워크 3D 프린터 앱 호환 3D 프린터:
+* 최신 버전의 Windows 10 IoT Core Insider Preview가 설치 된 보드입니다. [시작 가이드](https://developer.microsoft.com/en-us/windows/iot/getstarted) 에 따라 iot 대시보드 앱을 가져오고 Windows 10 iot Core를 설치 합니다.
+* 네트워크 3D 프린터 앱과 호환 되는 3D 프린터:
 
     * Lulzbot Taz 6
     * Makergear M2
-    * 더하기 및 간단한 Printrbot Play
+    * Printrbot Play, 더하기 및 단순
     * Prusa i3 Mk2
-    * Ultimaker 원래 값과 원래 +
-    * Ultimaker 2, 2 +
+    * Ultimaker 원본 및 원본 +
+    * Ultimaker 2 및 2 +
     * Ultimaker 2 확장 및 확장 +
     * CraftBot 2
-    * CraftBot 더하기
+    * CraftBot PLUS
     * LulzBot 미니
     * Velleman K8200
 
-## <a name="2-connect-your-3d-printer-to-your-device"></a>2. 3D 프린터 장치에 연결
+## <a name="2-connect-your-3d-printer-to-your-device"></a>2. 3D 프린터를 장치에 연결
 ___
-* 플러그 인에 Windows 10 IoT Core 3D 프린터 보드는 USB 케이블을 사용 합니다.
+* USB 케이블을 사용 하 여 Windows 10 IoT Core 보드에 3D 프린터를 플러그인 합니다.
 
-    ![3D 프린터 장치에 연결](../media/3DPrintServer/connect-3d-printer.png)
+    ![3D 프린터를 장치에 연결](../media/3DPrintServer/connect-3d-printer.png)
 
-* IoT 대시보드 앱을 열고 장치에 표시 되는지 확인 합니다 **내 장치** 탭 합니다.
+* IoT 대시보드 앱을 열고 장치가 **내 장치** 탭에 표시 되는지 확인 합니다.
 
-    ![장치의 IoT 대시보드에서 표시 되는지 확인 합니다.](../media/3DPrintServer/selectDevice.png)
+    ![장치가 IoT 대시보드에 표시 되는지 확인 합니다.](../media/3DPrintServer/selectDevice.png)
     
-## <a name="3-deploy-the-network-3d-printer-app"></a>3. 네트워크를 배포 3D 프린터 앱
+## <a name="3-deploy-the-network-3d-printer-app"></a>3. 네트워크 3D 프린터 앱 배포
 ___
-* IoT 대시보드에서 다음을 클릭 합니다 **몇 가지 샘플을 시험해 볼** 섹션입니다.
+* IoT 대시보드에서 **샘플 시도** 섹션을 클릭 합니다.
 * 네트워크 3D 프린터 샘플 앱을 선택 합니다.
 
-   ![3D 네트워크 프린터를 설치 합니다.](../media/3dprintserver/dashboard-samples.png)
+   ![3D 네트워크 프린터 설치](../media/3dprintserver/dashboard-samples.png)
 
-* 3D 프린터 모델 및 키를 눌러 선택 합니다 **배포 및 실행** IoT Core 장치에 앱을 배포 하는 단추입니다. 
+* 3D 프린터 모델을 선택 하 고 **배포 및 실행** 단추를 눌러 앱을 IoT Core 장치에 배포 합니다. 
 
-    ![3D 네트워크 프린터를 설치 합니다.](../media/3dprintserver/dashboard-app.png)
+    ![3D 네트워크 프린터 설치](../media/3dprintserver/dashboard-app.png)
 
-    [LulzBot TAZ 6 이미지](http://devel.lulzbot.com/TAZ/Olive/photos/TAZ_6_Angle_Rock2pus_transparent.png) 하 여 [Aleph 개체, Inc.](https://www.alephobjects.com/) 사용이 허가 됩니다 [CC BY SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)합니다.
+    [Aleph 개체인 i n c.](https://www.alephobjects.com/) 의 [Lulzbot taz 6 이미지](http://devel.lulzbot.com/TAZ/Olive/photos/TAZ_6_Angle_Rock2pus_transparent.png) 는 [CC by-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)에 따라 사용이 허가 됩니다.
     
-    프린터 목록에서 사용자 지정 프린터 선택 "사용자 지정" 옵션을 설치 하려면. 사용자 지정 3d 프린터 호출 PrintDeviceCapabilities.xml 파일을 올바르게 연결 하 고 3d 프린터에 인쇄를 제공 해야 하는 구성 xml을 해야 합니다. 샘플 PrintDeviceCapabilities.xml 파일을 확인할 수 있습니다. https://docs.microsoft.com/windows-hardware/drivers/3dprint/sample-configuration-xml
+    사용자 지정 프린터를 설치 하려는 경우 프린터 목록에서 "사용자 지정" 옵션을 선택 합니다. 사용자 지정 3d 프린터에는 3d 프린터에 올바르게 연결 하 여 인쇄 하기 위해 제공 되는 PrintDeviceCapabilities 파일 이라는 구성 xml이 필요 합니다. 샘플 PrintDeviceCapabilities 파일은 여기에서 찾을 수 있습니다. https://docs.microsoft.com/windows-hardware/drivers/3dprint/sample-configuration-xml
    
-   Xml 파일에서 해야 할 최소 변경 내용을 다음 섹션에서는 특정 호환 프린터에 올바른 값으로 업데이트 되도록 합니다.
+   Xml 파일에서 수행 해야 하는 최소 변경 내용은 다음 섹션을 호환 프린터와 관련 된 올바른 값으로 업데이트 하는 것입니다.
 
-3d 모델을 처리할 때 이러한 값에 슬라이서에 3d 프린터의 인쇄 평판 크기 지정
+이러한 값은 3d 모델을 처리할 때 슬라이서에 대 한 3d 프린터의 인쇄 평판 크기를 지정 합니다.
 
     <psk3d:Job3DOutputAreaWidth>200000</psk3d:Job3DOutputAreaWidth>
     <psk3d:Job3DOutputAreaDepth>200000</psk3d:Job3DOutputAreaDepth>
     <psk3d:Job3DOutputAreaHeight>200000</psk3d:Job3DOutputAreaHeight>
 
 
-Psk3dx:baudrate xml 태그에 값 raspberry pi3에서 3d 프린터와 통신 하는 동안 사용할 특정 전송 속도 제어 합니다. 3d 프린터 관련 적절 한 전송 속도 설정 합니다. 
+Psk3dx: 전송 전 xml 태그의 값은 raspberry pi3에서 3d 프린터와 통신 하는 동안 사용할 특정 전송 속도를 제어 합니다. 3d 프린터와 관련 된 적절 한 전송 속도를 설정 합니다. 
 
 ```
 \<psk3dx:baudrate\>115200</psk3dx:baudrate>
 ```
 
-PrintDeviceCapabilities xml에 다른 값은 3d 인쇄 드라이버에서 특정 호환 프린터를 사용 하 여 작동 방법을 미세 조정 하려면 슬라이서를 알리는 데 사용 됩니다.
-자세한 내용은 이러한 값을 제공 하는 모든 [여기](https://docs.microsoft.com/windows-hardware/drivers/3dprint/slicer-settings)합니다.
+PrintDeviceCapabilities xml의 다른 값은 특정 호환 프린터를 사용 하 여 작동 하는 방식을 세밀 하 게 조정 하기 위해 3d 인쇄 드라이버에서 슬라이서에 알리는 데 사용 됩니다.
+이러한 모든 값에 대 한 자세한 내용은 [여기](https://docs.microsoft.com/windows-hardware/drivers/3dprint/slicer-settings)에서 제공 됩니다.
 
     
     
-## <a name="4-add-your-3d-printer"></a>4. 3D 프린터를 추가 합니다.
+## <a name="4-add-your-3d-printer"></a>4. 3D 프린터 추가
 ___
-* Windows 10 PC로 이동할 **설정을** -> **장치** -> **프린터 및 스캐너**합니다.
-* 키를 눌러 **프린터 또는 스캐너 추가**합니다.
+* Windows 10 PC로 이동 하 고 **설정** -> **장치** -> **프린터 & 스캐너**로 이동 합니다.
+* **프린터 또는 스캐너 추가**를 누릅니다.
 
-     ![장치를 추가 하는 Windows 설정](../media/3dprintserver/add-printer.png)
+     ![Windows 설정 장치 추가](../media/3dprintserver/add-printer.png)
 
-* 3D 프린터 및 키를 눌러 선택할 **장치 추가**합니다. 프린터를 자동으로 설치 합니다.
+* 3D 프린터를 선택 하 고 **장치 추가**를 누릅니다. 프린터가 자동으로 설치 됩니다.
 
-     ![장치를 추가 하는 Windows 설정](../media/3dprintserver/add-device.png)
+     ![Windows 설정 장치 추가](../media/3dprintserver/add-device.png)
 
-프린터는 이제 설치 하는 축을 선택 하 고 USB 케이블을 사용 하 여 연결 된 것 처럼 정확 하 게 작동 합니다.
-이제 사용 하 여 인쇄할 수 있습니다 [3D 작성기](https://msdn.microsoft.com/windows/hardware/mt561568.aspx)합니다.
+이제 프린터가 설치 되었으며 USB 케이블로 연결 된 것 처럼 동작 합니다.
+이제 [3D 작성기](https://msdn.microsoft.com/windows/hardware/mt561568.aspx)를 사용 하 여 인쇄할 수 있습니다.

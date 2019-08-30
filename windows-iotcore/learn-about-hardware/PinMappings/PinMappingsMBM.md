@@ -1,47 +1,47 @@
 ---
-title: Minnowboard 최대 핀 매핑
+title: Minnowboard 최대 Pin 매핑
 author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-description: Minnowboard 최대 핀 매핑 기능을 알아봅니다.
-keywords: windows iot, 핀 매핑, GPIO Minnowboard Max
+description: Minnowboard Max의 pin 매핑 기능에 대해 알아봅니다.
+keywords: windows iot, Minnowboard Max, pin 매핑, GPIO
 ms.openlocfilehash: 884d9ee0d93167a13f39a28b28454daccb2eebad
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59513382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60167504"
 ---
-# <a name="minnowboard-max-pin-mappings"></a>MinnowBoard 최대 핀 매핑
+# <a name="minnowboard-max-pin-mappings"></a>MinnowBoard 최대 Pin 매핑
 
 > [!NOTE] 
-> 이 pin 매핑에 Minnowboard의 최신 버전을 비교 하려면 설명서를 참조 하세요 [여기](https://minnowboard.org/minnowboard-turbot/documentation)합니다.
+> 이 pin 매핑을 최신 버전의 Minnowboard와 비교 하려면 [여기](https://minnowboard.org/minnowboard-turbot/documentation)에서 설명서를 참조 하세요.
 
 ## <a name="overview"></a>개요
 
-![MinnowBoard 최대 Pin 헤더](../../media/PinMappingsMBM/MBM_Pinout.png)
+![MinnowBoard Max Pin 헤더](../../media/PinMappingsMBM/MBM_Pinout.png)
 
-26 pin 헤더를 통해 MinnowBoard 최대 하드웨어 인터페이스를 노출 시키는 **JP1** 보드. 기능은 다음과 같습니다.
+MinnowBoard Max의 하드웨어 인터페이스는 보드에서 26 핀 헤더 **JP1** 를 통해 노출 됩니다. 기능은 다음과 같습니다.
 
-* **10 배** -GPIO pin
-* **2 x** -직렬 UARTs
-* **1 x** -SPI 버스
-* **1x** - I2C bus
-* **1 x** -5V power pin
-* **1 x** -3.3V power pin
-* **2 x** -pin 방지 매트를
+* **10 배** -GPIO 핀
+* **2x** -직렬 uarts
+* **1x** -SPI 버스
+* **1x** -I2C 버스
+* **1x** -5v 전원 pin
+* **1x** -3.3 v 전원 pin
+* **2** -접지 핀
 
-모든 IO 핀에 MinnowBoard 최대 사용 3.3V 논리 수준입니다. 모든 핀으로 버퍼링 됩니다는 또한 [TXS0104E](http://www.ti.com/product/txs0104e) 전원 및 그라운드 핀을 제외 하 고 변환기 수준입니다.
-이러한 수준 변환기 열기 수집기의 출력으로 표시를 **10k&#x2126; 저항 식 풀업은 풀업 이며 IO 입력 또는 출력으로 설정 되어 있는지 여부에 관계 없이 표시 합니다.**
+MinnowBoard Max는 모든 IO 핀에 3.3 V 논리 수준을 사용 합니다. 또한 모든 pin은 [TXS0104E](http://www.ti.com/product/txs0104e) 수준 shifters에 의해 버퍼링 되며 전원 및 접지 핀은 제외 됩니다.
+이러한 수준 shifters는 **&#x2126; 10k resistive 풀을 포함 하는 개방형 수집기 출력으로 나타나며, IO가 입력으로 설정 되었는지 또는 출력으로 설정 되었는지에 관계 없이 풀에 존재 합니다.**
  
-오픈 수집기 수준 변환기 의미 하는 ' 0 ', 강력 하 게 하지만 약한만 출력 ' 1' 핀을 출력할 수 있습니다. 이 장치 (예: LED) 핀에서 현재 그리기를 연결 하는 경우에 유의 해야 합니다. 참조 된 [쳐다 샘플](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinky) MinnowBoard max LED를 인터페이스에 대 한 올바른 방법에 대 한 합니다.
+수준 shifters의 개방형 수집기 특성은 핀에서 ' 0 '을 강력 하 게 출력할 수 있지만 약하게 출력 하는 ' 1 '을 의미 합니다. 이는 핀에서 현재를 그리는 장치 (예: LED)를 연결할 때 주의 해야 합니다. MinnowBoard Max에 LED를 인터페이스 하는 올바른 방법은 [Blinky 샘플](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinky) 을 참조 하세요.
 
-## <a name="gpio-pins"></a>GPIO Pin
+## <a name="gpio-pins"></a>GPIO 핀
 
-다음 GPIO 핀은 Api를 통해 액세스할 수 있습니다.
+다음 GPIO pin은 Api를 통해 액세스할 수 있습니다.
 
-> | GPIO# | 헤더 Pin         |
+> | GPIO # | 헤더 Pin         |
 > |-------|--------------------|
 > | 0     | 21                 |
 > | 1     | 23                 |
@@ -54,13 +54,13 @@ ms.locfileid: "59513382"
 > | 8     | 24                 |
 > | 9     | 26                 |
 
-**참고:** **GPIO 4** 하 고 **GPIO 5** MinnowBoard 최대에서 BIOS 부트스트랩 구성 핀으로 사용 됩니다.
-MBM 부팅 되지 않을 수 있습니다이 연결 된 장치를 유도 하지 않습니다 이러한 GPIO 낮은 부팅 하는 동안 입력 되어 있는지 확인 합니다.
-BIOS 과거의 MBM가 부팅 되 면 이러한 GPIO 일반적으로 사용할 수 있습니다.
+**참고:** **Gpio 4** 및 **GPIO 5** 는 BIOS에 대 한 부트스트랩 구성 핀으로 MinnowBoard Max에서 사용 됩니다.
+장치를 부팅 하는 동안 연결 된 장치에서 이러한 GPIO를 사용 하지 않도록 해야 합니다 .이로 인해 MBM이 부팅 되지 않을 수 있습니다.
+MBM이 BIOS를 지 나 부팅 되 면 일반적으로 이러한 GPIO를 사용할 수 있습니다.
      
 ## <a name="gpio-sample"></a>GPIO 샘플
 
-예를 들어 다음 코드 열립니다 **GPIO 5** 출력으로 디지털 쓰고 '**1**' 핀 아웃 합니다.
+예를 들어 다음 코드는 **GPIO 5** 를 출력으로 열고 pin에 디지털 '**1**'을 기록 합니다.
          
 ```C#
 using Windows.Devices.Gpio;
@@ -77,30 +77,30 @@ public void GPIO()
 
 ## <a name="serial-uart"></a>직렬 UART
 
-MBM에 사용할 직렬 UARTS 두 가지. **UART1** 고 **UART2**
+MBM에서 사용할 수 있는 두 개의 직렬 UARTS가 있습니다. **UART1** 및 **UART2**
 
-**UART1** 에 표준 **UART1 TX** 하 고 **UART1 RX** flow와 함께 줄 제어 신호 **UART1 CTS** 및 **UART1 RTS**.
+**UART1** 에는 표준 **UART1 TX** 및 **UART1 RX** 회선이 있으며,이는 CTS 및 **UART1 RTS**를 **UART1** 하는 흐름 제어 신호와 함께 있습니다.
 
-* 6-고정 **UART1 TX**
-* 8-고정 **UART1 RX**
-* 고정 10- **UART1 CTS**
-* 12-고정 **UART1 RTS**
+* 핀 6- **UART1 TX**
+* Pin 8- **UART1 RX**
+* Pin 10- **UART1 CTS**
+* 12- **UART1 RTS** 고정
 
-UART1 빌드 10240 기준으로 작동 하지 않습니다. UART2 또는 USB-직렬 변환기를 사용 하세요.
+UART1가 빌드 10240으로 작동 하지 않습니다. UART2 또는 USB 직렬 변환기를 사용 하십시오.
 
-**UART2** 포함 요소만 **UART2 TX** 하 고 **UART2 RX** 줄.
+**UART2** 에는 **UART2 TX** 및 **UART2 RX** 줄만 포함 됩니다.
 
-* 17-고정 **UART2 TX**
-* 19-고정 **UART2 RX**
+* Pin 17- **UART2 TX**
+* Pin 19- **UART2 RX**
 
-예외가 발생 하면 직렬의 다음 속성에 액세스 하므로 UART2 흐름 제어를 지원 하지 않습니다.
+UART2는 흐름 제어를 지원 하지 않으므로 SerialDevice의 다음 속성에 액세스 하면 예외가 throw 될 수 있습니다.
 
  * BreakSignalState
  * IsDataTerminalReadyEnabled
  * IsRequestToSendEnabled
- * 핸드셰이크-SerialHandshake.None만 지원 됩니다.
+ * 핸드셰이크 전용 SerialHandshake는 지원 되지 않습니다.
 
-초기화 아래 예에서 **UART2** 읽기 뒤 쓰기를 수행 합니다.
+아래 예제에서는 **UART2** 를 초기화 하 고 쓰기 후에 읽기를 수행 합니다.
 
 ```C#
 using Windows.Storage.Streams;
@@ -135,9 +135,9 @@ public async void Serial()
 }
 ```
 
-다음 기능을 추가 해야 합니다 **Package.appxmanifest** 직렬 UART 코드를 실행 하기 위해 UWP 프로젝트에서 파일:
+직렬 UART 코드를 실행 하려면 UWP 프로젝트의 **appxmanifest.xml** 파일에 다음 기능을 추가 해야 합니다.
 
-Visual Studio 2017에 매니페스트 디자이너에서 (appxmanifest 파일에 대 한 시각적 편집기) serialcommunication 기능에 영향을 주는 알려진된 버그가 있습니다.  프로그램 appxmanifest serialcommunication 기능에 추가 하는 경우 디자이너를 사용 하 여 프로그램 appxmanifest 수정 프로그램 appxmanifest (장치 xml 자식 없어집니다.) 손상 됩니다.  수 해결 방법이이 문제 appxmanifest 직접 편집 하 여 프로그램 appxmanifest를 마우스 오른쪽 단추로 클릭 하 고 상황에 맞는 메뉴에서 코드 보기를 선택 하 여.
+Visual Studio 2017에는 매니페스트 디자이너 (appxmanifest.xml 파일용 시각적 편집기)에서 serialcommunication 기능에 영향을 주는 알려진 버그가 있습니다.  Appxmanifest.xml가 serialcommunication 기능을 추가 하는 경우 디자이너를 사용 하 여 appxmanifest.xml를 수정 하면 appxmanifest.xml가 손상 됩니다 (장치 xml 자식은 손실 됨).  Appxmanifest.xml를 마우스 오른쪽 단추로 클릭 하 고 상황에 맞는 메뉴에서 코드 보기를 선택 하 여 appxmanifest.xml를 직접 편집이 문제를 해결할 수 있습니다.
 
 ```
   <Capabilities>
@@ -151,18 +151,18 @@ Visual Studio 2017에 매니페스트 디자이너에서 (appxmanifest 파일에
 
 ## <a name="i2c-bus"></a>I2C 버스
 
-이 장치에서 사용할 수 있는 I2C 버스를 살펴보겠습니다.
+이 장치에서 사용할 수 있는 I2C bus를 살펴보겠습니다.
 
 ### <a name="i2c-overview"></a>I2C 개요
 
-하나의 I2C 컨트롤러가 **I2C5** 두 줄을 사용 하 여 pin 헤더에 노출 **SDA** 하 고 **SCL**합니다. 10k&#x2126; 다음이 줄에서 내부 풀업 반대자 이미 있습니다.
+**Sda** 와 **SCL**이라는 두 줄로 된 핀 헤더에는 하나의 I2C 컨트롤러 **I2C5** 노출 됩니다. 10K&#x2126; 내부 풀에 있는 저항기는 이미 이러한 줄에 있습니다.
 
-* Pin 15 - **I2C5 SDA**
-* 13-고정 **I2C5 SCL**
+* Pin 15- **I2C5 SDA**
+* Pin 13- **I2C5 SCL**
 
 ### <a name="i2c-sample"></a>I2C 샘플
 
-초기화 아래 예에서 **I2C5** I2C 장치 주소를 사용 하 여 데이터를 쓰고 **0x40**:
+아래 예제에서는 **I2C5** 를 초기화 하 고 주소가 **0x40**인 I2C 장치에 데이터를 씁니다.
 
 ```C#
 using Windows.Devices.Enumeration;
@@ -190,28 +190,28 @@ public async void I2C()
 
 ### <a name="i2c-issues"></a>I2C 문제
 
-MinnowBoard 최대에 특정 I2C 장치와 통신 문제를 일으키는 I2C 버스를 사용 하 여 알려진된 문제가 있는 경우 일반적으로 I2C 장치를 버스 요청 하는 동안 해당 주소를 승인 됩니다.
-그러나 특정 조건에서이 승인은 MBM 수준 변환기를 통해 다시 전파할 수 실패 하 고 장치가 응답 하지 않았습니다 고 bus 트랜잭션을 취소 CPU가 생각 하는 결과적으로 합니다.
-문제에 관련 된 것으로 보입니다 합니다 [TXS0104E](http://www.ti.com/product/txs0104e) 줄에서 전압 급증으로 인해 중간을 트리거할 수 있는 IO 핀에 변환기 수준입니다.
-현재 해결 방법은 급증을 표시 하지 않을 수 있는 I2C SCK 줄을 사용 하 여 계열의 100 옴 저항기를 삽입 하는 것입니다. 모든 장치에는 영향을이 해결 방법은 이므로 필요한 경우 문제가 버스 응답 합니다. 이 해결 방법은 필요으로 알려진 하나의 장치는 HTU21D는입니다.
+MinnowBoard Max에 I2C 버스와 관련 하 여 알려진 문제가 있어 특정 I2C 장치에서 통신 문제가 발생 합니다. 일반적으로 I2C 장치는 버스 요청 중에 해당 주소를 승인 합니다.
+그러나 특정 조건에서이 승인은 shifters 수준에서 MBM으로 다시 전파 되지 않으므로 CPU에서 장치가 응답 하지 않았고 버스 트랜잭션을 취소 하는 것으로 간주 됩니다.
+이 문제는 IO 핀에서 [TXS0104E](http://www.ti.com/product/txs0104e) 수준 shifters와 관련 된 것으로 보입니다 .이는 줄의 전압 급증으로 인해 중간에 트리거될 수 있습니다.
+현재 해결 방법은 급증을 방지 하는 데 도움이 되는 I2C SCK 줄에서 100 옴 저항기를 계열에 삽입 하는 것입니다. 모든 장치가 영향을 받지 않으므로이 해결 방법은 버스 응답을 가져오는 데 문제가 있는 경우에만 필요 합니다. 이 해결 방법이 필요한 것으로 알려진 장치 하나는 HTU21D입니다.
 
 ## <a name="spi-bus"></a>SPI 버스
 
-이 장치에서 사용할 수 있는 SPI 버스를 살펴보겠습니다.
+이 장치에서 사용할 수 있는 SPI bus를 살펴보겠습니다.
 
 ### <a name="spi-overview"></a>SPI 개요
 
-하나의 SPI 컨트롤러가 **SPI0** 는 MBM에서 사용할 수 있습니다.
+MBM에서 사용할 수 있는 SPI 컨트롤러 **SPI0** 하나는 다음과 같습니다.
 
-* 9-고정 **SPI0 MOSI**
-* 7-고정 **SPI0 MISO**
-* 11-고정 **SPI0 SCLK**
-* 5-고정 **SPI0 CS0**
+* 핀 9- **SPI0 MOSI**
+* 핀 7- **SPI0 mia**
+* 핀 11- **SPI0 SCLK**
+* 핀 5- **SPI0 CS0**
 
 
 ### <a name="spi-sample"></a>SPI 샘플
 
-SPI를 수행 하는 방법을 예로 버스에 작성할 **SPI0** 아래에 표시 됩니다.
+다음은 bus **SPI0** 에서 SPI 쓰기를 수행 하는 방법에 대 한 예제입니다.
 
 ```C#
 using Windows.Devices.Enumeration;

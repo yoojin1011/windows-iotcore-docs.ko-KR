@@ -1,7 +1,7 @@
-## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft 오픈 소스 규정
+## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft 오픈 소스 준수 코드
 
-이 프로젝트에서는 [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)(Microsoft 오픈 소스 규정)를 채택했습니다.
-자세한 내용은 [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)(규정 FAQ)를 참조하세요. 또는 추가 질문이나 의견은 [opencode@microsoft.com](mailto:opencode@microsoft.com)으로 문의하세요.
+이 프로젝트는 [Microsoft 오픈 소스 준수 사항](https://opensource.microsoft.com/codeofconduct/)을 채택했습니다.
+자세한 내용은 [준수 사항 FAQ](https://opensource.microsoft.com/codeofconduct/faq/) 를 참조하고, 추가 질문이나 의견이 있는 경우 [opencode@microsoft.com](mailto:opencode@microsoft.com) 에 문의하세요.
 
 # <a name="how-to-contribute-to-windows-10-iotcore-documentation"></a>Windows 10 IoTCore 설명서에 기여하는 방법
 
@@ -80,7 +80,7 @@ body {
 | 왼쪽 맞춤| #이 아닌 경우  | 456          |
 | 텍스트 값  | 자세한 텍스트   | $0.00        |
 
-## <a name="notes"></a>참고
+## <a name="notes"></a>메모
 
 메모를 제한적으로 사용합니다. "누락하지 마세요" 정보를 강조 표시하도록 설계된 블록입니다.
 
@@ -101,4 +101,4 @@ body {
 
 
 ## <a name="code-of-conduct"></a>준수 사항
-이 프로젝트에서는 [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)(Microsoft 오픈 소스 규정)를 채택했습니다. 자세한 내용은 [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)(규정 FAQ)를 참조하세요. 또는 추가 질문이나 의견은 [opencode@microsoft.com](mailto:opencode@microsoft.com)으로 문의하세요.
+이 프로젝트는 [Microsoft 오픈 소스 준수 사항](https://opensource.microsoft.com/codeofconduct/)을 채택했습니다. 자세한 내용은 [준수 사항 FAQ](https://opensource.microsoft.com/codeofconduct/faq/) 를 참조하고, 추가 질문이나 의견이 있는 경우 [opencode@microsoft.com](mailto:opencode@microsoft.com) 에 문의하세요.

@@ -1,43 +1,43 @@
 ---
-title: Dragonboard 핀 매핑
+title: Dragonboard Pin 매핑
 author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-description: Dragonboard pin 매핑의 기능에 알아봅니다.
-keywords: windows iot, Dragonboard, pin 매핑을 GPIO
+description: Dragonboard에 대 한 pin 매핑 기능에 대해 알아봅니다.
+keywords: windows iot, Dragonboard, pin 매핑, GPIO
 ms.openlocfilehash: f6df962c6d05aa912013f8f0819c0789bfc393ce
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59515080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60167693"
 ---
-# <a name="dragonboard-pin-mappings"></a>Dragonboard 핀 매핑
+# <a name="dragonboard-pin-mappings"></a>Dragonboard Pin 매핑
 
 ![Dragonboard Pin 헤더](../../media/PinMappingsDB/DB_Pinout.png)
 
-하드웨어 인터페이스는 Dragonboard 보드의 40 핀 헤더를 통해 노출 됩니다. 기능은 다음과 같습니다.
+Dragonboard에 대 한 하드웨어 인터페이스는 보드의 40 핀 헤더를 통해 노출 됩니다. 기능은 다음과 같습니다.
 
-* **11 배** -GPIO pin
-* **2 x** -직렬 UARTs
-* **1 x** -SPI 버스
-* **2 x** -I2C 버스
-* **1 x** -5V power pin
-* **1 x** -1.8 v power pin
-* **4 x** -pin 방지 매트를
+* **11x** -GPIO 핀
+* **2x** -직렬 uarts
+* **1x** -SPI 버스
+* **2** -I2C 버스
+* **1x** -5v 전원 pin
+* **1x** -1.8 v 전원 pin
+* **4x** -접지 핀
 
-참고는 Dragonboard 1.8 v는 모든 IO 핀에 논리 수준입니다. 
+Dragonboard에서는 모든 IO 핀에서 1.8 V 논리 수준을 사용 합니다. 
 
-## <a name="gpio-pins"></a>GPIO Pin
+## <a name="gpio-pins"></a>GPIO 핀
 
 이 장치에서 사용 가능한 GPIO를 살펴보겠습니다.
 
-### <a name="gpio-pin-table"></a>GPIO Pin 테이블
+### <a name="gpio-pin-table"></a>GPIO 고정 테이블
 
-다음 GPIO 핀은 Api를 통해 액세스할 수 있습니다.
+다음 GPIO pin은 Api를 통해 액세스할 수 있습니다.
 
-> | GPIO# | 헤더 Pin         |
+> | GPIO # | 헤더 Pin         |
 > |-------|--------------------|
 > | 36    | 23                 |
 > | 12    | 24                 |
@@ -50,11 +50,11 @@ ms.locfileid: "59515080"
 > | 34    | 32                 |
 > | 28    | 33                 |
 > | 33    | 34                 |
-> | 21    | 사용자 1 LED         | 
-> | 120   | 사용자 led가 2         |         
+> | 21    | 사용자 LED 1         | 
+> | 120   | 사용자 LED 2         |         
 
 
-예를 들어 다음 코드 열립니다 **GPIO 35** 출력으로 디지털 쓰고 '**1**' 핀 아웃 합니다.
+예를 들어 다음 코드는 **GPIO 35** 을 출력으로 열고 pin에 디지털 '**1**'을 기록 합니다.
          
 ```C#
 using Windows.Devices.Gpio;
@@ -71,30 +71,30 @@ public void GPIO()
 
 ### <a name="gpio-issues"></a>GPIO 문제
 
-* 출력은 GPIO 24에서 작동 하지 않습니다. 입력이 제대로 작동합니다.
-* Pin, 부팅 시 InputPullDown으로 구성 되어 있지만 입력 (부동)로 변경 됩니다 처음 열 때
-* Pin을 닫을 때 기본 상태로 전환 되지 않고 수행
-* 의사 인터럽트 인터럽트 다중 핀에 설정 된 경우 표시 될 수 있습니다.
+* GPIO 24에서는 출력이 작동 하지 않습니다. 입력이 제대로 작동 합니다.
+* Pin은 부팅 시 InputPullDown로 구성 되지만 처음 열릴 때 입력 (부동)으로 변경 됩니다.
+* 닫히면 pin은 기본 상태로 되돌아가지 않습니다.
+* 여러 핀에서 인터럽트를 사용 하는 경우 의사 인터럽트가 표시 될 수 있습니다.
 
 
 ## <a name="serial-uart"></a>직렬 UART
 
-Dragonboard에서 두 직렬 UARTS 됩니다 **UART0** 고 **UART1**
+Dragonboard **UART0** 및 **UART1** 에는 두 개의 직렬 uarts를 사용할 수 있습니다.
 
-**UART0** 에 표준 **UART0 TX** 하 고 **UART0 RX** flow와 함께 줄 제어 신호 **UART0 CTS** 및 **UART0 RTS**.
+**UART0** 에는 표준 **UART0 TX** 및 **UART0 RX** 회선이 있으며,이는 CTS 및 **UART0 RTS**를 **UART0** 하는 흐름 제어 신호와 함께 있습니다.
 
-* 5-고정 **UART0 TX**
-* 7-고정 **UART0 RX**
-* 3-고정 **UART0 CTS**
-* 9-고정 **UART0 RTS**
+* 핀 5- **UART0 TX**
+* Pin 7- **UART0 RX**
+* Pin 3- **UART0 CTS**
+* Pin 9- **UART0 RTS**
 
 
-**UART1** 포함 요소만 **UART1 TX** 하 고 **UART1 RX** 줄.
+**UART1** 에는 **UART1 TX** 및 **UART1 RX** 줄만 포함 됩니다.
 
-* 11-고정 **UART1 TX**
-* 13-고정 **UART1 RX**
+* 핀 11- **UART1 TX**
+* Pin 13- **UART1 RX**
 
-초기화 아래 예에서 **UART1** 읽기 뒤 쓰기를 수행 합니다.
+아래 예제에서는 **UART1** 를 초기화 하 고 쓰기 후에 읽기를 수행 합니다.
 
 ```C#
 using Windows.Storage.Streams;
@@ -129,9 +129,9 @@ public async void Serial()
 }
 ```
 > [!NOTE]
-> Visual Studio 2017에 매니페스트 디자이너에서 (appxmanifest 파일에 대 한 시각적 편집기) serialcommunication 기능에 영향을 주는 알려진된 버그가 있습니다.  프로그램 appxmanifest serialcommunication 기능에 추가 하는 경우 디자이너를 사용 하 여 프로그램 appxmanifest 수정 프로그램 appxmanifest (장치 xml 자식 없어집니다.) 손상 됩니다.  수 해결 방법이이 문제 appxmanifest 직접 편집 하 여 프로그램 appxmanifest를 마우스 오른쪽 단추로 클릭 하 고 상황에 맞는 메뉴에서 코드 보기를 선택 하 여.
+> Visual Studio 2017에는 매니페스트 디자이너 (appxmanifest.xml 파일용 시각적 편집기)에서 serialcommunication 기능에 영향을 주는 알려진 버그가 있습니다.  Appxmanifest.xml가 serialcommunication 기능을 추가 하는 경우 디자이너를 사용 하 여 appxmanifest.xml를 수정 하면 appxmanifest.xml가 손상 됩니다 (장치 xml 자식은 손실 됨).  Appxmanifest.xml를 마우스 오른쪽 단추로 클릭 하 고 상황에 맞는 메뉴에서 코드 보기를 선택 하 여 appxmanifest.xml를 직접 편집이 문제를 해결할 수 있습니다.
 
-다음 기능을 추가 해야 합니다 **Package.appxmanifest** 직렬 UART 코드를 실행 하기 위해 UWP 프로젝트에서 파일:
+다음 기능을 UWP 프로젝트의 **appxmanifest.xml** 파일에 추가 하 여 직렬 UART 코드를 실행 해야 합니다.
 
 ```xml
   <Capabilities>
@@ -147,21 +147,21 @@ public async void Serial()
 
 이 장치에서 사용할 수 있는 I2C 버스를 살펴보겠습니다.
 
-### <a name="i2c-pins"></a>I2C Pin
+### <a name="i2c-pins"></a>I2C 핀
 
-**I2C0** 두 줄을 사용 하 여 pin 헤더에 노출 **SDA** 고 **SCL**
+**I2C0** 는 두 줄 **Sda** 와 **SCL** 을 사용 하 여 pin 헤더에 노출 됩니다.
 
-* 17-고정 **I2C0 SDA**
-* 15-고정 **I2C0 SCL**
+* Pin 17- **I2C0 SDA**
+* Pin 15- **I2C0 SCL**
 
-**I2C1** 두 줄을 사용 하 여 pin 헤더에 노출 **SDA** 고 **SCL**
+**I2C1** 는 두 줄 **Sda** 와 **SCL** 을 사용 하 여 pin 헤더에 노출 됩니다.
 
-* Pin 21 - **I2C1 SDA**
-* 19-고정 **I2C1 SCL**
+* 핀 21- **I2C1 SDA**
+* Pin 19- **I2C1 SCL**
 
 ### <a name="i2c-sample"></a>I2C 샘플
 
-초기화 아래 예에서 **I2C0** I2C 장치 주소를 사용 하 여 데이터를 쓰고 **0x40**:
+아래 예제에서는 **I2C0** 를 초기화 하 고 주소가 **0x40**인 I2C 장치에 데이터를 씁니다.
 
 ```C#
 using Windows.Devices.Enumeration;
@@ -192,25 +192,25 @@ public async void I2C()
 
 ## <a name="spi-bus"></a>SPI 버스
 
-이 장치에서 사용할 수 있는 SPI 버스를 살펴보겠습니다.
+이 장치에서 사용할 수 있는 SPI bus를 살펴보겠습니다.
 
 ### <a name="spi-pins"></a>SPI Pin
 
-하나의 SPI 컨트롤러가 **SPI0** DB에서 사용할 수 있습니다.
+DB에서 사용할 수 있는 SPI 컨트롤러 **SPI0** 하나 있습니다.
 
-* 고정 10- **SPI0 MISO**
-* 14-고정 **SPI0 MOSI**
-* 8-고정 **SPI0 SCLK**
-* 12-고정 **SPI0 CS0**
+* Pin 10- **SPI0 miso**
+* Pin 14- **SPI0 MOSI**
+* Pin 8- **SPI0 SCLK**
+* Pin 12- **SPI0 CS0**
 
 ### <a name="spi-issues"></a>SPI 문제
 
-SPI 클록 4.8 mhz에 고정 됩니다. 요청 된 SPI 클록은 무시 됩니다. 
+SPI clock은 4.8 mhz에서 고정 됩니다. 요청 된 SPI clock은 무시 됩니다. 
 
 
 ### <a name="spi-sample"></a>SPI 샘플
 
-SPI를 수행 하는 방법을 예로 버스에 작성할 **SPI0** 아래에 표시 됩니다.
+다음은 bus **SPI0** 에서 SPI 쓰기를 수행 하는 방법에 대 한 예제입니다.
 
 ```C3
 using Windows.Devices.Enumeration;
