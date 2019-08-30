@@ -8,7 +8,7 @@ description: Windows 10 IoT Core를 실행하는 디바이스에 Python을 설�
 keywords: windows iot, python
 ms.openlocfilehash: 26063863e5fdf7539e3159d4a4809bab3a38fb71
 ms.sourcegitcommit: 4272081b5186dada1e61974193e41fcc1c42a1b9
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 08/20/2019
 ms.locfileid: "69629376"
