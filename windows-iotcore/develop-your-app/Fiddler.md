@@ -4,66 +4,66 @@ author: saraclay
 ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
-description: Fiddler를 사용 하 여 Windows IoT Core에 Fiddler 추적을 캡처하는 방법을 알아봅니다.
+description: Fiddler를 사용 하 여 Windows IoT Core에서 Fiddler 추적을 캡처하는 방법에 대해 알아봅니다.
 keywords: windows iot, Fiddler, 추적, PuTTY, Fiddler 추적
 ms.openlocfilehash: b8bf4fa6390aad9640ad9139a8a164a9c83fcff5
-ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59513286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60167761"
 ---
-# <a name="capturing-fiddler-traces-on-windows-iot-core"></a><span data-ttu-id="7c142-104">Windows IoT Core에 Fiddler 추적 캡처</span><span class="sxs-lookup"><span data-stu-id="7c142-104">Capturing Fiddler Traces on Windows IoT Core</span></span>
+# <a name="capturing-fiddler-traces-on-windows-iot-core"></a><span data-ttu-id="a1f55-104">Windows IoT Core에서 Fiddler 추적 캡처</span><span class="sxs-lookup"><span data-stu-id="a1f55-104">Capturing Fiddler Traces on Windows IoT Core</span></span>
 
-<span data-ttu-id="7c142-105">Fiddler는 웹 트래픽을 디버깅을 위한 도구입니다.</span><span class="sxs-lookup"><span data-stu-id="7c142-105">Fiddler is a tool for debugging web traffic.</span></span> <span data-ttu-id="7c142-106">확장 및 추가 기능을 사용 하 여 특정 요구 사항에 대 한 사용자 지정할 수 있습니다이 도구는 많은 웹 트래픽에 대 한 유용한 정보를 제공 하기 때문에 특히 유용 합니다.</span><span class="sxs-lookup"><span data-stu-id="7c142-106">It's particularly helpful because you can customize it for specific needs using extensions and add-ons, and the tool provides a lot of useful information specific to web traffic.</span></span>
+<span data-ttu-id="a1f55-105">Fiddler는 웹 트래픽을 디버깅 하기 위한 도구입니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-105">Fiddler is a tool for debugging web traffic.</span></span> <span data-ttu-id="a1f55-106">확장 및 추가 기능을 사용 하 여 특정 요구에 맞게 사용자 지정할 수 있으며,이 도구는 웹 트래픽과 관련 된 많은 유용한 정보를 제공 하기 때문에 특히 유용 합니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-106">It's particularly helpful because you can customize it for specific needs using extensions and add-ons, and the tool provides a lot of useful information specific to web traffic.</span></span>
 
-## <a name="assumptions"></a><span data-ttu-id="7c142-107">가정</span><span class="sxs-lookup"><span data-stu-id="7c142-107">Assumptions</span></span> 
+## <a name="assumptions"></a><span data-ttu-id="a1f55-107">Assumptions</span><span class="sxs-lookup"><span data-stu-id="a1f55-107">Assumptions</span></span> 
 
-* <span data-ttu-id="7c142-108">있다고 [PuTTY](http://www.putty.org/) 개발자 상자 또는 SSH에 대 한 대안</span><span class="sxs-lookup"><span data-stu-id="7c142-108">You have [PuTTY](http://www.putty.org/) on your developer box or an alternative for SSH</span></span>
-* <span data-ttu-id="7c142-109">아래 지침에 따라 IoT 코어 VM의 가정 하지만 작동 *모든* IoT Core 장치</span><span class="sxs-lookup"><span data-stu-id="7c142-109">The instructions below make the assumption of a IoT Core VM but will work on *any* IoT Core device</span></span>
+* <span data-ttu-id="a1f55-108">개발자 상자에 [PuTTY](http://www.putty.org/) 하거나 SSH에 대 한 대안을 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-108">You have [PuTTY](http://www.putty.org/) on your developer box or an alternative for SSH</span></span>
+* <span data-ttu-id="a1f55-109">아래 지침은 IoT Core VM을 가정 하지만 *모든* iot core 장치에서 작동 합니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-109">The instructions below make the assumption of a IoT Core VM but will work on *any* IoT Core device</span></span>
 
-## <a name="initial-setup"></a><span data-ttu-id="7c142-110">초기 설치</span><span class="sxs-lookup"><span data-stu-id="7c142-110">Initial Setup</span></span>
+## <a name="initial-setup"></a><span data-ttu-id="a1f55-110">초기 설정</span><span class="sxs-lookup"><span data-stu-id="a1f55-110">Initial Setup</span></span>
 
-1. <span data-ttu-id="7c142-111">최신 버전 다운로드 및 설치 [Fiddler](http://www.telerik.com/fiddler/) 아직 없는 경우 개발자 상자에서</span><span class="sxs-lookup"><span data-stu-id="7c142-111">Download and install the latest version of [Fiddler](http://www.telerik.com/fiddler/) on your developer box if you haven't already</span></span>
-2. <span data-ttu-id="7c142-112">아래에 다음 설정을 업데이트 하 고 Fiddler를 시작 _도구에는 Telerik Fiddler 옵션-> HTTPS->_ 탭</span><span class="sxs-lookup"><span data-stu-id="7c142-112">Start Fiddler and make the following setting updates under _Tools -> Telerik Fiddler Options -> HTTPS_ tab</span></span>
-    * <span data-ttu-id="7c142-113">확인 _HTTPS 연결 캡처_</span><span class="sxs-lookup"><span data-stu-id="7c142-113">Check _Capture HTTPS CONNECTs_</span></span>
-    * <span data-ttu-id="7c142-114">확인 _모든 프로세스에서 HTTPS 트래픽 해독->_</span><span class="sxs-lookup"><span data-stu-id="7c142-114">Check _Decrypt HTTPS Traffic -> from all processes_</span></span>
-    * <span data-ttu-id="7c142-115">'인증서에서 생성 된' 링크를 클릭 하 고 선택 _MakeCert 엔진_ (권장 사항: 이 변경 내용을 적용 하려면 Fiddler를 다시 시작)</span><span class="sxs-lookup"><span data-stu-id="7c142-115">Click on the 'Certificates generated by' link and select _MakeCert engine_ (Recommendation: Restart Fiddler for this change to take effect)</span></span>
-    * <span data-ttu-id="7c142-116">다음으로 통해 FiddlerRoot.cer 파일을 내보내기 _작업 데스크톱에 루트 인증서 내보내기->_</span><span class="sxs-lookup"><span data-stu-id="7c142-116">Next, export the FiddlerRoot.cer file via _Actions -> Export Root Certificate To Desktop_</span></span>
-3. <span data-ttu-id="7c142-117">아래에서 다음 설정을 업데이트할 _도구-> Telerik Fiddler 옵션-> 연결_ 탭:</span><span class="sxs-lookup"><span data-stu-id="7c142-117">Make the following setting updates under _Tools -> Telerik Fiddler Options -> Connections_ tab:</span></span>
-    * <span data-ttu-id="7c142-118">Fiddler를 확인 하 여 시스템 프록시 프록시로 설정 _연결할 수 있도록 원격 컴퓨터_</span><span class="sxs-lookup"><span data-stu-id="7c142-118">Setup Fiddler to act as a system proxy by checking _Allow Remote Computers to Connect_</span></span>
-    * <span data-ttu-id="7c142-119">_Fiddler는 포트에서 수신 대기_ 로 설정 해야 _8888_</span><span class="sxs-lookup"><span data-stu-id="7c142-119">_Fiddler listens on port_ should be set to _8888_</span></span>
+1. <span data-ttu-id="a1f55-111">아직 없는 경우 개발자 상자에 최신 버전의 [Fiddler](http://www.telerik.com/fiddler/) 를 다운로드 하 여 설치 합니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-111">Download and install the latest version of [Fiddler](http://www.telerik.com/fiddler/) on your developer box if you haven't already</span></span>
+2. <span data-ttu-id="a1f55-112">Fiddler을 시작 하 고 _도구-> Telerik Fiddler 옵션-> HTTPS_ 탭에서 다음 설정을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-112">Start Fiddler and make the following setting updates under _Tools -> Telerik Fiddler Options -> HTTPS_ tab</span></span>
+    * <span data-ttu-id="a1f55-113">_캡처 HTTPS 연결_ 확인</span><span class="sxs-lookup"><span data-stu-id="a1f55-113">Check _Capture HTTPS CONNECTs_</span></span>
+    * <span data-ttu-id="a1f55-114">_HTTPS 트래픽 암호 해독 확인-모든 프로세스에서 >_</span><span class="sxs-lookup"><span data-stu-id="a1f55-114">Check _Decrypt HTTPS Traffic -> from all processes_</span></span>
+    * <span data-ttu-id="a1f55-115">'에 의해 생성 된 인증서 ' 링크를 클릭 하 고 _makecert.exe 엔진_ (권장 사항: 이 변경 내용을 적용 하려면 Fiddler를 다시 시작 하십시오.</span><span class="sxs-lookup"><span data-stu-id="a1f55-115">Click on the 'Certificates generated by' link and select _MakeCert engine_ (Recommendation: Restart Fiddler for this change to take effect)</span></span>
+    * <span data-ttu-id="a1f55-116">그런 다음 _작업 > 통해 루트 인증서를 바탕 화면으로 내보내기_ FiddlerRoot 파일을 내보냅니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-116">Next, export the FiddlerRoot.cer file via _Actions -> Export Root Certificate To Desktop_</span></span>
+3. <span data-ttu-id="a1f55-117">_도구-> Telerik Fiddler 옵션-> Connections_ 탭에서 다음 설정을 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-117">Make the following setting updates under _Tools -> Telerik Fiddler Options -> Connections_ tab:</span></span>
+    * <span data-ttu-id="a1f55-118">_원격 컴퓨터의 연결 허용_ 을 선택 하 여 시스템 프록시 역할을 하도록 Fiddler를 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-118">Setup Fiddler to act as a system proxy by checking _Allow Remote Computers to Connect_</span></span>
+    * <span data-ttu-id="a1f55-119">_Fiddler 수신 대기 포트_ 를 _8888_ 으로 설정 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-119">_Fiddler listens on port_ should be set to _8888_</span></span>
   
-<span data-ttu-id="7c142-120">참고: 그러면 Fiddler를 다시 시작 하 고 모든 UAC 프롬프트를 수락 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="7c142-120">Note: You should restart Fiddler after this and accept any UAC prompt.</span></span>
+<span data-ttu-id="a1f55-120">참고: 이 경우 Fiddler를 다시 시작 하 고 모든 UAC 프롬프트를 수락 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-120">Note: You should restart Fiddler after this and accept any UAC prompt.</span></span>
 
-## <a name="transfer-and-import-fiddler-root-certificate"></a><span data-ttu-id="7c142-121">전송 및 Fiddler 루트 인증서 가져오기</span><span class="sxs-lookup"><span data-stu-id="7c142-121">Transfer and Import Fiddler Root Certificate</span></span>
-<span data-ttu-id="7c142-122">Https 트래픽 라우팅을 통해 PC를 디버그 하기 위해 IoT 이미지 또는 장치에 Fiddler 루트 인증서를 가져올 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="7c142-122">You'll need to import the Fiddler root certificate to your IoT image or device in order to debug https traffic routing through your PC.</span></span>  <span data-ttu-id="7c142-123">가상 하드 디스크 파일에 대한 중요 정보를 제공하려면</span><span class="sxs-lookup"><span data-stu-id="7c142-123">To do this:</span></span>
+## <a name="transfer-and-import-fiddler-root-certificate"></a><span data-ttu-id="a1f55-121">Fiddler 루트 인증서 전송 및 가져오기</span><span class="sxs-lookup"><span data-stu-id="a1f55-121">Transfer and Import Fiddler Root Certificate</span></span>
+<span data-ttu-id="a1f55-122">PC를 통해 https 트래픽 라우팅을 디버깅 하려면 Fiddler 루트 인증서를 IoT 이미지 또는 장치로 가져와야 합니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-122">You'll need to import the Fiddler root certificate to your IoT image or device in order to debug https traffic routing through your PC.</span></span>  <span data-ttu-id="a1f55-123">가상 하드 디스크 파일에 대한 중요 정보를 제공하려면</span><span class="sxs-lookup"><span data-stu-id="a1f55-123">To do this:</span></span>
 
-1. <span data-ttu-id="7c142-124">VHD 파일을 탑재할 (선택한 VHD를 마우스 오른쪽 단추로 클릭 _탑재_) 또는 PuTTY 통해 IoT 장치에 연결 (또는 다른 SSH 클라이언트)</span><span class="sxs-lookup"><span data-stu-id="7c142-124">Mount the VHD file (right click on the VHD and choose _mount_) or connect to your IoT device via PuTTY (or alternative SSH client)</span></span>
-2. <span data-ttu-id="7c142-125">MainOS 파티션을 이동 하 고 만들기를 _테스트_ 루트 폴더 (SSH를 통해 사용 하 여 _md c:\test_)</span><span class="sxs-lookup"><span data-stu-id="7c142-125">Browse to the mainOS partition and create a _test_ folder at root (via SSH, use _md c:\test_)</span></span>
-3. <span data-ttu-id="7c142-126">위에서 생성 된 FiddlerRoot.cer 복사 (기본적으로 바탕 화면에 이어야 함)를 테스트 폴더 위치</span><span class="sxs-lookup"><span data-stu-id="7c142-126">Copy FiddlerRoot.cer you generated above (should be on your desktop by default) to the test folder location</span></span>
-4. <span data-ttu-id="7c142-127">VHD를 사용 하는 경우 탑재 된 드라이브 꺼내기에서 분리 하 고 HyperV 통해 IoT 코어 VM 시작</span><span class="sxs-lookup"><span data-stu-id="7c142-127">If using a VHD, unmount it by ejecting any of the mounted drives and then start the IoT Core VM via HyperV</span></span>
-5. <span data-ttu-id="7c142-128">시작을 [SSH 세션](../connect-your-device/ssh.md) 및 관리자 권한으로 로그인</span><span class="sxs-lookup"><span data-stu-id="7c142-128">Start an [SSH session](../connect-your-device/ssh.md) and login as administrator</span></span> 
-6. <span data-ttu-id="7c142-129">SSH 세션에서 c:\test 디렉터리 이동</span><span class="sxs-lookup"><span data-stu-id="7c142-129">Navigate to c:\test directory in your SSH session</span></span>
-7. <span data-ttu-id="7c142-130">명령을 통해 Fiddler 루트 인증서를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="7c142-130">Import Fiddler Root Certificate via command:</span></span>
+1. <span data-ttu-id="a1f55-124">VHD 파일 탑재 (VHD를 마우스 오른쪽 단추로 클릭 하 고 _탑재_선택) 또는 PuTTY (또는 대체 SSH 클라이언트)를 통해 IoT 장치에 연결</span><span class="sxs-lookup"><span data-stu-id="a1f55-124">Mount the VHD file (right click on the VHD and choose _mount_) or connect to your IoT device via PuTTY (or alternative SSH client)</span></span>
+2. <span data-ttu-id="a1f55-125">MainOS 파티션으로 이동 하 고 루트에 _테스트_ 폴더를 만듭니다 (SSH를 통해 _md c:\test_사용).</span><span class="sxs-lookup"><span data-stu-id="a1f55-125">Browse to the mainOS partition and create a _test_ folder at root (via SSH, use _md c:\test_)</span></span>
+3. <span data-ttu-id="a1f55-126">위에서 생성 한 FiddlerRoot (기본적으로 데스크톱에 있어야 함)를 테스트 폴더 위치로 복사 합니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-126">Copy FiddlerRoot.cer you generated above (should be on your desktop by default) to the test folder location</span></span>
+4. <span data-ttu-id="a1f55-127">VHD를 사용 하는 경우 탑재 된 드라이브를 모두 꺼내면 탑재를 해제 한 다음 HyperV를 통해 IoT Core VM을 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-127">If using a VHD, unmount it by ejecting any of the mounted drives and then start the IoT Core VM via HyperV</span></span>
+5. <span data-ttu-id="a1f55-128">[SSH 세션](../connect-your-device/ssh.md) 을 시작 하 고 관리자 권한으로 로그인 합니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-128">Start an [SSH session](../connect-your-device/ssh.md) and login as administrator</span></span> 
+6. <span data-ttu-id="a1f55-129">SSH 세션에서 c:\test 디렉터리로 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-129">Navigate to c:\test directory in your SSH session</span></span>
+7. <span data-ttu-id="a1f55-130">명령을 통해 Fiddler 루트 인증서를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-130">Import Fiddler Root Certificate via command:</span></span>
     * `certmgr -add FiddlerRoot.cer -r localmachine -s root`
-8. <span data-ttu-id="7c142-131">SSH 세션 닫기</span><span class="sxs-lookup"><span data-stu-id="7c142-131">Close SSH session</span></span>
+8. <span data-ttu-id="a1f55-131">SSH 세션 닫기</span><span class="sxs-lookup"><span data-stu-id="a1f55-131">Close SSH session</span></span>
 
 
-## <a name="setup-proxy-on-vm-or-iot-core-device"></a><span data-ttu-id="7c142-132">VM 또는 IoT Core 장치에 대 한 프록시 설정</span><span class="sxs-lookup"><span data-stu-id="7c142-132">Setup Proxy on VM or IoT Core Device</span></span>
-<span data-ttu-id="7c142-133">아래 단계를 사용 하면 IoT VM 또는 PC 통해 트래픽 라우팅하는 데는 장치에 있으므로 해당 Fiddler 분석에 대 한 네트워크 트래픽을 캡처할 수 있습니다.:</span><span class="sxs-lookup"><span data-stu-id="7c142-133">The steps below will allow your IoT VM or device to route traffic through your PC so that Fiddler can capture network traffic for analysis:</span></span>
+## <a name="setup-proxy-on-vm-or-iot-core-device"></a><span data-ttu-id="a1f55-132">VM 또는 IoT Core 장치에서 프록시 설정</span><span class="sxs-lookup"><span data-stu-id="a1f55-132">Setup Proxy on VM or IoT Core Device</span></span>
+<span data-ttu-id="a1f55-133">아래 단계를 수행 하면 Fiddler에서 분석을 위해 네트워크 트래픽을 캡처할 수 있도록 IoT VM 또는 장치에서 PC를 통해 트래픽을 라우팅할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-133">The steps below will allow your IoT VM or device to route traffic through your PC so that Fiddler can capture network traffic for analysis:</span></span>
 
-1. <span data-ttu-id="7c142-134">통해 CMD 콘솔을 사용 하 여 개발 컴퓨터의 IP 확인 _ipconfig_</span><span class="sxs-lookup"><span data-stu-id="7c142-134">Determine the IP of your development machine using a CMD console via _ipconfig_</span></span>
-2. <span data-ttu-id="7c142-135">새 SSH 세션을 시작 defaultUser 로그인이이 시간 (사용자 이름: _DefaultAccount_ Pwd: _[공백]_ )</span><span class="sxs-lookup"><span data-stu-id="7c142-135">Start a new SSH session and this time, login as defaultUser (Username: _DefaultAccount_  Pwd: _[blank]_ )</span></span>
-3. <span data-ttu-id="7c142-136">다음 명령을 통해 프록시 설정:</span><span class="sxs-lookup"><span data-stu-id="7c142-136">Set the proxy via the following commands:</span></span>
+1. <span data-ttu-id="a1f55-134">_Ipconfig_ 를 통해 CMD 콘솔을 사용 하 여 개발 컴퓨터의 IP 확인</span><span class="sxs-lookup"><span data-stu-id="a1f55-134">Determine the IP of your development machine using a CMD console via _ipconfig_</span></span>
+2. <span data-ttu-id="a1f55-135">새 SSH 세션을 시작 하 고 이번에는 defaultUser로 로그인 합니다 (사용자 이름: _Defaultaccount_  Pwd: _[blank]_ )</span><span class="sxs-lookup"><span data-stu-id="a1f55-135">Start a new SSH session and this time, login as defaultUser (Username: _DefaultAccount_  Pwd: _[blank]_ )</span></span>
+3. <span data-ttu-id="a1f55-136">다음 명령을 통해 프록시를 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-136">Set the proxy via the following commands:</span></span>
     * `reg add "hkcu\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyEnable /t REG_DWORD /d 1`
     * `reg add "hkcu\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyServer /t REG_SZ /d [PC IP address]:8888`
 
-<span data-ttu-id="7c142-137">아직 실행 하는 경우 PC에서 Fiddler를 시작, VM 또는 IoT Core 장치를 다시 시작 하 고 Fiddler를 통해 트래픽을 이제 라우팅해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="7c142-137">If not already running, start Fiddler on your PC, restart your VM or IoT Core device and traffic should now be routed through Fiddler.</span></span> 
+<span data-ttu-id="a1f55-137">아직 실행 중이 아닌 경우 PC에서 Fiddler를 시작 하 고, VM 또는 IoT Core 장치를 다시 시작 하 고, 이제 Fiddler를 통해 트래픽을 라우팅합니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-137">If not already running, start Fiddler on your PC, restart your VM or IoT Core device and traffic should now be routed through Fiddler.</span></span> 
 
-<span data-ttu-id="7c142-138">참고: Https 연결 데이터를 제외한 Fiddler에 표시 되 면 인증서를 올바르게 설치 되지 않은 가능성이 했습니다.</span><span class="sxs-lookup"><span data-stu-id="7c142-138">Note: If you see https CONNECT in Fiddler but no data, the certificate was likely not installed correctly.</span></span> <span data-ttu-id="7c142-139">누르지 않은 있는지 확인 합니다 _전송 하 고 Fiddler 루트 인증서 가져오기_ 위의 단계입니다.</span><span class="sxs-lookup"><span data-stu-id="7c142-139">Make sure you didn't miss the _Transfer and Import Fiddler Root Certificate_ steps above.</span></span>
+<span data-ttu-id="a1f55-138">참고: Fiddler에는 https CONNECT가 있지만 데이터가 없는 경우 인증서가 올바르게 설치 되지 않은 것일 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-138">Note: If you see https CONNECT in Fiddler but no data, the certificate was likely not installed correctly.</span></span> <span data-ttu-id="a1f55-139">위의 _Fiddler 루트 인증서 전송 및 가져오기_ 단계를 놓치지 않았는지 확인 합니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-139">Make sure you didn't miss the _Transfer and Import Fiddler Root Certificate_ steps above.</span></span>
 
-<span data-ttu-id="7c142-140">또한 위의 레지스트리 키에서 다른 키 이진 blob의 캐시는 참고 백오프 프록시를 설정 하려는 경우.</span><span class="sxs-lookup"><span data-stu-id="7c142-140">Additonally, if you wish to turn the proxy back off note that the above reg keys get cached in a binary blob in another key.</span></span> <span data-ttu-id="7c142-141">따라서 제거 하는 것 외에도 위의 3 단계에서 방금 추가한 키도 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="7c142-141">so, in addition to removing the keys just added in step 3 above you also need to do:</span></span>
+<span data-ttu-id="a1f55-140">또한 프록시를 다시 사용 하도록 설정 하려는 경우 위의 reg 키는 다른 키의 이진 blob에서 캐시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-140">Additonally, if you wish to turn the proxy back off note that the above reg keys get cached in a binary blob in another key.</span></span> <span data-ttu-id="a1f55-141">따라서 위의 3 단계에서 방금 추가한 키를 제거 하는 것 외에도 다음 작업을 수행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="a1f55-141">so, in addition to removing the keys just added in step 3 above you also need to do:</span></span>
 
     reg delete "hkcu\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections"
     
