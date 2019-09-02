@@ -6,12 +6,12 @@ ms.date: 01/18/2018
 ms.topic: article
 description: Windows 10 IoT Core가 무엇인지와 이를 통해 수행할 수 있는 작업에 대해 알아봅니다.
 keywords: Windows 10 IoT Core, 작은 사용 공간, 헤드리스
-ms.openlocfilehash: 602aeb62ecc0bb2dd08118775aaf41c3ee61184b
-ms.sourcegitcommit: c5552007f5456e57512307f51b146406a23fa723
+ms.openlocfilehash: a1f2ce0835dcb40efc71f2b4d0d4733b781b0799
+ms.sourcegitcommit: 823a8f6967f74d71d5c61fe90f6b63ba79483479
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68739797"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70159281"
 ---
 # <a name="an-overview-of-windows-10-iot-core"></a>Windows 10 IoT Core 개요
 
@@ -27,13 +27,10 @@ Windows 10 IoT Core는 ARM과 x86/x64 디바이스에서 실행되는 디스플�
 
 디바이스를 제작하기 전에, 먼저 Windows 10 IoT Core를 사용하여 디바이스의 프로토타입을 만드는 것이 좋습니다. 이렇게 하면 디바이스를 만들 때 어떤 기능이 필요하고 어떤 구성을 원하는지 알아볼 수 있습니다.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
+<table>  
+<colgroup> <col width="50%" /> <col width="50%" /> </colgroup>  
+<thead>  
+<tr class="header">  
 <th align="left">항목</th>
 <th align="left">설명</th>
 </tr>
