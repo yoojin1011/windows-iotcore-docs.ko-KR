@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: Windows 10 IoT Core에서 보안 부팅, BitLocker 및 Device Guard를 사용 하도록 설정 하는 방법을 알아봅니다.
 keywords: windows iot, 보안 부팅, BitLocker, device guard, 보안, 턴키 보안
-ms.openlocfilehash: 26e0949dd8ee0a8cfec8aeafee3908a3ade86293
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 012cf74528a556f40b865a4ca02f27c9effc2cb7
+ms.sourcegitcommit: 365721929dc902ec12bafe02653609d3d21a59f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67142358"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71140472"
 ---
 # <a name="enabling-secure-boot-bitlocker-and-device-guard-on-windows-10-iot-core"></a>Windows 10 IoT Core에서 보안 부팅, BitLocker 및 Device Guard 사용
 
@@ -49,7 +49,7 @@ OEM으로 서는 제조할 때 IoT 장치에 UEFI 보안 부팅 데이터베이�
 
 * **서명 데이터베이스 (db):** 그러면 장치에 로드 될 수 있는 운영 체제 로더, UEFI 응용 프로그램 및 UEFI 드라이버의 서명자 또는 이미지 해시가 나열 됩니다.
 
-* **해지 된 서명 데이터베이스 (.dbx):** 이는 더 이상 신뢰할 수 없고 장치에 로드 될 수 없는 운영 체제 로더, UEFI 응용 프로그램 및 UEFI 드라이버의 서명자 또는 이미지 해시를 나열 합니다. 
+* **해지 된 서명 데이터베이스 (.dbx):** 이는 더 이상 신뢰할 수 없고 장치에 로드 *될 수 없는* 운영 체제 로더, uefi 응용 프로그램 및 uefi 드라이버의 서명자 또는 이미지 해시를 나열 합니다. 
 
 * **키 등록 키 데이터베이스 (KEK):** 서명 및 해지 된 서명 데이터베이스를 업데이트 하는 데 사용할 수 있는 서명 키의 목록을 포함 합니다.
 
@@ -104,7 +104,7 @@ IoT Core 장치에서 주요 보안 기능을 쉽게 사용할 수 있도록 Mic
 
 ### <a name="prerequisites"></a>사전 요구 사항
 
-* Windows 10 Enterprise를 실행 하는 PC
+* Windows 10 Enterprise를 실행 하는 PC (다른 Windows 버전은 제공 된 스크립트에서 지원 **되지 않음** ) 
 * [Windows 10 SDK](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk) -인증서 생성에 필요
 * [Windows 10 ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) -CAB 생성에 필요
 * 최종 잠금에 대 한 배송 펌웨어, OS, 드라이버 및 응용 프로그램을 사용 하 여 플랫폼 릴리스 하드웨어 참조
