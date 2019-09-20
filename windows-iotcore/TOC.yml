@@ -1,0 +1,240 @@
+- name: IoT용 Windows 설명서
+  href: index.yml
+- name: IoT용 Windows
+  expanded: false
+  items:
+    - name: "Windows\_10 IoT Core K"
+      href: windows-iot-core.md
+    - name: Windows 10 IoT Enterprise
+      href: windows-iot-enterprise.md
+    - name: Windows Server IoT 2019
+      href: windows-server.md
+- name: 자습서
+  expanded: false
+  items:
+    - name: Raspberry Pi 설정
+      href: tutorials/rpi.md
+    - name: MinnowBoard 설정
+      href: tutorials/minnowboard.md
+    - name: NXP 디바이스 설정
+      href: tutorials/nxp.md
+    - name: DragonBoard 설정
+      href: tutorials/dragonboard.md
+    - name: Qualcomm 디바이스 설정
+      href: tutorials/qualcomm.md
+    - name: Intel 디바이스 설정
+      href: tutorials/intel.md
+- name: 하드웨어 지침
+  expanded: false
+  items:
+    - name: SoCs 및 사용자 지정 보드
+      href: learn-about-hardware/SoCsAndCustomBoards.md
+    - name: 하드웨어 호환성 목록
+      href: learn-about-hardware/HardwareCompatList.md
+    - name: NXP i.MX SoCs
+      href: learn-about-hardware/iotnxp.md
+    - name: 핀 매핑
+      items:
+        - name: Raspberry Pi 2 및 3
+          href: learn-about-hardware/PinMappings/PinMappingsRPI.md
+        - name: Dragonboard
+          href: learn-about-hardware/PinMappings/PinMappingsDB.md
+        - name: Minnowboard Max
+          href: learn-about-hardware/PinMappings/PinMappingsMBM.md
+    - name: headed 및 headless 디바이스
+      href: learn-about-hardware/HeadlessMode.md
+    - name: 터치 입력 시 절전 모드 해제
+      href: learn-about-hardware/WakeOnTouch.md
+    - name: UEFI 요구 사항
+      href: commercialize-your-device/uefirequirements.md
+- name: 드라이버 지침
+  expanded: false
+  items:
+    - name: 드라이버 배포
+      href: learn-about-hardware/DriverDeployment.md
+    - name: 범용 드라이버 만들기
+      href: learn-about-hardware/DriverCreation.md
+    - name: USB 지원
+      href: learn-about-hardware/usb-support.md
+    - name: USB 주변 장치 드라이버 설치
+      href: learn-about-hardware/PeripheralDrivers.md
+- name: 애플리케이션 개발
+  expanded: false
+  items:
+    - name: 포그라운드 애플리케이션
+      href: develop-your-app/BuildingAppsForIoTCore.md
+    - name: 백그라운드 애플리케이션
+      href: develop-your-app/BackgroundApplications.md
+    - name: 앱 배포
+      href: develop-your-app/AppDeployment.md
+    - name: 기본 앱 설정
+      href: develop-your-app/SetupDefaultApp.md
+    - name: 앱 설치
+      href: develop-your-app/AppInstaller.md
+    - name: IoT Core 기본 앱
+      href: develop-your-app/IoTCoreDefaultApp.md
+    - name: 단위 테스트
+      href: develop-your-app/UnitTestsForIoTCore.md
+    - name: 콘솔 애플리케이션 배포
+      href: develop-your-app/RemoteDebugging.md
+    - name: 언어 지원
+      href: develop-your-app/MultiLang.md
+    - name: Embedded(포함) 모드
+      href: develop-your-app/EmbeddedMode.md
+    - name: 버스 공급자
+      href: develop-your-app/BusProviders.md
+    - name: 화상 키보드
+      href: develop-your-app/OnScreenKeyboard.md
+    - name: 로그인 대화 상자 모음
+      href: develop-your-app/SignInDialogTitleBars.md
+    - name: localhost 루프백
+      href: develop-your-app/Loopback.md
+    - name: IoT Shell 개요
+      href: develop-your-app/IoTCoreShell.md
+- name: 애플리케이션 디버그
+  expanded: false
+  items:
+    - name: 개요
+      href: manage-your-device/Overview.md
+    - name: Windows Device Portal
+      href: manage-your-device/DevicePortal.md
+    - name: Windows 디버거
+      href: manage-your-device/WindowsDebugger.md
+    - name: 기본 앱 설정
+      href: develop-your-app/SetupDefaultApp.md
+    - name: 메모리 누수
+      href: develop-your-app/InvestigateMemoryLeaks.md
+    - name: Fiddler
+      href: develop-your-app/Fiddler.md
+    - name: Lightning 공급자
+      href: develop-your-app/LightningProviders.md
+    - name: 이벤트 추적
+      href: manage-your-device/EventTracing.md
+- name: 개발자 도구
+  expanded: false
+  items:
+    - name: Windows 10 IoT Core 대시보드
+      href: connect-your-device/IoTDashboard.md
+    - name: PowerShell
+      href: connect-your-device/PowerShell.md
+    - name: 원격 표시
+      href: manage-your-device/RemoteDisplay.md
+    - name: 명령줄 유틸리티
+      href: manage-your-device/CommandLineUtils.md
+    - name: Windows 10 IoT Core API 포팅 도구
+      href: learn-about-hardware/IoTCorePortingTool.md
+    - name: 네트워크 패킷 캡처
+      href: manage-your-device/NetworkPacketCapture.md
+    - name: Windows 파일 공유
+      href: manage-your-device/WindowsFileSharing.md
+    - name: SSH
+      href: connect-your-device/SSH.md
+    - name: DISM
+      href: connect-your-device/DISM.md
+    - name: FTP
+      href: connect-your-device/FTP.md
+    - name: MTP
+      href: connect-your-device/MTP.md
+    - name: Python
+      href: developer-tools/python.md
+- name: 연결
+  expanded: false
+  items:
+    - name: Wi-Fi Direct
+      href: connect-your-device/SetupWiFiDirect.md
+    - name: Wi-Fi
+      href: connect-your-device/SetupWifi.md
+    - name: Miracast
+      href: connect-your-device/Miracast.md
+    - name: Bluetooth
+      href: connect-your-device/Bluetooth.md
+    - name: VPN
+      href: connect-your-device/VPN.md
+    - name: 모바일 광대역
+      href: connect-your-device/MBB.md
+- name: 장치 관리
+  expanded: false
+  items:
+    - name: 장치 관리
+      href: manage-your-device/DeviceManagement.md
+    - name: 프로젝트 로마
+      href: manage-your-device/ProjectRome.md
+    - name: Intune 디바이스 등록
+      href: manage-your-device/IntuneDeviceEnrollment.md
+- name: 디바이스 보안
+  expanded: false
+  items:
+    - name: 개요
+      href: secure-your-device/BuildingSecureDevices.md
+    - name: '보안 부팅, BitLocker 및 Device Guard'
+      href: secure-your-device/SecureBootAndBitLocker.md
+    - name: 통합 쓰기 필터
+      href: secure-your-device/UnifiedWriteFilter.md
+    - name: TPM 개요
+      href: secure-your-device/TPM.md
+    - name: TPM 설정
+      href: secure-your-device/setupTPM.md
+- name: 클라우드 연결
+  expanded: false
+  items:
+    - name: 개요
+      href: connect-to-cloud/Overview.md
+    - name: 디바이스 연결
+      href: connect-to-cloud/ConnectDeviceToCloud.md
+    - name: 앱 연결
+      href: connect-to-cloud/ConnectAppToCloud.md
+    - name: Azure IoT 디바이스 에이전트
+      href: manage-your-device/AzureIoTDA.md
+- name: 릴리스 정보
+  expanded: false
+  items:
+    - name: Insider 미리 보기
+      items:
+        - name: '현재: 빌드 17744'
+          href: release-notes/insider/17744.md
+        - name: 빌드 17723
+          href: release-notes/insider/17723.md
+        - name: 빌드 17692
+          href: release-notes/insider/17692.md
+        - name: 빌드 17686
+          href: release-notes/insider/17686.md
+        - name: 빌드 17672
+          href: release-notes/insider/17672.md
+        - name: '현재: 빌드 17661'
+          href: release-notes/insider/17661.md
+        - name: Raspberry Pi 3B+ 릴리스
+          href: release-notes/insider/RPi3BP.md
+        - name: 빌드 17110
+          href: release-notes/insider/17110.md
+        - name: 빌드 17083
+          href: release-notes/insider/17083.md
+        - name: 빌드 17015
+          href: release-notes/insider/17015.md
+        - name: 빌드 16267
+          href: release-notes/insider/16267.md
+        - name: 빌드 16257
+          href: release-notes/insider/16257.md
+    - name: 상용 릴리스
+      items:
+        - name: '현재: 2018년 10월 업데이트(2019년 1월 서비스 포함)'
+          href: release-notes/commercial/17763.md
+        - name: 2018년 10월 업데이트(빌드 17763)
+          href: release-notes/commercial/October2018Update.md
+        - name: 2018년 4월 업데이트(빌드 17134)
+          href: release-notes/commercial/April2018Update.md
+        - name: Fall Creators Update(빌드 16299)
+          href: release-notes/commercial/FallCreatorsUpdate.md
+        - name: 크리에이터스 업데이트(빌드 15063)
+          href: release-notes/commercial/CreatorsUpdate.md
+- name: 문제 해결
+  href: Troubleshooting.md
+- name: 다운로드
+  href: Downloads.md
+- name: 리소스
+  href: Resources.md
+- name: Microsoft IoT 팩
+  href: tutorials/adafruitkit.md
+- name: 접근성
+  href: Accessibility.md
+- name: 용어집
+  href: Glossary.md
