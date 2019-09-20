@@ -6,12 +6,12 @@ ms.date: 09/07/18
 ms.topic: article
 description: Windows 10 IoT 커뮤니티의 모든 리소스를 활용합니다.
 keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, 리소스, 가장 중요한 사람, 비디오, 블로그 게시물
-ms.openlocfilehash: ba3fb673c12849e9b3cfb48ae9215f3ec85992eb
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: b8916b4f344ee11e3cd0697f43e9afbad23c7870
+ms.sourcegitcommit: 365721929dc902ec12bafe02653609d3d21a59f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "66499342"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71135790"
 ---
 # <a name="windows-10-iot-resources"></a>Windows 10 IoT 리소스
 
@@ -45,6 +45,9 @@ ms.locfileid: "66499342"
 * [Windows Machine Learning: Windows 앱에 AI 구현](https://aka.ms/Windows-ML-WP)
 * [Windows IoT를 사용하여 보다 안전한 IoT 솔루션 만들기](https://aka.ms/secure-windowsiot)
 
+## <a name="webinars"></a>웹 세미나
+* [지능형 에지 모범 사례](https://youtu.be/DEOCKFb7lvM)
+
 ## <a name="learning-resources"></a>학습 리소스
 
 * [Microsoft MVP 커뮤니티](https://mvp.microsoft.com/)
@@ -55,25 +58,6 @@ ms.locfileid: "66499342"
 * [Hackster.io에서 Windows 10 IoT Core 시작](http://www.hackster.io/KiwiBryn)
 * [Window 10 IoT Core HAT](https://www.turta.io/iothat)
 
-## <a name="commercialized-projects"></a>상용화된 프로젝트
-
-* [Misty Robotics](https://customers.microsoft.com/en-us/story/misty-robotics)
-* [Askey Turbomate](https://customers.microsoft.com/en-us/story/askey)
-* [Johnson GLAS 제어](https://customers.microsoft.com/en-us/story/johnson-controls)
-* [Keith & Koep 칵테일 부스터](https://customers.microsoft.com/de-de/story/keith-koep)
-* [Kodisoft](https://customers.microsoft.com/en-us/story/kodisoft)
-* [Redback 기술](https://customers.microsoft.com/en-us/story/redback-technologies)
-
-
-## <a name="community-projects"></a>커뮤니티 프로젝트
-
-* [산업 자동화](https://www.hackster.io/projects/tags/industrial+automation+win10)
-* [디지털 사이니지](https://www.hackster.io/projects/tags/digital+signage+win10)
-* [Healthcare](https://www.hackster.io/projects/tags/healthcare+win10)
-* [스마트 빌딩](https://www.hackster.io/projects/tags/smart+building+win10)
-* [일반 정품](https://www.hackster.io/projects/tags/retail+win10)
-* [보안](https://www.hackster.io/projects/tags/security+win10)
-* [에너지](https://www.hackster.io/projects/tags/energy+win10)
 
 ## <a name="our-technology-partners"></a>기술 파트너
 
