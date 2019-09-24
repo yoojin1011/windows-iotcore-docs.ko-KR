@@ -8,12 +8,12 @@ ms.prod: windows-iot
 ms.technology: IoT
 description: Windows 10 IoT Core를 디버그할 수 있는 여러 가지 방법에 대해 알아봅니다.
 keywords: windows iot, 디버깅, PowerShell, SSH
-ms.openlocfilehash: 64fa743416823a849deb2cb7826c149f9023a893
-ms.sourcegitcommit: 77b86eee2bba3844e87f9d3dbef816761ddf0dd9
+ms.openlocfilehash: 1baeaca24fff425372e6a6de64d4b74bdcc60abb
+ms.sourcegitcommit: e3457de2e13ff89142a91cb8af2da4bf2e41ad20
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "65535833"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71189928"
 ---
 # <a name="debugging-on-windows-iot-core"></a>Windows IoT Core에서 디버깅
 응용 프로그램을 실행 하 여 IoT Core 이미지를 설치한 후에는 필요에 따라 응용 프로그램 또는 시스템을 디버그할 수 있는 것이 중요 합니다. 시스템을 디버깅 하 고 테스트 하는 데 가장 적합 한 시기는 테스트 이미지 상태입니다. IoT 코어 기반 시스템이 야생 경우 디버깅이 challanging 될 수 있습니다. 이는 수행할 수 없으며 테스트 단계와의 비교를 디버그 하기 위해 추가 어려움이 추가 된 것입니다. 테스트 모드에서 다음을 사용 하 여 응용 프로그램 또는 이미지를 디버그할 수 있습니다.
