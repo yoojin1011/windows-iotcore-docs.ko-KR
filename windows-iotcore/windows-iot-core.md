@@ -7,10 +7,10 @@ ms.topic: article
 description: Windows 10 IoT Core가 무엇인지와 이를 통해 수행할 수 있는 작업에 대해 알아봅니다.
 keywords: Windows 10 IoT Core, 작은 사용 공간, 헤드리스
 ms.openlocfilehash: a1f2ce0835dcb40efc71f2b4d0d4733b781b0799
-ms.sourcegitcommit: 823a8f6967f74d71d5c61fe90f6b63ba79483479
+ms.sourcegitcommit: e3457de2e13ff89142a91cb8af2da4bf2e41ad20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2019
+ms.lasthandoff: 09/24/2019
 ms.locfileid: "70159281"
 ---
 # <a name="an-overview-of-windows-10-iot-core"></a>Windows 10 IoT Core 개요
