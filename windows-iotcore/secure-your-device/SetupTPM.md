@@ -1,30 +1,28 @@
 ---
 title: 제안 된 플랫폼에서 TPM 설정
-author: saraclay
-ms.author: saclayt
-ms.date: 09/05/17
+ms.date: 09/05/2017
 ms.topic: article
 description: 제안 된 플랫폼에서 TPM을 설정 하는 방법에 대 한 지침에 따라 장치를 안전 하 게 보호 하는 방법을 알아봅니다.
 keywords: windows iot, 보안, 설정, 신뢰할 수 있는 플랫폼 모듈, TPM, 암호화, 키
-ms.openlocfilehash: cc82262e3f800195b460bfe1113ec7c075d36b9a
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: 905d6ea829d6920a1458dbc1a4bdd16f266f7be1
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60170131"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918683"
 ---
-# <a name="setting-up-tpm-on-suggested-platforms"></a><span data-ttu-id="d11f8-104">제안 된 플랫폼에서 TPM 설정</span><span class="sxs-lookup"><span data-stu-id="d11f8-104">Setting up TPM on Suggested Platforms</span></span>
+# <a name="setting-up-tpm-on-suggested-platforms"></a><span data-ttu-id="8dfb3-104">제안 된 플랫폼에서 TPM 설정</span><span class="sxs-lookup"><span data-stu-id="8dfb3-104">Setting up TPM on Suggested Platforms</span></span>
 
-## <a name="setup-firmware-tpm-ftpm"></a><span data-ttu-id="d11f8-105">펌웨어 TPM 설치 (fTPM)</span><span class="sxs-lookup"><span data-stu-id="d11f8-105">Setup firmware TPM (fTPM)</span></span>
-<span data-ttu-id="d11f8-106">펌웨어 TPM (fTPM)은 특수 한 프로세서/SoC를 지원 해야 하며, Raspberry Pi2에는 현재 구현 되어 있지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-106">Firmware TPM (fTPM) requires special Processor/SoC support and whence fTPM is not currently implemented on Raspberry Pi2.</span></span>
+## <a name="setup-firmware-tpm-ftpm"></a><span data-ttu-id="8dfb3-105">펌웨어 TPM 설치 (fTPM)</span><span class="sxs-lookup"><span data-stu-id="8dfb3-105">Setup firmware TPM (fTPM)</span></span>
+<span data-ttu-id="8dfb3-106">펌웨어 TPM (fTPM)은 특수 한 프로세서/SoC를 지원 해야 하며, Raspberry Pi2에는 현재 구현 되어 있지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-106">Firmware TPM (fTPM) requires special Processor/SoC support and whence fTPM is not currently implemented on Raspberry Pi2.</span></span>
 
-1. <span data-ttu-id="d11f8-107">MBM (UEFI 버전 0.80 이상)이 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-107">You must have MBM with UEFI version 0.80 or above.</span></span>
-2. <span data-ttu-id="d11f8-108">다음 UEFI 설정을 변경 하 여 fTPM을 사용 하도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-108">Enable fTPM by changing the following UEFI settings:</span></span>
+1. <span data-ttu-id="8dfb3-107">MBM (UEFI 버전 0.80 이상)이 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-107">You must have MBM with UEFI version 0.80 or above.</span></span>
+2. <span data-ttu-id="8dfb3-108">다음 UEFI 설정을 변경 하 여 fTPM을 사용 하도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-108">Enable fTPM by changing the following UEFI settings:</span></span>
 
         Device Manager -> System Setup -> Security Configuration -> PTT = <Enable>
 
-3. <span data-ttu-id="d11f8-109">STPM/dTPM에 대 한 C:\Windows\System32\ACPITABL.dat가 없는지 확인 합니다 (필요 하지 않은 경우 충돌 해결/파일 삭제).</span><span class="sxs-lookup"><span data-stu-id="d11f8-109">Ensure you do not have C:\Windows\System32\ACPITABL.dat for sTPM/dTPM (resolve the conflict/delete the file if not needed).</span></span>
-4. <span data-ttu-id="d11f8-110">올바른 TPM 버전이 사용 하도록 설정 되어 있는지 확인-Windows IoT Core 장치에서 [tpm 2.0 도구](https://github.com/ms-iot/security/tree/master/Urchin/T2T) 를 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-110">Verify you have the right TPM version enabled - run the [TPM 2.0 Tool](https://github.com/ms-iot/security/tree/master/Urchin/T2T) on the Windows IoT Core device.</span></span>
+3. <span data-ttu-id="8dfb3-109">STPM/dTPM에 대 한 C:\Windows\System32\ACPITABL.dat가 없는지 확인 합니다 (필요 하지 않은 경우 충돌 해결/파일 삭제).</span><span class="sxs-lookup"><span data-stu-id="8dfb3-109">Ensure you do not have C:\Windows\System32\ACPITABL.dat for sTPM/dTPM (resolve the conflict/delete the file if not needed).</span></span>
+4. <span data-ttu-id="8dfb3-110">올바른 TPM 버전이 사용 하도록 설정 되어 있는지 확인-Windows IoT Core 장치에서 [tpm 2.0 도구](https://github.com/ms-iot/security/tree/master/Urchin/T2T) 를 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-110">Verify you have the right TPM version enabled - run the [TPM 2.0 Tool](https://github.com/ms-iot/security/tree/master/Urchin/T2T) on the Windows IoT Core device.</span></span>
 
         C:\>t2t.exe -cap
 
@@ -95,8 +93,8 @@ ms.locfileid: "60170131"
 
         c:\>
 
-5. <span data-ttu-id="d11f8-111">FTPM이 작동 하는지 확인-Windows IoT Core 장치에서 [Urchin 단위 테스트](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest) 를 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-111">Verify fTPM is functioning - run the [Urchin Unit Tests](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest) on the Windows IoT Core device.</span></span>  
-   <span data-ttu-id="d11f8-112">여러 패스 테스트가 표시 되어야 합니다. 일부 기능은 fTPM에서 지원 되지 않으므로 몇 가지 오류 코드가 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-112">You should see several PASS tests (note that some of the functionality is not supported by the fTPM, so a few error codes are expected):</span></span>
+5. <span data-ttu-id="8dfb3-111">FTPM이 작동 하는지 확인-Windows IoT Core 장치에서 [Urchin 단위 테스트](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest) 를 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-111">Verify fTPM is functioning - run the [Urchin Unit Tests](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest) on the Windows IoT Core device.</span></span>  
+   <span data-ttu-id="8dfb3-112">여러 패스 테스트가 표시 되어야 합니다. 일부 기능은 fTPM에서 지원 되지 않으므로 몇 가지 오류 코드가 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-112">You should see several PASS tests (note that some of the functionality is not supported by the fTPM, so a few error codes are expected):</span></span>
 
         C:\>urchintest.exe
         ---SETUP----------------------------------------
@@ -141,27 +139,27 @@ ms.locfileid: "60170131"
 
         C:\>
 
-## <a name="setup-discrete-tpm-dtpm"></a><span data-ttu-id="d11f8-113">불연속 TPM 설정 (dTPM)</span><span class="sxs-lookup"><span data-stu-id="d11f8-113">Setup discrete TPM (dTPM)</span></span>
-<span data-ttu-id="d11f8-114">이러한 지침은 MBM, RPi2 또는 RPi3에서 지원 되는 dTPM 모듈에 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-114">These instructions are applicable for any dTPM module supported on MBM, RPi2, or RPi3.</span></span>
+## <a name="setup-discrete-tpm-dtpm"></a><span data-ttu-id="8dfb3-113">불연속 TPM 설정 (dTPM)</span><span class="sxs-lookup"><span data-stu-id="8dfb3-113">Setup discrete TPM (dTPM)</span></span>
+<span data-ttu-id="8dfb3-114">이러한 지침은 MBM, RPi2 또는 RPi3에서 지원 되는 dTPM 모듈에 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-114">These instructions are applicable for any dTPM module supported on MBM, RPi2, or RPi3.</span></span>
 
-1. <span data-ttu-id="d11f8-115">개별 TPM 모듈을 가져와서 MBM/RPi2/RPi3에 연결 합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-115">Get a discrete TPM module and attach it to the MBM/RPi2/RPi3.</span></span>
-2. <span data-ttu-id="d11f8-116">(MBM에 적용 됨) 다음 UEFI 설정을 변경 하 여 fTPM을 사용 하지 않도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-116">(Applies to MBM) Disable fTPM by changing the following UEFI settings:</span></span>
+1. <span data-ttu-id="8dfb3-115">개별 TPM 모듈을 가져와서 MBM/RPi2/RPi3에 연결 합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-115">Get a discrete TPM module and attach it to the MBM/RPi2/RPi3.</span></span>
+2. <span data-ttu-id="8dfb3-116">(MBM에 적용 됨) 다음 UEFI 설정을 변경 하 여 fTPM을 사용 하지 않도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-116">(Applies to MBM) Disable fTPM by changing the following UEFI settings:</span></span>
 
         Device Manager -> System Setup -> Security Configuration -> PTT = <Disable>
 
-3. <span data-ttu-id="d11f8-117">(MBM에 적용 됨) 다음 UEFI 설정을 변경 하 여 dTPM을 사용 하도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-117">(Applies to MBM) Enable dTPM by changing the following UEFI settings:</span></span>
+3. <span data-ttu-id="8dfb3-117">(MBM에 적용 됨) 다음 UEFI 설정을 변경 하 여 dTPM을 사용 하도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-117">(Applies to MBM) Enable dTPM by changing the following UEFI settings:</span></span>
 
         Device Manager -> System Setup -> Security Configuration -> Discrete TPM = <Enable>
 
-4. <span data-ttu-id="d11f8-118">선택한 개별 TPM 모듈을 기준으로 [여기](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL)에서 일치 하는 ACPI 테이블을 식별 합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-118">Based on your discrete TPM module of choice, identify its matching ACPI table [here](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL).</span></span>
-5. <span data-ttu-id="d11f8-119">이 ACPI 테이블을 MBM/RPi2/RPi3 _C:\Windows\System32\ACPITABL.dat_에 복사 합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-119">Copy that ACPI table to MBM/RPi2/RPi3 _C:\Windows\System32\ACPITABL.dat_.</span></span>
-6. <span data-ttu-id="d11f8-120">장치에서 testsigning을 사용 하도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-120">Enable testsigning on the device:</span></span>
+4. <span data-ttu-id="8dfb3-118">선택한 개별 TPM 모듈을 기준으로 [여기](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL)에서 일치 하는 ACPI 테이블을 식별 합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-118">Based on your discrete TPM module of choice, identify its matching ACPI table [here](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL).</span></span>
+5. <span data-ttu-id="8dfb3-119">이 ACPI 테이블을 MBM/RPi2/RPi3 _C:\Windows\System32\ACPITABL.dat_에 복사 합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-119">Copy that ACPI table to MBM/RPi2/RPi3 _C:\Windows\System32\ACPITABL.dat_.</span></span>
+6. <span data-ttu-id="8dfb3-120">장치에서 testsigning을 사용 하도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-120">Enable testsigning on the device:</span></span>
 
         bcdedit /set {current} integrityservices disable
         bcdedit /set testsigning on
 
-7. <span data-ttu-id="d11f8-121">장치를 다시 부팅합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-121">Reboot the device.</span></span>
-8. <span data-ttu-id="d11f8-122">올바른 TPM 버전이 사용 하도록 설정 되어 있는지 확인-Windows IoT Core 장치에서 [tpm 2.0 도구](https://github.com/ms-iot/security/tree/master/Urchin/T2T) 를 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-122">Verify you have the right TPM version enabled - run the [TPM 2.0 Tool](https://github.com/ms-iot/security/tree/master/Urchin/T2T) on the Windows IoT Core device.</span></span>
+7. <span data-ttu-id="8dfb3-121">장치를 다시 부팅합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-121">Reboot the device.</span></span>
+8. <span data-ttu-id="8dfb3-122">올바른 TPM 버전이 사용 하도록 설정 되어 있는지 확인-Windows IoT Core 장치에서 [tpm 2.0 도구](https://github.com/ms-iot/security/tree/master/Urchin/T2T) 를 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-122">Verify you have the right TPM version enabled - run the [TPM 2.0 Tool](https://github.com/ms-iot/security/tree/master/Urchin/T2T) on the Windows IoT Core device.</span></span>
 
         C:\>t2t.exe -cap
 
@@ -232,8 +230,8 @@ ms.locfileid: "60170131"
 
         C:\>
 
-9. <span data-ttu-id="d11f8-123">DTPM이 작동 하는지 확인-Windows IoT Core 장치에서 [Urchin 단위 테스트](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest) 를 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-123">Verify dTPM is functioning - run the [Urchin Unit Tests](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest) on the Windows IoT Core device.</span></span>  
-    <span data-ttu-id="d11f8-124">여러 패스 테스트가 표시 되어야 합니다 (일부 기능은 dTPM에서 지원 되지 않을 수 있으므로 몇 가지 오류 코드가 필요 함).</span><span class="sxs-lookup"><span data-stu-id="d11f8-124">You should see several PASS tests (note that some of the functionality may not be supported by the dTPM, so a few error codes are expected):</span></span>
+9. <span data-ttu-id="8dfb3-123">DTPM이 작동 하는지 확인-Windows IoT Core 장치에서 [Urchin 단위 테스트](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest) 를 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-123">Verify dTPM is functioning - run the [Urchin Unit Tests](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest) on the Windows IoT Core device.</span></span>  
+    <span data-ttu-id="8dfb3-124">여러 패스 테스트가 표시 되어야 합니다 (일부 기능은 dTPM에서 지원 되지 않을 수 있으므로 몇 가지 오류 코드가 필요 함).</span><span class="sxs-lookup"><span data-stu-id="8dfb3-124">You should see several PASS tests (note that some of the functionality may not be supported by the dTPM, so a few error codes are expected):</span></span>
 
         C:\>urchintest.exe
 
@@ -279,25 +277,25 @@ ms.locfileid: "60170131"
 
         C:\>
 
-## <a name="enable-and-verify-software-tpm-stpm"></a><span data-ttu-id="d11f8-125">소프트웨어 TPM 사용 및 확인 (sTPM)</span><span class="sxs-lookup"><span data-stu-id="d11f8-125">Enable and verify software TPM (sTPM)</span></span>  
-<span data-ttu-id="d11f8-126">**Stpm은 개발 목적 으로만 제공 되며 실제 보안 이점을 제공 하지**않습니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-126">Note that **sTPM is intended for development purposes only and does not provide any real security benefits**.</span></span>
+## <a name="enable-and-verify-software-tpm-stpm"></a><span data-ttu-id="8dfb3-125">소프트웨어 TPM 사용 및 확인 (sTPM)</span><span class="sxs-lookup"><span data-stu-id="8dfb3-125">Enable and verify software TPM (sTPM)</span></span>  
+<span data-ttu-id="8dfb3-126">**Stpm은 개발 목적 으로만 제공 되며 실제 보안 이점을 제공 하지**않습니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-126">Note that **sTPM is intended for development purposes only and does not provide any real security benefits**.</span></span>
 
-1. <span data-ttu-id="d11f8-127">(MBM에 적용 됨) 다음 UEFI 설정을 변경 하 여 fTPM을 사용 하지 않도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-127">(Applies to MBM) Disable fTPM by changing the following UEFI settings:</span></span>
+1. <span data-ttu-id="8dfb3-127">(MBM에 적용 됨) 다음 UEFI 설정을 변경 하 여 fTPM을 사용 하지 않도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-127">(Applies to MBM) Disable fTPM by changing the following UEFI settings:</span></span>
 
         Device Manager -> System Setup -> Security Configuration -> PTT = <Disable>
 
-2. <span data-ttu-id="d11f8-128">(MBM에 적용 됨) 다음 UEFI 설정을 변경 하 여 dTPM을 사용 하도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-128">(Applies to MBM) Enable dTPM by changing the following UEFI settings:</span></span>
+2. <span data-ttu-id="8dfb3-128">(MBM에 적용 됨) 다음 UEFI 설정을 변경 하 여 dTPM을 사용 하도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-128">(Applies to MBM) Enable dTPM by changing the following UEFI settings:</span></span>
 
         Device Manager -> System Setup -> Security Configuration -> Discrete TPM = <Enable>
 
-3. <span data-ttu-id="d11f8-129">장치에서 testsigning을 사용 하도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-129">Enable testsigning on the device:</span></span>
+3. <span data-ttu-id="8dfb3-129">장치에서 testsigning을 사용 하도록 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-129">Enable testsigning on the device:</span></span>
 
         bcdedit /set {current} integrityservices disable
         bcdedit /set testsigning on
 
-4. <span data-ttu-id="d11f8-130">[여기](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL/fTPMSim) 에서 ACPI 테이블을 Mbm/RPi2/RPi3 _C:\Windows\System32\ACPITABL.dat_로 복사 합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-130">Copy the ACPI table from [here](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL/fTPMSim) to MBM/RPi2/RPi3 _C:\Windows\System32\ACPITABL.dat_.</span></span>
-5. <span data-ttu-id="d11f8-131">장치를 다시 부팅합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-131">Reboot the device.</span></span>
-6. <span data-ttu-id="d11f8-132">올바른 TPM 버전이 사용 하도록 설정 되어 있는지 확인-Windows IoT Core 장치에서 [tpm 2.0 도구](https://github.com/ms-iot/security/tree/master/Urchin/T2T) 를 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-132">Verify you have the right TPM version enabled - run the [TPM 2.0 Tool](https://github.com/ms-iot/security/tree/master/Urchin/T2T) on the Windows IoT Core device.</span></span>
+4. <span data-ttu-id="8dfb3-130">[여기](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL/fTPMSim) 에서 ACPI 테이블을 Mbm/RPi2/RPi3 _C:\Windows\System32\ACPITABL.dat_로 복사 합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-130">Copy the ACPI table from [here](https://github.com/ms-iot/security/tree/master/TPM-ACPITABL/fTPMSim) to MBM/RPi2/RPi3 _C:\Windows\System32\ACPITABL.dat_.</span></span>
+5. <span data-ttu-id="8dfb3-131">장치를 다시 부팅합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-131">Reboot the device.</span></span>
+6. <span data-ttu-id="8dfb3-132">올바른 TPM 버전이 사용 하도록 설정 되어 있는지 확인-Windows IoT Core 장치에서 [tpm 2.0 도구](https://github.com/ms-iot/security/tree/master/Urchin/T2T) 를 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-132">Verify you have the right TPM version enabled - run the [TPM 2.0 Tool](https://github.com/ms-iot/security/tree/master/Urchin/T2T) on the Windows IoT Core device.</span></span>
 
         C:\>t2t.exe -cap
         TBS detected 2.0 simulated TPM (sTPM).
@@ -367,8 +365,8 @@ ms.locfileid: "60170131"
 
         C:\>
 
-7. <span data-ttu-id="d11f8-133">STPM이 작동 하는지 확인-Windows IoT Core 장치에서 [Urchin 단위 테스트](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest) 를 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-133">Verify sTPM is functioning - run the [Urchin Unit Tests](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest) on the Windows IoT Core device.</span></span>  
-   <span data-ttu-id="d11f8-134">여러 패스 테스트가 표시 되어야 합니다. 일부 기능은 sTPM에서 지원 되지 않으므로 몇 가지 오류 코드가 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="d11f8-134">You should see several PASS tests (note that some of the functionality is not supported by the sTPM, so a few error codes are expected):</span></span>
+7. <span data-ttu-id="8dfb3-133">STPM이 작동 하는지 확인-Windows IoT Core 장치에서 [Urchin 단위 테스트](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest) 를 실행 합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-133">Verify sTPM is functioning - run the [Urchin Unit Tests](https://github.com/ms-iot/security/tree/master/Urchin/UrchinTest) on the Windows IoT Core device.</span></span>  
+   <span data-ttu-id="8dfb3-134">여러 패스 테스트가 표시 되어야 합니다. 일부 기능은 sTPM에서 지원 되지 않으므로 몇 가지 오류 코드가 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="8dfb3-134">You should see several PASS tests (note that some of the functionality is not supported by the sTPM, so a few error codes are expected):</span></span>
 
         C:\>urchintest.exe
         ---SETUP----------------------------------------
