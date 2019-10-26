@@ -1,17 +1,15 @@
 ---
 title: IoT Core의 Cortana
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Windows IoT Core에서 Cortana에 대 한 업데이트를 시작 하 고 설치 하는 방법을 알아봅니다.
 keywords: windows iot, Cortana, 음성, AI, 디지털 길잡이, 언어
-ms.openlocfilehash: c18534a532b0588b54f377acf1092d6916e8a673
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: b3a4699a762f158671459c8bc592007def6d9621
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60170511"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918174"
 ---
 # <a name="cortana-on-iot-core"></a>IoT Core의 Cortana
 

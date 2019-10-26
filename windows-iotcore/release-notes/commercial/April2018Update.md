@@ -1,17 +1,15 @@
 ---
 title: 4 월 2018 업데이트-빌드 17134
-author: saraclay
-ms.author: saclayt
 ms.date: 05/01/2018
 ms.topic: article
 description: Windows 10 IoT 용 4 월 2018 업데이트의 새로운 기능에 대해 알아봅니다.
 keywords: Windows IoT, 4 월 2018 업데이트, 릴리스 정보
-ms.openlocfilehash: b61ee94651c2bea0ec0582669b62867d47c85a0c
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: f9068b3860dcf684aaa12d12ed3fb0abd9598232
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60167441"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918725"
 ---
 # <a name="april-2018-update-release-notes-for-windows-10-iot"></a>Windows 10 IoT 용 업데이트 릴리스 정보 4 월 2018
 빌드 번호 17134. 2018년 5월
@@ -22,7 +20,7 @@ Windows 10 IoT는 임베디드 또는 전용 용도의 장치를 개발할 수 �
 
 ## <a name="privacy-statement"></a>개인정보취급방침
 
-이 버전의 Windows 운영 체제에 대 한 개인 정보 취급 방침은에서 [https://go.microsoft.com/fwlink/?LinkId=521839](https://go.microsoft.com/fwlink/?LinkId=521839)볼 수 있습니다.
+이 버전의 Windows 운영 체제에 대 한 개인 정보 취급 방침은 [https://go.microsoft.com/fwlink/?LinkId=521839](https://go.microsoft.com/fwlink/?LinkId=521839)에서 볼 수 있습니다.
 
 ## <a name="whats-new-in-april-2018-update"></a>4 월 2018 업데이트의 새로운 기능
 * [Visual studio 15.6 RTW](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-relnotes#Win10_IoT_Core_Testing_Support) 와 함께 제공 되는 [Visual studio 테스트 플랫폼](https://blogs.msdn.microsoft.com/devops/2017/02/12/evolving-the-visual-studio-test-platform-part-4-together-in-the-open/) 은 이제 Windows 10 IoT Core에서 테스트를 지원 합니다. Windows 10 IoT Core를 대상으로 하는 Visual Studio 2017에서 프로젝트에 대 한 [단위 테스트를 작성할](https://blogs.msdn.microsoft.com/devops/2018/03/07/devops-for-iot-with-win10-iot-core-uwp-and-vsts/) 때 개발자는 이제 장치에 테스트를 배포 하 고 수동으로 실행 하는 대신 visual studio에서 직접 해당 단위 테스트를 장치에서 직접 실행할 수 있습니다.

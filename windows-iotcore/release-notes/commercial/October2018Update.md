@@ -1,17 +1,15 @@
 ---
 title: 2018 10 월 업데이트-빌드 17763
-author: saraclay
-ms.author: saclayt
 ms.date: 10/02/2018
 ms.topic: article
 description: Windows 10 월 2018 업데이트의 새로운 기능에 대해 알아봅니다.
 keywords: Windows IoT, 2018 년 10 월 업데이트, 릴리스 정보
-ms.openlocfilehash: 886f86a733f53632dee73d0af7b2c172693bc3a5
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: 30292437da20a577a319fe47b3f5c2647df00382
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60170121"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918702"
 ---
 # <a name="october-2018-update-release-notes-for-windows-10-iot"></a>10 월 2018 Windows 10 IoT의 업데이트 릴리스 정보
 빌드 번호 17763. 2018년 10월
@@ -25,7 +23,7 @@ Windows 10 IoT는 임베디드 또는 전용 용도의 장치를 개발할 수 �
 
 ## <a name="privacy-statement"></a>개인정보취급방침
 
-이 버전의 Windows 운영 체제에 대 한 개인 정보 취급 방침은에서 [https://go.microsoft.com/fwlink/?LinkId=521839](https://go.microsoft.com/fwlink/?LinkId=521839)볼 수 있습니다.
+이 버전의 Windows 운영 체제에 대 한 개인 정보 취급 방침은 [https://go.microsoft.com/fwlink/?LinkId=521839](https://go.microsoft.com/fwlink/?LinkId=521839)에서 볼 수 있습니다.
 
 ## <a name="whats-new-in-october-2018-update"></a>10 월 2018 업데이트의 새로운 기능
 

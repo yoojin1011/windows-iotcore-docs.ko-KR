@@ -1,17 +1,15 @@
 ---
 title: 네트워크 패킷 캡처
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Microsoft Message Analyzer를 사용 하 여 네트워크 패킷 캡처를 사용 하도록 설정 하는 방법을 알아봅니다.
 keywords: windows iot, 네트워크 패킷, 네트워크 패킷 캡처, Microsoft Message Analyzer, PowerShell
-ms.openlocfilehash: 1880b6502099c50653e9e60ebc3d4ff3cd926450
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: 593b6f4f8650e074666dda06feb88e6afccf5e61
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60171020"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72917425"
 ---
 # <a name="network-packet-capture"></a>네트워크 패킷 캡처
 
@@ -19,13 +17,13 @@ ms.locfileid: "60171020"
 
 ![메시지 분석기](../media/NetworkPacketCapture/message-analyzer.png)
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
 
 Powershell 연결 작업 ( [powershell](../connect-your-device/PowerShell.md)에서 설명 하는 1 ~ 8 단계).
 
 ## <a name="set-up-your-device"></a>장치 설정
 
-메시지 분석기를 사용 하 여 장치에 연결 하려면 먼저 장치 이름을 변경 해야 합니다.  이 작업은 `setcomputername` 명령을 사용 하 여 [SSH](../connect-your-device/SSH.md) 또는 [PowerShell](../connect-your-device/PowerShell.md) 을 통해 수행할 수 있습니다.
+메시지 분석기를 사용 하 여 장치에 연결 하려면 먼저 장치 이름을 변경 해야 합니다.  `setcomputername` 명령을 사용 하 여 [SSH](../connect-your-device/SSH.md) 또는 [PowerShell](../connect-your-device/PowerShell.md) 을 통해 수행할 수 있습니다.
 
 ![PowerShell 장치 이름 바꾸기](../media/NetworkPacketCapture/powershell-rename-device.png)
 
@@ -43,19 +41,19 @@ PowerShell 또는 SSH를 사용 하 여 장치에 연결 하 고 다음 명령�
 
 1. [Microsoft Message Analyzer](http://www.microsoft.com/en-us/download/details.aspx?id=44226)를 다운로드 합니다.
 2. 메시지 분석기를 엽니다.
-3. 설정을 `New Session`클릭 합니다.
+3. `New Session`를 클릭 합니다.
 
     ![메시지 분석기](../media/NetworkPacketCapture/message-analyzer-new-session.png)
 4. 열리는 창에서 `Live Trace` 단추를 클릭 합니다.
-    ![메시지 분석기](../media/NetworkPacketCapture/message-analyzer-live-trace.png)
+    ![Message Analyzer](../media/NetworkPacketCapture/message-analyzer-live-trace.png)
 5. `Edit...` 단추를 클릭 합니다.
-    ![메시지 분석기](../media/NetworkPacketCapture/message-analyzer-edit-button.png)
+    ![Message Analyzer](../media/NetworkPacketCapture/message-analyzer-edit-button.png)
 6. Localhost를 IoT 장치의 이름으로 바꾸고 관리자 사용자 이름 및 암호를 입력 합니다.  그런 다음 `OK`를 클릭 합니다.
-    ![메시지 분석기](../media/NetworkPacketCapture/message-analyzer-edit-target-computers.png)
-7. 드롭다운을 클릭 하 고를 `Local Network Interfaces`선택 합니다. `Select a trace scenario`
-    ![메시지 분석기](../media/NetworkPacketCapture/message-analyzer-trace-scenario.png)
-8. `Start` 단추를 클릭합니다.
+    ![Message Analyzer](../media/NetworkPacketCapture/message-analyzer-edit-target-computers.png)
+7. `Select a trace scenario` 드롭다운을 클릭 하 고 `Local Network Interfaces`을 선택 합니다.
+    ![Message Analyzer](../media/NetworkPacketCapture/message-analyzer-trace-scenario.png)
+8. `Start` 단추를 클릭 합니다.
 9. 장치에서 네트워크 인터페이스를 통과 하는 메시지가 표시 되기 시작 해야 합니다.
-    ![메시지 분석기](../media/NetworkPacketCapture/message-analyzer.png)
-10. 메시지 분석기를 통해 추적을 시작한 후 장치의 [웹 인터페이스](DevicePortal.md)에서 패킷 캡처 드라이버의 ETW 메시지도 볼 수 있습니다.  이렇게 하려면 웹 인터페이스의 ETW 탭으로 이동 하 여 `Microsoft-Windows-NDIS-PacketCapture` `Registered providers` 드롭다운 메뉴에서를 선택 하 고 단추를 `Enable` 클릭 합니다.
-    ![메시지 분석기](../media/NetworkPacketCapture/web-etw.png)    
+    ![Message Analyzer](../media/NetworkPacketCapture/message-analyzer.png)
+10. 메시지 분석기를 통해 추적을 시작한 후 장치의 [웹 인터페이스](DevicePortal.md)에서 패킷 캡처 드라이버의 ETW 메시지도 볼 수 있습니다.  이렇게 하려면 웹 인터페이스의 ETW 탭으로 이동 하 여 `Registered providers` 드롭다운 메뉴에서 `Microsoft-Windows-NDIS-PacketCapture`를 선택 하 고 `Enable` 단추를 클릭 합니다.
+    ![Message Analyzer](../media/NetworkPacketCapture/web-etw.png)    

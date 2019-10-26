@@ -1,17 +1,15 @@
 ---
 title: Windows 10 IoT Core에서 보안 부팅, BitLocker 및 Device Guard 사용
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Windows 10 IoT Core에서 보안 부팅, BitLocker 및 Device Guard를 사용 하도록 설정 하는 방법을 알아봅니다.
 keywords: windows iot, 보안 부팅, BitLocker, device guard, 보안, 턴키 보안
-ms.openlocfilehash: 012cf74528a556f40b865a4ca02f27c9effc2cb7
-ms.sourcegitcommit: 365721929dc902ec12bafe02653609d3d21a59f0
+ms.openlocfilehash: 00e2abf82a043dfebe956281995961692b45c3b9
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71140472"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918536"
 ---
 # <a name="enabling-secure-boot-bitlocker-and-device-guard-on-windows-10-iot-core"></a>Windows 10 IoT Core에서 보안 부팅, BitLocker 및 Device Guard 사용
 
@@ -102,7 +100,7 @@ IoT Core 장치에서 주요 보안 기능을 쉽게 사용할 수 있도록 Mic
 
 ![잠금 이미지 만들기](../media/SecurityFlowAndCertificates/ImageLockDown.png)
 
-### <a name="prerequisites"></a>사전 요구 사항
+### <a name="prerequisites"></a>필수 구성 요소
 
 * Windows 10 Enterprise를 실행 하는 PC (다른 Windows 버전은 제공 된 스크립트에서 지원 **되지 않음** ) 
 * [Windows 10 SDK](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk) -인증서 생성에 필요
@@ -119,7 +117,7 @@ Windows 10 IoT Core는 수백 개의 장치에서 활용 되는 다양 한 silic
 
 * Intel MinnowBoardMax
 
-    Intel의 MinnowBoard Max의 경우 펌웨어 버전은 0.82 이상 이어야 합니다 ( [최신 펌웨어](https://firmware.intel.com/projects/minnowboard-max)다운로드). TPM 기능을 사용 하도록 설정 하려면 키보드를 사용 하 여 보드를 켜고, 연결 된 & 표시 하 고 F2 키를 눌러 UEFI 설치를 시작 합니다. _Device Manager-> 시스템 설정-> 보안 구성-> ptt_ 로 이동 하 여  _&lt;사용&gt;_ 으로 설정 합니다. F10 키를 눌러 변경 내용을 저장 하 고 플랫폼 다시 부팅을 진행 합니다.
+    Intel의 MinnowBoard Max의 경우 펌웨어 버전은 0.82 이상 이어야 합니다 ( [최신 펌웨어](https://firmware.intel.com/projects/minnowboard-max)다운로드). TPM 기능을 사용 하도록 설정 하려면 키보드를 사용 하 여 보드를 켜고, 연결 된 & 표시 하 고 F2 키를 눌러 UEFI 설치를 시작 합니다. _Device Manager-> 시스템 설정-> 보안 구성-> PTT_ 로 이동 하 고&lt;_사용_ &gt;로 설정 합니다. F10 키를 눌러 변경 내용을 저장 하 고 플랫폼 다시 부팅을 진행 합니다.
 
 > [!NOTE]
 > Raspberry Pi 2 또는 3은 TPM을 지원 하지 않으므로 잠금 시나리오를 구성할 수 없습니다.
@@ -147,18 +145,18 @@ Windows 10 IoT Core는 수백 개의 장치에서 활용 되는 다양 한 silic
 5. _설정 .xml_ 구성
 
     * 일반 섹션: 패키지 디렉터리 지정
-    * 도구 섹션: 도구의 경로 설정
-        * Windows10KitsRoot`(e.g. <Windows10KitsRoot>C:\Program Files (x86)\Windows Kits\10\</Windows10KitsRoot>)`
-        * WindowsSDKVersion`(e.g. <WindowsSDKVersion>10.0.15063.0</WindowsSDKVersion>)`
-            * 컴퓨터에 설치 된 SDK 버전이 아래에 있습니다.`C:\Program Files (x86)\Windows Kits\10\`
+    * 도구 섹션: 도구에 대 한 경로 설정
+        * Windows10KitsRoot `(e.g. <Windows10KitsRoot>C:\Program Files (x86)\Windows Kits\10\</Windows10KitsRoot>)`
+        * WindowsSDKVersion `(e.g. <WindowsSDKVersion>10.0.15063.0</WindowsSDKVersion>)`
+            * 컴퓨터에 설치 된 SDK 버전이 `C:\Program Files (x86)\Windows Kits\10\`에 있습니다.
     * SecureBoot 섹션: 보안 부팅에 사용할 키를 지정 합니다 (PK 및 SB 키).
     * BitLocker 섹션: Bitlocker 데이터 복구에 대 한 인증서 지정 (DRA 키)
-    * SIPolicy 섹션: 신뢰할 수 있는 인증서 지정
-        * ScanPath: 이진 파일을 검색할 장치의 경로`\\a.b.c.d\C$`
-        * 고침 SIPolicy (PAUTH 키)의 서명자
-        * 정의 사용자 모드 인증서 (UMCI 키) 
-        * Kernel 커널 모드 인증서 (KMCI 키)
-    * 패키지 패키지 생성에 대 한 설정 지정
+    * SIPolicy 섹션: 신뢰할 수 있는 인증서를 지정 합니다.
+        * ScanPath: 이진 파일을 검색 하기 위한 장치의 경로 `\\a.b.c.d\C$`
+        * 업데이트: SIPolicy (PAUTH 키)의 서명자
+        * 사용자: 사용자 모드 인증서 (UMCI 키) 
+        * 커널: 커널 모드 인증서 (KMCI 키)
+    * 패키징: 패키지 생성에 대 한 설정을 지정 합니다.
 
 > [!IMPORTANT]
 > 초기 개발 주기 중 테스트를 지원 하기 위해 Microsoft는 해당 하는 경우 미리 생성 된 키 및 인증서를 제공 했습니다.  이는 Microsoft 테스트, 개발 및 시험판 이진 파일이 신뢰할 수 있는 것으로 간주 됨을 의미 합니다.  최종 제품을 만들고 이미지를 생성 하는 동안 이러한 인증서를 제거 하 고 자신의 키를 사용 하 여 완전히 잠기는 장치를 확인 해야 합니다.
@@ -179,7 +177,7 @@ Windows 10 IoT Core는 수백 개의 장치에서 활용 되는 다양 한 silic
 
 1. 잠금 해제 된 이미지를 사용 하 여 장치를 깜박입니다 (이전 단계에서 스캔 하는 데 사용 되는 이미지).
 2. 장치에 연결 ([SSH 사용](../connect-your-device/SSH.md) 또는 [Powershell](../connect-your-device/PowerShell.md)사용)
-3. 다음 .cab 파일을 디렉터리 아래의 장치에 복사 합니다 (예:).`c:\OemInstall`
+3. 다음 .cab 파일을 디렉터리 아래의 장치에 복사 합니다 (예: `c:\OemInstall`
     * 지원을. 사용자 지정 .Cmd .cab
     * 지원을. 보안. BitLocker .cab
     * 지원을. 보안. c a b .cab .cab
@@ -189,7 +187,7 @@ Windows 10 IoT Core는 수백 개의 장치에서 활용 되는 다양 한 silic
     ```C
     applyupdate -stage c:\OemInstall\OEM.Custom.Cmd.cab
     ```
-    사용자 지정 이미지를 사용 하는 경우이 파일을 *건너뛰고* 파일에서 `c:\windows\system32\oemcustomization.cmd` `Output\OEMCustomization\OEMCustomization.cmd` 사용할 수 있는 콘텐츠를 사용 하 여를 수동으로 편집 해야 합니다.
+    사용자 지정 이미지를 사용 하는 경우이 파일을 *건너뛰고* `Output\OEMCustomization\OEMCustomization.cmd` 파일에서 사용할 수 있는 콘텐츠를 사용 하 여 `c:\windows\system32\oemcustomization.cmd`를 수동으로 편집 해야 합니다.
 
     ```C
     applyupdate -stage c:\OemInstall\OEM.Security.BitLocker.cab
@@ -205,24 +203,24 @@ Windows 10 IoT Core는 수백 개의 장치에서 활용 되는 다양 한 silic
 6. 장치는 패키지를 설치 하기 위해 업데이트 OS (기어 표시)로 다시 부팅 되 고, 다시 주 OS로 다시 부팅 됩니다.  장치가 MainOS로 다시 부팅 되 면 보안 부팅이 사용 하도록 설정 되 고 SIPolicy를 사용 해야 합니다.
 7. 장치를 다시 부팅 하 여 Bitlocker 암호화를 활성화 합니다.
 8. 보안 기능 테스트
-    * SecureBoot: 시도 `bcdedit /debug on` 하면 보안 부팅 정책에 의해 값이 보호 됨을 나타내는 오류가 발생 합니다.
-    * BitLocker: 를 `start /wait sectask.exe -waitencryptcomplete:1`실행 합니다. ERRORLEVEL `-2147023436` 이 (ERROR_TIMEOUT) 이면 암호화가 완료 되지 않은 것입니다. .Cmd 파일에서 sectask를 실행 하는 경우를 `start /wait`생략 합니다.
-    * DeviceGuard: SIPolicy 목록에 없는 서명 된 이진 파일 또는 인증서로 서명 된 이진 파일을 실행 하 고 실행이 실패 하는지 확인 합니다.
+    * SecureBoot: `bcdedit /debug on` 시도 하면 보안 부팅 정책에 의해 값이 보호 됨을 나타내는 오류가 발생 합니다.
+    * BitLocker: `start /wait sectask.exe -waitencryptcomplete:1`를 실행 합니다. ERRORLEVEL이 `-2147023436` (ERROR_TIMEOUT) 이면 암호화가 완료 되지 않은 것입니다. .Cmd 파일에서 sectask를 실행 하는 경우 `start /wait`를 생략 합니다.
+    * DeviceGuard: SIPolicy 목록에 없는 서명 된 이진 또는 이진 서명 된 인증서를 실행 하 고 실행이 실패 하는지 확인 합니다.
 
 ### <a name="generate-lockdown-image"></a>잠금 이미지 생성
 
 이전에 정의 된 설정에 따라 잠금 패키지가 작동 하는지 확인 한 후에는 다음 단계를 수행 하 여 이러한 패키지를 이미지에 포함할 수 있습니다. 사용자 지정 이미지 생성 지침은 [IoT 제조 가이드](https://aka.ms/iotcoreguide) 를 참조 하세요.
 
 1. 작업 영역 디렉터리에서 위의 생성 된 출력 디렉터리에서 다음 파일을 업데이트 합니다.
-    * SecureBoot`Copy ..\Output\SecureBoot\*.bin  ..\Workspace\Common\Packages\Security.SecureBoot`
+    * SecureBoot: `Copy ..\Output\SecureBoot\*.bin  ..\Workspace\Common\Packages\Security.SecureBoot`
       * SetVariable_db
       * SetVariable_kek
       * SetVariable_pk
-    * BitLocker`Copy ..\Output\Bitlocker\*.* ..\Workspace\Common\Packages\Security.Bitlocker`
+    * BitLocker: `Copy ..\Output\Bitlocker\*.* ..\Workspace\Common\Packages\Security.Bitlocker`
       * DETask .xml
       * 보안.
       * 설정. bitlocker.
-    * DeviceGuard:`Copy ..\Output\DeviceGuard\*.*  ..\Workspace\Common\Packages\Security.DeviceGuard`
+    * DeviceGuard: `Copy ..\Output\DeviceGuard\*.*  ..\Workspace\Common\Packages\Security.DeviceGuard`
       * SIPolicyOn. p7b
       * SIPolicyOff. p7b
   
@@ -231,8 +229,8 @@ Windows 10 IoT Core는 수백 개의 장치에서 활용 되는 다양 한 silic
     * `<Feature>SEC_SECUREBOOT</Feature>`
     * `<Feature>SEC_DEVICEGUARD</Feature>`
 3. 이미지 다시 생성
-    * `buildpkg all`이는 위의 정책 파일을 기반으로 새 잠금 패키지를 생성 합니다.
-    * `buildimage ProductName test(or)retail`(새 Flash .ffu 생성)
+    * `buildpkg all` (위의 정책 파일을 기반으로 새 잠금 패키지 생성)
+    * `buildimage ProductName test(or)retail` (새 Flash .ffu 생성)
 4. 이 새로운 Flash .ffu를 사용 하 여 장치를 플래시 하 고 보안 기능의 유효성을 검사 합니다.
 
 [SecureSample](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/SecureSample) 를 참조 하세요.
@@ -259,7 +257,7 @@ Windows 10 IoT Core는 수백 개의 장치에서 활용 되는 다양 한 silic
 
 ### <a name="disabling-bitlocker"></a>BitLocker 사용 안 함
 
-BitLocker를 일시적으로 사용 하지 않도록 설정 하 고, IoT 장치를 사용 하 여 원격 PowerShell 세션을 초기화 하 고, 명령을 `sectask.exe -disable`실행 해야 하는 경우가 발생 합니다.  
+BitLocker를 일시적으로 사용 하지 않도록 설정 하 고, IoT 장치를 사용 하 여 원격 PowerShell 세션을 초기화 하 고, 다음 명령을 실행 해야 하는 경우에는 `sectask.exe -disable`합니다.  
 
 > [!NOTE]
 > 예약 된 암호화 작업이 사용 하지 않도록 설정 된 경우를 제외 하 고 다음 장치 부팅에서 장치 암호화를 다시 사용 하도록 설정 합니다.

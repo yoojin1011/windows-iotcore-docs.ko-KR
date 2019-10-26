@@ -1,17 +1,15 @@
 ---
 title: 원격 표시
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Windows 10 IoT Core UWP 응용 프로그램을 원격으로 확인 하 고 제어 하는 방법을 알아봅니다.
 keywords: windows iot, UWP, 원격 디스플레이, 원격, UWP 응용 프로그램
-ms.openlocfilehash: 6f46ddbc5738f377ce3ebd15a49785e27c6a40bf
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: c0e082284e5bceb6f1a7a87723e883ad6e552c4e
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60170711"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72917401"
 ---
 # <a name="remote-display"></a>원격 표시
 Windows 10 desktop PC, 태블릿 또는 휴대폰에서 원격으로 Windows 10 IoT Core UWP 응용 프로그램 보기 및 제어
@@ -41,7 +39,7 @@ ___
     장치를 인터넷에 연결 하 고 Windows 장치 포털에 연결 합니다.
   
     왼쪽의 옵션에서 "원격" 페이지를 선택 하 고 "Window IoT 원격 서버 사용" 이라는 확인란을 선택 합니다.  이제 장치가 원격 디스플레이 환경에서 사용 하도록 설정 되었습니다.
-    ![원격 디스플레이 환경 사용](../media/RemoteDisplay/enable-remote.png)
+    원격 표시 환경을 사용 하도록 설정 ![](../media/RemoteDisplay/enable-remote.png)
 
 1. Windows IoT 원격 클라이언트를 부록 Windows 10 장치에 설치 합니다.
   
@@ -77,7 +75,7 @@ ___
 1. 그래도 문제가 해결 되지 않으면 장치를 외부 디스플레이에 연결 하지 않는 문제가 발생할 수 있습니다.
     이로 인해 장치는 완전히 헤드리스로 간주 됩니다.  이 문제를 해결하려면:
     * 마이크로 Sd 카드를 꺼내고 컴퓨터에 배치 합니다.
-    * 편집`<MicroSD card drive>:\config.txt`
+    * `<MicroSD card drive>:\config.txt` 편집
     * 다음 줄을 추가 합니다.
  
 ```

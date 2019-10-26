@@ -1,17 +1,15 @@
 ---
 title: Azure IoT 장치 관리
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Azure IoT 장치 관리 및 Windows IoT를 사용 하 여 장치를 관리 하는 방법에 대해 알아봅니다.
 keywords: windows iot, Azure IoT, Azure 장치 관리, 장치 관리
-ms.openlocfilehash: 51580c2ca4c5bf653428ed83e0d6d53310ae89a3
-ms.sourcegitcommit: b00cd20ca22e63b3d0795a1b8fe248963b3c74ed
+ms.openlocfilehash: 6ab98a1b684c21042395dbd3af0c5cd3d2fa215c
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67467126"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72917391"
 ---
 # <a name="azure-iot-device-management"></a>Azure IoT 장치 관리   
 
@@ -31,10 +29,10 @@ ms.locfileid: "67467126"
 
 Microsoft에서는 OEM이 장치 이미지에 포함 해야 하는 두 가지 시스템 구성 요소인 기능을 제공 합니다. 이러한 구성 요소는 Csp에 대 한 액세스를 제공 합니다. IoTDMClientLib는 Azure IoT Hub 장치 관리에서 사용할 수 있는 함수에 CSP 인터페이스를 매핑합니다. 또한 CSP를 사용 하지 않는 DM 함수도 제공 합니다. 예를 들어 표준 시간대를 설정 합니다. IoTDMClientLib는 오픈 소스 구성 요소로 제공 됩니다. Oem은이를 확장 하 여 센서 또는 작동기 구성과 같은 장치와 관련 된 DM 기능을 추가할 수 있습니다.  
 
-## <a name="device-health-attestation"></a>디바이스 상태 증명    
+## <a name="device-health-attestation"></a>장치 상태 증명    
 IoT 장치를 안전 하 게 작동 하려면 장치가 신뢰할 수 있는 호환 상태로 부팅 되는지 평가 하는 것이 중요 합니다. [DHA (Windows IoT 디바이스 상태 증명)](https://github.com/ms-iot/iot-core-azure-dm-client/blob/master/docs/device-health-attestation.md) 운영자는 장치의 보안 상태를 확인 하 고, 필요한 경우 [장치 관리를 Azure IoT Hub](https://github.com/ms-iot/iot-core-azure-dm-client/blob/master/README.md)통해 적절 한 수정 작업을 수행할 수 있습니다. DHA는 Windows IoT Core Azure 장치 관리 클라이언트의 일부입니다. 솔루션에서 DHA 기능을 사용 하려면 Microsoft DHA 서비스에 액세스 해야 합니다. [Windows 10 IoT Core Services](https://docs.microsoft.com/windows-hardware/manufacture/iot/iotcoreservicesoverview)를 통해 서비스에 대 한 구독을 사용할 수 있습니다. 
 
-### <a name="reference"></a>참조   
+### <a name="reference"></a>참고자료   
 [Azure IoT DM에 대 한 디바이스 상태 증명](https://github.com/ms-iot/iot-core-azure-dm-client/blob/master/docs/device-health-attestation.md)  
 
 [디바이스 상태 증명에 대 한 Azure 리소스 배포](https://github.com/ms-iot/iot-core-azure-dm-client/blob/master/docs/dha-deploy.md#deploy-azure-resources-for-device-health-attestation)  
@@ -71,5 +69,5 @@ Limpet를 사용 하 여 장치 프로 비전 서비스 등록 프로세스에 �
 프로젝트 리포지토리: [Limpet 프로젝트 리포지토리](https://github.com/ms-iot/azure-dm-client/)     
 
 
-사용권이 Limpet는 MIT 오픈 소스 라이선스에 따라 사용이 허가 됩니다.   
+라이선스: Limpet는 MIT 오픈 소스 라이선스에 따라 사용이 허가 됩니다.   
 

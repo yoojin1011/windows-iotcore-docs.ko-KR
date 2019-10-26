@@ -1,17 +1,15 @@
 ---
 title: headed 및 headless 디바이스
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: 장치에 대해 Windows IoT Core를 구성 하는 방법에 대해 알아봅니다.
 keywords: windows iot, 화면, 양방향, 헤드리스, UI
-ms.openlocfilehash: 8ac0d7e06477836aa080af1b7556b054957d0cac
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: 138bc19b355e39db7e6bd4f4441159b03fde26c1
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60169443"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918097"
 ---
 # <a name="headed-and-headless-devices"></a>양방향 및 헤드리스 장치
 
@@ -35,14 +33,14 @@ Windows PowerShell 세션 또는 SSH 세션에서 장치의 양방향/헤드리�
     [192.168.0.243]: PS C:\> setbootoption.exe
 ~~~
 
-* 헤드리스 모드를 사용 하도록 장치 상태를 수정 하려면 다음 `setbootoption` `headless` 인수를 사용 하 여 유틸리티를 사용 합니다.
+* 헤드리스 모드를 사용 하도록 장치 상태를 수정 하려면 `setbootoption` 유틸리티 `headless` arg를 사용 합니다.
 
 ~~~
     [192.168.0.243]: PS C:\> setbootoption.exe headless
     [192.168.0.243]: PS C:\> shutdown /r /t 0
 ~~~
 
-* 모드를 사용 하도록 장치 상태를 수정 하려면 다음 `setbootoption` `headed` 인수를 사용 하 여 유틸리티를 사용 합니다.
+* 양방향 모드를 사용 하도록 장치의 상태를 수정 하려면 `setbootoption` 유틸리티 `headed` arg를 사용 합니다.
 
 ~~~
     [192.168.0.243]: PS C:\> setbootoption.exe headed

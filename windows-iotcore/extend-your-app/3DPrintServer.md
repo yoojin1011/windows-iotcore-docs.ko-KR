@@ -1,23 +1,21 @@
 ---
 title: Windows 10 IoT Core를 사용 하는 네트워크 3D 프린터
-author: saraclay
-ms.author: saclayt
-ms.date: 09/05/17
+ms.date: 09/05/2017
 ms.topic: article
 description: Windows 10 IoT Core 장치를 인쇄 서버로 전환 하 고 3D 프린터를 연결 하는 방법에 대해 알아봅니다.
 keywords: windows iot, 3D, 3D 프린터, 인쇄 서버, 네트워크 3D 프린터
-ms.openlocfilehash: 7a9bcc7871c62be5a73319ca284127ee4abc42f5
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: 3c11756f7832952f816978244d401d1d735a8f80
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60170485"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918193"
 ---
 # <a name="network-3d-printer-with-windows-10-iot-core"></a>Windows 10 IoT Core를 사용 하는 네트워크 3D 프린터
 
 Windows 10 IoT Core 장치를 인쇄 서버로 전환 하 고 3D 프린터를 연결 합니다. 다른 장치에서 무선으로 프린터에 액세스할 수 있습니다.
 
-## <a name="1-install-windows-10-iot-core-on-your-device"></a>1. 장치에 Windows 10 IoT Core 설치
+## <a name="1-install-windows-10-iot-core-on-your-device"></a>1. 장치에 Windows 10 IoT Core를 설치 합니다.
 ___
 시작 하기 전에 다음이 필요 합니다.
 
@@ -36,7 +34,7 @@ ___
     * LulzBot 미니
     * Velleman K8200
 
-## <a name="2-connect-your-3d-printer-to-your-device"></a>2. 3D 프린터를 장치에 연결
+## <a name="2-connect-your-3d-printer-to-your-device"></a>2.3D 프린터를 장치에 연결
 ___
 * USB 케이블을 사용 하 여 Windows 10 IoT Core 보드에 3D 프린터를 플러그인 합니다.
 
@@ -59,7 +57,7 @@ ___
 
     [Aleph 개체인 i n c.](https://www.alephobjects.com/) 의 [Lulzbot taz 6 이미지](http://devel.lulzbot.com/TAZ/Olive/photos/TAZ_6_Angle_Rock2pus_transparent.png) 는 [CC by-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)에 따라 사용이 허가 됩니다.
     
-    사용자 지정 프린터를 설치 하려는 경우 프린터 목록에서 "사용자 지정" 옵션을 선택 합니다. 사용자 지정 3d 프린터에는 3d 프린터에 올바르게 연결 하 여 인쇄 하기 위해 제공 되는 PrintDeviceCapabilities 파일 이라는 구성 xml이 필요 합니다. 샘플 PrintDeviceCapabilities 파일은 여기에서 찾을 수 있습니다. https://docs.microsoft.com/windows-hardware/drivers/3dprint/sample-configuration-xml
+    사용자 지정 프린터를 설치 하려는 경우 프린터 목록에서 "사용자 지정" 옵션을 선택 합니다. 사용자 지정 3d 프린터에는 3d 프린터에 올바르게 연결 하 여 인쇄 하기 위해 제공 되는 PrintDeviceCapabilities 파일 이라는 구성 xml이 필요 합니다. 샘플 PrintDeviceCapabilities 파일은 여기에서 찾을 수 있습니다 https://docs.microsoft.com/windows-hardware/drivers/3dprint/sample-configuration-xml
    
    Xml 파일에서 수행 해야 하는 최소 변경 내용은 다음 섹션을 호환 프린터와 관련 된 올바른 값으로 업데이트 하는 것입니다.
 
@@ -81,7 +79,7 @@ PrintDeviceCapabilities xml의 다른 값은 특정 호환 프린터를 사용 �
 
     
     
-## <a name="4-add-your-3d-printer"></a>4. 3D 프린터 추가
+## <a name="4-add-your-3d-printer"></a>4.3D 프린터를 추가 합니다.
 ___
 * Windows 10 PC로 이동 하 고 **설정** -> **장치** -> **프린터 & 스캐너**로 이동 합니다.
 * **프린터 또는 스캐너 추가**를 누릅니다.

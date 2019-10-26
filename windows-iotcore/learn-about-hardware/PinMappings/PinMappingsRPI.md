@@ -1,17 +1,15 @@
 ---
 title: Raspberry Pi 2 & 3 Pin 매핑
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Raspberry Pi 2 및 3에 대 한 pin 매핑 기능에 대해 알아봅니다.
 keywords: windows iot, Rasperry Pi 2, Raspberry Pi 3, pin 매핑, GPIO
-ms.openlocfilehash: 86e641bdcc6b4895161c6509ca7529b0dd55fad9
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: 2a3155b28fb01434ff8596de6e2f75b06b42f6ae
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60167523"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72917845"
 ---
 # <a name="raspberry-pi-2--3-pin-mappings"></a>Raspberry Pi 2 & 3 Pin 매핑
 
@@ -39,12 +37,12 @@ Raspberry Pi 2 및 Raspberry Pi 3의 하드웨어 인터페이스는 보드의 4
 > |-------|---------------|---------------------|--------------------|
 > | 2     | PullUp        | I2C1 SDA            | 3                  |
 > | 3     | PullUp        | I2C1 SCL            | 5                  |
-> | 4     | PullUp        |                     | 7                  |
+> | 추가를 클릭합니다.     | PullUp        |                     | 7                  |
 > | 5     | PullUp        |                     | 29                 |
 > | 6     | PullUp        |                     | 31                 |
 > | 7     | PullUp        | SPI0 CS1            | 26                 |
 > | 8     | PullUp        | SPI0 CS0            | 24                 |
-> | 9     | 3:2      | SPI0 MISO           | 21                 |
+> | 9     | 3:2      | SPI0 MISO           | RD 세션 호스트 서버 팜의 이름을 지정하는 새 RD RAP 만들기                 |
 > | 10    | 3:2      | SPI0 MOSI           | 19                 |
 > | 11    | 3:2      | SPI0 SCLK           | 23                 |
 > | 12    | 3:2      |                     | 32                 |
@@ -54,17 +52,17 @@ Raspberry Pi 2 및 Raspberry Pi 3의 하드웨어 인터페이스는 보드의 4
 > | 18    | 3:2      |                     | 12                 |
 > | 19    | 3:2      | SPI1 MISO           | 35                 |
 > | 20    | 3:2      | SPI1 MOSI           | 38                 |
-> | 21    | 3:2      | SPI1 SCLK           | 40                 |
-> | 22    | 3:2      |                     | 15                 |
+> | RD 세션 호스트 서버 팜의 이름을 지정하는 새 RD RAP 만들기    | 3:2      | SPI1 SCLK           | 40                 |
+> | 22    | 3:2      |                     | 15일                 |
 > | 23    | 3:2      |                     | 16                 |
 > | 24    | 3:2      |                     | 18                 |
-> | 25    | 3:2      |                     | 22                 |
+> | 25일    | 3:2      |                     | 22                 |
 > | 26    | 3:2      |                     | 37                 |
 > | 27    | 3:2      |                     | 13                 |
 > | 35 *   | PullUp        |                     | 빨간색 전원 LED      |
 > | 47 *   | PullUp        |                     | 녹색 작업 LED |
 
-\*= Raspberry Pi 2에만 해당 합니다. GPIO 35 & 47은 Raspberry Pi 3에서 사용할 수 없습니다.
+\* = Raspberry Pi 2에만 해당 합니다. GPIO 35 & 47은 Raspberry Pi 3에서 사용할 수 없습니다.
 
 ### <a name="gpio-sample"></a>GPIO 샘플
 
@@ -101,7 +99,7 @@ Pin이 닫히면 전원 켜기 상태로 돌아갑니다.
 
 ### <a name="pin-muxing"></a>Muxing 고정
 
-일부 GPIO pin은 여러 기능을 수행할 수 있습니다. 기본적으로 pin은 GPIO 입력으로 구성 됩니다. `I2cDevice.FromIdAsync()` 또는`SpiDevice.FromIdAsync()` 를 호출 하 여 대체 함수를 열면 함수에 필요한 pin이 자동으로 올바른 함수로 전환 됩니다 ("muxed"). `I2cDevice.Dispose()` 또는`SpiDevice.Dispose()`를 호출 하 여 장치를 닫으면 pin은 해당 기본 함수로 다시 돌아갑니다. 두 개의 다른 함수에 대해 한 번에 pin을 사용 하려고 하면 충돌 하는 함수를 열려고 할 때 예외가 throw 됩니다. 예:
+일부 GPIO pin은 여러 기능을 수행할 수 있습니다. 기본적으로 pin은 GPIO 입력으로 구성 됩니다. `I2cDevice.FromIdAsync()` 또는 `SpiDevice.FromIdAsync()`를 호출 하 여 대체 함수를 열면 함수에 필요한 pin이 자동으로 올바른 함수로 전환 됩니다 ("muxed"). `I2cDevice.Dispose()` 또는 `SpiDevice.Dispose()`를 호출 하 여 장치를 닫으면 pin은 해당 기본 함수로 되돌아갑니다. 두 개의 다른 함수에 대해 한 번에 pin을 사용 하려고 하면 충돌 하는 함수를 열려고 할 때 예외가 throw 됩니다. 예를 들면
 
 ```csharp
 var controller = GpioController.GetDefault();
@@ -121,7 +119,7 @@ var gpio2 = controller.OpenPin(2); // succeeds now that GPIO2 is available
 
 ## <a name="serial-uart"></a>직렬 UART
 
-RPi2/3에는 하나의 직렬 UART를 사용할 수 있습니다. **UART0**
+RPi2/3: **UART0** 에는 하나의 직렬 UART를 사용할 수 있습니다.
 
 * Pin 8- **UART0 TX**
 * Pin 10- **UART0 RX**
@@ -222,7 +220,7 @@ RPi2/3에서 사용 가능한 두 개의 SPI bus 컨트롤러가 있습니다.
 > | 신호 이름 | 헤더 Pin 번호 | Gpio 번호 |
 > |-------------|-------------------|-------------|
 > | MOSI        | 19                | 10          |
-> | MISO        | 21                | 9           |
+> | MISO        | RD 세션 호스트 서버 팜의 이름을 지정하는 새 RD RAP 만들기                | 9           |
 > | SCLK        | 23                | 11          |
 > | CS0         | 24                | 8           |
 > | CS1         | 26                | 7           |
@@ -233,7 +231,7 @@ RPi2/3에서 사용 가능한 두 개의 SPI bus 컨트롤러가 있습니다.
 > |-------------|-------------------|-------------|
 > | MOSI        | 38                | 20          |
 > | MISO        | 35                | 19          |
-> | SCLK        | 40                | 21          |
+> | SCLK        | 40                | RD 세션 호스트 서버 팜의 이름을 지정하는 새 RD RAP 만들기          |
 > | CS0         | 36                | 16          |
 
 

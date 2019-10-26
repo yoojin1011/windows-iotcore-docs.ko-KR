@@ -2,16 +2,16 @@
 title: Windows IoT Core 장치에 대 한 Arduino 배선
 author: msalehmsft
 ms.author: msaleh
-ms.date: 09/06/17
+ms.date: 09/06/2017
 ms.topic: article
 description: 지원 되는 Windows IoT Core 장치에서 Arduino 배선 스케치를 만들고, 배포 하 고, 디버그 하는 방법을 알아봅니다.
 keywords: windows iot, Arduino, Arduino 배선, 템플릿, IoT Core, UWP
-ms.openlocfilehash: ee6c64bdfd01e79d26bfa0a6c5f88f7735150393
-ms.sourcegitcommit: cbea9d713986fbe8b85e1bba1561a000188bd91c
+ms.openlocfilehash: e6329001649aee8fc474d30f1761c05537dabf45
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64744791"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918126"
 ---
 # <a name="arduino-wiring-for-windows-iot-core-devices"></a>Windows IoT Core 장치에 대 한 Arduino 배선
 

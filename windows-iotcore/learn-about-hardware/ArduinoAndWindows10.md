@@ -1,17 +1,15 @@
 ---
 title: Arduino 및 Windows 10
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Arduino 및 Windows 10을 연결, 원격 Arduino 등에 함께 사용 하는 방법에 대해 알아봅니다.
 keywords: windows iot, Arduino, Arduino 배선, Windows 원격 Arduino
-ms.openlocfilehash: 79201f2f85f84783838b1de7c28031863d948d5e
-ms.sourcegitcommit: cbea9d713986fbe8b85e1bba1561a000188bd91c
+ms.openlocfilehash: 3d402d2718d5d57177d62eaff39a86841b61ad42
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64744807"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918143"
 ---
 # <a name="arduino-and-windows-10"></a>Arduino 및 Windows 10
 
@@ -30,7 +28,7 @@ IoT Core 장치에서 친숙 한 [Arduino 배선](https://www.arduino.cc/en/Refe
 
 ## <a name="windows-remote-arduino"></a>Windows 원격 Arduino
 
-[![windows 원격 arduino](../media/ArduinoAndWindows10/WindowsPhone_0.png)](https://github.com/ms-iot/remote-wiring)
+[windows 원격 arduino![](../media/ArduinoAndWindows10/WindowsPhone_0.png)](https://github.com/ms-iot/remote-wiring)
 
 Windows Remote Arduino는 작성자가 Bluetooth, USB, Wi-fi 또는 이더넷 연결을 통해 Arduino를 제어할 수 있는 오픈 소스 Windows 런타임 라이브러리입니다. 이를 통해 개발자는 Windows 프로젝트에 Arduino 센서를 포함 하거나 Arduino에서 Windows로 계산 비용이 많이 드는 작업을 오프 로드할 수도 있습니다. Windows 원격 Arduino 라이브러리는 모든 WinRT 언어 (C++/Cx C# 및 JavaScript)에서 사용할 수 있습니다.
 

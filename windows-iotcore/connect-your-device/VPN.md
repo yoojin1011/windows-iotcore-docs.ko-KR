@@ -1,17 +1,15 @@
 ---
 title: Windows 10 IoT Core의 VPN
-author: saraclay
-ms.author: saclayt
 ms.date: 11/19/2018
 ms.topic: article
 description: Windows 10 IoT Core 장치에 대 한 VPN 기능을 사용, 설정 및 구성 하는 방법을 알아봅니다.
 keywords: windows iot, VPN, 설치, 장치
-ms.openlocfilehash: 94eafcb74a05179a7741cb516b5e7be30b525092
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: 2f88fe9090f7cf5329b77a3185f82dd153547b6a
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60167901"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918272"
 ---
 # <a name="leveraging-vpn-capabilities-for-your-windows-10-iot-core-device"></a>Windows 10 IoT Core 장치에 대 한 VPN 기능 활용
 

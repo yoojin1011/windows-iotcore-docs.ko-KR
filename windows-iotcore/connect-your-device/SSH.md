@@ -1,17 +1,15 @@
 ---
 title: SSH (Secure Shell)
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Secure shell을 사용 하 여 IoT Core 장치를 원격으로 관리 하 고 구성 하는 방법을 알아봅니다.
 keywords: windows iot, secure shell, remote, SSH client, PuTTY, SSH
-ms.openlocfilehash: 2c83184507a840c6017b1dfe36ac915004057d9a
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: 1fe94a29f04ac01efc94079425ac4a5a0dab34f6
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60168771"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918304"
 ---
 # <a name="secure-shell-ssh"></a>SSH (Secure Shell)
 SSH (Secure Shell)를 사용 하 여 Windows IoT Core 장치를 원격으로 관리 하 고 구성할 수 있습니다.
@@ -78,7 +76,7 @@ Ssh 에이전트를 사용 하 여 키를 등록 하지 않은 경우 로그인 
 ssh -i .\id_rsa DefaultAccount@host
 ```
 
-Ssh 에이전트를 사용 하 여 개인 키를 등록 한 경우에는 다음을 <strong>DefaultAccount@host</strong>지정 해야 합니다.
+개인 키가 ssh 에이전트에 등록 된 경우 <strong>DefaultAccount@host</strong>지정 해야 합니다.
 
 ```cmd
 ssh DefaultAccount@host
@@ -119,7 +117,7 @@ get-acl x:\data\ProgramData\ssh\ssh_host_dsa_key | set-acl x:\data\ProgramData\s
 ```
 
 > [!NOTE]
-> Windows 10 IoT Core 장치를 변경한 후 **원격 호스트 id 변경** 메시지가 표시 되 면 C:\Users\<username >\.ssh\known_hosts를 편집 하 고 변경 된 호스트를 제거 합니다.
+> Windows 10 IoT Core 장치를 변경한 후 **원격 호스트 ID 변경** 메시지가 표시 되 면 C:\Users\<사용자 이름 >\.하 고 변경 된 호스트를 제거 합니다.
 
 참고 항목: [Win32-OpenSSH](https://github.com/PowerShell/Win32-OpenSSH/wiki/ssh.exe-examples)
 
@@ -137,12 +135,12 @@ SSH를 사용 하 여 장치에 연결 하기 위해 먼저 [PuTTY](http://the.e
 
     ![PuTTY 구성](../media/SSH/putty_config.png)
 
-* 컴퓨터에서 처음으로 장치에 연결 하는 경우 다음과 같은 보안 경고가 표시 될 수 있습니다.  계속 하려면 `Yes` 클릭 하세요.
+* 컴퓨터에서 처음으로 장치에 연결 하는 경우 다음과 같은 보안 경고가 표시 될 수 있습니다.  `Yes`를 클릭 하 여 계속 합니다.
 
     ![PuTTY 보안 경고](../media/SSH/putty_security_prompt.png)
 
-* 성공적으로 연결 되 면 화면에 로그인 하 `login as:` 라는 메시지가 표시 됩니다.  
-    을 `Administrator` 입력 하 고 enter 키를 누릅니다.  그런 다음 기본 암호 `p@ssw0rd` 를 암호로 입력 하 고 enter 키를 누릅니다.
+* 성공적으로 연결 되 면 화면에 `login as:` 하 여 로그인 하 라는 메시지가 표시 됩니다.  
+    `Administrator`를 입력 하 고 enter 키를 누릅니다.  그런 다음 암호 `p@ssw0rd` 기본 암호를 입력 하 고 enter 키를 누릅니다.
 
     ![PuTTY 로그인](../media/SSH/putty_login.png)
 
@@ -154,7 +152,7 @@ SSH를 사용 하 여 장치에 연결 하기 위해 먼저 [PuTTY](http://the.e
 
 관리자 계정에 대 한 기본 암호를 업데이트 하는 것이 **좋습니다** .
 
-이렇게 하려면 PuTTY 콘솔에서 다음 명령을 입력 하 여를 강력한 암호로 바꿉니다 `[new password]` .
+이렇게 하려면 PuTTY 콘솔에 다음 명령을 입력 하 고 `[new password]`를 강력한 암호로 바꿉니다.
     
     net user Administrator [new password]
     
@@ -163,7 +161,7 @@ SSH를 사용 하 여 장치에 연결 하기 위해 먼저 [PuTTY](http://the.e
 
 * 장시간의 비활성 시간이 지난 후에도 Visual Studio 원격 디버거 시간이 초과 될 수 있습니다. Visual Studio에서 Windows IoT Core 장치에 연결할 수 없는 경우 장치를 다시 부팅 합니다.
 
-* 원하는 경우 장치 이름을 바꿀 수도 있습니다. ' 컴퓨터 이름 '을 변경 하려면 유틸리티를 사용 `setcomputername` 합니다.
+* 원하는 경우 장치 이름을 바꿀 수도 있습니다. ' 컴퓨터 이름 '을 변경 하려면 `setcomputername` 유틸리티를 사용 합니다.
 
         setcomputername <new-name>
 

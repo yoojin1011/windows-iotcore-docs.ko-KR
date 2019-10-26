@@ -2,16 +2,16 @@
 title: 기본 앱 설정
 author: bfjelds
 ms.author: bfjelds
-ms.date: 09/05/17
+ms.date: 09/05/2017
 ms.topic: article
 description: Windows 장치 포털 또는 셸을 사용 하 여 기본 앱을 설정 하는 방법을 알아봅니다.
 keywords: windows iot, 기본 앱, PowerShell, iot
-ms.openlocfilehash: f3f7a5194491250a8a0b49e81e073282c8f5660b
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: b7165331daba3b8bc953535ecc2d5b51cfda782c
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60170250"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918211"
 ---
 # <a name="setup-a-default-app"></a>기본 앱 설정
 여기서는 응용 프로그램을 기본 응용 프로그램으로 설정 하는 방법을 알아봅니다. 기본 응용 프로그램은 시스템이 부팅 될 때 실행 되는 응용 프로그램입니다.  
@@ -34,9 +34,9 @@ ms.locfileid: "60170250"
 
 1. [Powershell](../connect-your-device/PowerShell.md) 을 통해 장치에 연결
 
-2. 을 사용 하 여 설치 된 응용 프로그램 나열`iotstartup list`
+2. `iotstartup list`를 사용 하 여 설치 된 응용 프로그램 나열
 
-3. 기본값으로 지정할 응용 프로그램의 appid를 확인 하 고을 사용 하 여 `iotstartup add headed <appid>`설정 합니다. 헤드리스 응용 프로그램의 경우를 사용 `iotstartup add headless <appid>`해야 합니다.
+3. 기본값으로 지정할 응용 프로그램의 appid를 확인 하 고 `iotstartup add headed <appid>`를 사용 하 여 설정 합니다. 헤드리스 응용 프로그램의 경우 `iotstartup add headless <appid>`를 사용 해야 합니다.
 
 
 ## <a name="build-time-option"></a>빌드 시간 옵션

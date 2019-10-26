@@ -1,19 +1,17 @@
 ---
 title: Windows 10 IoT Core 용 Soc 및 사용자 지정 보드
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: 다양 한 제안 된 보드 및 커뮤니티 장치에 대 한 하드웨어 기능에 대해 알아봅니다.
 keywords: windows iot, 개발 장치, 보드, SOC, SOM, 시스템의 칩, Raspberry Pi 2, Raspberry Pi 3, Minnowboard Max, DragonBoard
-ms.openlocfilehash: 85625926a5aaa474ba2ea86ff6c2890553669131
-ms.sourcegitcommit: 8bb162cbfa286107e243a0286fe53b3b9cc3f359
+ms.openlocfilehash: 4114cc6ba7b0580b1f00a7aeae67284bb1fc8cb3
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67345112"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72917405"
 ---
-# <a name="socs-and-custom-boards"></a>Soc 및 사용자 지정 보드
+# <a name="socs-and-custom-boards"></a>SoCs 및 사용자 지정 보드
 
 ## <a name="microsoft-enabled-socs"></a>Microsoft 지원 Soc
 
@@ -46,23 +44,23 @@ Microsoft는 Broadcom, Intel, NXP 및 Qualcomm와 함께 작동 하 여 여러 �
 > | 오디오 | x | x | x | x | x | x |
 > | GPIO | x | x | x | x | x | x |
 > | I2C | x | x | x | x | x | x |
-> | 이더넷 | x | 해당 사항 없음 | x | x | x | x |
+> | Ethernet | x | 해당 없음 | x | x | x | x |
 > | SPI | x | x | x | x | x | x |
-> | 표시 | x | x | x | x | x | x |
+> | Display | x | x | x | x | x | x |
 > | UART | x | x | x | x | x | x |
-> | USB | x | x | x | x | x | x |
-> | PCIe | x | 해당 사항 없음 | x | 개발 중 | 개발 중 | 해당 사항 없음 |
-> |MIPI-CSI | 해당 사항 없음 | x | 해당 사항 없음 | 해당 사항 없음 | 해당 사항 없음 | 해당 사항 없음 |
+> | USB를 선택합니다 | x | x | x | x | x | x |
+> | PCIe | x | 해당 없음 | x | 개발 중 | 개발 중 | 해당 없음 |
+> |MIPI-CSI | 해당 없음 | x | 해당 없음 | 해당 없음 | 해당 없음 | 해당 없음 |
 > | 그래픽/비디오 | x | x | 소프트웨어 렌더링 | 소프트웨어 렌더링 | 소프트웨어 렌더링 | 소프트웨어 렌더링 |
-> | GPS | 해당 사항 없음 | x | 해당 사항 없음 | 해당 사항 없음 | 해당 사항 없음 | 해당 사항 없음 |
-> | Wi-fi/BT | 해당 사항 없음 | x | 해당 사항 없음 | 해당 사항 없음 | 해당 사항 없음 | 해당 사항 없음 |
-> | 신뢰할 수 있는 i/o | 해당 사항 없음 | 해당 사항 없음 | x | x | x | 해당 사항 없음 |
+> | GPS | 해당 없음 | x | 해당 없음 | 해당 없음 | 해당 없음 | 해당 없음 |
+> | Wi-fi/BT | 해당 없음 | x | 해당 없음 | 해당 없음 | 해당 없음 | 해당 없음 |
+> | 신뢰할 수 있는 i/o | 해당 없음 | 해당 없음 | x | x | x | 해당 없음 |
 > | 프로세서 전원 관리 |  | x | x | x | 개발 중 | |
-> | TPM | x | x | x | x | x | 해당 사항 없음 |
+> | TPM | x | x | x | x | x | 해당 없음 |
 > | 보안 부팅 | x | x | 개발 중 | 개발 중 | 개발 중 | |
 > | 최대 절전 모드 | x | | | | | | 
-> | PWM) | x | 해당 사항 없음 | x | x | x | |
-> | JTAG | x | 해당 사항 없음 | x | x | x | |
+> | PWM) | x | 해당 없음 | x | x | x | |
+> | JTAG | x | 해당 없음 | x | x | x | |
 > | eMMC | x | x | x | x | x | |
 > | SDHC | x | x | x | x | x | x |
 
@@ -79,9 +77,9 @@ Microsoft는 Broadcom, Intel, NXP 및 Qualcomm와 함께 작동 하 여 여러 �
 * __[Qualcomm](#qualcomm-dragonboard-410c-apq8016-based-custom-design)__
 * __[NXP](#nxp-preview)__
 
-*SoM 공급자 또는 ODM이 고 아래 목록에 추가 하려는 경우 전자 메일을 [winiotsomhelp@microsoft.com](mailto:winiotsomhelp@microsoft.com) 보내거나이 페이지를 직접 편집 하 고 끌어오기 요청을 제출 하세요.*
+*SoM 공급자 또는 ODM이 고 아래 목록에 추가 하려는 경우 [winiotsomhelp@microsoft.com](mailto:winiotsomhelp@microsoft.com) 전자 메일을 보내거나이 페이지를 직접 편집 하 고 끌어오기 요청을 제출 하세요.*
 
-*여기에 나열 된 많은 회사는 크고 복잡 합니다.  올바른 사람에 게 연락 하는 데 문제가 있는 경우 [winiotsomhelp@microsoft.com](mailto:winiotsomhelp@microsoft.com) 전자 메일을 보내 주시기 바랍니다.*
+*여기에 나열 된 많은 회사는 크고 복잡 합니다.  적절 한 사람에 게 연락 하는 데 문제가 있는 경우 [winiotsomhelp@microsoft.com](mailto:winiotsomhelp@microsoft.com) 메일을 보내 주시기 바랍니다.*
 
 ### <a name="raspberry-pi-derived-custom-design"></a>**Raspberry Pi 파생 사용자 지정 디자인**
 
@@ -123,7 +121,7 @@ BSP 패키지에는 acpi를 변경 해야 하는 단순한 하드웨어 사용�
 * [Intrinsyc](https://www.intrinsyc.com/computing-platforms/410-som/) Waldenberg (mwaldenberg@intrinsyc.com)
 * [Keith & Koep](https://keith-koep.com/en/products/products-som/myon-1-features-snapdragon-410/) -contact@keith-koep.com
 * [Reycom](http://www.reycom.swiss/en/home-swiss.html) -welcome@reycom.swiss
-* [Unitech](http://ute.com/products_info.php?pc1=4&pc2=461&rbu=0&pid=2395) (saml@tw.ute.com); Perry (perryt@te.ute.com)
+* [Unitech](http://ute.com/products_info.php?pc1=4&pc2=461&rbu=0&pid=2395) -Sam (saml@tw.ute.com); Perry (perryt@te.ute.com)
 
 ### <a name="nxp-preview"></a>**NXP 미리 보기**
 
@@ -132,12 +130,12 @@ NXP for Windows 10 IoT Core는 공개 미리 보기로 제공 됩니다. 자세�
 작업 중인 파트너에 게 연락할 수도 있습니다.
 
 * Advantech co. [Rsb-4411](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858) -buy@advantech.tw
-* Keith & Koep [pconxs](https://keith-koep.com/de/produkte/produkte-baseboards/pconxs-baseboard-vollausstattung-technische-daten/
+* Keith & Koep [Pconxs](https://keith-koep.com/de/produkte/produkte-baseboards/pconxs-baseboard-vollausstattung-technische-daten/
 ) 와 [Trizeps vii](https://keith-koep.com/de/produkte/produkte-trizeps/trizeps-vii-technische-daten-imx6/) -contact@keith-koep.com
 * Kontron [SMARC-sAMX6i](https://www.kontron.com/products/boards-and-standard-form-factors/smarc/smarc-samx6i.html) -Martin Unverdorben (martin.unverdorben@kontron.com)
 * Solid Run [Hummingboard Edge](https://www.solid-run.com/imx6-win-10-iot-core/ )-ilya (ilya@solid-run.com)
-* Geniatech [som-iMX6Q-Q7](https://www.geniatech.com/product/som-imx6q-q7/) & [som-iMX7D](https://www.geniatech.com/product/som-imx7d/) -Mike Decker (mike.decker@geniatech.com) 또는 Fang Jijun (Fjj@geniatech.com)
-* VIA [vab-820](https://www.viaembeddedstore.com/shop/boards/vab-820/) -Michael Fox (MichaelFox@via.com.tw) 또는 꿈 Ku (dreamku@via.com.tw)
+* Geniatech [som-iMX6Q-Q7](https://www.geniatech.com/product/som-imx6q-q7/) & [som-IMX7D](https://www.geniatech.com/product/som-imx7d/) -Mike Decker (mike.decker@geniatech.com) 또는 Fang Jijun (Fjj@geniatech.com)
+* VIA [Vab-820](https://www.viaembeddedstore.com/shop/boards/vab-820/) -Michael Fox (MichaelFox@via.com.tw) 또는 꿈 Ku (dreamku@via.com.tw)
 * Phytec [phyBOARD-i. MX7](https://phytec.com/products/single-board-computers/phyboard-i.mx7/) -Brad Dodson (sales@phytec.com)
 
 

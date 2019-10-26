@@ -1,17 +1,15 @@
 ---
 title: Dragonboard Pin 매핑
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Dragonboard에 대 한 pin 매핑 기능에 대해 알아봅니다.
 keywords: windows iot, Dragonboard, pin 매핑, GPIO
-ms.openlocfilehash: f6df962c6d05aa912013f8f0819c0789bfc393ce
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: 170b14ce640fed33754f90bd4df188f4629f04c2
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60167693"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72917970"
 ---
 # <a name="dragonboard-pin-mappings"></a>Dragonboard Pin 매핑
 
@@ -41,16 +39,16 @@ Dragonboard에서는 모든 IO 핀에서 1.8 V 논리 수준을 사용 합니다
 > |-------|--------------------|
 > | 36    | 23                 |
 > | 12    | 24                 |
-> | 13    | 25                 |
+> | 13    | 25일                 |
 > | 69    | 26                 |
 > | 115   | 27                 |
 > | 24    | 29                 |
-> | 25    | 30                 |
+> | 25일    | 30                 |
 > | 35    | 31                 |
 > | 34    | 32                 |
 > | 28    | 33                 |
 > | 33    | 34                 |
-> | 21    | 사용자 LED 1         | 
+> | RD 세션 호스트 서버 팜의 이름을 지정하는 새 RD RAP 만들기    | 사용자 LED 1         | 
 > | 120   | 사용자 LED 2         |         
 
 

@@ -1,17 +1,15 @@
 ---
 title: 한 수준 작성자 업데이트-빌드 16299
-author: saraclay
-ms.author: saclayt
 ms.date: 10/12/2017
 ms.topic: article
 description: Windows 10 IoT에 대 한 적합 한 작성자 업데이트의 새로운 기능에 대해 알아봅니다.
 keywords: Windows IoT, 동일 하 게 작성자 업데이트, 릴리스 정보
-ms.openlocfilehash: 00daad18d5519eee9be695105332aced81a1133f
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: 35dbe905cfb25613d1225ab8e6d4b8fd636134d9
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60167461"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918700"
 ---
 # <a name="fall-creators-update-release-notes-for-windows-10-iot"></a>Windows 10 IoT에 대 한 해당 업데이트 릴리스 정보
 빌드 번호 16299. 2017년 10월
@@ -24,7 +22,7 @@ Windows 10 IoT는 임베디드 또는 전용 용도의 장치를 개발할 수 �
 
 ## <a name="privacy-statement"></a>개인정보취급방침
 
-이 버전의 Windows 운영 체제에 대 한 개인 정보 취급 방침은에서 [https://go.microsoft.com/fwlink/?LinkId=521839](https://go.microsoft.com/fwlink/?LinkId=521839)볼 수 있습니다.
+이 버전의 Windows 운영 체제에 대 한 개인 정보 취급 방침은 [https://go.microsoft.com/fwlink/?LinkId=521839](https://go.microsoft.com/fwlink/?LinkId=521839)에서 볼 수 있습니다.
 
 ## <a name="whats-new-in-fall-creators-update"></a>동일 항목 작성자 업데이트의 새로운 기능
 * [UWP 앱에 대 한 .net](https://msdn.microsoft.com/library/windows/apps/xaml/mt185501.aspx?f=255&mspperror=-2147217396)은 또는 Visual Basic를 사용 하 여 C# 유니버설 Windows 플랫폼 앱을 빌드하는 데 사용할 수 있는 관리 되는 형식 집합으로, .NET Standard 2.0을 준수 하기 위해 수천 개의 [새 api](https://blogs.msdn.microsoft.com/dotnet/2017/08/25/uwp-net-standard-2-0-preview/) 로 강화 되었습니다.

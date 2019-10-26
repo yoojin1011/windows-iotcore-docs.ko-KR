@@ -2,16 +2,16 @@
 title: Windows 10 IoT Core 언어 지원
 author: msalehmsft
 ms.author: msaleh
-ms.date: 09/12/17
+ms.date: 09/12/2017
 ms.topic: article
 description: IoT Core에서 UWP 응용 프로그램 및 OS의 여러 언어 지원에 대해 알아봅니다.
 keywords: windows iot, 언어, 앱 유형, UWP, OS
-ms.openlocfilehash: aad3005a008264223750b7ede5b154306d9d3015
-ms.sourcegitcommit: b005de492d52cd5139fa410dd31c3ca369030dd9
+ms.openlocfilehash: 5bc44fb090e6e198525e95d6aee6815afd0095da
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69545523"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918222"
 ---
 # <a name="language-support"></a>언어 지원
 
@@ -33,25 +33,25 @@ UWP 응용 프로그램은 지원 되는 데 필요한 언어에 대 한 리소�
 
 이제 Windows 10 I이상 코어 키트에는 다음 언어에 대 한 언어 리소스가 포함 되어 있습니다.
 
-> | 언어  | 코드 | Region |
+> | 언어  | Code | 국가 |
 > |-------------|-----|-----|
-> | 영어 (미국) | ko-KR | North America | 
-> | 영어 (영국) | en-GB | Europe |
-> | 프랑스어 (프랑스) | fr-FR | Europe |
-> | 프랑스어(캐나다) | fr-CA | North America |
-> | 스페인어(스페인) | es-ES | Europe |
-> | 스페인어(멕시코) | es-MX | North America |
+> | 영어(미국) | en-US | 북아메리카 | 
+> | 영어 (영국) | en-GB | 유럽 |
+> | 프랑스어(프랑스) | fr-FR | 유럽 |
+> | 프랑스어(캐나다) | fr-CA | 북아메리카 |
+> | 스페인어(스페인) | es-ES | 유럽 |
+> | 스페인어(멕시코) | es-MX | 북아메리카 |
 > | 중국어 | zh-CN | 아시아 | 
 > | 아랍어 | ar-SA | 아시아 |
-> | 독일어 | de-DE | Europe |
-> | 이탈리아어 | it-IT | Europe | 
+> | 독일어 | de-DE | 유럽 |
+> | 이탈리아어 | it-IT | 유럽 | 
 > | 일본어 | ja-JP | 아시아 |
 > | 한국어 | ko-KR | 아시아 |
-> | 네덜란드어 | nl-NL | Europe |
-> | 폴란드어 | pl-PL | Europe | 
-> | 루마니아어 | ro-RO | Europe |
-> | 러시아어 | ru-RU | Europe |
-> | 그리스어 | el-GR | Europe |
+> | 네덜란드어 | nl-NL | 유럽 |
+> | 폴란드어 | pl-PL | 유럽 | 
+> | 루마니아어 | ro-RO | 유럽 |
+> | 러시아어 | ru-RU | 유럽 |
+> | 그리스어 | el-GR | 유럽 |
 > | 포르투갈어 (브라질) | pt-BR | 남부 아메리카/유럽 |
 > | Portuese (포르투갈) | pt-PT | 남부 아메리카/유럽 |
 
@@ -113,7 +113,7 @@ OEM 입력 xml 파일에서 필요한 음성 데이터 리소스는 아래와 �
 ### <a name="samples"></a>샘플
 * 여러 언어 지원에 대 한 [MultiLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/MultiLangSample) 를 참조 하세요.
 * 대체 언어로 en-us를 사용 하는 [SingleLangSample](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/SingleLangSample) 에 대 한 자세한 내용을 참조 하세요.
-    * 부팅 ui 언어가 변경 `administrator` 되 면 계정 이름도 부팅 ui 언어로 번역 됩니다. 따라서 fr-fr은 `administrateur`입니다. [Oemcustomization 지정 .cmd를](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/SingleLangSample/oemcustomization.cmd) 참조 하세요.
+    * 부팅 UI 언어가 변경 되 면 `administrator` 계정 이름도 부팅 UI 언어로 번역 됩니다. 따라서 fr-fr에서는 `administrateur`입니다. [Oemcustomization 지정 .cmd를](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/Products/SingleLangSample/oemcustomization.cmd) 참조 하세요.
 
 ## <a name="changing-user-preferences-language-region-speech-and-voice"></a>사용자 기본 설정 변경 (언어, 지역, 음성 및 음성)
 
@@ -123,8 +123,8 @@ UWP 응용 프로그램은 WinRT Api를 사용 하 여 기본적으로 사용 �
 
 * [GlobalizationPreferences](https://docs.microsoft.com/uwp/api/windows.system.userprofile.globalizationpreferences)에서 `TrySetHomeGeographicRegion`를 사용하여 지역 설정
 * [GlobalizationPreferences](https://docs.microsoft.com/uwp/api/windows.system.userprofile.globalizationpreferences)에서 `TrySetLanguages`를 사용하여 UI 언어 설정
-* SpeechRecognition에서를 사용 `TrySetSystemSpeechLanguageAsync` 하 여 음성 언어를 설정 합니다. [SpeechRecognizer](https://docs.microsoft.com/uwp/api/windows.media.speechrecognition.speechrecognizer)
-* SpeechSynthesis에서 음성 `TrySetDefaultVoiceAsync` 사용을 설정 합니다. [SpeechSynthesizer](https://docs.microsoft.com/en-us/uwp/api/windows.media.speechsynthesis.speechsynthesizer)
+* SpeechRecognition에서 `TrySetSystemSpeechLanguageAsync`를 사용 하 여 음성 언어를 설정 합니다. [SpeechRecognizer](https://docs.microsoft.com/uwp/api/windows.media.speechrecognition.speechrecognizer)
+* SpeechSynthesis에서 `TrySetDefaultVoiceAsync`를 사용 하 여 음성 설정 [SpeechSynthesizer](https://docs.microsoft.com/en-us/uwp/api/windows.media.speechsynthesis.speechsynthesizer)
 
 > [!NOTE]
 > 적절 한 기능을 제공 하기 위해 Cortana를 사용 하려면 지역, ui 언어 및 음성 언어를 일관 되 게 사용 해야 합니다 (예: 지역 FR, UI 및 음성 언어 fr-fr 또는 지역 ES, UI 및 음성 언어 es). Cortana는 자체 음성을 사용 하 고 UWP 응용 프로그램은 변경할 수 없습니다.

@@ -1,17 +1,15 @@
 ---
 title: Azure IoT Hub를 사용 하 여 Windows 장치 관리
-author: saraclay
-ms.author: saclayt
 ms.date: 01/08/2018
 ms.topic: article
 description: Azure IoT Hub를 사용 하 여 Windows 장치를 관리 하는 방법을 알아봅니다.
 keywords: windows iot, Azure, DM, 장치 관리, Azure IoT Hub, IoT Hub, 장치 상태
-ms.openlocfilehash: f3018007c262112374fd39439bf2306675fddafe
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: 7eea1a8d3ccfd35bcdb7ebae44803135db05f824
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60169041"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918384"
 ---
 # <a name="manage-your-windows-devices-with-the-azure-iot-hub"></a>Azure IoT Hub를 사용 하 여 Windows 장치 관리
 

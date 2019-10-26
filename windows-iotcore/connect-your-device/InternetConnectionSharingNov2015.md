@@ -1,23 +1,21 @@
 ---
 title: 인터넷 연결 공유 자습서 (11 월 2015 릴리스)
-author: saraclay
-ms.author: saclayt
-ms.date: 09/06/17
+ms.date: 09/06/2017
 ms.topic: article
 description: Windows 11 월 2015 릴리스에 대 한 인터넷 연결 공유를 사용 하도록 설정 하 고 구성 하는 방법을 알아봅니다.
 keywords: windows iot, 인터넷 연결 공유, ICS, 장치 포털
-ms.openlocfilehash: c8f27b48197a0ec881a66da5d3e81272b3076100
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: fa53539128251fd45e47003979a72e5a588b2869
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60169081"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918361"
 ---
 # <a name="internet-connection-sharing-tutorial-november-2015-release"></a>인터넷 연결 공유 자습서 (11 월 2015 릴리스)
 
 이 문서에서는 Windows 10 IoT Core 11 월 2015 릴리스를 실행 하는 장치에서 ICS (인터넷 연결 공유)를 사용 하도록 설정 하는 단계를 설명 합니다. 목표는 소프트웨어 Wi-fi 액세스 지점 (SoftAP)과 이더넷 어댑터 간에 인터넷 연결을 공유 하는 것입니다. Windows 10 IoT Core 기념일 릴리스를 사용 하는 경우 [인터넷 연결 공유 자습서](InternetConnectionSharing.md)를 참조 하세요.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
 
 * Windows 10 IoT Core 11 월 2015 릴리스를 실행 하는 장치입니다.
 * SoftAP를 시작할 수 있는 wi-fi USB 장치입니다. 지원 되는 Wi-fi USB 장치는 [하드웨어 호환성 목록](../learn-about-hardware/HardwareCompatList.md) 을 참조 하세요.
@@ -26,14 +24,14 @@ ms.locfileid: "60169081"
 
 ## <a name="setup"></a>설정
 
-### <a name="step-1-gathering-network-information"></a>1단계: 네트워크 정보를 모으고 있습니다.
+### <a name="step-1-gathering-network-information"></a>1 단계: 네트워크 정보 수집
 
 1. Wi-fi 동글이 연결 된 장치를 부팅 합니다. 이더넷 케이블이 연결 되어 있습니다.
 2. IoT Core 장치에서 SoftAP를 시작 합니다.
 
    기본적으로 Microsoft에서 제공한 이미지는 Wi-fi 라디오가 가능 하 고 WLAN 프로필이 추가 되지 않은 경우 SoftAP를 설정 하는 IoT 온 보 딩 응용 프로그램을 시작 합니다. SoftAP를 시작 하기 위해 UWP 응용 프로그램은 [WIFIDIRECTADVERTISEMENTPUBLISHER API](https://msdn.microsoft.com/library/windows/apps/windows.devices.wifidirect.wifidirectadvertisementpublisher.aspx)를 사용할 수 있습니다. IoT 온 보 딩 응용 프로그램의 소스 코드는 GitHub [i이상](https://github.com/ms-iot/samples/tree/develop/IotOnboarding)등록에 있을 수 있습니다.
 
-   SoftAP 네트워크의 SSID를 기록 합니다. 나중에 Wi-fi를 통해 IoT Core 장치에 연결 하는 데 필요 합니다. IoT 온 보 딩 응용 프로그램의 경우 SSID는 "\_AJ\_SoftAPSsid"로 시작 하 고 응용 프로그램의 구성 [파일](https://github.com/ms-iot/samples/blob/develop/IotOnboarding/IoTOnboardingTask/Config.xml)에서 변경할 수 있습니다.
+   SoftAP 네트워크의 SSID를 기록 합니다. 나중에 Wi-fi를 통해 IoT Core 장치에 연결 하는 데 필요 합니다. IoT 온 보 딩 응용 프로그램의 경우 SSID는 "AJ\_SoftAPSsid\_"로 시작 하 고 응용 프로그램의 구성 [파일](https://github.com/ms-iot/samples/blob/develop/IotOnboarding/IoTOnboardingTask/Config.xml)에서 변경할 수 있습니다.
 
 3. [Ssh를 사용 하 여](ssh.md)IoT Core 장치에 원격으로 연결 합니다.
 4. 네트워크 장치 인덱스 및 설명을 찾아 장치 네트워크에 대 한 정보를 수집 합니다. 연결할 네트워크를 선언 하는 데 필요 합니다.
@@ -41,7 +39,7 @@ ms.locfileid: "60169081"
    장치에서 **route print** 를 실행 하 고 다음 데이터를 수집 합니다.
 
    * 이더넷에 대 한 공용 인터페이스 네트워크 인덱스를 기록 합니다.
-   * SoftAP에 대 한 개인 인터페이스 네트워크 인덱스를 기록 합니다 (예: "Microsoft Wi-fi Direct 가상 어댑터 #2").
+   * SoftAP에 대 한 개인 인터페이스 네트워크 인덱스 (예: "Microsoft Wi-fi Direct 가상 어댑터 #2")를 기록 합니다.
 
    예를 들어 SoftAP는 인터페이스 인덱스 5, 어댑터 설명 "Microsoft Wi-fi Direct 가상 어댑터 #2"를 통해 노출 됩니다.
 
@@ -55,7 +53,7 @@ ms.locfileid: "60169081"
 
    ![모두 ipconfig](../media/InternetConnectionSharing/internetconnectionsharing_ipconfig.png)
 
-### <a name="step-2-scripting-internet-connection-sharing-trigger"></a>2단계: 인터넷 연결 공유 트리거 스크립팅
+### <a name="step-2-scripting-internet-connection-sharing-trigger"></a>2 단계: 인터넷 연결 공유 트리거 스크립팅
 
 두 네트워크 간에 인터넷 연결 공유를 시작 하려면 다음 단계를 수행 해야 합니다.
 
@@ -350,10 +348,10 @@ main(
 
 대상 아키텍처 (예: x86 릴리스)를 빌드하고 출력 **Sharedaccessutility .exe** 를 찾습니다.
 
-### <a name="step-3-starting-internet-connection-sharing"></a>3단계: 인터넷 연결 공유를 시작 하는 중
+### <a name="step-3-starting-internet-connection-sharing"></a>3 단계: 인터넷 연결 공유 시작
 
-1. 2 단계에서 만든 **Configics .cmd** 스크립트를 일부 위치의 장치에 복사 합니다. 예를 들면 다음과 같습니다.`C:\test\`
-2. 2 단계에서 만든 **Sharedaccessutility .exe** 를 같은 위치의 장치에 복사 합니다 (예:).`C:\test`\
+1. 2 단계에서 만든 **Configics .cmd** 스크립트를 특정 위치 (예: `C:\test\`)의 장치에 복사 합니다.
+2. 2 단계에서 만든 **Sharedaccessutility .exe** 를 같은 위치의 장치 (예: `C:\test`\에 복사 합니다.
 3. 장치에서 **C:\test\ConfigureICS.cmd start [public index] [private index] [private adapter name]** 를 실행 합니다 .이 예제에서는 <strong>C:\test\ConfigureICS.cmd Start 4 5 "Local Area Connection * 3"</strong> 을 의미 합니다.
 
 이 시점에서 장치는 장치의 보급 된 SSID에 연결 된 모든 클라이언트에 대해 인터넷 연결 공유를 사용 하도록 설정 했습니다.

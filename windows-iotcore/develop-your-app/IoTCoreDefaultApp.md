@@ -1,18 +1,16 @@
 ---
 title: Windows 10 IoT Core 기본 앱
-author: saraclay
-ms.author: saclayt
 ms.date: 08/08/2018
 ms.topic: article
 description: Windows 10 IoT Core 기본 앱 및 해당 기능에 대해 알아봅니다.
 keywords: windows iot, windows 10 iot core, 기본 앱
 ms.custom: RS5
-ms.openlocfilehash: 12baa759c9085360431c2b7f87f72816cd24680b
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: a0e26d54f1c6694cd408de6f54cf0c0fba263156
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60168025"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918245"
 ---
 # <a name="windows-10-iot-core-default-app-overview"></a>Windows 10 IoT Core 기본 앱 개요
 
@@ -34,8 +32,8 @@ ms.locfileid: "60168025"
 
 IoT Core 기본 앱을 사용자 지정 하 고 확장할 수 있습니다. 또는 소스 코드를 사용자 고유의 앱에 대 한 예제로 사용할 수 있습니다. 직접 사용해 보려면 샘플의 zip을 다운로드 하거나 [여기](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)에서 IoT Core 기본 앱에 대 한 코드를 확인 하세요. 질문을 하려면 [여기](https://github.com/Microsoft/Windows-iotcore-samples/issues)의 샘플 리포지토리에서 문제를 파일 하세요.
 
-아래 설정 섹션](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp#settings
-) 에 [표시 된 것 처럼 경우에 따라 최종 사용자를 대신 하 여 고객 시스템에서 기본 설정 및 기능을 구성할 수 있습니다. 그러나 기본적으로 이러한 설정 및 기능을 설정 하거나 진단이 기본 설정 위에 있는 경우 다음을 수행 해야 합니다.
+아래 [설정 섹션](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp#settings
+) 에 표시 된 것 처럼 경우에 따라 최종 사용자를 대신 하 여 고객 시스템에서 기본 설정 및 기능을 구성할 수 있습니다. 그러나 기본적으로 이러한 설정 및 기능을 설정 하거나 진단이 기본 설정 위에 있는 경우 다음을 수행 해야 합니다.
 
 * 최종 사용자에 게 이러한 기능을 사용할 수 있음을 알리고 [여기](http://go.microsoft.com/fwlink/?LinkId=521839)에서 Microsoft 개인 정보 취급 방침 웹 페이지에 대 한 링크를 최종 사용자에 게 제공 합니다. 
 * 관련 최종 사용자의 보안 동의를 통해 해당 법률에서 요구 하는 대로 기본적으로 이러한 기능을 사용 하도록 설정 합니다.
@@ -46,8 +44,8 @@ IoT Core 기본 앱을 사용자 지정 하 고 확장할 수 있습니다. 또�
 
 IoT Core 기본 앱에 대 한 기본 제공 환경은 가져오는 것과 같습니다. 첫 번째 페이지에는 기본 언어 및 wi-fi 설정이 표시 됩니다. 여기서 앱이 GDPR 규격을 준수 하도록 하려면 진단 데이터 화면이 있어야 하 고, 위치를 추적할 계획인 경우 위치 사용 권한 화면도 필요 합니다. 둘 다의 예가 아래에 나와 있습니다. 
 
-![Oobe에 대 한](../media/IoTCoreDefaultApp/OOBE3.jpg)
-oobe![진단 설정의 위치 설정](../media/IoTCoreDefaultApp/OOBE4.jpg)
+oobe](../media/IoTCoreDefaultApp/OOBE4.jpg)에 대 한 OOBE](../media/IoTCoreDefaultApp/OOBE3.jpg)
+![진단 설정 ![위치 설정
 
 ## <a name="command-bar"></a>명령 모음
 명령 모음은 화면 아래쪽에 있는 영구적인 horizonatal Bar입니다. 이렇게 하면 다음 기능이에 쉽게 액세스할 수 있습니다.
@@ -88,7 +86,7 @@ oobe![진단 설정의 위치 설정](../media/IoTCoreDefaultApp/OOBE4.jpg)
 
 ## <a name="start-menu---explore"></a>시작 메뉴-탐색 
 
-### <a name="apps"></a>앱 
+### <a name="apps"></a>앱을 선택하고 
 이 페이지에서 장치에 설치 된 다른 포그라운드 응용 프로그램을 시작할 수 있습니다. 응용 프로그램을 시작 하면 [Windows 장치 포털](../manage-your-device/DevicePortal.md)에서 app Manager를 사용 하 여 고 수 있는 IoT Core 기본 앱이 일시 중단 됩니다.
 
 전경 응용 프로그램을 페이지에 나열 하는 데 특별 한 사항은 없으며, 응용 프로그램을 [설치](AppInstaller.md) 하거나 [배포](AppDeployment.md) 하기만 하면 됩니다. 설치 또는 배포를 성공적으로 수행한 후 응용 프로그램 페이지를 다시 탐색 하 여 응용 프로그램 목록을 새로 고칩니다.
@@ -134,7 +132,7 @@ Wi-fi, Bluetooth, 전원 옵션 등을 비롯 한 다양 한 설정을 구성할
 
 ##### <a name="weather-settings"></a>날씨 설정
 * 위치 변경
-  > 이 기능은 유효한 [Bing 지도 서비스 토큰](https://msdn.microsoft.com/library/ff428642.aspx)을 제공한 경우에만 사용할 수 있습니다.  앱에 토큰을 전달 하려면 앱의 localstate 폴더 (예: C:\Data\USERS\\[User Account] \AppData\Packages\\[Package Full Name] \localst\maptoken.config)에 **maptoken .config** 파일을 만들고 앱을 다시 시작 합니다.
+  > 이 기능은 유효한 [Bing 지도 서비스 토큰](https://msdn.microsoft.com/library/ff428642.aspx)을 제공한 경우에만 사용할 수 있습니다.  응용 프로그램에 토큰을 전달 하려면 앱의 LocalState 폴더 (예: C:\Data\USERS\\[User Account] \AppData\Packages\\[Package Full Name] \Localst\mapt\mapor.config)에 **Maptoken .config** 파일을 만들고 앱을 다시 시작 합니다.
 * 지도 확장
 * 지도와 날씨 스위치를 주기적으로 배치 하 여 화면 굽기를 방지 하는 맵 대칭 이동 사용/사용 안 함
 
@@ -144,7 +142,7 @@ Wi-fi, Bluetooth, 전원 옵션 등을 비롯 한 다양 한 설정을 구성할
 ##### <a name="slideshow-settings"></a>슬라이드 쇼 설정
 * 슬라이드쇼 간격 설정
 
-##### <a name="appearance"></a>모양
+##### <a name="appearance"></a>바꿀
 * 타일 아이콘에 대해 Emojis 대신 MDL2 자산을 사용 합니다.
 * 타일 너비와 높이를 설정 합니다.
 * UI 배율 설정-자동 크기 조정은 기본적으로 설정 되어 있습니다.

@@ -1,17 +1,15 @@
 ---
 title: 제안 된 플랫폼에서 TPM 설정
-author: saraclay
-ms.author: saclayt
-ms.date: 09/05/17
+ms.date: 09/05/2017
 ms.topic: article
 description: 제안 된 플랫폼에서 TPM을 설정 하는 방법에 대 한 지침에 따라 장치를 안전 하 게 보호 하는 방법을 알아봅니다.
 keywords: windows iot, 보안, 설정, 신뢰할 수 있는 플랫폼 모듈, TPM, 암호화, 키
-ms.openlocfilehash: cc82262e3f800195b460bfe1113ec7c075d36b9a
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: 905d6ea829d6920a1458dbc1a4bdd16f266f7be1
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60170131"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918683"
 ---
 # <a name="setting-up-tpm-on-suggested-platforms"></a>제안 된 플랫폼에서 TPM 설정
 

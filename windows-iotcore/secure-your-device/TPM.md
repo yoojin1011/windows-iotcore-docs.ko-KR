@@ -1,17 +1,15 @@
 ---
 title: TPM(신뢰할 수 있는 플랫폼 모듈)
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: 신뢰할 수 있는 플랫폼 모듈를 사용 하 여 암호화 기능을 사용 하 여 장치를 보다 안전 하 게 보호 하는 방법을 알아봅니다.
 keywords: windows iot, 보안, 신뢰할 수 있는 플랫폼 모듈, TPM, 암호화, 키
-ms.openlocfilehash: 70552a5f98891281879f1d45cbdbd671b56dd902
-ms.sourcegitcommit: 77b86eee2bba3844e87f9d3dbef816761ddf0dd9
+ms.openlocfilehash: 36197c1cea96c964026682da2d05ba1fcd6524a9
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "65533315"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918529"
 ---
 # <a name="trusted-platform-module-tpm-on-windows-10-iot-core"></a>Windows 10 IoT Core의 신뢰할 수 있는 플랫폼 모듈 (TPM)
 

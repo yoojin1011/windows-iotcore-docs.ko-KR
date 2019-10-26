@@ -1,17 +1,15 @@
 ---
 title: 장치를 클라우드에 연결
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: 장치를 클라우드에 연결 하는 방법에 대해 알아봅니다.
 keywords: windows iot, Azure, 보안, 신뢰할 수 있는 플랫폼 모듈, SoC
-ms.openlocfilehash: ff54bbfa1aaf30d08107fac72ba59ae5a04aa247
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: 6bce16b45175c4c19156f30f35f6d3502f675930
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60169761"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918394"
 ---
 # <a name="connect-your-device-to-the-cloud"></a>장치를 클라우드에 연결
 

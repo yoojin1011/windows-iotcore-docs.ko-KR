@@ -1,17 +1,15 @@
 ---
 title: Windows 10 IoT Core 대시보드
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Windows 10 IoT Core 대시보드의 기능 및 시작 하는 방법에 대해 알아봅니다.
 keywords: windows iot, windows 10 iot core 대시보드, windows iot 대시보드, 장치
-ms.openlocfilehash: af87ff8224cf77b567b1dd96e6de2297b4752530
-ms.sourcegitcommit: f447681d9a73ebdec97a3da973bd798a02df975d
+ms.openlocfilehash: e244dd4705fa85707468f284b9a5d070c91720d8
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65197674"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918615"
 ---
 # <a name="windows-10-iot-core-dashboard"></a>Windows 10 IoT Core 대시보드
 
@@ -43,8 +41,8 @@ SD 카드의 유형, 제조업체 및 모델이 IoT Core의 성능 및 품질에
 ### <a name="device-name"></a>장치 이름
 기본 장치 이름은 minwinpc입니다. 네트워크에서 장치를 보다 쉽게 찾을 수 있도록 하기 때문에 고유한 항목으로 변경 하는 것이 좋습니다. 장치 이름은 15 자이 하 여야 하 고, 문자, 숫자 및 다음 기호를 포함할 수 있습니다. @ # $% ^ & ') (. -_ {} ~ 장치를 설정할 때 IoT 대시보드에서 장치 이름을 변경 하는 경우 처음으로 장치를 켤 때 자동 다시 부팅이 수행 됩니다.
 
-### <a name="password"></a>암호
-암호는 필수 필드 이므로 설정 해야 합니다. IoT 대시보드에서 암호를 설정 하면 관리자 사용자에 대 한 암호를 수정 합니다 .이p@ssw0rd암호는 기본적으로 ""입니다.
+### <a name="password"></a>Password(암호)
+암호는 필수 필드 이므로 설정 해야 합니다. IoT 대시보드에서 암호를 설정 하면 관리자 사용자에 대 한 암호를 수정 합니다 .이 암호는 기본적으로 "p@ssw0rd"입니다.
 
 ### <a name="wi-fi-network-connection"></a>Wi-fi 네트워크 연결
 IoT 대시보드에는 PC가 이전에 연결한 모든 사용 가능한 네트워크가 표시 됩니다. 원하는 Wi-fi 네트워크가 목록에 표시 되지 않으면 PC에서 해당 Wi-fi 네트워크에 연결 되어 있는지 확인 합니다.
@@ -89,7 +87,7 @@ ___
 
 Windows PowerShell을 사용 하 여 장치에 연결할 수도 있습니다.
 
-## <a name="connect-to-azure"></a>Azure에 연결
+## <a name="connect-to-azure"></a>Azure 연결
 ___
 IoT 대시보드에서 Azure IoT Hub를 사용 하 여 IoT Core 장치를 프로 비전 할 수 있습니다. 이에 대 한 자세한 내용은이 [블로그 게시물](https://blogs.windows.com/buildingapps/2016/07/20/building-secure-apps-for-windows-iot-core)을 참조 하세요.
 

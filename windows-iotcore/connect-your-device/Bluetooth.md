@@ -1,17 +1,15 @@
 ---
 title: Bluetooth 지원
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Windows 10 IoT Core를 실행 하는 장치에 대해 Bluetooth를 활용 하는 방법을 알아봅니다.
 keywords: windows iot, bluetooth, bluetooth 지원, 장치, 장치 포털
-ms.openlocfilehash: f24b50b65b192ed6bd9309eeda30dbadfedf5bc2
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: e9159e6488ddcd078f5d73b0dafd08082e295cde
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60168980"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918365"
 ---
 # <a name="bluetooth-support"></a>Bluetooth 지원
 Windows 10 IoT Core는 Bluetooth 4.0를 지원 합니다. 지원 되는 Bluetooth 동글 목록은 [하드웨어 호환성 목록](../learn-about-hardware/HardwareCompatList.md)에서 찾을 수 있습니다.
@@ -26,7 +24,7 @@ Windows 10 IoT Core는 Bluetooth 4.0를 지원 합니다. 지원 되는 Bluetoot
 ## <a name="supported-bluetooth-profiles"></a>지원 되는 Bluetooth 프로필
 Windows 10 IoT Core는 다음 Bluetooth 프로필을 지원 합니다.
 
-1.  **HID (휴먼 인터페이스 장치 프로필 개념)** HID 장치는 사람 으로부터 입력을 받아 인간 consumpation에 대 한 출력을 제공 합니다. 키보드, 마우스, 게임 컨트롤러, 바코드 판독기, LED 및 영숫자 표시의 예가 있습니다. Windows 10 IoT Core 장치는 Bluetooth를 통해 HID 장치에 연결할 수 있습니다. Windows 컨텍스트의 HID에 대 한 일반 항목을 참조 하세요. [HID 개념 소개](https://docs.microsoft.com/windows-hardware/drivers/hid/introduction-to-hid-concepts). 
+1.  **HID (휴먼 인터페이스 장치 프로필 개념)** HID 장치는 사람 으로부터 입력을 받아 인간 consumpation에 대 한 출력을 제공 합니다. 키보드, 마우스, 게임 컨트롤러, 바코드 판독기, LED 및 영숫자 표시의 예가 있습니다. Windows 10 IoT Core 장치는 Bluetooth를 통해 HID 장치에 연결할 수 있습니다. Windows 컨텍스트의 HID에 대 한 일반 항목인 [Hid 개념 소개](https://docs.microsoft.com/windows-hardware/drivers/hid/introduction-to-hid-concepts)를 참조 하세요. 
 
 2.  **라디오 주파수 통신 (RFCOMM)** RFCOMMM는 클래식 Bluetooth의 기본 직렬 통신입니다. UWP 앱에서 지원 되는 RFCOMM 서비스는 다음과 같습니다.
 

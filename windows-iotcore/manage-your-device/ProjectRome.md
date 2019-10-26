@@ -1,17 +1,15 @@
 ---
 title: Windows 10 IoT Core에서 Project 로마 사용
-author: saraclay
-ms.author: saclayt
 ms.date: 11/14/2017
 ms.topic: article
 description: Windows IoT 장치를 출시 하는 단계를 알아보고 파악 합니다.
 keywords: windows 10 IoT Core, 프로젝트 로마, 원격 장치
-ms.openlocfilehash: cc016abad05dd54c7b948bcae8120b6da1724ee0
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: dcf1ba9bec776b2ebde0d374266bb4d7dba3baec
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60170399"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72917315"
 ---
 # <a name="using-project-rome-with-windows-10-iot-core"></a>Windows 10 IoT Core에서 Project 로마 사용 
  

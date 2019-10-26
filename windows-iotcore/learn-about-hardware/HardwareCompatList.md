@@ -1,17 +1,15 @@
 ---
 title: 하드웨어 호환성 목록
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Windows 10 IoT Core에서 가장 잘 지 원하는 주변 장치 인터페이스 및 프로토콜에 대해 알아봅니다.
 keywords: windows iot, 주변 장치, 프로토콜, 호환성, 버스, 하드웨어
-ms.openlocfilehash: d1d97c3bff2fe843216410d07530f4866136bc63
-ms.sourcegitcommit: c5552007f5456e57512307f51b146406a23fa723
+ms.openlocfilehash: 4444001a77db654e1e666af068bec251749fb5ff
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68739825"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918110"
 ---
 # <a name="hardware-compatibility-list"></a>하드웨어 호환성 목록
 
@@ -31,7 +29,7 @@ Windows 10 IoT Core는 I2C, UART, USB 등과 같은 일반적인 버스에 대 �
 > | 공식 Raspberry Pi WiFi 동글을 | ARM32, x64, x86 | 공식 Raspberry Pi WiFi 동글을 diminutive 크기에 가장 적합 한 WiFi 성능을 제공 합니다. | | &#10004;  |
 > | 어 링크 무선 N 150 미니 USB 어댑터 | x64, x86 | WAP 링크 101 AWL5077 골든 150Mbps 무선 미니 USB 어댑터와 WPA2, WPA 및 WEP 강화 무선 보안 | | &#10004;  
 > | Panda PAU06 | x64, x86 |  Panda 300Mbps 무선 N USB 어댑터 및 고속 안테나 | |  &#10004;  
-> | TP-링크 TL_WN725N |  ARM32, x64, x86 | TP-링크 TL-WN725N Wireless N Nano USB Adapter 150 Mbps`(USB/VID_0BDA&PID_8179)` |  | &#10004;  
+> | TP-링크 TL_WN725N |  ARM32, x64, x86 | TP-링크 TL-WN725N Wireless N Nano USB Adapter 150 Mbps `(USB/VID_0BDA&PID_8179)` |  | &#10004;  
 > | NET-DYN USB WiFi 어댑터 | MBM | WiFi USB 어댑터 넷-DYN | |  &#10004;  
 > | Realtek 8191 USB 무선 WiFi | ARM32, x64, x86 | Realtek 8191 300Mbps 802.11 n/g/b/USB 무선 WiFi LAN 네트워크 카드 어댑터 | | &#10004;  
 > | Realtek 8192 USB 무선 WiFi | ARM32, x64, x86 | USB 2.0 인터페이스를 사용 하는 Realtek 단일 칩 IEEE 802.11 b/g/n 2T2R WLAN 컨트롤러 | | &#10004; |

@@ -1,17 +1,15 @@
 ---
 title: Minnowboard 최대 Pin 매핑
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Minnowboard Max의 pin 매핑 기능에 대해 알아봅니다.
 keywords: windows iot, Minnowboard Max, pin 매핑, GPIO
-ms.openlocfilehash: 884d9ee0d93167a13f39a28b28454daccb2eebad
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: c97147357bbe17c13f2e69e9878b2630a6d12097
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60167504"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72917960"
 ---
 # <a name="minnowboard-max-pin-mappings"></a>MinnowBoard 최대 Pin 매핑
 
@@ -43,18 +41,18 @@ MinnowBoard Max는 모든 IO 핀에 3.3 V 논리 수준을 사용 합니다. 또
 
 > | GPIO # | 헤더 Pin         |
 > |-------|--------------------|
-> | 0     | 21                 |
+> | 0     | RD 세션 호스트 서버 팜의 이름을 지정하는 새 RD RAP 만들기                 |
 > | 1     | 23                 |
-> | 2     | 25                 |
+> | 2     | 25일                 |
 > | 3     | 14                 |
-> | 4     | 16                 |
+> | 추가를 클릭합니다.     | 16                 |
 > | 5     | 18                 |
 > | 6     | 20                 |
 > | 7     | 22                 |
 > | 8     | 24                 |
 > | 9     | 26                 |
 
-**참고:** **Gpio 4** 및 **GPIO 5** 는 BIOS에 대 한 부트스트랩 구성 핀으로 MinnowBoard Max에서 사용 됩니다.
+**참고:** **Gpio 4** 및 **gpio 5** 는 BIOS에 대 한 부트스트랩 구성 핀으로 MinnowBoard Max에서 사용 됩니다.
 장치를 부팅 하는 동안 연결 된 장치에서 이러한 GPIO를 사용 하지 않도록 해야 합니다 .이로 인해 MBM이 부팅 되지 않을 수 있습니다.
 MBM이 BIOS를 지 나 부팅 되 면 일반적으로 이러한 GPIO를 사용할 수 있습니다.
      
@@ -77,7 +75,7 @@ public void GPIO()
 
 ## <a name="serial-uart"></a>직렬 UART
 
-MBM에서 사용할 수 있는 두 개의 직렬 UARTS가 있습니다. **UART1** 및 **UART2**
+MBM: **UART1** 및 **UART2** 에는 두 개의 직렬 uarts를 사용할 수 있습니다.
 
 **UART1** 에는 표준 **UART1 TX** 및 **UART1 RX** 회선이 있으며,이는 CTS 및 **UART1 RTS**를 **UART1** 하는 흐름 제어 신호와 함께 있습니다.
 

@@ -1,17 +1,15 @@
 ---
 title: Raspberry Pi 3B +에 대 한 릴리스 정보
-author: zeeshanfurqan
-ms.author: zeeshanf
 ms.date: 05/16/2018
 ms.topic: article
 description: Raspberry Pi 3B +에 대 한 빌드에 있는 항목을 읽고 자세히 알아보세요.
 keywords: windows iot, Windows 참가자, 릴리스 정보, Raspberry Pi 3B 이상
-ms.openlocfilehash: f9a1bf98e6ef53ff7f96d35cb34af9527f1c6de1
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: e0cf0afb98440034d8384e5d44ce98bb14a0fe71
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60167361"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918751"
 ---
 # <a name="release-notes-for-raspberry-pi-3b"></a>Raspberry Pi 3B +에 대 한 릴리스 정보
 
@@ -93,7 +91,7 @@ Windows 시스템을 사용하여 시스템 볼륨을 변경하는 USB 마이크
 Raspberry Pi 및 Dragonboard에서, 기본이 아닌 드라이브 모드에서 기본이 아닌 다른 드라이브 모드로 전환하면 GPIO 핀에서 문제가 발생할 수 있습니다. 이 문제를 해결 하려면 응용 프로그램의 시작 부분에서 드라이브 모드를 한 번 설정 합니다. 
 
 ### <a name="application-already-running-1244550"></a>응용 프로그램이 이미 실행 중입니다. (1244550) 
-기본 시작 앱 역시 Visual Studio에서 배포하면 자체 앱과 충돌할 수 있습니다. 해결 방법: 기본 시작 앱을 배포하려는 앱이 아닌 다른 애플리케이션으로 변경합니다. 
+기본 시작 앱 역시 Visual Studio에서 배포하면 자체 앱과 충돌할 수 있습니다. 해결 방법: 기본 시작 앱을 배포 하려는 응용 프로그램 이외의 응용 프로그램으로 변경 합니다. 
 
 ### <a name="backgroundmediaplayermessagereceivedfromforeground-may-crash-2199869"></a>BackgroundMediaPlayer. MessageReceivedFromForeground가 충돌할 수 있습니다 (2199869). 
 다음 코드 줄이 충돌할 수 있습니다. 
@@ -179,4 +177,4 @@ Schtasks는/xml 스위치 사용을 지원 하지 않습니다. 예를 들어 �
 ```
 schtasks /create /xml <xmlfile> /TN <taskname>
 ```
-IoT Core에서 실패 합니다. 명령을 실행 하면 오류가 생성 됩니다. 오류: 지정 된 프로시저를 찾을 수 없습니다. 
+IoT Core에서 실패 합니다. 명령을 실행 하면 오류가 생성 됩니다. 오류: 지정한 프로시저를 찾을 수 없습니다. 

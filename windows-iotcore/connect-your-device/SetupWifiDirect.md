@@ -1,17 +1,15 @@
 ---
 title: Windows 10 Iot Core 장치에서 WiFi Direct 사용
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: USB wifi 어댑터를 사용 하는 장치에서 wifi direct를 설정, 테스트 및 사용 하는 방법을 알아봅니다.
 keywords: windows iot, wifi direct, 설정, wifi, 장치
-ms.openlocfilehash: 04ecf1820356c59fecea81be47f69617ab42ab36
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: 7355d5d0879b2a0f31f5fa89eb00e71eb0fa4e4f
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60169411"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918284"
 ---
 # <a name="using-wifi-direct-on-your-windows-10-iot-core-device"></a>Windows 10 IoT Core 장치에서 WiFi Direct 사용
 

@@ -1,17 +1,15 @@
 ---
 title: 백그라운드 응용 프로그램
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: IoT 장치용 백그라운드 응용 프로그램을 개발 하는 방법을 알아봅니다.
 keywords: windows iot, 백그라운드 응용 프로그램
-ms.openlocfilehash: 1b3fd831a4cdf3ebb8bc2d80c544344b13115617
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: ab9e4f66f3829c9758cbc40abfcde50df597a2d3
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60167893"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918267"
 ---
 # <a name="developing-background-applications"></a>백그라운드 응용 프로그램 개발
 
@@ -27,7 +25,7 @@ ms.locfileid: "60167893"
 
 ## <a name="where-can-background-applications-be-installed-from"></a>백그라운드 응용 프로그램은 어디에서 설치할 수 있나요? 
 
-[여기](https://go.microsoft.com/fwlink/?linkid=847472)에서 Visual Studio 갤러리의 배경 응용 프로그램을 사용 하도록 설정 하는 IoT 템플릿을 다운로드 하 고 설치할 수 있습니다.  또는 `Windows IoT Core Project Templates` [visual studio 갤러리](https://visualstudiogallery.msdn.microsoft.com/) 에서를 검색 하거나 확장 및 업데이트 대화 상자 (도구 > 확장 및 업데이트 > 온라인)에서 직접 검색 하 여 템플릿을 찾을 수 있습니다.
+[여기](https://go.microsoft.com/fwlink/?linkid=847472)에서 Visual Studio 갤러리의 배경 응용 프로그램을 사용 하도록 설정 하는 IoT 템플릿을 다운로드 하 고 설치할 수 있습니다.  또는 [Visual Studio 갤러리](https://visualstudiogallery.msdn.microsoft.com/) 에서 `Windows IoT Core Project Templates`을 검색 하거나 확장 및 업데이트 대화 상자의 visual studio에서 직접 검색 (도구 > 확장 및 업데이트 > 온라인) 하 여 템플릿을 찾을 수 있습니다.
 
 ## <a name="what-languages-are-available"></a>사용할 수 있는 언어는 무엇 인가요?
 
@@ -35,8 +33,8 @@ ms.locfileid: "60167893"
 
 * **C++** `File > New > Project > Installed > Visual C++ > Windows > Windows IoT Core`
 * **C#** `File > New > Project > Installed > Visual C# > Windows > Windows IoT Core`
-* **Visual Basic**`File > New > Project > Installed > Visual Basic > Windows > Windows IoT Core`
-* **JavaScript**`File > New > Project > Installed > JavaScript > Windows > Windows IoT Core`
+* **Visual Basic** `File > New > Project > Installed > Visual Basic > Windows > Windows IoT Core`
+* **JavaScript** `File > New > Project > Installed > JavaScript > Windows > Windows IoT Core`
 
 ## <a name="how-are-background-applications-used"></a>백그라운드 응용 프로그램 사용 방법 
 
@@ -88,7 +86,7 @@ deferral.Complete();
 > [!NOTE]
 > 그러면 장치가 부팅 될 때 백그라운드 응용 프로그램이 시작 되도록 구성 되지 않습니다.
 
-* IoT 장치에 배포 된 백그라운드 응용 프로그램의 경우, i이상 시작 .exe 유틸리티를 사용 하 여 장치가 부팅 될 때 백그라운드 응용 프로그램이 시작 되도록 구성할 수 있습니다.  백그라운드 응용 프로그램을 시작 앱으로 지정 하려면 다음 지침을 따르세요. (아래에 대 한 `BackgroundApplication1` **앱 이름을 대체** 합니다.)
+* IoT 장치에 배포 된 백그라운드 응용 프로그램의 경우, i이상 시작 .exe 유틸리티를 사용 하 여 장치가 부팅 될 때 백그라운드 응용 프로그램이 시작 되도록 구성할 수 있습니다.  백그라운드 응용 프로그램을 시작 앱으로 지정 하려면 다음 지침을 따릅니다 (아래 `BackgroundApplication1`에 대 한**앱 이름으로 대체** ).
 
 1. [여기](../connect-your-device/PowerShell.md)에 설명 된 대로 Windows IoT Core 장치로 POWERSHELL (PS) 세션을 시작 합니다.
 
@@ -128,5 +126,5 @@ Headless : BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee`
 
 `Removed headless: BackgroundApplication1-uwp_1.0.0.0_x86__cqewk5knvpvee`
 
-# <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>참고 항목
 사용자 지정 이미지를 빌드할 때 백그라운드 앱을 추가 하려면 [Appx 패키지 만들기](../build-your-image/createinstallpackage.md) 를 참조 하세요.

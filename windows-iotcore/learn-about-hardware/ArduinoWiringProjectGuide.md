@@ -1,17 +1,15 @@
 ---
 title: Arduino 배선 프로젝트 가이드
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Windows IoT Core를 사용 하 여 Arduino 배선 프로젝트를 만들고, 설치 하 고, 배포 하는 방법에 대해 알아봅니다.
 keywords: windows iot, Arduino, Arduino 배선, 라이트닝 성능, Visual Studio
-ms.openlocfilehash: 7c5e51efd20de014af4533587fbe6f210140b793
-ms.sourcegitcommit: cbea9d713986fbe8b85e1bba1561a000188bd91c
+ms.openlocfilehash: 17dc35174cc6aca7074183875e69202fc36dd9bc
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64744811"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918114"
 ---
 # <a name="arduino-wiring-project-guide"></a>Arduino 배선 프로젝트 가이드
 
@@ -37,7 +35,7 @@ Arduino 배선 프로젝트 뿐만 아니라 다른 Microsoft IoT 프로젝트 �
 Arduino 배선 솔루션을 쓰려면 직접 메모리 매핑된 드라이버를 실행 해야 합니다. 지침은 [번개 설정 가이드](../develop-your-app/LightningSetup.md) 를 참조 하세요.
 
 ## <a name="develop"></a>개발
-[샘플 페이지](https://developer.microsoft.com/en-us/windows/iot/samples)의 "배선" 샘플 중 하나를 완료 하거나 고유한 프로젝트를 빌드합니다. Arduino 배선을 사용 하 여 작성 된 샘플은 다음과 같이 나열 됩니다. [Blinky (배선)](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinkybackgroundwiring). Blinky, IoT 프로젝트용 cononical "Hello World" 프로젝트는 첫 번째 프로젝트를 시작할 수 있는 좋은 장소입니다.
+[샘플 페이지](https://developer.microsoft.com/en-us/windows/iot/samples)의 "배선" 샘플 중 하나를 완료 하거나 고유한 프로젝트를 빌드합니다. Arduino 배선을 사용 하 여 작성 된 모든 샘플은 다음과 같이 표시 됩니다. [Blinky (배선)](https://developer.microsoft.com/en-us/windows/iot/samples/helloblinkybackgroundwiring). Blinky, IoT 프로젝트용 cononical "Hello World" 프로젝트는 첫 번째 프로젝트를 시작할 수 있는 좋은 장소입니다.
 
 ### <a name="create-a-new-project"></a>새 프로젝트 만들기
 1. Visual Studio를 엽니다.
@@ -69,7 +67,7 @@ Arduino 배선 API는 라이브러리 및 스케치를 Arduino 배선 프로젝�
 
 - 장치의 IP 주소 또는 컴퓨터 이름을 찾습니다. Windows 10 IoT Core 대시보드 응용 프로그램을 사용 하거나 장치를 모니터에 연결 합니다.
 - 컴퓨터 이름 (기본적으로 minwinpc) 또는 원격 컴퓨터의 IP 주소를 ' 컴퓨터 이름 ' 필드에 입력 합니다. ' Minwinpc ' 이외의 이름으로 장치 이름을 변경한 경우 대신 로그인 상자에서 해당 이름을 사용 합니다.
-- Authentican 형식 인지 확인 합니다. 유니버설 (암호화 되지 않은 프로토콜)
+- Authentican 형식이 유니버설 (암호화 되지 않은 프로토콜) 인지 확인 합니다.
 
 ![솔루션 속성](../media/ArduinoWiring/wiringapp_properties2.png)
 

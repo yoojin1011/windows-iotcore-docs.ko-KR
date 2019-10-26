@@ -1,17 +1,15 @@
 ---
 title: IoT Shell 개요
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: IoT 셸을 활용 하 여 장치에서 탐색을 탐색 하는 방법에 대해 알아봅니다.
 keywords: windows iot, IoT core shell, 응용 프로그램, 포그라운드 응용 프로그램, 백그라운드 응용 프로그램
-ms.openlocfilehash: 74d8406036aa18dc5f8dcaa871e116eb7f8ec29b
-ms.sourcegitcommit: beed912a2266d6dbc06a8a26b85ff49f1feffd69
+ms.openlocfilehash: e23f121073a84f9c36a390eb126e83b4f4215fee
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67316626"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918236"
 ---
 # <a name="iot-shell-overview"></a>IoT Shell 개요
 
@@ -19,7 +17,7 @@ ms.locfileid: "67316626"
 
 ## <a name="iot-shell-foreground-and-background-apps"></a>IoT Shell, 포그라운드 및 백그라운드 앱
 
-Iot Core 장치는 IoT 셸을 실행 합니다. 많은 책임이 있지만 기본 작업은 등록 된 시작 앱이 시작 되도록 하는 것입니다. 다음과 같은 두 가지 모드가 있습니다. 양방향 및 헤드리스. 또한 IoT Shell은 UI를 전체 화면 (바로 앱이 라고도 함)에 표시 하는 등록 된 단일 시작 앱을 시작 합니다. 화살표는 연결 된 화면이 있고 UI를 표시 하는 것으로 가정 합니다. 헤드리스 모드 ( [여기서](../learn-about-hardware/HeadlessMode.md)자세히 설명)에서는 UI가 없습니다. IoT Shell은 백그라운드 응용 프로그램만 시작 합니다.
+Iot Core 장치는 IoT 셸을 실행 합니다. 많은 책임이 있지만 기본 작업은 등록 된 시작 앱이 시작 되도록 하는 것입니다. 여기에는 두 가지 모드인 양방향 및 헤드리스가 있습니다. 또한 IoT Shell은 UI를 전체 화면 (바로 앱이 라고도 함)에 표시 하는 등록 된 단일 시작 앱을 시작 합니다. 화살표는 연결 된 화면이 있고 UI를 표시 하는 것으로 가정 합니다. 헤드리스 모드 ( [여기서](../learn-about-hardware/HeadlessMode.md)자세히 설명)에서는 UI가 없습니다. IoT Shell은 백그라운드 응용 프로그램만 시작 합니다.
 
 다음은 포그라운드 응용 프로그램과 백그라운드 응용 프로그램 간의 주요 차이점입니다.
 
@@ -37,7 +35,7 @@ Iot Core 장치는 IoT 셸을 실행 합니다. 많은 책임이 있지만 기�
 
 아래 지침에서는 레지스트리 항목을 통해 바로 가기 키 지원을 설정 하는 방법을 보여 줍니다. 사용자 고유의 이미지를 빌드하고 레지스트리에 액세스할 필요 없이 아래 핫키 (홈, 이전 앱 및 다음 앱)를 지원 하려는 경우 이러한 단계를 처리 하는 선택적 기능 패키지를 포함할 수 있습니다.
 
-찾을 기능 패키지를 라고 합니다. **Microsoft-OneCore-IoTUAP-Shell-HotKeys-Feature-Package** 및이 기능을 **IOT_SHELL_HOTKEY_SUPPORT**라고 합니다. 예제는 [설정. 핫키 샘플 패키지](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Common/Packages/Settings.HotKey/Settings.HotKey.pkg.xml) 를 참조 하십시오.
+찾을 기능 패키지를 **Microsoft-OneCore-IoTUAP-Shell-HotKeys-Feature-Package** 라고 하며,이 기능을 **IOT_SHELL_HOTKEY_SUPPORT**라고 합니다. 예제는 [설정. 핫키 샘플 패키지](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Common/Packages/Settings.HotKey/Settings.HotKey.pkg.xml) 를 참조 하십시오.
 
 이 문서의 나머지 부분에서는이 기능을 수동으로 구현 하는 방법을 설명 합니다.
 
@@ -66,7 +64,7 @@ REG 파일은 다음과 같습니다.
 “NEXT” QWORD 0x00020000 00050009 
 ``
 
-REG 파일은 다음과 같습니다.``
+REG 파일은 다음과 같습니다. ``
 [HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\IoTShellExtension\HotKeys]
 "Prev"=hex(b):09,00,01,00,00,00,01,00
 "Next"=hex(b):09,00,05,00,00,00,02,00
@@ -76,12 +74,12 @@ REG 파일은 다음과 같습니다.``
 
 위의 REG 파일 항목은 다음과 같이 왼쪽에서 오른쪽으로 디코딩합니다.
 
-- 비트 0-15: 가상 키 코드 (예: 1B, 00 (이스케이프)). 키 코드 값의 전체 목록은 [가상 키 코드](https://msdn.microsoft.com/library/windows/desktop/dd375731(v=vs.85).aspx) 를 참조 하세요.
-- 비트 16-19: 한정자 키입니다. 0x0 = No 한정자, 0x1 = ALT, 0x2 = CTRL 및 0x4 = SHIFT입니다. 키를 조합 하면 값이 함께 추가 됩니다 (예: ALT + SHIFT는 0x5).
-- 비트 20-47: 나중에 사용 하도록 예약 되어 있습니다. 0 이어야 합니다.
-- 비트 48-62:  작업
+- Bits 0-15: 가상 키 코드 (예: 1B, 00 (이스케이프)). 키 코드 값의 전체 목록은 [가상 키 코드](https://msdn.microsoft.com/library/windows/desktop/dd375731(v=vs.85).aspx) 를 참조 하세요.
+- Bits 16-19: Modifier 키입니다. 0x0 = No 한정자, 0x1 = ALT, 0x2 = CTRL 및 0x4 = SHIFT입니다. 키를 조합 하면 값이 함께 추가 됩니다 (예: ALT + SHIFT는 0x5).
+- Bits 20-47: 나중에 사용 하도록 예약 되어 있습니다. 0 이어야 합니다.
+- Bits 48-62: 작업
     - 0 = 홈
     - 1 = 이전 보기 (이후 릴리스에서 작동 하지 않을 수 있음)
     - 2 = 다음 보기 (이후 릴리스에서 작동 하지 않을 수 있음)
-- 비트 63: 쓰이는 0 이어야 합니다.
+- 비트 63: 예약 됨; 0 이어야 합니다.
 

@@ -1,21 +1,19 @@
 ---
 title: Computer Vision
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: IoT 장치에 대해 마이크로 Osft Cognitive Services 및 OpenCV를 사용 하는 방법에 대해 알아봅니다.
 keywords: windows iot, 컴퓨터 비전, Cognitive Services, OpenCV
-ms.openlocfilehash: f6d10024f0f52f7219eb3a63dcefa7fd2b4a6fe3
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: 74e4ee1303a9c59461f12b59f141c0f7b97d26db
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60169201"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918187"
 ---
 # <a name="computer-vision"></a>Computer Vision
 
-어떤 사람이 상대적으로 3 차원 세계를 용이 하 게 합니다. 초기 시대에서 시작 하 여 brains는 기능 식별, 장애물 방지, 조정, 깊이 인식 등을 비롯 한 유용한 정보를 visual stimuli에서 수집할 수 있습니다. 컴퓨터 비전은 프로세서와 카메라를 사용 하 여 동일한 작업을 수행 하려고 합니다. 오늘날의 장치에는 수많은 응용 프로그램이 있습니다. 드 론은 비행 중에이를 사용 하 여 신속 하 게 장애를 감지 하 고 피할 수 있습니다. 팩터리는이를 사용 하 여 어셈블리 줄의 가장 작은 구성 요소에서 외관상 결함을 검색할 수 있습니다. 그리고 사용자는 모니터 또는 의사 장비를 사용 하지 않고 하트 요금을 검색 하는 데 사용할 수 있습니다. 데이터 중심 세계는 컴퓨터 비전을 매우 활발 한 연구 영역으로 만들었습니다. 회사는 10 년 전까지 희박 하지만 발생할 간주 되는 방식으로 활용 하 고 있습니다. 컴퓨터, 카메라 및 데이터가 사회에서 더 세분화 되 면 컴퓨터의 시각 효과를 활용 하는 도구는 쉽게 액세스 하 고 사용할 수 있도록 해야 합니다. Windows 10 IoT Core는 다음 두 가지 기능을 함께 사용 하 여이 요구 사항을 충족 하려고 시도 합니다. Microsoft Cognitive Services 및 OpenCV.
+어떤 사람이 상대적으로 3 차원 세계를 용이 하 게 합니다. 초기 시대에서 시작 하 여 brains는 기능 식별, 장애물 방지, 조정, 깊이 인식 등을 비롯 한 유용한 정보를 visual stimuli에서 수집할 수 있습니다. 컴퓨터 비전은 프로세서와 카메라를 사용 하 여 동일한 작업을 수행 하려고 합니다. 오늘날의 장치에는 수많은 응용 프로그램이 있습니다. 드 론은 비행 중에이를 사용 하 여 신속 하 게 장애를 감지 하 고 피할 수 있습니다. 팩터리는이를 사용 하 여 어셈블리 줄의 가장 작은 구성 요소에서 외관상 결함을 검색할 수 있습니다. 그리고 사용자는 모니터 또는 의사 장비를 사용 하지 않고 하트 요금을 검색 하는 데 사용할 수 있습니다. 데이터 중심 세계는 컴퓨터 비전을 매우 활발 한 연구 영역으로 만들었습니다. 회사는 10 년 전까지 희박 하지만 발생할 간주 되는 방식으로 활용 하 고 있습니다. 컴퓨터, 카메라 및 데이터가 사회에서 더 세분화 되 면 컴퓨터의 시각 효과를 활용 하는 도구는 쉽게 액세스 하 고 사용할 수 있도록 해야 합니다. Windows 10 IoT Core는 두 가지 제공 (Microsoft Cognitive Services 및 OpenCV)과의 호환성을 통해이 요구를 충족 하려고 시도 합니다.
 
 ## <a name="services"></a>서비스
 ___
@@ -25,11 +23,11 @@ ___
 #### <a name="overview"></a>개요
 Cognitive Services, 원래 Project Oxford 라는 Microsoft Research 프로젝트는 높은 수준의 "인지 작업"을 수행 하는 Api 컬렉션입니다. 이러한 Api는 Microsoft Research에서 몇 년간의 탐색 및 개발으로 학습 된 기계 학습 모델을 기반으로 데이터에서 정보를 가져옵니다.
 
-Cognitive Services은 5 가지 범주로 구성 됩니다. 시각, 음성, 언어, 지식 및 검색 기능을 제공 합니다.
+Cognitive Services은 비전, 음성, 언어, 지식 및 검색의 5 가지 범주로 구성 됩니다.
 
 Cognitive Services [웹 사이트](https://www.microsoft.com/cognitive-services)에서 Cognitive Services에 대 한 자세한 정보를 찾을 수 있습니다.
 
-컴퓨터 비전 응용 프로그램에 가장 중요 한 범주인 비전 범주에는 다음과 같은 네 가지 Api가 있습니다. Computer Vision, Emotion, Face 및 비디오입니다. 이러한 Api는 다음과 같은 기능을 제공 합니다.
+컴퓨터 비전 응용 프로그램에 가장 중요 한 범주인 비전 범주에는 Computer Vision, Emotion, 얼굴 및 비디오의 네 가지 Api가 포함 되어 있습니다. 이러한 Api는 다음과 같은 기능을 제공 합니다.
 - 얼굴 인식
 - 동작 검색
 - Emotion 인식
@@ -43,7 +41,7 @@ Cognitive Services은 많은 양의 데이터를 사용 하 고, Microsoft Azure
 
 Cognitive Services 가격에 대 한 자세한 내용은 해당 [웹 사이트](https://www.microsoft.com/cognitive-services/en-us/pricing)에 있습니다.
 
-#### <a name="get-started"></a>시작
+#### <a name="get-started"></a>시작하기를
 Cognitive Services를 사용 하려면 사용자가 API 키를 수신 하기 위해 Congitive Services 웹 사이트에 등록 해야 합니다. Cognitive Services에 대 한 API 키를 제공 하면 사용자는 "가격 책정" 섹션에서 언급 한 제한 내에서 Api를 호출할 수 있습니다.
 
 각 API에 대 한 설명서는 Cognitive Services [웹 사이트](https://www.microsoft.com/cognitive-services/en-us/documentation)에서 찾을 수 있습니다.

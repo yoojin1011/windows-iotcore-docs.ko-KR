@@ -1,19 +1,17 @@
 ---
 title: Windows Device Portal
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: IoT
 description: Windows 장치 포털을 사용 하 여 장치를 원격으로 구성 하 고 관리 하는 방법에 대해 알아봅니다.
 keywords: windows iot, Windows 장치 포털, 원격, 장치 포털
-ms.openlocfilehash: 8e430365ea09509f5638d86ac77b151226df488f
-ms.sourcegitcommit: 8932969dc50805113c330bc2ba6ec9003d067b3c
+ms.openlocfilehash: d7e5285b7a29a61f15a5272cc822832230e56f75
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67412157"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72917440"
 ---
 # <a name="windows-device-portal"></a>Windows Device Portal
    Windows 장치 포털 (WDP)을 사용 하 여 로컬 네트워크를 통해 원격으로 장치를 구성 하 고 관리할 수 있습니다.
@@ -48,7 +46,7 @@ Windows 장치 포털을 시작 하 고 실행 하는 방법에는 두 가지가
     Password: `p@ssw0rd`
  
  ### <a name="2-browser"></a>2. 브라우저
-대시보드에서 장치를 찾을 수 없거나 대시보드를 사용 하는 것을 선호 하는 경우 장치의 IP 주소와 `:8080` 끝에를 입력 하 여 장치 포털을 열 수도 있습니다. 올바르게 수행 되 면 다음과 같이 표시 됩니다.
+대시보드에서 장치를 찾을 수 없거나 대시보드 사용을 건너뛰도록 선호 하는 경우 장치의 IP 주소를 입력 하 고 끝에 `:8080` 하 여 장치 포털을 열 수도 있습니다. 올바르게 수행 되 면 다음과 같이 표시 됩니다.
 
 
    ![I이상 대시보드 보기 장치](../media/deviceportal/Dashboard-Action.gif)
@@ -62,9 +60,9 @@ IoT Core는 [화상 키보드](../develop-your-app/OnScreenKeyboard.md) 를 사�
 > [!NOTE]
 > 이 확인란은 선택 된 상태에서 선택 되지 않은 것으로 "flash"가 되는 알려진 버그를 포함 합니다. 확인란이 원하는 상태를 표시 하는지 확인 하려면 클릭 한 후 페이지를 새로 고칩니다.
 
-### <a name="apps"></a>앱
+### <a name="apps"></a>앱을 선택하고
 장치에서 AppX 패키지 및 번들에 대 한 설치/제거 기능을 제공 합니다.
-![앱 목록](../media/DevicePortal/AppList.png)
+앱 목록 ![](../media/DevicePortal/AppList.png)
 
 IoT Core는 한 번에 하나의 포그라운드 앱만 실행할 수 있다는 면에서 고유 합니다. 이 경우 앱 목록이 수정 되어이를 확인 합니다. **시작** 열에서 기본적으로 시작할 백그라운드 응용 프로그램 수를 선택할 수 있지만 전경 응용 프로그램은 하나만 설정할 수 있습니다.  
 
@@ -118,12 +116,12 @@ IoT 온 보 딩은 IoT 장치의 Wi-fi 연결 옵션을 구성 하는 기능을 
 > [!NOTE]
 > Windows 10 IoT 빌드에서 10.0.14393 또는 이전 버전을 사용 하려면 [여기에서 다운로드할](https://github.com/ms-iot/samples)수 있는 <strong>iotonboarding 보 딩</strong> 샘플에 대 한 업데이트가 필요 합니다.
 
-![ICS에 대](../media/DevicePortal/OnboardingAllJoyn.png)
-한 AllJoyn![등록에 온 보 딩](../media/DevicePortal/OnboardingICS.png)
+](../media/DevicePortal/OnboardingAllJoyn.png)
+![를 통해 ![에 온 보 딩에 온 보 딩](../media/DevicePortal/OnboardingICS.png)
 
 > [!NOTE]
 > 액세스 지점 어댑터는 WiFi 액세스 지점 역할을 하는 WiFi 어댑터 이며 일반적으로 192.168.137.1와 같은 IP 주소가 있습니다.
-> 공유 네트워크 어댑터는 인터넷에 연결 하는 어댑터 (예: 이더넷 어댑터).
+> 공유 네트워크 어댑터는 인터넷 (예: 이더넷 어댑터)에 연결 되는 어댑터입니다.
 
 ![소프트 AP로 등록](../media/DevicePortal/OnboardingSoftAP.png)
 
@@ -135,7 +133,7 @@ IoT 온 보 딩은 IoT 장치의 Wi-fi 연결 옵션을 구성 하는 기능을 
 TPM (신뢰할 수 있는 플랫폼 모듈)은 난수 생성, 암호화 키의 보안 생성 및 사용 제한에 대 한 기능을 포함 하는 암호화 보조 기능입니다. 또한 원격 증명 및 봉인 된 저장소와 같은 기능을 포함 합니다. IoT Core의 TPM 및 보안에 대 한 자세한 내용은 [보안 장치 구축](../secure-your-device/BuildingSecureDevices.md) 페이지 및 [tpm](../secure-your-device/TPM.md) 페이지를 참조 하세요.
 
 > [!IMPORTANT]
-> Limpet는 Windows IoT Core의 일부로 사용 됩니다. 2018 년 10 월부터 현재 오픈 소스에서 [https://github.com/ms-iot/azure-dm-client](https://github.com/ms-iot/azure-dm-client)사용할 수 있습니다.
+> Limpet는 Windows IoT Core의 일부로 사용 됩니다. 2018 년 10 월부터 이제 [https://github.com/ms-iot/azure-dm-client](https://github.com/ms-iot/azure-dm-client)에서 오픈 소스로 사용할 수 있습니다.
 
 테스트를 용이 하 게 하기 위해 Limpet의 서명 되지 않은 미리 작성 된 버전을 사용할 수 있으며 WDP에서 바로 다운로드할 수 있습니다. ' TPM 구성 ' 탭으로 이동 하 여 ' 최신 버전 설치 ' 단추를 클릭 하기만 하면 됩니다. 
 
@@ -197,14 +195,14 @@ Windows 10 크리에이터 업데이트에서 Windows 장치 포털은 장치 �
 
 2. 디버그 > 디버그 설정-> 커널 충돌 설정-> 크래시 덤프 유형입니다. 
 
-3. 선택: 메모리 덤프 (사용 중인 메모리)를 완료 합니다.
+3. : 메모리 덤프 완료 (사용 중인 메모리)를 선택 합니다.
     설정을 적용 하려면 장치를 다시 부팅 해야 합니다. 
     
-4. `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CrashControl\CrashDumpEnabled` 가 0x1로 설정 되었는지 확인 합니다.
+4. `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CrashControl\CrashDumpEnabled`가 0x1로 설정 되었는지 확인 합니다.
 
-5. 0x0 `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CrashControl\DumpFileSize` 으로 업데이트 합니다.
+5. `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CrashControl\DumpFileSize`를 0x0으로 업데이트 합니다.
 
-6. 이 덤프를 생성 하기에 충분 한 공간이 장치에 있는지 확인 합니다. 덤프 파일 위치를 다음과 같이 변경 하도록 구성할 수 있습니다.`HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CrashControl\DumpFile`
+6. 이 덤프를 생성 하기에 충분 한 공간이 장치에 있는지 확인 합니다. 덤프 파일 위치를 변경 하는 작업은 다음 위치에서 구성할 수 있습니다. `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CrashControl\DumpFile`
 
 
 ## <a name="additional-resources"></a>추가 리소스

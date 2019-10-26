@@ -1,17 +1,15 @@
 ---
 title: IoT Core의 Miracast
-author: saraclay
-ms.author: saclayt
 ms.date: 11/30/2017
 ms.topic: article
 description: 장치에 Miracast 기능을 포함 하는 방법을 알아봅니다.
 keywords: windows iot, miracast, 연결
-ms.openlocfilehash: c58def4b218d35c78532f54df4a74fb572c8549e
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: bb997d0ec2899e7a0a988674ae8907e15e87b3c3
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60168110"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918325"
 ---
 # <a name="miracast-on-iot-core"></a>IoT Core의 Miracast
 
@@ -41,8 +39,8 @@ netsh wlan show driver
 | 팀 | SoC | WiFi 드라이버가 있음 | 그래픽 드라이버 있음 | Miracast 호환 |
 |-------|-----|----------------------|--------------------------|---------------------|
 | Qualcomm Dragonboard 410c | Snapdragon 410 | 예 | 예 | 예 |
-| Raspberry Pi 2/3 | Broadcom BCM283x | 예 | 아니오 | 아니요 |
-| Minnowboard Max | Intel Atom E3825 | 예 | 아니오 | 아니요 |
+| Raspberry Pi 2/3 | Broadcom BCM283x | 예 | 아니요 | 아니요 |
+| Minnowboard Max | Intel Atom E3825 | 예 | 아니요 | 아니요 |
 | 위쪽 제곱 | Intel 셀러론 N3350 | 예 | 예 | 예 |
 
 
@@ -79,11 +77,11 @@ reg add HKLM\Software\Microsoft\MiracastReceiver /v EnabledOnACOnly /t REG_DWORD
 ## <a name="windows-iot-as-a-miracast-source"></a>Windows IoT를 Miracast 원본으로
 
 > [!IMPORTANT]
-> 장치를 Miracast 원본으로 사용 하기 전에 아래와 같이 [Windows 장치 포털](https://docs.microsoft.com/windows/iot-core/manage-your-device/deviceportal) 에서 Is\on보드 ingtask 앱을 꺼야 합니다. 단, 한 번만 수행 하면 됩니다. ![Is\on보드 Ingtask 앱 해제](../media/Miracast/IoTOnboardingOff.gif)
+> 장치를 Miracast 원본으로 사용 하기 전에 아래와 같이 [Windows 장치 포털](https://docs.microsoft.com/windows/iot-core/manage-your-device/deviceportal) 에서 Is\on보드 ingtask 앱을 꺼야 합니다 .이 앱은 한 번만 수행 하면 됩니다. ![Is\on보드 ingtask 앱을 해제 하세요](../media/Miracast/IoTOnboardingOff.gif)
 >
 > 그런 다음 장치를 다시 시작 하세요.
 
-앱에서 네임 스페이스의 공용 api를 통해 호환 되는 `Windows.Media.Casting` 장치에서 Miracast 캐스트를 설정할 수 있습니다.
+앱에서 `Windows.Media.Casting` 네임 스페이스의 공용 Api를 통해 호환 되는 장치에서 Miracast 캐스트를 설정할 수 있습니다.
 
 이러한 Api의 작동 방식을 확인 하려면 [BASICMEDIACASTING UWP 샘플](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/BasicMediaCasting) 을 다운로드 하 고 장치에서 실행 합니다. 이 샘플의 Api는 다음과 같은 시나리오를 다룹니다. 이러한 시나리오는 모두 Miracast 호환 IoT Core 장치에서 실행 됩니다.
 1. 기본 제공 캐스트를 사용 하 여 Miracast, DLNA 및 Bluetooth 장치로 콘텐츠를 전송 하는 기본 미디어 캐스팅

@@ -1,17 +1,15 @@
 ---
 title: ETW(Windows용 이벤트 추적) IoT 코어
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: 이벤트 추적을 사용 하 여 이벤트를 쓰고 Windows IoT Core에 대 한 이벤트를 사용 하는 방법을 알아봅니다.
 keywords: windows iot, 이벤트 추적, ETW, windows 용 이벤트 추적, 장치
-ms.openlocfilehash: 7e01681e2af2ed8913614ba23bd12dfd36bcd76e
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: ce031cd2bc7b94f01c970bec9e1ad4df0b9dbf06
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60170311"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72917256"
 ---
 # <a name="event-tracing-for-windows-iot-core"></a>ETW(Windows용 이벤트 추적) IoT 코어
 

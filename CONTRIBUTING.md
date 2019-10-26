@@ -1,6 +1,6 @@
 # <a name="contributing-to-the-windows-10-iot-documentation"></a>Windows 10 IoT 설명서에 기여
 
-당사의 설명서에 관심을 가져 주셔서 감사합니다. 여러분이 보내주신 피드백, 편집 내용, 추가 기능 및 도움말은 문서 개선에 많은 도움이 되었습니다. 이 페이지에서는 설명서에 기여하기 위한 기본 단계 및 지침을 다룹니다.
+당사의 설명서에 관심을 가져 주셔서 감사합니다. 문서 개선을 위해 사용자 의견, 편집, 추가 및 도움을 주셔서 감사 합니다. 이 페이지에는 영향을 주는 기본 단계와 지침이 설명 되어 있습니다.
 
 ## <a name="sign-a-cla"></a>CLA 서명
 
@@ -29,7 +29,7 @@
 * 새 문서를 기고하는 경우 문서를 적절한 범주에 추가하고 TOC.md를 업데이트했나요?
 * URL 형식을 https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/master/CONTRIBUTING.md 가 아닌 [여기처럼](https://github.com/MicrosoftDocs/windows-iotcore-docs/blob/master/CONTRIBUTING.md) 지정했나요?
 * 새 문서를 검토할 사람이 두 명 이상 있나요?
-* 잘 모르는 내용이 있을 때 Sara(saclayt) 또는 Namrata(namkedia)에게 문의했나요?
+* Terry Warwick, twarwick@microsoft.com에 문의
 
 새 문서가 수락되면 다음 단계를 수행하는 것이 좋습니다.
 * 문서를 팀과 공유합니다. 성과를 숨기지 말고 동료들에게 알립니다.
@@ -41,19 +41,19 @@ Git 사용 방법에 익숙하지 않은 경우 [Lynda.com Git Essentials 교육
 
 ## <a name="authoring-your-contribution"></a>글 작성
 
-리포지토리를 분기하고 로컬 머신에 복제한 후에는 원하는 텍스트 편집기를 사용하여 글 작성을 시작할 수 있습니다.  물론 Microsoft에서 제공하는 가벼운 무료 오픈 소스 편집기인 [Visual Studio Code](https://code.visualstudio.com/)를 사용하는 것이 좋습니다. Markdown 작성에 도움이 필요한 경우 [Markdown is FUN for Everyone! 포스터](windows-iotcore/media/DocsMarkdownPoster.pdf)를 확인하세요. 모든 기본 사항을 배울 수 있습니다. 이 포스터를 인쇄하여 벽에 걸어 놓고 기여에 대한 미리 알림으로 사용할 수도 있습니다. 
+리포지토리를 분기하고 로컬 머신에 복제한 후에는 원하는 텍스트 편집기를 사용하여 글 작성을 시작할 수 있습니다.  물론 Microsoft에서 제공하는 가벼운 무료 오픈 소스 편집기인 [Visual Studio Code](https://code.visualstudio.com/)를 사용하는 것이 좋습니다. Markdown 작성에 대 한 도움말 [은이 Markdown 누구나 누구나 즐길 수 있습니다. ](windows-iotcore/media/DocsMarkdownPoster.pdf)알고 있어야 하는 모든 기본 사항을 포함 하는 포스터 이 포스터를 인쇄하여 벽에 걸어 놓고 기여에 대한 미리 알림으로 사용할 수도 있습니다. 
 
 ## <a name="submitting-your-contribution-and-filing-a-pull-request-pr"></a>기고문을 제출하고 끌어오기 요청(PR) 작성
 
 게시가 가능하도록 스테이징하기 위해 변경 내용을 원격 리포지토리에 추가할 준비가 되면 명령줄에서 다음 명령을 입력합니다.
-- `git status`: 이 명령은 변경 내용을 확인할 수 있도록 지금까지 변경한 파일을 표시합니다. 
-- `git add -A`: 이 명령은 모든 변경 내용을 추가하라고 git에 지시합니다. 특정 파일에서 변경한 내용만 추가하려면 이 명령 대신 `git add <file.md>` 명령을 입력합니다. 여기서 "file.md"는 변경 내용을 포함하고 있는 파일의 이름입니다.
-- `git commit -m “Fixed a few typos”`: 이 명령은 변경 내용에 대해 설명하는 짧은 메시지와 함께 이전 단계에서 추가한 변경 내용을 커밋하라고 git에 지시합니다.
-- `git push origin <yourbranchname>`: 이 명령은 GitHub("원점")에서 사용자가 지정한 분기로 포크한 원격 리포지토리에 변경 내용을 푸시합니다. 리포지토리를 사용자 고유의 GitHub 계정으로 포크했기 때문에 사용자가 **개발** 분기에서 작업을 수행할 수 있습니다. 
+- `git status`:이 명령은 변경 된 파일을 보여 주기 위해 변경한 내용을 확인할 수 있습니다. 
+- `git add -A`:이 명령은 git에 모든 변경 내용을 추가 하도록 지시 합니다. 특정 파일에서 변경한 내용만 추가하려면 이 명령 대신 `git add <file.md>` 명령을 입력합니다. 여기서 "file.md"는 변경 내용을 포함하고 있는 파일의 이름입니다.
+- `git commit -m “Fixed a few typos”`:이 명령은 이전 단계에서 추가한 변경 내용을 커밋하는 git에 지시 하 고 변경한 내용을 설명 하는 짧은 메시지를 표시 합니다.
+- `git push origin <yourbranchname>`:이 명령은 GitHub ("원본")에 분기 원격 리포지토리로 변경 내용을 지정 된 분기로 푸시합니다. 리포지토리를 사용자 고유의 GitHub 계정으로 포크했기 때문에 사용자가 **개발** 분기에서 작업을 수행할 수 있습니다. 
 
 변경 내용에 만족하고 PR을 제출할 준비가 완료되면 다음을 수행합니다.
 - IoT 리포지토리의 포크 https://github.com/your-github-alias/windows-iotcore-docs 로 이동합니다.
-- "새 끌어오기 요청" 단추를 클릭합니다. ("기본 포크:"는 "MicrosoftDocs/windows-iotcore-docs"로 나열되고, "헤드 포크"는 변경 작업을 수행한 리포지토리와 분기의 포크를 표시해야 합니다.) 여기서 변경 내용을 검토할 수도 있습니다. 
+- "새 끌어오기 요청" 단추를 클릭합니다. ("기본 포크:"는 "MicrosoftDocs"로 표시 되 고, "head 포크:"는 사용자가 변경한 리포지토리 및 분기의 포크를 표시 합니다.) 여기 에서도 변경 내용을 검토할 수 있습니다. 
 - 녹색 "끌어오기 요청 만들기" 단추를 클릭합니다. 끌어오기 요청의 제목과 설명을 입력한 다음, "끌어오기 요청 만들기" 단추를 한 번 더 클릭합니다.
 
 원격 리포지토리에 기고문을 푸시하면 기고문이 성공적으로 작성되었는지 여부를 알려주고 끊어진 링크 같은 오류 경고에 연결하는 *Open Publishing Build Service*의 이메일이 도착합니다. 링크를 클릭하면 사이트에서 콘텐츠가 스테이징되는 것을 볼 수 있습니다.
@@ -64,7 +64,7 @@ PR을 제출하면 Windows 10 IoT 문서 팀의 구성원이 요청을 검토할
 
 ## <a name="working-with-branches"></a>분기 작업
 
-[Windows 10 IoT Docs GitHub 리포지토리](https://github.com/MicrosoftDocs/windows-iotcore-docs)는 다음과 같은 두 가지 부모 분기를 활용합니다. [개발](https://github.com/MicrosoftDocs/windows-iotcore-docs/tree/develop) 콘텐츠는 [스테이징 사이트](https://review.docs.microsoft.com/en-us/windows/iot-core)에서 검토할 수 있고, [라이브](https://github.com/MicrosoftDocs/windows-iotcore-docs/tree/live)는 [라이브 사이트](https://docs.microsoft.com/windows/iot-core)에 표시되는 콘텐츠의 분기입니다. 
+[Windows 10 IoT Docs GitHub 리포지토리](https://github.com/MicrosoftDocs/windows-iotcore-docs) 는 두 개의 기본 부모 분기를 활용 합니다. [개발](https://github.com/MicrosoftDocs/windows-iotcore-docs/tree/develop),이 콘텐츠를 [스테이징 사이트](https://review.docs.microsoft.com/en-us/windows/iot-core)에서 검토 하 [고 라이브](https://github.com/MicrosoftDocs/windows-iotcore-docs/tree/live) [사이트](https://docs.microsoft.com/windows/iot-core)에 표시 되는 콘텐츠를 사용할 수 있습니다. 
 
 기고문을 작성할 때에는 **개발** 분기에 PR(끌어오기 요청)을 제출하세요. 이 분기는 스테이징 사이트에서 볼 수 있으며 실시간으로 게시할 준비가 완료된 기고문만 포함해야 합니다.
 
@@ -74,7 +74,7 @@ PR을 제출하면 Windows 10 IoT 문서 팀의 구성원이 요청을 검토할
 
 토픽 제목과 페이지 URL을 꼭 포함해야 합니다.
 
-## <a name="additional-resources"></a>추가 자료
+## <a name="additional-resources"></a>추가 리소스
 - [GitHub에서 작성 및 포맷 시작](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 
 ## <a name="additional-resources-for-microsoft-employees"></a>Microsoft 직원을 위한 추가 리소스

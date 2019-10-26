@@ -1,17 +1,15 @@
 ---
 title: 인터넷 연결 공유
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 description: Windows IoT Core에서 인터넷 연결 공유를 사용 하도록 설정 하 고 구성 하는 방법을 알아봅니다.
 keywords: windows iot, 인터넷 연결 공유, ICS, 장치 포털
-ms.openlocfilehash: dcf51d98bc618c1a843c43b2d33fc8f832ef73d4
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: 6392ef8b6216b9e622e308f8e1988655ebebee53
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60169021"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918572"
 ---
 # <a name="internet-connection-sharing"></a>인터넷 연결 공유
 
@@ -19,7 +17,7 @@ ms.locfileid: "60169021"
 [Windows 10 IoT Core 릴리스 이미지](https://developer.microsoft.com/en-us/windows/iot/downloads) 중 하나를 사용 하는 경우 장치 포털을 사용 하 여 ICS를 구성할 수도 있습니다.
 
 > [!IMPORTANT]
-> 먼저 WiFi 프로필을 만들고 다음을 매니페스트에 추가 해야 합니다.`<DeviceCapability Name="wiFiControl" />`
+> 먼저 WiFi 프로필을 만들고 다음을 매니페스트에 추가 해야 합니다. `<DeviceCapability Name="wiFiControl" />`
 
 공유 자습서는 [Windows IoT Core 11 월 2015 릴리스](InternetConnectionSharingNov2015.md) 문서를 참조 하세요.
 
