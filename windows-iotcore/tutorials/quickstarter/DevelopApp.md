@@ -1,17 +1,15 @@
 ---
 title: 디바이스용 앱 개발
-author: saraclay
-ms.author: saclayt
 ms.date: 04/17/2018
 ms.topic: article
 description: 디바이스용 앱을 추가 및 개발하는 방법 알아보기
 keywords: Windows 10 IoT Core, 시작, 앱 개발, 앱
-ms.openlocfilehash: f5ee15c2115d6e10a2a8ade1522c7b66cf788bee
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 7c047e2bba686705db19b12ea3b31350f0240688
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "60170103"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918486"
 ---
 # <a name="develop-an-app-for-your-device"></a>디바이스용 앱 개발
 

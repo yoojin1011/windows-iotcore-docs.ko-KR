@@ -1,17 +1,15 @@
 ---
 title: mDNS 응답기 샘플 소스 시작
-author: saraclay
-ms.author: saclayt
 ms.date: 02/26/2019
 ms.topic: article
 description: mDNS 응답기 샘플 소스를 시작하는 방법에 대해 알아봅니다.
 keywords: Windows 10 IoT Core, mDNS 응답기 샘플 소스
-ms.openlocfilehash: eacd22bf4d8a93948706e214fd48262c61c59a08
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: ca99a217ade4c55c6d3050134af8d5663d8d1621
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "60170613"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72917338"
 ---
 # <a name="getting-started-with-mdns-responder-sample-source"></a>mDNS 응답기 샘플 소스 시작
 

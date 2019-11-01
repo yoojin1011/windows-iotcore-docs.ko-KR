@@ -1,17 +1,16 @@
 ---
 title: Intel 디바이스 설정
-ms.author: saclayt
 ms.date: 05/22/2019
 ms.topic: article
 description: Windows 10 IoT Core를 사용하여 Intel 디바이스를 설정하는 방법을 알아봅니다.
 keywords: Windows 10 IoT Core, Intel
 ms.custom: RS5
-ms.openlocfilehash: a42771d82ffbebee9a45a72c5256479f5f611388
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 3f92f9af4ddb492b1f465ee00b55e88e16b3a67f
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "66182185"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918505"
 ---
 # <a name="setting-up-an-intel-device"></a>Intel 디바이스 설정
 

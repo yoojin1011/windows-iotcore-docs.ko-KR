@@ -1,17 +1,15 @@
 ---
 title: Windows 10 IoT 개요
-author: saraclay
-ms.author: saclayt
 ms.date: 01/30/2018
 ms.topic: article
 description: Windows 10 IoT와 이를 통해 수행할 수 있는 작업을 알아봅니다.
 keywords: Windows 10 IoT Enterprise, Windows 10 IoT Core, 헤드리스, 음성, 기능, 이진 버전, 버전
-ms.openlocfilehash: 8638a17201f2fe0a571741918e08172c99592be5
-ms.sourcegitcommit: 823a8f6967f74d71d5c61fe90f6b63ba79483479
+ms.openlocfilehash: 0c4c0a17ef979d00e1c01a231ab4d49bd8072240
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70159275"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918458"
 ---
 # <a name="an-overview-of-windows-10-iot"></a>Windows 10 IoT 개요 
 

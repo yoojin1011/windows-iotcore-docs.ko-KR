@@ -1,17 +1,16 @@
 ---
 title: Dragonboard 설정
-ms.author: saclayt
 ms.date: 05/22/2019
 ms.topic: article
 description: Windows 10 IoT Core를 사용하여 Dragonboard를 설정하는 방법을 알아봅니다.
 keywords: Windows 10 IoT Core, Dragonboard
 ms.custom: RS5
-ms.openlocfilehash: 6488237a41f42c7acbe9e5e1c68466548577ab38
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 0233ef4380cfb8f9fadbbd64d8e7e594cf11b0b1
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "66835605"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918667"
 ---
 # <a name="setting-up-a-dragonboard"></a>Dragonboard 설정
 

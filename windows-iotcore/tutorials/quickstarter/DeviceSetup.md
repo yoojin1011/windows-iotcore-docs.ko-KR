@@ -1,17 +1,16 @@
 ---
 title: 디바이스 설정
-ms.author: saclayt
 ms.date: 04/10/2018
 ms.topic: article
 description: SD 카드를 사용하여 Windows 10 IoT Core로 디바이스를 설정하는 방법을 알아보세요.
 keywords: Windows 10 IoT Core, SD 카드, Windows 10 IoT Core 대시보드
 ms.custom: RS5
-ms.openlocfilehash: e276f2cd1d123e4bbf266557fcf069c459e96210
-ms.sourcegitcommit: 1f3760a4f03c5f7713023bfa6bad508c99103a54
+ms.openlocfilehash: a201a70019a00448ea1913da158365d9788ed247
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522248"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918634"
 ---
 # <a name="setting-up-your-device"></a>디바이스 설정
 

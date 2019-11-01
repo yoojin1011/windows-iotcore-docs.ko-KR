@@ -1,17 +1,15 @@
 ---
 title: Windows 10 IoT의 접근성
-author: saraclay
-ms.author: saclayt
 ms.date: 03/8/2018
 ms.topic: article
 description: 접근성에 대해 알아보고 배운 내용을 앞으로 개발할 애플리케이션 또는 디바이스에 적용하는 방법을 살펴보세요.
 keywords: Windows 10 IoT Core, Windows 10 IoT Enterprise, 접근성, 색 대비
-ms.openlocfilehash: 149c47fc9cae7fb99eb6aa190055c13284c3e197
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 682541675cf2b59e07bc1596228e169a0f2457c9
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "60167352"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918570"
 ---
 # <a name="an-overview-of-accessibility-for-windows-iot"></a>Windows IoT 접근성의 개요 
  

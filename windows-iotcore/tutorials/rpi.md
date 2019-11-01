@@ -1,17 +1,16 @@
 ---
 title: Raspberry Pi 설정
-ms.author: saclayt
 ms.date: 05/22/2019
 ms.topic: article
 description: Windows 10 IoT Core를 사용하여 Raspberry Pi를 설정하는 방법을 알아봅니다.
 keywords: Windows 10 IoT Core, Raspberry Pi
 ms.custom: RS5
-ms.openlocfilehash: 3269aa2ed102b667519baa9212e604083f910783
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 304ad0ab555ccb32d546220e0b2b5a649e4b7e28
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "66182195"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918624"
 ---
 # <a name="setting-up-a-raspberry-pi"></a>Raspberry Pi 설정
 

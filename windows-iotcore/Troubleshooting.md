@@ -1,16 +1,14 @@
 ---
-author: saraclay
 Description: 다양한 개발 관련 문제 해결.
 title: 문제 해결
-ms.author: saclayt
-ms.date: 08/28/18
+ms.date: 08/28/2018
 ms.topic: article
-ms.openlocfilehash: 8b93ad987c27e1123d68c4d22148447ccc99e37d
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 8d2e326dae01157931e5d1d1c3d6eb858a1268b1
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "66491705"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918584"
 ---
 # <a name="troubleshooting"></a>문제 해결
 이 문서에는 사용자에게 일반적으로 발생하는 문제 해결 이슈가 포함되어 있습니다. Ctrl+F를 사용하여 단어 또는 구문을 입력하면 특정 항목을 찾을 수 있습니다. 추가하려는 인사이트가 있나요? 그렇다면 이 설명서 또는 아래 제공된 콘텐츠 피드백에 대한 PR를 생성하세요.

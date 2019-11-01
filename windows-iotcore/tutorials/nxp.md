@@ -1,17 +1,16 @@
 ---
 title: NXP 디바이스 설정
-ms.author: saclayt
 ms.date: 05/22/2019
 ms.topic: article
 description: Windows 10 IoT Core를 사용하여 NXP 디바이스를 설정하는 방법을 알아봅니다.
 keywords: Windows 10 IoT Core, NXP
 ms.custom: RS5
-ms.openlocfilehash: 4924d109ab6fce3b6794a996140364d2814aca23
-ms.sourcegitcommit: 4272081b5186dada1e61974193e41fcc1c42a1b9
+ms.openlocfilehash: 180399130d898baff6af4f0dc18e1e20e13ec83c
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69629395"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918492"
 ---
 # <a name="setting-up-a-nxp-device"></a>NXP 디바이스 설정
 

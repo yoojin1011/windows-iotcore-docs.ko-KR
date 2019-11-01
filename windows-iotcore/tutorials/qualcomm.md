@@ -1,17 +1,16 @@
 ---
 title: Qualcomm 디바이스 설정
-ms.author: saclayt
 ms.date: 05/22/2019
 ms.topic: article
 description: Windows 10 IoT Core를 사용하여 Qualcomm 디바이스를 설정하는 방법을 알아봅니다.
 keywords: Windows 10 IoT Core, Qualcomm
 ms.custom: RS5
-ms.openlocfilehash: 02f6c013c428a271d3b3956c88edc1ce8f4fdbf2
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 9c27f6011503ea557687817bc044b08695ee7add
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "66835608"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918642"
 ---
 # <a name="setting-up-a-qualcomm-device"></a>Qualcomm 디바이스 설정
 

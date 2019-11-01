@@ -1,19 +1,17 @@
 ---
 title: Windows IoT 용어집
-author: saraclay
-ms.author: saclayt
 ms.date: 08/28/2017
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: IoT
 description: 설명서를 통해 다양한 Windows IoT Core 관련 용어에 대해 알아봅니다.
 keywords: windows iot, 용어집, 용어, 용어, 정의
-ms.openlocfilehash: 155de380459cbb74642352ff2a2ff718ebfe1ed7
-ms.sourcegitcommit: 9ec4716afde25fdc8b94f7c0794448501f451b55
+ms.openlocfilehash: 109ddbb9e9c6c163fdc5a8d0219b89dde3a2bbf2
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "60168911"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918431"
 ---
 # <a name="glossary-for-windows-iot"></a>Windows IoT 용어집
 

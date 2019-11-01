@@ -1,17 +1,15 @@
 ---
 title: Windows Server IoT 2019 개요
-author: saraclay
-ms.author: saclayt
 ms.date: 02/07/2019
 ms.topic: article
 description: Windows Server IoT 2019의 기능과 이를 통해 수행할 수 있는 작업에 대해 알아봅니다.
 keywords: Windows Server IoT 2019, 엔터프라이즈 관리 효율성, Windows 에코시스템, IoT
-ms.openlocfilehash: 7c14df57e3a9e9368ba02a435027efe836d12e28
-ms.sourcegitcommit: c5552007f5456e57512307f51b146406a23fa723
+ms.openlocfilehash: c02dfb5887c53769baae54955f1208d2ae7f88ff
+ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68739839"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72918597"
 ---
 # <a name="an-overview-of-windows-server-iot-2019"></a>Windows Server IoT 2019 개요
 
