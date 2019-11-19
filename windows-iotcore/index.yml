@@ -3,16 +3,14 @@ title: IoT용 Windows 설명서
 summary: IoT용 Windows 플랫폼에는 특정 시나리오에 최적화된 여러 버전이 있습니다. 이는 모두 Windows에서 요구하는 보안, 관리 효율성, 지원 및 클라우드 연결을 공유합니다.
 metadata:
   description: 연결된 임베디드 솔루션 개발을 위한 IoT용 Windows에 대해 알아봅니다.
-  services: windows-iot
-  ms.service: windows-iot
   ms.topic: landing-page
   ms.date: 09/04/2019
-  ms.openlocfilehash: fa98addadf627de0037f38c2bd9f13c90cef460a
-  ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+  ms.openlocfilehash: 9d2a71a4e5615ec8ef79ed9e6f6d20ce6702aff1
+  ms.sourcegitcommit: 833f64e5c9ef8edc6ea62824d5f4f0b7d5a03270
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 10/25/2019
-  ms.locfileid: "72918154"
+  ms.lasthandoff: 11/18/2019
+  ms.locfileid: "74154959"
 landingContent:
 - title: IoT용 Windows 정보
   linkLists:
