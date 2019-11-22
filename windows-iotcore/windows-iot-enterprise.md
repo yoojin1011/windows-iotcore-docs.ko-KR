@@ -4,17 +4,17 @@ ms.date: 01/18/2018
 ms.topic: article
 description: Windows 10 IoT Enterprise가 무엇인지와 이를 통해 수행할 수 있는 작업에 대해 알아봅니다.
 keywords: Windows 10 IoT Enterprise, Enterprise, 이진, Windows
-ms.openlocfilehash: e965594b89ac41bc3f62a9fa3c033c4244100d02
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: ea8a3b2395052beaa722ad0c83e1fe7386a3e628
+ms.sourcegitcommit: 833f64e5c9ef8edc6ea62824d5f4f0b7d5a03270
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918611"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74154975"
 ---
 # <a name="an-overview-of-windows-10-iot-enterprise"></a>Windows 10 IoT Enterprise 개요
 
 > [!NOTE]
-> Windows 컨테이너는 Windows Server, Windows IoT Server, Windows IoT Enterprise 및 Windows IoT Core에서 상업용으로 배포할 수 있습니다.  Windows 10월 업데이트 2018(빌드 17763)부터 Windows 컨테이너는 Windows Enterprise 및 Professional에서 개발/테스트 용도로만 사용할 수 있습니다.
+> Windows Containers는 Windows Server, Windows Server IoT, Windows 10 IoT Enterprise 및 Windows 10 IoT Core에서 상업용 배포를 지원합니다.  Windows 10월 업데이트 2018(빌드 17763)부터 Windows Containers는 Windows 10 Enterprise 및 Windows 10 Professional에서 개발/테스트 용도로만 사용할 수 있습니다.
 
 ## <a name="what-is-windows-10-iot-enterprise"></a>Windows 10 IoT Enterprise란?
 Windows 10 IoT Enterprise는 IoT 솔루션에 엔터프라이즈 관리 효율성 및 보안을 제공하는 Windows 10의 전체 버전입니다. Windows 10 IoT Enterprise는 전 세계 Windows 에코시스템의 모든 혜택을 공유합니다. Windows 10 IoT Enterprise에 해당하는 이진 파일이기 때문에 클라이언트 PC 및 노트북과 동일한 익숙한 개발 및 관리 도구를 사용할 수 있습니다.  그러나 라이선스 및 배포와 관련하여 데스크톱 버전과 IoT 버전이 다릅니다. Windows 10 IoT Enterprise는 LTSC(장기 서비스 채널) 및 SAC(반기 채널) 옵션을 제공합니다. OEM은 디바이스에 필요한 버전을 선택할 수 있다.
