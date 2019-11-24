@@ -32,13 +32,13 @@ IoT Core 장치의 MDM 등록은 프로 비전 패키지를 사용 하 여 수�
 1. Configuration Manager Management Console (ConfigMgr 콘솔)을 엽니다.
 
 2. _자산 및 준수 > 준수 설정 > 회사 리소스 액세스 > 인증서 프로필_
-   ![인증서 프로필로 이동 합니다.](../media/ManagingDevices/ConfigMgr-Certificate-Profiles.PNG)
+   ![인증서 프로필로 이동](../media/ManagingDevices/ConfigMgr-Certificate-Profiles.PNG)
 
 3. **인증서 프로필 만들기** 를 클릭 합니다.
 
 4. 프로필에 대 한 이름 및 설명을 제공 합니다.
    - 이름: ConfigMgr 예제 신뢰할 수 있는 루트 인증서
-     - 인증서 프로필의 유형입니다. 신뢰할 수 있는 CA 인증서  
+     - 인증서 프로필 유형: 신뢰할 수 있는 CA 인증서  
      ![신뢰할 수 있는 인증](../media/ManagingDevices/ConfigMgr-Certificate-Profiles-Wizard.png)
 
 5. **다음**을 클릭합니다.
@@ -49,7 +49,7 @@ IoT Core 장치의 MDM 등록은 프로 비전 패키지를 사용 하 여 수�
 
 8. **다음**을 클릭합니다.
 
-9. 지원 되는 플랫폼 ![지원 플랫폼에 대해 **모두 선택** 을 선택 합니다.](../media/ManagingDevices/ConfigMgr-Certificate-Profiles-Wizard-Supported-Platforms.png)
+9. 지원 되는 플랫폼 ![지원 되는 플랫폼에 대해 **모두 선택** 을 선택](../media/ManagingDevices/ConfigMgr-Certificate-Profiles-Wizard-Supported-Platforms.png)
 
 10. **요약, 다음, 닫기** 를 차례로 클릭 하 여 마법사를 종료 합니다.
 
@@ -64,7 +64,7 @@ IoT Core 장치의 MDM 등록은 프로 비전 패키지를 사용 하 여 수�
 1. Windows [ADK (평가 및 배포 키트)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)를 다운로드 하 여 설치 합니다.
 
 2. Windows 이미징 및 구성 디자이너 (WICD)를 엽니다.
-   ![Windows 이미징 및 구성 디자이너](../media/ManagingDevices/WICD-Start-Page.png)
+   Windows 이미징 및 구성 디자이너를 ![](../media/ManagingDevices/WICD-Start-Page.png)
 
 3. **고급 프로 비전** 선택
 
@@ -73,13 +73,13 @@ IoT Core 장치의 MDM 등록은 프로 비전 패키지를 사용 하 여 수�
 5. Windows 10 IoT Core에 공통적인 설정을 선택 합니다.
 
 6. 패키지 가져오기 단계를 건너뜁니다.
-   ![WICD-](../media/ManagingDevices/WICD-Advanced-Provisioning-New-Project-Details.PNG) 
-   프로젝트-세부 정보![WICD](../media/ManagingDevices/WICD-Advanced-Provisioning-New-Project-Editions.PNG) 
-   ![(WICD)-프로젝트-가져오기](../media/ManagingDevices/WICD-Advanced-Provisioning-New-Project-Import.PNG)
+   ![WICD](../media/ManagingDevices/WICD-Advanced-Provisioning-New-Project-Details.PNG) 
+   ![WICD](../media/ManagingDevices/WICD-Advanced-Provisioning-New-Project-Editions.PNG) 
+   ![WICD-새 프로젝트-가져오기-프로젝트-가져오기](../media/ManagingDevices/WICD-Advanced-Provisioning-New-Project-Import.PNG)
 
 7. 작업 공간-> 등록로 이동 합니다.
 
-8. UPN 필드에서 장치를 등록 하려는 계정을 입력 하 고 (예: trmck@contoso.co) **추가**를 클릭 합니다.
+8. UPN 필드에서 장치를 등록 하려는 계정 (예: trmck@contoso.co)을 입력 하 고 **추가**를 클릭 합니다.
 
    ![작업 공간 등록 채우기](../media/ManagingDevices/WICD-Workplace-Enrollments-UPN-Filled.png)
 
@@ -91,8 +91,8 @@ IoT Core 장치의 MDM 등록은 프로 비전 패키지를 사용 하 여 수�
 > 등록 서비스 URL 및 정책 서비스 URL은 선택 사항입니다.
 
 11. 비밀을 입력 합니다.  
-    - 온-프레미스 등록 하는 계정의 암호  
-    - 인증서 인증서의 지문
+    - OnPremises: 등록 하는 계정의 암호  
+    - Certificate: 인증서의 손 도장 (thumbprint)
     
     ![채워진 온-프레미스](../media/ManagingDevices/WICD-Workplace-Enrollments-UPN-Details-Filled-Premise.png)  
 
@@ -115,7 +115,7 @@ IoT Core 장치의 MDM 등록은 프로 비전 패키지를 사용 하 여 수�
 
 #### <a name="copying-package-to-device"></a>장치에 패키지를 복사 하는 중
 
-SCCM 또는 WICD에서 내보낸 프로 비전 패키지를 가져와. n a t kg 파일을 IoT 장치의 `C:\Windows\Provisioning\Packages` 디렉터리에 복사 합니다. 장치를 다시 부팅 하면 패키지가 실행 되 고 장치에서 등록 프로세스가 시작 됩니다.
+SCCM 또는 WICD에서 내보낸 프로 비전 패키지를 가져와. n a p kg 파일을 IoT 장치의 `C:\Windows\Provisioning\Packages` 디렉터리에 복사 합니다. 장치를 다시 부팅 하면 패키지가 실행 되 고 장치에서 등록 프로세스가 시작 됩니다.
 
 #### <a name="adding-package-to-image"></a>이미지에 패키지 추가
 
