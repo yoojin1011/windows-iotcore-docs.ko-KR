@@ -5,16 +5,16 @@ ms.topic: article
 description: Windows 10 IoT Core를 사용하여 Intel 디바이스를 설정하는 방법을 알아봅니다.
 keywords: Windows 10 IoT Core, Intel
 ms.custom: RS5
-ms.openlocfilehash: bd1aa788e11bf4d01fdd897c64c9ae947928a46f
-ms.sourcegitcommit: 833f64e5c9ef8edc6ea62824d5f4f0b7d5a03270
+ms.openlocfilehash: bf32ffbaa890620c8ff9aca40a2c45023609c9ef
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74154972"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721898"
 ---
 # <a name="setting-up-an-intel-device"></a>Intel 디바이스 설정
 
-Qualcomm 디바이스로 제작하려는 경우에는 [IoT Core 제작 가이드](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)를 참조하세요. 제조사 이미지는 제작에 사용할 수 없습니다.
+Qualcomm 디바이스로 제작하려는 경우에는 [IoT Core 제작 가이드](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)를 참조하세요. 제조사 이미지는 제작에 사용할 수 없습니다.
 
 > [!NOTE]
 > BIOS 설정을 다시 입력하고, USB 드라이브 대신 하드 드라이브에서 로드하도록 부팅 드라이브 순서를 전환하여 디바이스가 eMMC 메모리에서 부팅되도록 설정합니다.

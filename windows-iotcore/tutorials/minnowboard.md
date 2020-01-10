@@ -5,12 +5,12 @@ ms.topic: article
 description: Windows 10 IoT Core를 사용하여 Minnowboard를 설정하는 방법을 알아봅니다.
 keywords: Windows 10 IoT Core, Minnowboard
 ms.custom: RS5
-ms.openlocfilehash: f74d15a5a20a6869544ad47798457067422590f4
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: abbc6548a9219b967ea379e238ed6a898830e798
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918661"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721918"
 ---
 # <a name="setting-up-a-minnowboard"></a>MinnowBoard 설정
 
@@ -22,7 +22,7 @@ ms.locfileid: "72918661"
 > [!IMPORTANT]
 > "이 디스크 포맷" 팝업이 나타나면 디스크를 포맷하지 _마세요_. 이 이슈를 수정하기 위한 작업을 진행 중입니다.
 
-프로토타입 제작용 MinnowBoard를 설정할 때 Windows 10 IoT Core 대시보드를 사용하는 것이 좋습니다. 그러나 MinnowBoard를 사용하여 제작하려는 경우에는 [IoT Core 제작 가이드](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)를 참조하세요. 제조사 이미지는 제작에 사용할 수 없습니다.
+프로토타입 제작용 MinnowBoard를 설정할 때 Windows 10 IoT Core 대시보드를 사용하는 것이 좋습니다. 그러나 MinnowBoard를 사용하여 제작하려는 경우에는 [IoT Core 제작 가이드](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)를 참조하세요. 제조사 이미지는 제작에 사용할 수 없습니다.
 <br>
 > [!Video https://www.youtube.com/embed/JPRUbGIyODY]
 

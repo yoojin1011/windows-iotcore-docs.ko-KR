@@ -5,24 +5,24 @@ ms.topic: article
 description: Windows 10 IoT Core를 사용하여 Raspberry Pi를 설정하는 방법을 알아봅니다.
 keywords: Windows 10 IoT Core, Raspberry Pi
 ms.custom: RS5
-ms.openlocfilehash: 304ad0ab555ccb32d546220e0b2b5a649e4b7e28
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 7a79931bc4ce1976a047d51f64a8ba6d4cc590a1
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918624"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721724"
 ---
 # <a name="setting-up-a-raspberry-pi"></a>Raspberry Pi 설정
 
 ## <a name="overview"></a>개요
 
 > [!NOTE]
-> 대시보드는 Raspberry Pi 3B+를 설정하는 데 사용할 수 없습니다. 3B+ 디바이스가 있는 경우 [3B+ 기술 미리 보기](https://www.microsoft.com/en-us/software-download/windowsiot)를 사용해야 합니다. 기술 미리 보기의 [알려진 제한 사항](https://docs.microsoft.com/en-us/windows/iot-core/troubleshooting)을 확인하여 개발 작업에 적합한지 알아보세요.
+> 대시보드는 Raspberry Pi 3B+를 설정하는 데 사용할 수 없습니다. 3B+ 디바이스가 있는 경우 [3B+ 기술 미리 보기](https://www.microsoft.com/en-us/software-download/windowsiot)를 사용해야 합니다. 기술 미리 보기의 [알려진 제한 사항](https://docs.microsoft.com/windows/iot-core/troubleshooting)을 확인하여 개발 작업에 적합한지 알아보세요.
 
 > [!IMPORTANT]
 > "이 디스크 포맷" 팝업이 나타나면 디스크를 포맷하지 _마세요_. 이 이슈를 수정하기 위한 작업을 진행 중입니다.
 
-프로토타입 제작용 Raspberry Pi를 설정할 때 Windows 10 IoT Core 대시보드를 사용하는 것이 좋습니다. 그러나 Raspberry Pi를 사용하여 제작하려는 경우에는 [IoT Core 제작 가이드](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)를 참조하세요. 제조사 이미지는 제작에 사용할 수 없습니다.
+프로토타입 제작용 Raspberry Pi를 설정할 때 Windows 10 IoT Core 대시보드를 사용하는 것이 좋습니다. 그러나 Raspberry Pi를 사용하여 제작하려는 경우에는 [IoT Core 제작 가이드](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)를 참조하세요. 제조사 이미지는 제작에 사용할 수 없습니다.
 <br>
 > [!Video https://www.youtube.com/embed/JPRUbGIyODY]
 

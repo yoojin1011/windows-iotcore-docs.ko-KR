@@ -5,22 +5,22 @@ ms.topic: article
 description: Windows 10 IoT Core를 사용하여 Dragonboard를 설정하는 방법을 알아봅니다.
 keywords: Windows 10 IoT Core, Dragonboard
 ms.custom: RS5
-ms.openlocfilehash: 0233ef4380cfb8f9fadbbd64d8e7e594cf11b0b1
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 49de9a3007dac12a13a42a334d33dc79c96f96af
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918667"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721746"
 ---
 # <a name="setting-up-a-dragonboard"></a>Dragonboard 설정
 
 > [!IMPORTANT]
-> 새 Dragonboard를 사용하는 경우 Android가 설치된 상태로 제공됩니다. [여기](https://docs.microsoft.com/en-us/windows/iot-core/tutorials/qualcomm)서 eMMC 플래시 메서드를 사용하여 디바이스의 데이터를 지우고 다시 로드해야 합니다.
+> 새 Dragonboard를 사용하는 경우 Android가 설치된 상태로 제공됩니다. [여기](https://docs.microsoft.com/windows/iot-core/tutorials/qualcomm)서 eMMC 플래시 메서드를 사용하여 디바이스의 데이터를 지우고 다시 로드해야 합니다.
 
 > [!NOTE]
 > DragonBoard에서 오디오 관련 이슈가 발생하는 경우 [여기서](https://developer.qualcomm.com/download/db410c/stereo-connector-and-audio-routing-application-note.pdf) Qualcomm의 설명서를 읽어보시기를 권장합니다. 
 
-프로토타입 제작용 Dragonboard를 설정할 때 Windows 10 IoT Core 대시보드를 사용하는 것이 좋습니다. 그러나 Dragonboard를 사용하여 제작하려는 경우에는 [IoT Core 제작 가이드](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)를 참조하세요. 제조사 이미지는 제작에 사용할 수 없습니다.
+프로토타입 제작용 Dragonboard를 설정할 때 Windows 10 IoT Core 대시보드를 사용하는 것이 좋습니다. 그러나 Dragonboard를 사용하여 제작하려는 경우에는 [IoT Core 제작 가이드](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)를 참조하세요. 제조사 이미지는 제작에 사용할 수 없습니다.
 <br>
 > [!Video https://www.youtube.com/embed/iPm57hGq-Q8]
 

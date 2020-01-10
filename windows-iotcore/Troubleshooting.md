@@ -3,18 +3,18 @@ Description: 다양한 개발 관련 문제 해결.
 title: 문제 해결
 ms.date: 08/28/2018
 ms.topic: article
-ms.openlocfilehash: 8d2e326dae01157931e5d1d1c3d6eb858a1268b1
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 6118a5a5006d79c65681400de45fb7626f96836d
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918584"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721519"
 ---
 # <a name="troubleshooting"></a>문제 해결
 이 문서에는 사용자에게 일반적으로 발생하는 문제 해결 이슈가 포함되어 있습니다. Ctrl+F를 사용하여 단어 또는 구문을 입력하면 특정 항목을 찾을 수 있습니다. 추가하려는 인사이트가 있나요? 그렇다면 이 설명서 또는 아래 제공된 콘텐츠 피드백에 대한 PR를 생성하세요.
 
 > [!TIP]
-> 제조와 관련된 문제 해결 이슈의 경우 제조 가이드의 [문제 해결 문서](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/troubleshooting)를 읽어 주세요.
+> 제조와 관련된 문제 해결 이슈의 경우 제조 가이드의 [문제 해결 문서](https://docs.microsoft.com/windows-hardware/manufacture/iot/troubleshooting)를 읽어 주세요.
 
 ## <a name="asus-tinkerboard-and-rockchip-support"></a>ASUS Tinkerboard 및 Rockchip 지원
 
@@ -82,7 +82,7 @@ ASUS Tinkerboard 및 Rockchip은 공식적으로 지원되지 않지만, SoC가 
 ## <a name="raspberry-pi-3b-booting-issues"></a>Raspberry Pi 3B + 부팅 문제
 
 > [!NOTE]
-> 이번 Raspberry Pi 3B용 릴리스에서는 기술 미리 보기를 지원하지 않습니다. 유효성 검사 및 활성화가 제한적으로 완료되었습니다. 보다 나은 평가 환경은 물론, 상용 제품을 위해 Raspberry Pi 3B 또는 Intel, Qualcomm 또는 NXP SoC가 지원되는 기타 디바이스를 사용해 주세요. Raspberry Pi 3B+ 관련 문제 해결의 경우 문제 해결 가이드([여기](https://docs.microsoft.com/en-us/windows/iot-core/troubleshooting?branch=master#raspberry-pi-3b-booting-issues))를 참조해 주세요. 
+> 이번 Raspberry Pi 3B용 릴리스에서는 기술 미리 보기를 지원하지 않습니다. 유효성 검사 및 활성화가 제한적으로 완료되었습니다. 보다 나은 평가 환경은 물론, 상용 제품을 위해 Raspberry Pi 3B 또는 Intel, Qualcomm 또는 NXP SoC가 지원되는 기타 디바이스를 사용해 주세요. Raspberry Pi 3B+ 관련 문제 해결의 경우 문제 해결 가이드([여기](https://docs.microsoft.com/windows/iot-core/troubleshooting?branch=master#raspberry-pi-3b-booting-issues))를 참조해 주세요. 
 
 Raspberry Pi 3 모델 B+는 Raspberry Pi 3 제품군에서 최신 제품으로서, 1.4GHz에서 실행하는 64비트 쿼드 코어 프로세서, 듀얼 밴드 2.4GHz 및 5GHz 무선 LAN, Bluetooth 4.2/BLE, 더 빨라진 이더넷은 물론, 별도의 PoE HA를 통한 PoE 기능을 자랑합니다.
 
@@ -101,7 +101,7 @@ Windows 10 IoT Core에 사용할 SD 카드를 선택할 때 단 두 가지 요�
 
 일반적으로 SD 카드가 위조 또는 손상되거나 훼손되지 않았는지 확인해야 합니다. SD 카드는 정전 또는 부적절한 분리 등, 다양한 요인으로 인해 손상되기 쉽습니다. 메모리 카드가 손상되지 않도록 보호하는 것이 중요합니다.
 
-이미지를 SD 카드로 플래시하기 위해 [Windows 10 IoT Core 대시보드](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/iotdashboard)를 사용할 수 있습니다. OS 빌드 필드에서 “사용자 지정"을 선택한 후 플래시할 FFU 파일을 선택해야 합니다. 
+이미지를 SD 카드로 플래시하기 위해 [Windows 10 IoT Core 대시보드](https://docs.microsoft.com/windows/iot-core/connect-your-device/iotdashboard)를 사용할 수 있습니다. OS 빌드 필드에서 “사용자 지정"을 선택한 후 플래시할 FFU 파일을 선택해야 합니다. 
 
 디바이스에 하드웨어 오류가 있는지 확인하세요. Raspberry Pi 3B+ 보드에는 3B와 동일한 두 개의 LED가 있습니다. 하나는 PWR용이고, 다른 하나는 ACT용입니다. ACT 표시등이 깜박이는 횟수로 보드의 부팅 여부를 알 수 있습니다. SD 카드 활동 LED는 Raspberry Pi 3B+가 부팅되는 일부 부분에서는 깜박이지 않습니다.
 
@@ -117,7 +117,7 @@ Raspberry Pi에서 하드웨어 UART 및 USB UART 어댑터 모두 직렬 통신
 
 ![UART 및 USB UART 어댑터](media/Troubleshooting/adapters.png)
 
-UART0을 초기화하고 읽기 후 쓰기를 수행하는 방법에 대해 자세히 알아보려면 [이 문서](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/pinmappings/pinmappingsrpi#serial-uart)를 읽어 보세요.
+UART0을 초기화하고 읽기 후 쓰기를 수행하는 방법에 대해 자세히 알아보려면 [이 문서](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/pinmappings/pinmappingsrpi#serial-uart)를 읽어 보세요.
 
 또한 RFCOMM(무선 주파수 통신)은 클래식 Bluetooth의 기본 직렬 통신입니다. Bluetooth 직렬이 지원되는 IoT 디바이스를 통해 연결된 Windows 10 IoT Core에서 UWP 앱을 실행하는 방법을 알아 보려면 [이 GitHub 샘플](https://github.com/djaus2/iotbluetoothserial)을 참조하세요.
 
@@ -182,7 +182,7 @@ administrator@MINWINPC C:\Data\Users\administrator>sc config TestSirepSvc start=
 
 "태블릿 모드”는 데스크톱 셸에만 존재하는 개념으로, IoT Core에는 해당되지 않습니다. 
 
-디바이스에 지원되는 하드웨어(I2C 또는 USB HID 터치를 통해)가 있는 경우 터치는 인박스 클래스 드라이버를 사용하여 자동으로 작동해야 합니다. 자세한 내용은 [여기](https://docs.microsoft.com/en-us/windows-hardware/design/component-guidelines/touchscreen-device-bus-connectivity)를 참조하세요.
+디바이스에 지원되는 하드웨어(I2C 또는 USB HID 터치를 통해)가 있는 경우 터치는 인박스 클래스 드라이버를 사용하여 자동으로 작동해야 합니다. 자세한 내용은 [여기](https://docs.microsoft.com/windows-hardware/design/component-guidelines/touchscreen-device-bus-connectivity)를 참조하세요.
 
 
 ## <a name="yubikey-support"></a>Yubikey 지원

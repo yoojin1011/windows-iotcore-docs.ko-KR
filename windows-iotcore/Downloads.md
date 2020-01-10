@@ -5,33 +5,33 @@ ms.date: 10/05/2018
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: IoT
-ms.openlocfilehash: 863df3df64515e96bbd1b1308d86e2228b291f84
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: c2ba5b9151400774c236bab612b877c4e5a360f3
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918549"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721458"
 ---
 # <a name="downloads"></a>다운로드
 Windows 10 IoT Core를 시작하는 데 필요한 도구와 소프트웨어를 다운로드합니다.
 
 ## <a name="windows-10-iot-core-dashboard"></a>Windows 10 IoT Core 대시보드
 
-Windows 10 IoT Core 대시보드를 사용하면 탐색 가능한 인터페이스를 통해 Windows 10 IoT Core를 디바이스에 간단하게 플래시할 수 있습니다. 다운로드했으면 [여기](https://docs.microsoft.com/en-gb/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-raspberry-pi-minnowboard-nxp)서 대시보드를 사용하여 디바이스를 설정하는 방법을 알아봅니다.
+Windows 10 IoT Core 대시보드를 사용하면 탐색 가능한 인터페이스를 통해 Windows 10 IoT Core를 디바이스에 간단하게 플래시할 수 있습니다. 다운로드했으면 [여기](https://docs.microsoft.com/windows/iot-core/tutorials/quickstarter/devicesetup#using-the-iot-dashboard-raspberry-pi-minnowboard-nxp)서 대시보드를 사용하여 디바이스를 설정하는 방법을 알아봅니다.
 
 > [!div class="nextstepaction"]
-> [Windows 10 IoT Core 대시보드 다운로드](http://go.microsoft.com/fwlink/?LinkID=708576)
+> [Windows 10 IoT Core 대시보드 다운로드](https://go.microsoft.com/fwlink/?LinkID=708576)
 
-_Windows 10 IoT Core 대시보드를 다운로드하여 사용하는 것은 Windows 10 IoT Core 대시보드의 [사용 조건](http://go.microsoft.com/fwlink/?LinkID=703960&clcid=0x4809) 및 [개인정보처리방침](http://go.microsoft.com/fwlink/?LinkId=521839)에 동의하는 것입니다._
+_Windows 10 IoT Core 대시보드를 다운로드하여 사용하는 것은 Windows 10 IoT Core 대시보드의 [사용 조건](https://go.microsoft.com/fwlink/?LinkID=703960&clcid=0x4809) 및 [개인정보처리방침](https://go.microsoft.com/fwlink/?LinkId=521839)에 동의하는 것입니다._
 
 ![Windows 10 IoT Core 대시보드의 이미지](media/IoTDashboard/DASHBOARD-800x450.jpg)
 
 ## <a name="latest-windows-10-iot-core-builds"></a>최신 Windows 10 IoT Core 빌드
 
 > [!WARNING]
-> 상용화에 제조사 이미지를 사용하지 마세요. 디바이스를 상용화하려는 경우 최적의 보안을 위해 사용자 지정 FFU를 사용해야 합니다. [여기](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)에서 자세한 내용을 알아보세요.
+> 상용화에 제조사 이미지를 사용하지 마세요. 디바이스를 상용화하려는 경우 최적의 보안을 위해 사용자 지정 FFU를 사용해야 합니다. [여기](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)에서 자세한 내용을 알아보세요.
 
-IoT 솔루션을 상용화할 때 [Microsoft 소프트웨어 다운로드 사이트](https://www.microsoft.com/en-us/software-download/windows10IoTCore#!)에서 빌드를 다운로드해야 합니다. 디바이스의 이전 Windows 10 IoT Core 빌드가 필요한 경우를 대비하여 아래에 이전 릴리스를 준비해 두었습니다. 
+IoT 솔루션을 상용화할 때 [Microsoft 소프트웨어 다운로드 사이트](https://www.microsoft.com/software-download/windows10IoTCore#!)에서 빌드를 다운로드해야 합니다. 디바이스의 이전 Windows 10 IoT Core 빌드가 필요한 경우를 대비하여 아래에 이전 릴리스를 준비해 두었습니다. 
 
 ### <a name="october-2018-release"></a>2018년 10월 릴리스
 
@@ -54,9 +54,9 @@ IoT 솔루션을 상용화할 때 [Microsoft 소프트웨어 다운로드 사이
 ### <a name="fall-creators-update"></a>Fall Creators Update
 
 * [Windows 10 IoT Core 패키지](https://software-download.microsoft.com/download/pr/16299.15.170928-1534.rs3_release_amd64fre_IOTCORE_PACKAGES.iso)
-* [Raspberry Pi 2 및 3](http://download.microsoft.com/download/9/6/2/9629C69B-02B8-4A82-A4C8-860D6E880C66/16299.15.170928-1534.rs3_release_amd64fre_IOTCORE_RPi.iso)
-* [DragonBoard 410c](http://download.microsoft.com/download/1/0/C/10CAECC2-3B60-45BF-BF0D-D0BACF4072E5/16299.15.170928-1534.rs3_release_amd64fre_IOTCORE_QCDB410C.iso)
-* [MinnowBoard Turbot/Max](http://download.microsoft.com/download/5/F/9/5F917B68-020E-4993-A972-F1A7038510CF/16299.15.170928-1534.rs3_release_amd64fre_IOTCORE_MBM.iso)
+* [Raspberry Pi 2 및 3](https://download.microsoft.com/download/9/6/2/9629C69B-02B8-4A82-A4C8-860D6E880C66/16299.15.170928-1534.rs3_release_amd64fre_IOTCORE_RPi.iso)
+* [DragonBoard 410c](https://download.microsoft.com/download/1/0/C/10CAECC2-3B60-45BF-BF0D-D0BACF4072E5/16299.15.170928-1534.rs3_release_amd64fre_IOTCORE_QCDB410C.iso)
+* [MinnowBoard Turbot/Max](https://download.microsoft.com/download/5/F/9/5F917B68-020E-4993-A972-F1A7038510CF/16299.15.170928-1534.rs3_release_amd64fre_IOTCORE_MBM.iso)
 
 
 ## <a name="other-downloads"></a>기타 다운로드

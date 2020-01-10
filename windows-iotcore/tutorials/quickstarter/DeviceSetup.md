@@ -5,19 +5,19 @@ ms.topic: article
 description: SD 카드를 사용하여 Windows 10 IoT Core로 디바이스를 설정하는 방법을 알아보세요.
 keywords: Windows 10 IoT Core, SD 카드, Windows 10 IoT Core 대시보드
 ms.custom: RS5
-ms.openlocfilehash: a201a70019a00448ea1913da158365d9788ed247
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 7575889b94cf7a69550c5c4128ab5ff8a82dde9c
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918634"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721838"
 ---
 # <a name="setting-up-your-device"></a>디바이스 설정
 
 아래에서는 Windows 10 IoT Core로 디바이스를 플래시하는 네 가지 방법을 확인할 수 있습니다. [프로토타입 제작에 추천하는 보드 목록](PrototypeBoards.md)에 포함된 차트에 따라 적절한 지침을 따릅니다. 오른쪽 열을 사용하여 다양한 플래시 방법을 탐색하세요.
 
 > [!IMPORTANT]
-> 상용화에 제조사 이미지를 사용하지 마세요. 디바이스를 상용화하려는 경우 최적의 보안을 위해 사용자 지정 FFU를 사용해야 합니다. [여기](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)에서 자세한 내용을 알아보세요.
+> 상용화에 제조사 이미지를 사용하지 마세요. 디바이스를 상용화하려는 경우 최적의 보안을 위해 사용자 지정 FFU를 사용해야 합니다. [여기](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)에서 자세한 내용을 알아보세요.
 
 > [!IMPORTANT]
 > "이 디스크 포맷" 팝업이 나타나면 디스크를 포맷하지 _마세요_. 이 이슈를 수정하지 위한 작업을 진행 중입니다.
@@ -34,7 +34,7 @@ ms.locfileid: "72918634"
 > NXP는 사용자 지정 이미지만 지원합니다. 사용자 지정 이미지를 플래시하려는 경우 OS 빌드 드롭다운 목록에서 "사용자 지정"을 선택하고, [여기](https://docs.microsoft.com/windows-hardware/manufacture/iot/create-a-basic-image)의 지침에 따라 기본 이미지를 만들고, 아래의 나머지 지침에 따라 완료합니다.
 
 > [!NOTE]
-> 대시보드는 Raspberry Pi 3B+를 설정하는 데 사용할 수 없습니다. 3B+ 디바이스가 있는 경우 [3B+ 기술 미리 보기](https://www.microsoft.com/en-us/software-download/windowsiot)를 사용해야 합니다. 기술 미리 보기의 [알려진 제한 사항](https://docs.microsoft.com/en-us/windows/iot-core/troubleshooting)을 확인하여 개발 작업에 적합한지 알아보세요.
+> 대시보드는 Raspberry Pi 3B+를 설정하는 데 사용할 수 없습니다. 3B+ 디바이스가 있는 경우 [3B+ 기술 미리 보기](https://www.microsoft.com/software-download/windowsiot)를 사용해야 합니다. 기술 미리 보기의 [알려진 제한 사항](https://docs.microsoft.com/windows/iot-core/troubleshooting)을 확인하여 개발 작업에 적합한지 알아보세요.
 
 > [!TIP]
 > 안정성을 높이고 디바이스를 외부 디스플레이에 연결하여 기본 애플리케이션이 부팅되는 것을 볼 수 있도록 SanDisk SD 카드 같은 고성능 SD 카드를 사용하는 것이 좋습니다.
@@ -79,7 +79,7 @@ ms.locfileid: "72918634"
 ## <a name="flashing-with-emmc-for-dragonboard-410c-other-qualcomm-devices"></a>eMMC로 플래시(DragonBoard 410c의 경우 다른 Qualcomm 디바이스)
 
 1. [x86](https://developer.qualcomm.com/download/db410c/windows-10-iot-update-tool-dragonboard-410c-x86.zip) 또는 [x64](https://developer.qualcomm.com/download/db410c/windows-10-iot-update-tool-dragonboard-410c-x64.zip) 머신에 맞는 DragonBoard 업데이트 도구를 다운로드하여 설치합니다.
-2. [Windows 10 IoT Core DragonBoard FFU](https://developer.microsoft.com/en-us/windows/iot/Downloads)를 다운로드합니다.
+2. [Windows 10 IoT Core DragonBoard FFU](https://developer.microsoft.com/windows/iot/Downloads)를 다운로드합니다.
 3. 다운로드한 ISO 파일을 두 번 클릭하고 탑재된 가상 CD 드라이브를 찾습니다. 이 드라이브에 설치 관리자 파일(.msi)이 포함되어 있습니다. 이 파일을 두 번 클릭합니다. 그러면 PC의  `C:\Program Files (x86)\Microsoft IoT\FFU\` 아래에 새 디렉터리가 생성되고 "flash.ffu" 이미지 파일이 보입니다.
 4. 아래와 같이 보드의 첫 번째 스위치를 USB 부팅으로 설정하여 DragonBoard를 다운로드 모드로 설정합니다. 그런 다음, microUSB 케이블을 통해 DragonBoard를 호스트 PC에 연결하고, DragonBoard를 12V(>1A) 전원 공급 장치에 연결합니다.
 5. 녹색 원을 사용하여 DragonBoard가 PC에 연결되어 있는지 탐지하는 DragonBoard 업데이트 도구를 시작합니다. 다운로드한 DragonBoard의 FFU를 찾은 다음, _프로그램_ 단추를 클릭합니다.
@@ -99,12 +99,12 @@ ms.locfileid: "72918634"
 1. 머신에서 실행 중인 Windows 10 버전과 관련된 [Windows 평가 및 배포 키트](https://docs.microsoft.com/windows-hardware/get-started/adk-install)(Windows ADK)를 다운로드하여 설치합니다.
 2. [ADK용 Windows PE 추가 기능](https://go.microsoft.com/fwlink/?linkid=2087112)을 다운로드하여 설치합니다.
 
-#### <a name="create-a-usb-bootable-windows-pehttpsdocsmicrosoftcomen-uswindows-hardwaremanufacturedesktopwinpe-intro-image"></a>USB 부팅 가능 [Windows PE](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro) 이미지 만들기
+#### <a name="create-a-usb-bootable-windows-pehttpsdocsmicrosoftcomwindows-hardwaremanufacturedesktopwinpe-intro-image"></a>USB 부팅 가능 [Windows PE](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-intro) 이미지 만들기
 
 3. USB 드라이브를 머신에 삽입합니다.
 4. 관리자로 배포 및 이미지 도구 환경을 시작합니다. 기본 설치 경로는 `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\DandISetEnv.bat`입니다.
-5. [`Copype`](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/copype-command-line-options)를 사용하여 Windows PE 파일의 작업 복사본을 만듭니다. x86, amd64 또는 ARM 아키텍처 중 하나를 지정해야 합니다(예: `Copype amd64 C:\WINPE_amd64`).
-6. [`MakeWinPEMedia`](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/makewinpemedia-command-line-options)를 사용하여 Windows PE를 USB 플래시 드라이브에 설치합니다. 대상 USB 드라이브를 지정해야 합니다(예: `MakeWinPEMedia /UFD C:\WinPE_amd64 P:`).
+5. [`Copype`](https://docs.microsoft.com/windows-hardware/manufacture/desktop/copype-command-line-options)를 사용하여 Windows PE 파일의 작업 복사본을 만듭니다. x86, amd64 또는 ARM 아키텍처 중 하나를 지정해야 합니다(예: `Copype amd64 C:\WINPE_amd64`).
+6. [`MakeWinPEMedia`](https://docs.microsoft.com/windows-hardware/manufacture/desktop/makewinpemedia-command-line-options)를 사용하여 Windows PE를 USB 플래시 드라이브에 설치합니다. 대상 USB 드라이브를 지정해야 합니다(예: `MakeWinPEMedia /UFD C:\WinPE_amd64 P:`).
 7. 다운로드한 ISO 파일을 두 번 클릭하고 탑재된 가상 CD 드라이브를 찾아 [Windows 10 IoT Core 이미지](https://downloads.up-community.org/?post_type=wpdmpro&p=204&preview=true)를 다운로드합니다.
 8. 이 드라이브에 포함된 설치 관리자 파일(.msi)을 두 번 클릭합니다. 그러면 PC의 `C:\Program Files (x86)\Microsoft IoT\FFU\` 아래에 새 디렉터리가 생성되고 `flash.ffu` 이미지 파일이 보입니다.
 9. 디바이스의 FFU와 함께 [eMMC 설치 관리자 스크립트](https://github.com/ms-iot/content/blob/develop/Resources/eMMCInstaller.zip)를 USB 디바이스의 루트 디렉터리에 다운로드하여 압축을 풀고 복사합니다.

@@ -5,12 +5,12 @@ ms.topic: article
 description: Windows 10 IoT Core를 사용하여 NXP 디바이스를 설정하는 방법을 알아봅니다.
 keywords: Windows 10 IoT Core, NXP
 ms.custom: RS5
-ms.openlocfilehash: 180399130d898baff6af4f0dc18e1e20e13ec83c
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: aa3e28cb79e69c1faccd733d993c8ec12f6ae314
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918492"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721734"
 ---
 # <a name="setting-up-a-nxp-device"></a>NXP 디바이스 설정
 
@@ -22,7 +22,7 @@ ms.locfileid: "72918492"
 > [!NOTE]
 > NXP에 대한 설정은 Raspberry Pi를 설정하는 것과 거의 동일합니다.
 
-프로토타입 제작용 NXP 디바이스를 설정할 때 Windows 10 IoT Core 대시보드를 사용하는 것이 좋습니다. 그러나 NXP 디바이스를 사용하여 제작하려는 경우에는 [IoT Core 제작 가이드](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)를 참조하세요. 제조사 이미지는 제작에 사용할 수 없습니다.
+프로토타입 제작용 NXP 디바이스를 설정할 때 Windows 10 IoT Core 대시보드를 사용하는 것이 좋습니다. 그러나 NXP 디바이스를 사용하여 제작하려는 경우에는 [IoT Core 제작 가이드](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)를 참조하세요. 제조사 이미지는 제작에 사용할 수 없습니다.
 <br>
 > [!Video https://www.youtube.com/embed/JPRUbGIyODY]
 
@@ -46,7 +46,7 @@ Device: minwinpc
 Password: p@ssw0rd
 ```
 
-4. "찾아보기" 함수를 사용하여 미리 다운로드한 이미지 파일을 업로드합니다. 자세한 내용은 [NXP 설명서](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/iotnxp)를 참조하세요.
+4. "찾아보기" 함수를 사용하여 미리 다운로드한 이미지 파일을 업로드합니다. 자세한 내용은 [NXP 설명서](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/iotnxp)를 참조하세요.
 5. 소프트웨어 사용 조건에 동의하고 *다운로드 및 설치*를 클릭합니다. 정상적으로 작동하는 경우 Windows 10 IoT Core가 SD 카드에 플래시되는 것을 볼 수 있습니다.
 
 ![대시보드 스크린샷](../media/DeviceSetup/Dashboard-Screenshot.jpg)
