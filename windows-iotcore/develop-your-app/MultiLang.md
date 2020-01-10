@@ -6,12 +6,12 @@ ms.date: 09/12/2017
 ms.topic: article
 description: IoT Core에서 UWP 응용 프로그램 및 OS의 여러 언어 지원에 대해 알아봅니다.
 keywords: windows iot, 언어, 앱 유형, UWP, OS
-ms.openlocfilehash: 5bc44fb090e6e198525e95d6aee6815afd0095da
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: ea54ee9dac93866065313e00caccb91ac1dc7c7f
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918222"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721686"
 ---
 # <a name="language-support"></a>언어 지원
 
@@ -36,7 +36,7 @@ UWP 응용 프로그램은 지원 되는 데 필요한 언어에 대 한 리소�
 > | 언어  | Code | 국가 |
 > |-------------|-----|-----|
 > | 영어(미국) | en-US | 북아메리카 | 
-> | 영어 (영국) | en-GB | 유럽 |
+> | 영어(영국) | en-GB | 유럽 |
 > | 프랑스어(프랑스) | fr-FR | 유럽 |
 > | 프랑스어(캐나다) | fr-CA | 북아메리카 |
 > | 스페인어(스페인) | es-ES | 유럽 |
@@ -124,7 +124,7 @@ UWP 응용 프로그램은 WinRT Api를 사용 하 여 기본적으로 사용 �
 * [GlobalizationPreferences](https://docs.microsoft.com/uwp/api/windows.system.userprofile.globalizationpreferences)에서 `TrySetHomeGeographicRegion`를 사용하여 지역 설정
 * [GlobalizationPreferences](https://docs.microsoft.com/uwp/api/windows.system.userprofile.globalizationpreferences)에서 `TrySetLanguages`를 사용하여 UI 언어 설정
 * SpeechRecognition에서 `TrySetSystemSpeechLanguageAsync`를 사용 하 여 음성 언어를 설정 합니다. [SpeechRecognizer](https://docs.microsoft.com/uwp/api/windows.media.speechrecognition.speechrecognizer)
-* SpeechSynthesis에서 `TrySetDefaultVoiceAsync`를 사용 하 여 음성 설정 [SpeechSynthesizer](https://docs.microsoft.com/en-us/uwp/api/windows.media.speechsynthesis.speechsynthesizer)
+* SpeechSynthesis에서 `TrySetDefaultVoiceAsync`를 사용 하 여 음성 설정 [SpeechSynthesizer](https://docs.microsoft.com/uwp/api/windows.media.speechsynthesis.speechsynthesizer)
 
 > [!NOTE]
 > 적절 한 기능을 제공 하기 위해 Cortana를 사용 하려면 지역, ui 언어 및 음성 언어를 일관 되 게 사용 해야 합니다 (예: 지역 FR, UI 및 음성 언어 fr-fr 또는 지역 ES, UI 및 음성 언어 es). Cortana는 자체 음성을 사용 하 고 UWP 응용 프로그램은 변경할 수 없습니다.

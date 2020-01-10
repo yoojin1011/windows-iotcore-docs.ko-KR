@@ -4,18 +4,18 @@ ms.date: 10/02/2018
 ms.topic: article
 description: Windows 10 월 2018 업데이트의 새로운 기능에 대해 알아봅니다.
 keywords: Windows IoT, 2018 년 10 월 업데이트, 릴리스 정보
-ms.openlocfilehash: 30292437da20a577a319fe47b3f5c2647df00382
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 5b5b6e45552d099426019626ca52000635e308a5
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918702"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721878"
 ---
 # <a name="october-2018-update-release-notes-for-windows-10-iot"></a>10 월 2018 Windows 10 IoT의 업데이트 릴리스 정보
 빌드 번호 17763. 2018년 10월
 
 > [!IMPORTANT]
-> [10 월 2018 업데이트](https://docs.microsoft.com/en-us/windows/iot-core/release-notes/commercial/october2018update)를 사용 하는 경우 대신 [10 월 업데이트 (서비스 팩 1 월, 빌드 17763.253)](https://docs.microsoft.com/en-us/windows/iot-core/release-notes/commercial/17763) 릴리스를 사용 하세요. 10 월 2018 업데이트의 사용자에 게 영향을 주는 알려진 문제가 있음을 발견 했습니다. 
+> [10 월 2018 업데이트](https://docs.microsoft.com/windows/iot-core/release-notes/commercial/october2018update)를 사용 하는 경우 대신 [10 월 업데이트 (서비스 팩 1 월, 빌드 17763.253)](https://docs.microsoft.com/windows/iot-core/release-notes/commercial/17763) 릴리스를 사용 하세요. 10 월 2018 업데이트의 사용자에 게 영향을 주는 알려진 문제가 있음을 발견 했습니다. 
 
 Windows 10 IoT는 임베디드 또는 전용 용도의 장치를 개발할 수 있도록 하며, 스마트 장치용 Windows 솔루션을 구축 하는 Oem 및 개발자에 게 적합 합니다.
 
@@ -37,7 +37,7 @@ _Windows 10 IoT Core_
 * E다양성에 대 한 증가 하는 고객 및 파트너 수요를 충족 하기 위해 NXP와의 가까운 파트너 관계에 있는 Microsoft는 NXP i.MX 6, 7 및 8M 시리즈 프로세서에 대 한 지원을 Windows 10 IoT Core에 추가 했습니다. 
 * Qualcomm 및 Microsoft는 Windows 10 IoT Enterprise와 Snapdragon 프로세서를 결합 하 여 더 적게 사용 되는 장치를 구축 하 고, 항상 연결 되어 있으며 즉시 절전 모드를 해제 하는 솔루션을 만들었습니다. 배터리 수명이 긴 경우 모바일 POS 및 lob (기간 업무) 태블릿과 같은 전용 장치를 사용 하 여 마지막으로 전체를 사용할 수 있습니다. 
 * [Windows 10 IoT Core 기본 앱](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp) 에는 사용자가 자신의 응용 프로그램을 위해 사용할 수 있는 기능이 더 많이 있습니다. 특히 장치를 시장으로 가져올 때 사용할 수 있습니다. 이러한 기능에는 날씨, 잉크 기능, 오디오 기능 등이 있습니다. 
-* 최종 사용자가 최종 구성을 수행 하 고 고객에 게 [WDP에 대 한 인증서를 얻어야 하는 고객을 문서화 하는 "특정/제한 된 설치" (즉, 공장 또는 소매점)에 대해 상용 배포를 위한 오픈 정품 장치를 구축 하는 경우 그리고 WDP에 설치 하 고 브라우저와 암호를 연결 하면 WDP에서](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-ssl)WDP를 사용할 수 있습니다. 이 시나리오에서 소매점 이미지는 여전히 IOT_TOOLKIT를 포함 하지 않지만 IOT_WEBBEXTN 패키지를 사용 하 여 WDP로 가져와야 합니다. 
+* 최종 사용자가 최종 구성을 수행 하 고, 최종 사용자가 최종 구성을 수행 하 고, [WDP에 대 한 인증서를 획득 하 고 두 WDP 모두에 설치](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-ssl)해야 한다는 것을 고객에 게 문서화 하 고, WDP에서 연결 하는 브라우저와 암호를 변경 하는 등 상용 배포에 대 한 오픈 정품 장치를 빌드하는 경우이 좁은 상업적 인스턴스에서 WDP를 사용할 수 있습니다. 이 시나리오에서 소매점 이미지는 IOT_TOOLKIT 포함 하지 않아야 하지만 IOT_WEBBEXTN 패키지를 사용 하 여 WDP를 가져와야 합니다. 
 * Limpet는 이제 [오픈 소스 프로젝트로](https://github.com/ms-iot/azure-dm-client)사용할 수 있습니다. 테스트를 용이 하 게 하기 위해 서명 되지 않은 미리 작성 된 버전의 Limpet를 사용할 수 있으며 WDP에서 바로 다운로드할 수 있습니다. 이 기능에 대 한 자세한 내용은 [Windows 장치 포털 설명서](https://docs.microsoft.com/windows/iot-core/manage-your-device/deviceportal)를 참조 하세요.  
 * 이제 개발자는 대시보드를 사용 하 여 장치에 사용자 지정 FFUs를 RS5 수 있습니다. 이 작업은 DragonBoard 410C 또는 NXP 중 하나로 수행할 수 있습니다. 자세히 알아보고 [여기](https://docs.microsoft.com/windows/iot-core/tutorials/quickstarter/devicesetup)에서 시작 하세요.
 * 이제 windows 10 IoT Core는 Windows의 데스크톱 버전과 동일한 터치 키보드 구성 요소를 사용 하 여 받아쓰기 모드, 전체 Windows 키보드 언어 레이아웃 집합과 같은 기능을 사용할 수 있도록 합니다. 이 새로운 업데이트에는 이모티콘, 대부분의 입력 "범위" 및 향상 된 다중 언어 지원에 대 한 지원 prt도 포함 됩니다. [여기](https://docs.microsoft.com/windows/iot-core/develop-your-app/onscreenkeyboard)에서 이러한 기능을 활용 하는 방법을 알아보세요.
@@ -47,11 +47,11 @@ _Windows 10 IoT Core_
 * 이제 Gpio, I2c, Spi 및 UART와 상호 작용할 수 있는 Bus 도구를 [샘플 리포지토리에서](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/BusTools)사용할 수 있습니다. 이러한 도구는 windows 10 IoT Core 및 Windows Enterprise를 비롯 한 모든 Windows 버전에서 실행 됩니다. 
 * [Windows To Update 네임 스페이스 API를](https://docs.microsoft.com/uwp/api/windows.system.update) 사용 하면 시스템 업데이트의 대화형 제어를 호출할 수 있습니다. 이 네임스페이스는 Windows 10 IoT Core에서만 사용할 수 있습니다.
 * Windows 10 IoT 솔루션의 일부로 IoT Central를 사용 하려는 경우 이제 [windows 10 Iot Core 장치를 준비 하 고 Azure IoT Central 응용 프로그램에 연결할](https://docs.microsoft.com/azure/iot-central/howto-connect-windowsiotcore)수 있습니다. 
-* Raspberry Pi 3B +의 릴리스 (다운로드할 수 있는 ISO는 [여기](http://go.microsoft.com/fwlink/?LinkID=708576)에서 찾을 수 있음)는 technical preview 이며 현재 릴리스 버전에 대 한 타임 라인이 없습니다. 더 나은 평가 환경 및 fr 모든 상용 제품은 Raspberry Pi 3B 또는 지원 되는 Intel, Qualcomm 또는 NXP Soc의 기타 장치를 사용 하세요. 
+* Raspberry Pi 3B +의 릴리스 (다운로드할 수 있는 ISO는 [여기](https://go.microsoft.com/fwlink/?LinkID=708576)에서 찾을 수 있음)는 technical preview 이며 현재 릴리스 버전에 대 한 타임 라인이 없습니다. 더 나은 평가 환경 및 fr 모든 상용 제품은 Raspberry Pi 3B 또는 지원 되는 Intel, Qualcomm 또는 NXP Soc의 기타 장치를 사용 하세요. 
 
 ## <a name="iot-enterprise-manufacturing-guide"></a>IoT Enterprise 제조 가이드
 
-* 이제 Windows 10 IoT Enterprise에 대 한 새 제조 가이드를 [사용할 수](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview)있습니다. 
+* 이제 Windows 10 IoT Enterprise에 대 한 새 제조 가이드를 [사용할 수](https://docs.microsoft.com/windows-hardware/manufacture/desktop/iot-ent-overview)있습니다. 
 
 ## <a name="improvements-in-assigned-access"></a>할당 된 액세스의 향상 된 기능 
 

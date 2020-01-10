@@ -4,12 +4,12 @@ ms.date: 05/01/2018
 ms.topic: article
 description: Windows 10 IoT 용 4 월 2018 업데이트의 새로운 기능에 대해 알아봅니다.
 keywords: Windows IoT, 4 월 2018 업데이트, 릴리스 정보
-ms.openlocfilehash: f9068b3860dcf684aaa12d12ed3fb0abd9598232
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: b06378db14ba78fc5a3eb60e842e1555e56a66ac
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918725"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721756"
 ---
 # <a name="april-2018-update-release-notes-for-windows-10-iot"></a>Windows 10 IoT 용 업데이트 릴리스 정보 4 월 2018
 빌드 번호 17134. 2018년 5월
@@ -25,7 +25,7 @@ Windows 10 IoT는 임베디드 또는 전용 용도의 장치를 개발할 수 �
 ## <a name="whats-new-in-april-2018-update"></a>4 월 2018 업데이트의 새로운 기능
 * [Visual studio 15.6 RTW](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-relnotes#Win10_IoT_Core_Testing_Support) 와 함께 제공 되는 [Visual studio 테스트 플랫폼](https://blogs.msdn.microsoft.com/devops/2017/02/12/evolving-the-visual-studio-test-platform-part-4-together-in-the-open/) 은 이제 Windows 10 IoT Core에서 테스트를 지원 합니다. Windows 10 IoT Core를 대상으로 하는 Visual Studio 2017에서 프로젝트에 대 한 [단위 테스트를 작성할](https://blogs.msdn.microsoft.com/devops/2018/03/07/devops-for-iot-with-win10-iot-core-uwp-and-vsts/) 때 개발자는 이제 장치에 테스트를 배포 하 고 수동으로 실행 하는 대신 visual studio에서 직접 해당 단위 테스트를 장치에서 직접 실행할 수 있습니다.
 * 개발자는 Windows 10 IoT에서 [WINDOWS AI 플랫폼](https://blogs.windows.com/buildingapps/2018/03/07/ai-platform-windows-developers/) 의 기능을 활용 하 여 더 지능적인 장치를 만들고 CPU 또는 GPU를 사용 하 여 ML 모델 평가를 가속화 할 수 있습니다.
-* 음성 사용 장치를 신속 하 게 출시 하려는 Oem은 [Cortana 장치 SDK의 미리 보기](http://www.aka.ms/cortanadevices)를 사용 하 여 cortana 지원을 장치에 통합할 수 있습니다.
+* 음성 사용 장치를 신속 하 게 출시 하려는 Oem은 [Cortana 장치 SDK의 미리 보기](https://www.aka.ms/cortanadevices)를 사용 하 여 cortana 지원을 장치에 통합할 수 있습니다.
 * Oem은 Windows에서 제공 되는 다양 한 Csp를 활용 하 여 [Azure IoT 장치 관리](https://github.com/ms-iot/iot-core-azure-dm-client)를 통해 대규모로 장치의 원격 구성 및 관리를 수행할 수 있습니다. 이 새로운 샘플 구현에서는 로컬 클라이언트, 클라우드 서비스 및 관리 포털을 결합 하 여 IoT 운영자가 클라우드 규모에서 장치 관리를 수행할 수 있도록 합니다.
 * 이 릴리스에서는 명령 콘솔, PowerShell 등의 콘솔 호스트에서 실행 되는 [UWP 콘솔 앱](https://docs.microsoft.com/windows/uwp/launch-resume/console-uwp) 을 작성할 수 있습니다. UWP 콘솔 앱은 UWP 앱에 사용할 수 있는 Win32 Api를 사용할 수도 있으며 Microsoft Store를 통해 게시 하 고 업데이트할 수 있습니다.
 * 장치를 Miracast 전송기 또는 수신자 역할을 할 수 있도록 하는 [캐스트 api 집합과](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/BasicMediaCasting) 함께 IoT Core에 대 한 새로운 [Miracast 기능 패키지](https://docs.microsoft.com/windows/iot-core/connect-your-device/miracast) 를 추가 했습니다.
@@ -50,7 +50,7 @@ Windows 10 IoT는 임베디드 또는 전용 용도의 장치를 개발할 수 �
 * 64 비트 버전의 Windows 10 IoT Core 및 Enterprise에서 [Nano Server 컨테이너](https://docs.microsoft.com/virtualization/windowscontainers/about/index) 호스팅을 지원 하므로 응용 프로그램과 해당 데이터를 서로 격리 하 고 개발에서 프로덕션 또는 클라우드로 신속 하 게 이동할 수 있습니다.
 * Windows 디바이스 상태 증명 [Preview] 서비스는 하드웨어 기능 및 클라우드 서비스를 사용 하 여 하드웨어 수준 메트릭과 증명 된 데이터를 기반으로 하는 장치 상태의 변조 교정 및 원격 증명을 제공 합니다.
 * Windows IoT [미리 보기]를 [Azure IoT Edge](https://azure.microsoft.com/campaigns/iot-edge/) iot 솔루션은 클라우드 및에 지 장치 간에 인텔리전스를 오케스트레이션 할 수 있으므로 응용 프로그램 및 서비스가 가장 적합 한 위치에서 iot 데이터에 대해 작업을 수행할 수 있습니다.
-* Azure IoT Hub [장치 프로 비전 서비스 [미리 보기]](https://blogs.windows.com/buildingapps/2017/10/05/windows-10-iot-enables-complete-iot-lifecycle/) 를 사용 하면 제조 중에 공용 이미지로 Windows 10 IoT 장치를 만들고, 처음 Azure IoT Hub 부팅 시 자동으로 연결 하 여 장치 관련 프로 비전을 검색할 수 있습니다. 내용을.
+* Azure IoT Hub [장치 프로 비전 서비스 [미리 보기]](https://blogs.windows.com/buildingapps/2017/10/05/windows-10-iot-enables-complete-iot-lifecycle/) 를 사용 하면 제조 중에 공통 이미지를 사용 하 여 Windows 10 IoT 장치를 만들고, 처음 Azure IoT Hub 부팅 시 자동으로 연결 하 여 장치 관련 프로 비전 정보를 검색할 수 있습니다.
 
 ## <a name="windows-10-iot-core-reference-images"></a>Windows 10 IoT Core 참조 이미지
 ___ 

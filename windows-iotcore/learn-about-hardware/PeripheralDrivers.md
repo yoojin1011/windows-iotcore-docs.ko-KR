@@ -4,12 +4,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 드라이버 패키지를 만들고 장치에 타사 드라이버를 설치 하는 방법에 대해 알아봅니다.
 keywords: windows iot, USB 드라이버, 주변 장치, USB
-ms.openlocfilehash: 96e234c943771c336a9f5d7c0b7568cb11c0f6ce
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 4e3b77466e2bacb9bf8e06bc3a0dc081db2ee5f9
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918064"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721478"
 ---
 # <a name="install-usb-peripheral-drivers"></a>USB 주변 장치 드라이버 설치
 USB 모바일 광대역 모뎀, 프린터, 스캐너 등의 주변 장치에 대 한 타사 드라이버 (usb)를 추가 하려면 다음 단계를 수행 합니다. 
@@ -27,7 +27,7 @@ ___
 
 4. 속성 창에서 드라이버 탭으로 이동 하 여 드라이버 세부 정보를 클릭 합니다. 여기에는 sys 파일이 나열 되어 있습니다.
 
-5. `C:\Windows\system32`에서 sys 파일을 복사 하 고 `C:\Windows\Inf`에서 관련 inf 파일도 복사 합니다. `.inf` 파일에서 sys 파일 참조를 searcing 하 여 inf 파일을 찾을 수 있습니다. Inf에 나열 된 추가 파일을 복사 해야 할 수 있습니다. 이러한 파일은 다음 단계에서 `inf2pkg.cmd`를 사용할 때 생성 되는 inf_filelist 파일에 나열 됩니다.
+5. `C:\Windows\system32`에서 sys 파일을 복사 하 고 `C:\Windows\Inf`에서 관련 inf 파일도 복사 합니다. `.inf` 파일에서 sys 파일 참조를 searcing 하 여 inf 파일을 찾을 수 있습니다. Inf에 나열 된 추가 파일을 복사 해야 할 수 있습니다. 이러한 파일은 다음 단계에서 `inf2pkg.cmd`를 사용할 때 생성 된 inf_filelist .txt 파일에 나열 됩니다.
 
 
 ## <a name="step-2-create-a-driver-package"></a>2 단계: 드라이버 패키지 만들기
@@ -38,7 +38,7 @@ ___
 [IoTInf2Cab](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/New-IoTInf2Cab.md) 는 패키지 xml 파일을 만들고 cab 파일도 직접 빌드합니다.
 
 > [!NOTE]
-> Windows IoT Core는 [범용 INF 및 범용 드라이버만](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/getting-started-with-universal-drivers)지원 합니다.
+> Windows IoT Core는 [범용 INF 및 범용 드라이버만](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers)지원 합니다.
 
 
 참고 항목: [샘플 드라이버 패키지](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Workspace/Source-arm/BSP/CustomRpi2/Packages/CustomRPi2.GPIO) 

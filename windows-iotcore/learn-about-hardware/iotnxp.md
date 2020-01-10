@@ -6,12 +6,12 @@ ms.date: 02/22/2019
 ms.topic: article
 description: Windows 10 IoT Core 및 NXP i.MX Soc에 대 한 자세한 정보
 keywords: Windows 10 IoT Core, 시작 하기, i.MX, NXP
-ms.openlocfilehash: 6b0561b64264358410a86ed8e117e7e407e164b0
-ms.sourcegitcommit: 8980231f05b9fe0a1fd6350cfed5fd8a1dd38c33
+ms.openlocfilehash: 5720def1be274d2c241715c164e74249f4ab8e76
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74178778"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721868"
 ---
 # <a name="window-10-iot-core-and-nxp-imx-socs"></a>Windows 10 IoT Core 및 NXP i.MX Soc
 
@@ -34,11 +34,10 @@ I.MX 제품에 대 한 BSP 사용자 지정 및 integration에 대 한 커뮤니
 여러 Microsoft 및 NXP 파트너가 상용 i.MX 6, i.MX 7 및 i.MX 8M 장치에서 Windows 10 IoT Core를 사용 하도록 설정 했습니다. 하드웨어 액세스를 위해 파트너에 게 직접 문의 하세요. 
 
 
-> | 장치 | 연락처 |
+> | 장치 | Contact |
 > |-------|------|
 > | [Aaeon PICO-IMX6](https://www.aaeon.com/en/p/pico-itx-boards-pico-imx6/) | [David 중단](mailto:davidhung@aaeon.com.tw) |
 > | [Advantech co. RSB-4411](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858) | [buy@advantech.com](mailto:buy@advantech.com) |
-> | [Compulab IoT-게이트](https://www.compulab.com/products/iot-gateways/iot-gate-imx7-nxp-i-mx-7-internet-of-things-gateway/) | [Igor Vaisbein](mailto:igor@compulab.co.il) | 
 > | [FS Eletronik 시스템 서버의 armStone A9](https://www.fs-net.de/en/products/armstone/armstonea9/) | [support@fs-net.de](mailto:support@fs-net.de) |
 > | [Geniatech SoM-iMX6Q-Q7](https://www.geniatech.com/product/som-imx6q-q7/) | [Mike Decker](mailto:mike.decker@geniatech.com) 또는 [Fang Jijun](mailto:Fjj@geniatech.com) |
 > | [Geniatech SoM-iMX7D](https://www.geniatech.com/product/som-imx7d/) | [Mike Decker](mailto:mike.decker@geniatech.com) 또는 [Fang Jijun](mailto:Fjj@geniatech.com) |

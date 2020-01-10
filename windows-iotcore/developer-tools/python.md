@@ -6,12 +6,12 @@ ms.date: 08/13/2019
 ms.topic: article
 description: Windows 10 IoT Core를 실행하는 디바이스에 Python을 설치하는 방법을 알아봅니다.
 keywords: windows iot, python
-ms.openlocfilehash: 26063863e5fdf7539e3159d4a4809bab3a38fb71
-ms.sourcegitcommit: 4272081b5186dada1e61974193e41fcc1c42a1b9
+ms.openlocfilehash: e76fdeaafe4b3b2b80b75a1fc22bd8a58769e1e5
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69629376"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721636"
 ---
 # <a name="python"></a>Python
 Python은 시스템 자동화 및 ML(기계 학습)에 널리 사용되는 스크립트 언어입니다.
@@ -211,21 +211,21 @@ Windows용 Python을 가져오려면 이진 파일을 직접 작성해야 합니
 
 ### <a name="set-up-an-iot-hub-and-create-a-device-identity"></a>IoT Hub 설정 및 디바이스 ID 만들기
 
-19. [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)를 설치하고(또는 [Azure Cloud Shell](https://shell.azure.com/) 사용) 이를 사용하여 [Azure IoT Hub를 만듭니다](https://docs.microsoft.com/en-us/cli/azure/iot/hub?view=azure-cli-latest#az-iot-hub-create).
+19. [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)를 설치하고(또는 [Azure Cloud Shell](https://shell.azure.com/) 사용) 이를 사용하여 [Azure IoT Hub를 만듭니다](https://docs.microsoft.com/cli/azure/iot/hub?view=azure-cli-latest#az-iot-hub-create).
 
     ```powershell
     az iot hub create --resource-group <your resource group> --name <your IoT Hub name>
     ```
     * 이 작업을 수행하는 데 몇 분 정도 걸립니다.
 
-20. Azure CLI에 IoT 확장을 추가한 다음, [디바이스 ID를 등록합니다](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-identity?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-device-identity-create).
+20. Azure CLI에 IoT 확장을 추가한 다음, [디바이스 ID를 등록합니다](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-identity?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-device-identity-create).
 
     ```powershell
     az extension add --name azure-cli-iot-ext
     az iot hub device-identity create --hub-name <your IoT Hub name> --device-id <your device id>
     ```
 
-21. Azure CLI를 사용하여 [디바이스 연결 문자열 검색](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-identity?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-device-identity-show-connection-string)
+21. Azure CLI를 사용하여 [디바이스 연결 문자열 검색](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-identity?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-device-identity-show-connection-string)
 
     ```powershell
     az iot hub device-identity show-connection-string --device-id <your device id> --hub-name <your IoT Hub name>
@@ -238,7 +238,7 @@ Windows용 Python을 가져오려면 이진 파일을 직접 작성해야 합니
 
 ### <a name="send-a-simple-telemetry-message"></a>간단한 원격 분석 메시지 보내기
 
-22. Azure CLI를 사용하여 IoT Hub에서 [원격 분석에 대한 모니터링 시작](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot/hub?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-monitor-events)
+22. Azure CLI를 사용하여 IoT Hub에서 [원격 분석에 대한 모니터링 시작](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-monitor-events)
 
     ```powershell
     az iot hub monitor-events --hub-name <your IoT Hub name> --output table

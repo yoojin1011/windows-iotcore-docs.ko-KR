@@ -4,12 +4,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 작성자 업데이트의 새로운 기능에 대해 읽어 보세요.
 keywords: windows iot, 작성자 업데이트, 릴리스 정보
-ms.openlocfilehash: f62bb14e99c8509374c776172cfcb495b62325da
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 5946d97cd84992f62213d71c59374aa7f9a5779b
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918714"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721858"
 ---
 # <a name="creators-update-release-notes-for-windows-10-iot-core"></a>Windows 10 IoT Core의 작성자 업데이트 릴리스 정보
 빌드 번호 15063. 2017년 4월
@@ -24,7 +24,7 @@ Windows 10 IoT Core는 임베디드 또는 전용 용도의 장치를 개발할 
 
 ## <a name="privacy-statement"></a>개인정보취급방침
 
-이 Windows 운영 체제 버전의 개인정보처리방침은 [여기](http://go.microsoft.com/fwlink/?LinkId=506737)서 볼 수 있습니다.
+이 Windows 운영 체제 버전의 개인정보처리방침은 [여기](https://go.microsoft.com/fwlink/?LinkId=506737)서 볼 수 있습니다.
 
 ## <a name="whats-new"></a>새로운 기능
 * Windows 10 IoT Core 공용 릴리스. 
@@ -113,7 +113,7 @@ Dragonboard의 SPI는 요청 된 속도를 무시 하 고 항상 미리 구성 �
 
 #### <a name="minnowboard-max-firmware-update"></a>Minnowboard 최대 펌웨어 업데이트 
 MinnowBoard Max는 펌웨어가 092 이상 버전이 아닌 경우 부팅 되지 않습니다.  
-MBM (MinnowBoard Max) 펌웨어 버전 0.93에 네트워크 연결 오류가 있을 수 있습니다.   이 문제는 펌웨어 버전 0.94에서 해결 되었습니다.  펌웨어의 최소 권장 버전은 "MinnowBoard MAX 0.94 32-bit"입니다. 펌웨어 업데이트는 [여기](http://go.microsoft.com/fwlink/?LinkId=708613)에서 다운로드할 수 있습니다.
+MBM (MinnowBoard Max) 펌웨어 버전 0.93에 네트워크 연결 오류가 있을 수 있습니다.   이 문제는 펌웨어 버전 0.94에서 해결 되었습니다.  펌웨어의 최소 권장 버전은 "MinnowBoard MAX 0.94 32-bit"입니다. 펌웨어 업데이트는 [여기](https://go.microsoft.com/fwlink/?LinkId=708613)에서 다운로드할 수 있습니다.
   
  
 ### <a name="all-platforms"></a>모든 플랫폼 
@@ -222,7 +222,7 @@ Microsoft를 © 합니다. All rights reserved. 
  
 이 설명서는 “있는 그대로” 제공됩니다.  URL 및 기타 인터넷 웹 사이트 참조를 비롯 하 여이 문서에 표시 된 정보 및 보기는 예 고 없이 변경 될 수 있습니다. 
 
-여기에서 설명하는 일부 예는 설명 목적으로만 제공되는 가상의 예이며,  실제 연결 또는 연결을 사용할 의도가 없으며 그렇게 유추 해서도 안 됩니다.  
+여기에서 설명한 일부 예시는 설명을 위한 것이며 실제가 아닙니다.  실제 연결 또는 연결을 사용할 의도가 없으며 그렇게 유추 해서도 안 됩니다.  
 
 이 문서는 Microsoft 제품의 지적 재산에 대 한 법적 권한을 제공 하지 않습니다.  이 문서는 내부 참조용 으로만 사용할 수 있습니다. 
   
@@ -230,7 +230,7 @@ Microsoft에서는 어떠한 명시적 또는 묵시적 보증도 하지 않습�
 
 상표 제품 목록은 Microsoft 상표를 참조 하세요. 
 
-다른 모든 상표는 해당 소유자의 자산입니다.  
+기타 모든 상표는 해당 소유자의 자산입니다.  
 
 UPnP™은 UPnP™ Implementers Corporation의 인증 표시입니다. 
 

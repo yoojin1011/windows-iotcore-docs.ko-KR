@@ -5,12 +5,12 @@ ms.topic: article
 description: Windows 10 IoT Core 기본 앱 및 해당 기능에 대해 알아봅니다.
 keywords: windows iot, windows 10 iot core, 기본 앱
 ms.custom: RS5
-ms.openlocfilehash: a0e26d54f1c6694cd408de6f54cf0c0fba263156
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 730e8c386b328efdbb66092121980a42e066679c
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918245"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721498"
 ---
 # <a name="windows-10-iot-core-default-app-overview"></a>Windows 10 IoT Core 기본 앱 개요
 
@@ -21,21 +21,21 @@ ms.locfileid: "72918245"
 
 ![IoT Core 기본 앱의 스크린샷](../media/IoTCoreDefaultApp/DeviceInfoPage-Screenshot.jpg)
 
-이 응용 프로그램의 목적은 Windows 10 IoT Core를 처음 부팅할 때 상호 작용할 수 있는 친숙 한 셸을 제공 하기 위한 것이 아니라이 [응용 프로그램에](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp) 대 한 코드를 오픈 소스로 사용 하 여 사용자 고유의 cu에서 이러한 기능을 연결 하 고 재생할 수 있도록 하는 것입니다. stom 응용 프로그램입니다.
+이 응용 프로그램의 목적은 Windows 10 IoT Core를 처음 부팅할 때 상호 작용할 수 있는 친숙 한 셸을 제공 하기 위한 것이 아니라, 사용자 지정 응용 프로그램에서 이러한 기능을 연결 하 고 재생할 수 있도록 [여기](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp) 에서이 응용 프로그램에 대 한 코드를 오픈 소스로 사용 하는 것입니다.
 
 이 문서에서는 Windows 10 IoT Core 기본 앱에서 제공 하는 다양 한 기능에 대 한 개요를 제공 하 고 응용 프로그램에 대해 이러한 여러 기능을 활용할 수 있는 방법을 설명 합니다.
 
 ## <a name="leveraging-the-iot-core-default-app"></a>IoT Core 기본 앱 활용 
 
 > [!IMPORTANT]
-> 상용화에 제조사 이미지를 사용하지 마세요. 디바이스를 상용화하려는 경우 최적의 보안을 위해 사용자 지정 FFU를 사용해야 합니다. [여기](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)에서 자세한 내용을 알아보세요.
+> 상용화에 제조사 이미지를 사용하지 마세요. 디바이스를 상용화하려는 경우 최적의 보안을 위해 사용자 지정 FFU를 사용해야 합니다. [여기](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)에서 자세한 내용을 알아보세요.
 
 IoT Core 기본 앱을 사용자 지정 하 고 확장할 수 있습니다. 또는 소스 코드를 사용자 고유의 앱에 대 한 예제로 사용할 수 있습니다. 직접 사용해 보려면 샘플의 zip을 다운로드 하거나 [여기](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)에서 IoT Core 기본 앱에 대 한 코드를 확인 하세요. 질문을 하려면 [여기](https://github.com/Microsoft/Windows-iotcore-samples/issues)의 샘플 리포지토리에서 문제를 파일 하세요.
 
 아래 [설정 섹션](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp#settings
 ) 에 표시 된 것 처럼 경우에 따라 최종 사용자를 대신 하 여 고객 시스템에서 기본 설정 및 기능을 구성할 수 있습니다. 그러나 기본적으로 이러한 설정 및 기능을 설정 하거나 진단이 기본 설정 위에 있는 경우 다음을 수행 해야 합니다.
 
-* 최종 사용자에 게 이러한 기능을 사용할 수 있음을 알리고 [여기](http://go.microsoft.com/fwlink/?LinkId=521839)에서 Microsoft 개인 정보 취급 방침 웹 페이지에 대 한 링크를 최종 사용자에 게 제공 합니다. 
+* 최종 사용자에 게 이러한 기능을 사용할 수 있음을 알리고 [여기](https://go.microsoft.com/fwlink/?LinkId=521839)에서 Microsoft 개인 정보 취급 방침 웹 페이지에 대 한 링크를 최종 사용자에 게 제공 합니다. 
 * 관련 최종 사용자의 보안 동의를 통해 해당 법률에서 요구 하는 대로 기본적으로 이러한 기능을 사용 하도록 설정 합니다.
 * 최종 사용자에 게 진단 설정을 다시 기본 설정으로 변경할 수 있는 기능을 제공 합니다.
 * Microsoft 계정을 사용 하도록 설정 하 고 최종 사용자 데이터에 대 한 액세스 권한이 있는 경우 최종 사용자가 Microsoft 계정을 삭제 하는 경우 장치에서 모든 최종 사용자의 Microsoft 계정 데이터를 동시에 삭제할 수 있어야 합니다. 
@@ -142,7 +142,7 @@ Wi-fi, Bluetooth, 전원 옵션 등을 비롯 한 다양 한 설정을 구성할
 ##### <a name="slideshow-settings"></a>슬라이드 쇼 설정
 * 슬라이드쇼 간격 설정
 
-##### <a name="appearance"></a>바꿀
+##### <a name="appearance"></a>모양
 * 타일 아이콘에 대해 Emojis 대신 MDL2 자산을 사용 합니다.
 * 타일 너비와 높이를 설정 합니다.
 * UI 배율 설정-자동 크기 조정은 기본적으로 설정 되어 있습니다.
@@ -172,5 +172,5 @@ Microsoft에서 제공 하려는 진단 데이터의 양을 선택 합니다.  �
 ##### <a name="full"></a>전체
 검색 한 웹 사이트에 대 한 정보, 앱 및 기능을 사용 하는 방법, 장치 상태, 장치 작업 및 고급 오류 보고에 대 한 추가 정보를 비롯 하 여 모든 기본 진단 데이터를 보냅니다.
 
-#### <a name="location"></a>위치
+#### <a name="location"></a>Location
 사용자의 위치에 대 한 앱 액세스를 허용 하거나 거부 합니다.

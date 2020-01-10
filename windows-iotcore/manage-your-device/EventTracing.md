@@ -4,12 +4,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 이벤트 추적을 사용 하 여 이벤트를 쓰고 Windows IoT Core에 대 한 이벤트를 사용 하는 방법을 알아봅니다.
 keywords: windows iot, 이벤트 추적, ETW, windows 용 이벤트 추적, 장치
-ms.openlocfilehash: ce031cd2bc7b94f01c970bec9e1ad4df0b9dbf06
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: e5d017c28640f78011ef0b7d82071a51524b2185
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72917256"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721576"
 ---
 # <a name="event-tracing-for-windows-iot-core"></a>ETW(Windows용 이벤트 추적) IoT 코어
 
@@ -32,7 +32,7 @@ Windows IoT Core 장치에서 ETW는 매니페스트 기반 이벤트와 클래�
 
 ## <a name="use-tools-in-windows-assessment-and-deployment-kit"></a>Windows 평가 및 배포 키트의 도구 사용
 
-Windows 평가 및 배포 키트에는 이벤트를 캡처 및 분석 하는 데 유용한 3 가지 도구가 포함 되어 있습니다. [다운로드 하려면 여기를 클릭 하세요.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
+Windows 평가 및 배포 키트에는 이벤트를 캡처 및 분석 하는 데 유용한 3 가지 도구가 포함 되어 있습니다. [다운로드 하려면 여기를 클릭 하세요.](https://go.microsoft.com/fwlink/p/?LinkId=526740)
 
 
 1. **Windows Performance Analyzer** 는 데스크톱에서 ETL 파일을 시각화 [여기](https://msdn.microsoft.com/library/windows/hardware/dn927319(v=vs.85).aspx)에 단계별 가이드를 포함 합니다.

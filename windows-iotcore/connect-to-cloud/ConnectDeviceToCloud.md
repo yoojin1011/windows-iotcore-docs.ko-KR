@@ -4,12 +4,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 장치를 클라우드에 연결 하는 방법에 대해 알아봅니다.
 keywords: windows iot, Azure, 보안, 신뢰할 수 있는 플랫폼 모듈, SoC
-ms.openlocfilehash: 6bce16b45175c4c19156f30f35f6d3502f675930
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 62120695d2209227f938ebd5635380f226dddfc1
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918394"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721508"
 ---
 # <a name="connect-your-device-to-the-cloud"></a>장치를 클라우드에 연결
 
@@ -24,9 +24,9 @@ TPM의 주요 기능은 쓰기 전용 메모리입니다. TPM은 데이터를 �
 
 암호화 키 사용의 기본 개념은 장치 프로 비전 프로세스 중에 IoT 장치와 클라우드 간에 비밀 (공유 액세스 키 라고도 함)을 설정 하 고 공유 하는 것입니다. 이 시점부터 비밀에서 파생 된 HMAC가 IoT 장치를 인증 하는 데 사용 됩니다.
 
-## <a name="device-provisioning"></a>장치 프로 비전 
+## <a name="device-provisioning"></a>디바이스 프로비전 
 
-Windows 10 IoT Core 장치를 프로 비전 하는 도구를 IoT Core 대시보드 라고 하며 [다운로드 페이지](http://go.microsoft.com/fwlink/?LinkID=708576)에서 다운로드할 수 있습니다.
+Windows 10 IoT Core 장치를 프로 비전 하는 도구를 IoT Core 대시보드 라고 하며 [다운로드 페이지](https://go.microsoft.com/fwlink/?LinkID=708576)에서 다운로드할 수 있습니다.
 
 대시보드는 OS 이미지를 생성 하 고 장치를 Azure에 안전 하 게 연결 합니다. 이 작업은 물리적 장치를 Azure IoT Hub의 장치 ID와 연결 하 고 장치 전용 공유 액세스 키를 장치의 TPM으로 인쇄 하 여 수행 합니다. 
 

@@ -6,12 +6,12 @@ ms.date: 11/10/2017
 ms.topic: article
 description: Windows에서 포함 모드를 허용 하도록 구성 하 여 백그라운드 응용 프로그램 및 기타 기능을 사용 하도록 구성 하는 방법을 알아봅니다.
 keywords: windows iot, 포함 모드, 백그라운드 응용 프로그램
-ms.openlocfilehash: ca8124d97a9161a1539eff92c55cf3630cf0a049
-ms.sourcegitcommit: b719e66699372e1339c2316cab45df2a474d09a0
+ms.openlocfilehash: 7305853515b5bd1ca53c9b8be34c2449752c4897
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66252173"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721673"
 ---
 # <a name="embedded-mode"></a>Embedded(포함) 모드
 
@@ -42,7 +42,7 @@ Windows IoT Enterprise에서 아래 단계를 수행 하 여 포함 모드를 �
 
 **Lowleveldevices** 기능을 통해 많은 추가 요구 사항이 충족 되 면 앱에서 사용자 지정 장치에 액세스할 수 있습니다. 이 기능은 GPIO, I2C, SPI 및 PWM) 장치에 대 한 액세스를 허용 하는 lowLevel 장치 기능과 혼동 해서는 안 됩니다.
 
-자세한 내용은 [앱 기능 선언](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations) 을 참조 하세요.
+자세한 내용은 [앱 기능 선언](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations) 을 참조 하세요.
 
 ## <a name="systemmanagment-capability"></a>systemManagment 기능
 
@@ -57,13 +57,13 @@ Windows IoT Enterprise에서 아래 단계를 수행 하 여 포함 모드를 �
 
 Windows IoT Core를 실행 하지 않는 장치에서 디버깅 하는 경우 다음 오류 메시지 중 하나가 표시 되 면 장치에서 AllowEmbeddedMode을 사용 하도록 설정 하 고 포함 된 모드 서비스가 실행 중인지 확인 해야 합니다.
 
-* 끝점 매퍼에서 사용할 수 있는 끝점이 더 이상 없습니다.
+* 엔드포인트 매퍼에서 사용 가능한 엔드포인트가 더 이상 없습니다.
 * 이 프로그램은 그룹 정책에 의해 차단 됩니다. 자세한 내용은 시스템 관리자에 게 문의 하십시오.
 
 ## <a name="changing-the-mode"></a>모드 변경
 포함 모드를 사용 하도록 설정 하려면 AllowEmbeddedMode = 1을 설정 하는 ICD (이미징 및 구성 디자이너)에서 프로 비전 패키지를 만들어야 합니다.  ICD를 설치 하려면 Windows 10 용 Windows ADK를 다운로드 하 여 설치 해야 합니다.
 
-* [Windows 10 용 Windows ADK 다운로드](http://go.microsoft.com/fwlink/p/?LinkId=526740)
+* [Windows 10용 Windows ADK 다운로드](https://go.microsoft.com/fwlink/p/?LinkId=526740)
 * [Windows 10 용 Windows ADK의 새로운 기능에 대해 알아봅니다.](https://msdn.microsoft.com/library/windows/hardware/dn927348(v=vs.85).aspx)
 
 1. ADK를 설치할 때 **ICD (이미징 및 구성 디자이너)** 를 선택 합니다.
@@ -71,7 +71,7 @@ Windows IoT Core를 실행 하지 않는 장치에서 디버깅 하는 경우 �
 
     ![WICD 아이콘](../media/EmbeddedMode/WICD_Icon.png)
 
-3. **Advanced provisioning**(고급 프로비전)을 클릭합니다.  프로젝트 이름을 **AllowEmbeddedMode** 로, **다음**을 클릭 합니다.
+3. **고급 프로비저닝**을 클릭합니다.  프로젝트 이름을 **AllowEmbeddedMode** 로, **다음**을 클릭 합니다.
     ![3 단계](../media/EmbeddedMode/Step3.png)
 
 4. **모든 Windows 버전에 공통을 선택 하** 고 **다음**을 선택 합니다.
@@ -85,7 +85,7 @@ Windows IoT Core를 실행 하지 않는 장치에서 디버깅 하는 경우 �
 
     ![6 단계](../media/EmbeddedMode/Step6.png)
 
-7. 가운데 창에서 **AllowEmbeddedMode** 값을 **예** ![Step7로 설정 합니다.](../media/EmbeddedMode/Step7.png)
+7. 가운데 창에서 **AllowEmbeddedMode** 값을 **예** ![Step7로 설정](../media/EmbeddedMode/Step7.png)
 
 8. 내보내기 > 프로 비전 패키지를 클릭 합니다.
 
@@ -103,7 +103,7 @@ Windows IoT Core를 실행 하지 않는 장치에서 디버깅 하는 경우 �
 
     ![Step11](../media/EmbeddedMode/Step11.png)
 
-12. 빌드를 클릭 합니다.
+12. 빌드를 클릭한 다음
 
     ![Step12](../media/EmbeddedMode/Step12.png)
 
@@ -115,7 +115,7 @@ Windows IoT Core를 실행 하지 않는 장치에서 디버깅 하는 경우 �
 
 
 ## <a name="configuring-a-background-application-to-run-automatically"></a>백그라운드 응용 프로그램이 자동으로 실행 되도록 구성
-1. 백그라운드 응용 프로그램을 자동으로 실행 하도록 구성 하려면 지침에 따라 [MinnowBoardMax SD 카드를 만들고](https://developer.microsoft.com/en-us/windows/iot/getstarted) 복사 `D:\windows\system32\iotstartup.exe` 합니다. 여기서 D:는 SD 카드입니다.
+1. 백그라운드 응용 프로그램을 자동으로 실행 하도록 구성 하려면 지침에 따라 [MINNOWBOARDMAX SD 카드를 만들고](https://developer.microsoft.com/en-us/windows/iot/getstarted) `D:\windows\system32\iotstartup.exe` (여기서 D:는 SD 카드)를 복사 해야 합니다.
 
 2. 설치 된 백그라운드 응용 프로그램의 목록을 가져오려면 다음을 입력 합니다.
 

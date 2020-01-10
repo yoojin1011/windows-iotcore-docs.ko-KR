@@ -6,20 +6,20 @@ ms.date: 08/28/2017
 ms.topic: article
 description: Windows 10 IoT Core를 통해 제공 되는 다양 한 공급자에 대해 알아봅니다.
 keywords: windows iot, 공급자, 버스 공급자, UWP, Gpio, Spi
-ms.openlocfilehash: 7e2a3bf45317cd11ca558db6f1b6845e0e0f7a67
-ms.sourcegitcommit: 77b86eee2bba3844e87f9d3dbef816761ddf0dd9
+ms.openlocfilehash: 9f9b13834565fd896fd63e6d09ce113ef5035202
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "65533277"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721428"
 ---
 # <a name="usermode-access-to-gpio-i2c-and-spi"></a>GPIO, I2C 및 SPI에 대 한 Usermode 액세스
 
 Windows 10에는 사용자 모드에서 직접 GPIO, I2C, SPI 및 UART에 액세스하기 위한 새로운 API가 포함되어 있습니다. Raspberry Pi 2와 같은 개발 보드는 사용자 지정 회로로 기본 컴퓨팅 모듈을 확장하여 특정 응용 프로그램을 처리할 수 있도록 하는 이러한 연결 일부를 노출합니다. 이러한 낮은 수준의 버스는 일반적으로 GPIO 핀 및 버스 일부만 헤더에 노출된 상태로 다른 중요한 온보드 기능과 공유됩니다. 시스템의 안정성을 유지하기 위해서는 사용자 모드 응용 프로그램에 의해 수정해도 안전한 핀 및 버스를 지정해야 합니다.
 
-Windows의 낮은 수준 버스에 대한 사용자 모드 액세스는 기존 `GpioClx` 및 `SpbCx` 프레임워크를 통해 연결됩니다. Windows IoT Core 및 windows Enterprise에서 사용할 수 있는 RhProxy 라는 새 드라이버가 usermode에 `GpioClx` `SpbCx` 리소스를 노출 합니다. 이 API를 사용하도록 설정하려면 사용자 모드에 공개해야 하는 각 GPIO 및 SPB 리소스를 사용하여 ACPI 테이블에서 rhproxy에 대한 디바이스 노드를 선언해야 합니다.
+Windows의 하위 수준 버스에 대한 사용자 모드 액세스는 기존 `GpioClx` 및 `SpbCx` 프레임워크를 통해 연결됩니다. Windows IoT Core 및 Windows Enterprise에서 사용할 수 있는 RhProxy 이라는 새 드라이버는 usermode에 `GpioClx` 및 `SpbCx` 리소스를 제공 합니다. 이 API를 사용하도록 설정하려면 사용자 모드에 공개해야 하는 각 GPIO 및 SPB 리소스를 사용하여 ACPI 테이블에서 rhproxy에 대한 디바이스 노드를 선언해야 합니다.
 
-RhProxy를 통한 UserMode 액세스에 대 한 추가 심층 설명서는 [여기](https://docs.microsoft.com/en-us/windows/uwp/devices-sensors/enable-usermode-access)에서 찾을 수 있습니다.
+RhProxy를 통한 UserMode 액세스에 대 한 추가 심층 설명서는 [여기](https://docs.microsoft.com/windows/uwp/devices-sensors/enable-usermode-access)에서 찾을 수 있습니다.
 
 ## <a name="bus-providers"></a>버스 공급자
 
@@ -50,7 +50,7 @@ GpioPin pin = gpioController.OpenPin(LED_PIN, GpioSharingMode.Exclusive);`
   - Mcp3008
   - 원격 Arduino
 
-- **PWM)**
+- **PWM**
   - PCA9685
   - Gpio를 사용 하 여 시뮬레이션
   - 원격 Arduino
@@ -58,7 +58,7 @@ GpioPin pin = gpioController.OpenPin(LED_PIN, GpioSharingMode.Exclusive);`
 - **Gpio, SPI, I2C**
   - 원격 Arduino
 
-실제 하드웨어에 대 한 액세스를 제공 하는 공급자 외에도, inifitely 지원 공급자 인 것 처럼 작동 하는 [시뮬레이션 된 공급자](https://github.com/ms-iot/BusProviders/tree/develop/SimulatedProvider) 를 빌드하고 먼저 응용 프로그램을에 배포 하지 않고도 응용 프로그램을 작성 하 고 디버그할 수 있도록 설계 되었습니다. 작업 장치. 더 풍부한 환경을 위해 실제 하드웨어를 시뮬레이션 하도록 사용자 지정할 수 있습니다. 예: 지정 된 슬레이브 주소를 사용 하 여 장치에서 온도 읽기에 대 한 명령을 보낼 때 I2c 공급자를 업데이트 하면 결과 "75"이 반환 됩니다.
+실제 하드웨어에 대 한 액세스를 제공 하는 공급자 외에도, inifitely 지원 공급자 인 것 처럼 작동 하는 [시뮬레이션 된 공급자](https://github.com/ms-iot/BusProviders/tree/develop/SimulatedProvider) 를 빌드하고 먼저 작업 장치에 배포 하지 않고도 응용 프로그램을 작성 하 고 디버그할 수 있도록 설계 되었습니다. 더 풍부한 환경을 위해 실제 하드웨어를 시뮬레이션 하도록 사용자 지정할 수 있습니다. 예: 지정 된 슬레이브 주소를 사용 하 여 장치에서 온도 읽기에 대 한 명령을 보낼 때 I2c 공급자를 업데이트 하면 결과 "75"이 반환 됩니다.
 
 ## <a name="additional-resources"></a>추가 리소스
 

@@ -4,19 +4,19 @@ ms.date: 05/16/2018
 ms.topic: article
 description: Raspberry Pi 3B +에 대 한 빌드에 있는 항목을 읽고 자세히 알아보세요.
 keywords: windows iot, Windows 참가자, 릴리스 정보, Raspberry Pi 3B 이상
-ms.openlocfilehash: e0cf0afb98440034d8384e5d44ce98bb14a0fe71
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: d321676758f7ff438540720098e6a6ecb1ba457f
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918751"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721018"
 ---
 # <a name="release-notes-for-raspberry-pi-3b"></a>Raspberry Pi 3B +에 대 한 릴리스 정보
 
 &copy; 2018 Microsoft Corporation. All rights reserved.
 
 > [!NOTE]
-> 이번 Raspberry Pi 3B용 릴리스에서는 기술 미리 보기를 지원하지 않습니다. 유효성 검사 및 활성화가 제한적으로 완료되었습니다. 현재 릴리스는 [여기](https://www.microsoft.com/en-us/software-download/windowsiot)에서 찾을 수 있습니다. 보다 나은 평가 환경은 물론, 상용 제품을 위해 Raspberry Pi 3B 또는 Intel, Qualcomm 또는 NXP SoC가 지원되는 기타 디바이스를 사용해 주세요. Raspberry Pi 3B+ 관련 문제 해결의 경우 문제 해결 가이드([여기](https://docs.microsoft.com/en-us/windows/iot-core/troubleshooting?branch=master#raspberry-pi-3b-booting-issues))를 참조해 주세요. 
+> 이번 Raspberry Pi 3B용 릴리스에서는 기술 미리 보기를 지원하지 않습니다. 유효성 검사 및 활성화가 제한적으로 완료되었습니다. 현재 릴리스는 [여기](https://www.microsoft.com/en-us/software-download/windowsiot)에서 찾을 수 있습니다. 보다 나은 평가 환경은 물론, 상용 제품을 위해 Raspberry Pi 3B 또는 Intel, Qualcomm 또는 NXP SoC가 지원되는 기타 디바이스를 사용해 주세요. Raspberry Pi 3B+ 관련 문제 해결의 경우 문제 해결 가이드([여기](https://docs.microsoft.com/windows/iot-core/troubleshooting?branch=master#raspberry-pi-3b-booting-issues))를 참조해 주세요. 
 
 ## <a name="whats-new-in-this-build"></a>이 빌드의 새로운 기능 
 * 일반 버그 수정
@@ -53,7 +53,7 @@ checknetisolation loopbackexempt -a -n=<AppID for Additional App>
 For example:  checknetisolation loopbackexempt -a -n=IoTOnboardingTask-uwp_1w720vyc4ccym 
 ```
 
-부팅이.
+다시 부팅합니다.
 
 ### <a name="sensor-driver-conflict-in-pre-built-ffus"></a>미리 빌드된 FFU의 센서 드라이버 충돌 
 제공된 FFU의 센서 드라이버가 충돌합니다. 원격 센서 프레임워크는 나침반, 자력계, 가속도계 및 자이로스코프의 드라이버를 설치합니다. 응용 프로그램에서 이러한 응용 프로그램에 액세스 하기 위한 UWP Api는 설치 된 것으로 가정 합니다. 물리적으로 연결되는 디바이스의 드라이버를 개발하는 경우 Microsoft에서 제공한 FFU의 원격 드라이버가 충돌합니다.  
@@ -74,7 +74,7 @@ For example:  checknetisolation loopbackexempt -a -n=IoTOnboardingTask-uwp_1w720
 Windows 시스템을 사용하여 시스템 볼륨을 변경하는 USB 마이크 및 스피커의 시스템 볼륨 컨트롤은 현재 Windows 10 IoT Core에서 지원되지 않습니다. 
 
 ### <a name="usb-keyboards"></a>USB 키보드
-일부 USB 키보드 및 마우스는 IoT Core에서 작동하지 않을 수 있습니다. 다른 키보드 또는 마우스를 사용하세요. 유효성이 검사 된 주변 장치의 목록은 [여기](http://go.microsoft.com/fwlink/?LinkId=619428)의 설명서에서 확인할 수 있습니다.
+일부 USB 키보드 및 마우스는 IoT Core에서 작동하지 않을 수 있습니다. 다른 키보드 또는 마우스를 사용하세요. 유효성이 검사 된 주변 장치의 목록은 [여기](https://go.microsoft.com/fwlink/?LinkId=619428)의 설명서에서 확인할 수 있습니다.
  
 ### <a name="screen-orientation"></a>화면 방향
 방향을 "세로"로 설정하는 기능이 유니버설 앱에서는 작동하지 않을 수 있습니다.

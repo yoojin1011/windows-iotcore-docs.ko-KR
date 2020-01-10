@@ -6,12 +6,12 @@ ms.prod: windows-iot
 ms.technology: IoT
 description: Windows 장치 포털을 사용 하 여 장치를 원격으로 구성 하 고 관리 하는 방법에 대해 알아봅니다.
 keywords: windows iot, Windows 장치 포털, 원격, 장치 포털
-ms.openlocfilehash: d7e5285b7a29a61f15a5272cc822832230e56f75
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 9a5bb55da073ad7fa44674bc851e9dfef4809a37
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72917440"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721624"
 ---
 # <a name="windows-device-portal"></a>Windows Device Portal
    Windows 장치 포털 (WDP)을 사용 하 여 로컬 네트워크를 통해 원격으로 장치를 구성 하 고 관리할 수 있습니다.
@@ -20,13 +20,13 @@ ms.locfileid: "72917440"
 ![장치 포털 홈](../media/deviceportal/deviceportal.png)
 
 > [!IMPORTANT]
-> 상용화에 제조사 이미지를 사용하지 마세요. 디바이스를 상용화하려는 경우 최적의 보안을 위해 사용자 지정 FFU를 사용해야 합니다. [여기](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)에서 자세한 내용을 알아보세요.
+> 상용화에 제조사 이미지를 사용하지 마세요. 디바이스를 상용화하려는 경우 최적의 보안을 위해 사용자 지정 FFU를 사용해야 합니다. [여기](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)에서 자세한 내용을 알아보세요.
 
 > [!WARNING]
 > 라이브 커널 디버그가 현재 ARM 장치에 대해 실패 합니다. 이 문제를 해결 하기 위해 노력 하 고 있습니다.
 
 > [!IMPORTANT]
-> 최종 사용자가 최종 구성을 수행 하 고 고객에 게 [WDP에 대 한 인증서를 얻어야 하는 고객을 문서화 하는 "특정/제한 된 설치" (즉, 공장 또는 소매점)에 대해 상용 배포를 위한 오픈 정품 장치를 구축 하는 경우 그리고 WDP에 설치 하 고 브라우저와 암호를 연결 하면 WDP에서](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-ssl)WDP를 사용할 수 있습니다. 이 시나리오에서 소매점 이미지는 여전히 IOT_TOOLKIT를 포함 *하지* 않지만 IOT_WEBBEXTN 패키지를 사용 하 여 WDP로 가져와야 합니다. 
+> 최종 사용자가 최종 구성을 수행 하 고, 최종 사용자가 최종 구성을 수행 하 고, [WDP에 대 한 인증서를 획득 하 고 두 WDP 모두에 설치](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-ssl)해야 한다는 것을 고객에 게 문서화 하 고, WDP에서 연결 하는 브라우저와 암호를 변경 하는 등 상용 배포에 대 한 오픈 정품 장치를 빌드하는 경우이 좁은 상업적 인스턴스에서 WDP를 사용할 수 있습니다. 이 시나리오에서 소매점 이미지는 IOT_TOOLKIT 포함 *하지* 않아야 하지만 IOT_WEBBEXTN 패키지를 사용 하 여 WDP를 가져와야 합니다. 
 
 ## <a name="shared-documentation"></a>공유 설명서
 WDP는 모든 Windows 10 장치에서 공유 되는 개발자 도구입니다. 각 제품에는 고유한 기능이 있지만 핵심 기능은 동일 합니다.
@@ -38,7 +38,7 @@ Windows 장치 포털을 시작 하 고 실행 하는 방법에는 두 가지가
 
 ### <a name="1-windows-10-iot-dashboard"></a>1. Windows 10 IoT 대시보드
 
-먼저 새 장치를 쉽게 설정할 수 있도록 하는 개발자 도구인 [Windows 10 IoT 대시보드](https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/iotdashboard)를 다운로드 하는 것이 좋습니다. 대시보드를 사용 하 여 Windows 10 IoT Core 이미지를 장치에 플래시 한 후 장치가 "내 장치" 아래에 표시 되는지 확인 합니다. 
+먼저 새 장치를 쉽게 설정할 수 있도록 하는 개발자 도구인 [Windows 10 IoT 대시보드](https://docs.microsoft.com/windows/iot-core/connect-your-device/iotdashboard)를 다운로드 하는 것이 좋습니다. 대시보드를 사용 하 여 Windows 10 IoT Core 이미지를 장치에 플래시 한 후 장치가 "내 장치" 아래에 표시 되는지 확인 합니다. 
 
 여기에서 "작업" 아래에 있는 줄임표를 사용 하 여 "장치 포털에서 열기"를 선택 합니다. 여기서는 처음에 자격 증명을 변경 하지 않은 경우 기본 자격 증명을 사용 하 여 장치 포털 인증 페이지로 이동 합니다. 
 
@@ -111,7 +111,7 @@ IoT 온 보 딩은 IoT 장치의 Wi-fi 연결 옵션을 구성 하는 기능을 
 
 **SoftAP 설정** SoftAP 설정을 사용 하 여 장치의 SoftAP 사용 여부를 제어할 수 있습니다.  또한 다른 장치에서 SoftAP를 연결 하는 데 필요한 SoftAP의 SSID와 WPA2-PSK 키를 구성 하는 수단을 제공 합니다.
 
-**AllJoyn 온 보 딩 설정** AllJoyn 온 보 딩 설정을 사용 하 여 장치의 AllJoyn 등록 생산자를 통해 장치의 Wi-fi 연결을 구성할 수 있는지 여부를 제어할 수 있습니다.  AllJoyn 온 보 딩 소비자 응용 프로그램을 실행 하는 별도 장치에서 Windows 10 IoT SoftAP에 연결 하는 경우 AllJoyn 온 보 딩 소비자 응용 프로그램을 사용 하 여 IoT 장치의 Wi-fi 어댑터를 구성할 수 있습니다.  이 기능을 사용 하도록 설정 하면 ECDHE_NULL 인증 방법을 사용 하는 AllJoyn 온 보 딩 생산자 앱 
+**AllJoyn 온 보 딩 설정** AllJoyn 온 보 딩 설정을 사용 하 여 장치의 AllJoyn 등록 생산자를 통해 장치의 Wi-fi 연결을 구성할 수 있는지 여부를 제어할 수 있습니다.  AllJoyn 온 보 딩 소비자 응용 프로그램을 실행 하는 별도 장치에서 Windows 10 IoT SoftAP에 연결 하는 경우 AllJoyn 온 보 딩 소비자 응용 프로그램을 사용 하 여 IoT 장치의 Wi-fi 어댑터를 구성할 수 있습니다.  이 기능을 사용 하도록 설정 하면 ECDHE_NULL 인증 방법을 사용 하는 AllJoyn 온 보 딩 생산자 앱 (I이상 등록)입니다. 
 
 > [!NOTE]
 > Windows 10 IoT 빌드에서 10.0.14393 또는 이전 버전을 사용 하려면 [여기에서 다운로드할](https://github.com/ms-iot/samples)수 있는 <strong>iotonboarding 보 딩</strong> 샘플에 대 한 업데이트가 필요 합니다.
@@ -126,7 +126,7 @@ IoT 온 보 딩은 IoT 장치의 Wi-fi 연결 옵션을 구성 하는 기능을 
 ![소프트 AP로 등록](../media/DevicePortal/OnboardingSoftAP.png)
 
 > [!NOTE]
-> SoftAP SSID는 AllJoyn 등록을 사용 하도록 설정 하 고, Wifi 어댑터의 MAC 주소를 사용 하 여 되도록 후 위를 사용 하는 경우 "AJ_"로 자동 접두사가 붙습니다. SoftAP 암호는 8 ~ 007e; 63 ASCII 문자 여야 합니다.
+> SoftAP SSID는 AllJoyn 등록을 사용 하도록 설정 하 고, Wifi 어댑터의 MAC 주소를 사용 하 여 되도록 후 위가 설정 된 경우 자동으로 "AJ_" 접두사가 붙습니다. SoftAP 암호는 8 ~ 007e; 63 ASCII 문자 여야 합니다.
 
 
 ### <a name="tpm-configuration"></a>TPM 구성

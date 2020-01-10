@@ -4,12 +4,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 다양 한 제안 된 보드 및 커뮤니티 장치에 대 한 하드웨어 기능에 대해 알아봅니다.
 keywords: windows iot, 개발 장치, 보드, SOC, SOM, 시스템의 칩, Raspberry Pi 2, Raspberry Pi 3, Minnowboard Max, DragonBoard
-ms.openlocfilehash: 4114cc6ba7b0580b1f00a7aeae67284bb1fc8cb3
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 049cea0ede9740c95d49eba39c387fb1be49a86c
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72917405"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721711"
 ---
 # <a name="socs-and-custom-boards"></a>SoCs 및 사용자 지정 보드
 
@@ -19,9 +19,9 @@ Microsoft는 Broadcom, Intel, NXP 및 Qualcomm와 함께 작동 하 여 여러 �
 
 | Broadcom | Intel | Qualcomm | NXP |
 |----------|-------|----------|-----|
-| BCM2837 | [Intel® Atom® processor E3900 시리즈 (아폴로 Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                | [Snapdragon 410 (APQ8016)](https://www.qualcomm.com/products/snapdragon/processors/410) | [i.MX 6 제품군](http://aka.ms/iotnxp) |
-| BCM2836 | [Intel® 셀러론® processor N3350 (아폴로 Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                    | [Snapdragon 212 (APQ8009)](https://www.qualcomm.com/products/snapdragon/processors/212) | [i.MX 7 제품군](http://aka.ms/iotnxp)     |
-|         | [Intel® Pentium® processor N4200 platform (아폴로 Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                           |                                                                                         | [i.MX 8M 및 8M 미니 제품군](http://aka.ms/iotnxp) |
+| BCM2837 | [Intel® Atom® processor E3900 시리즈 (아폴로 Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                | [Snapdragon 410 (APQ8016)](https://www.qualcomm.com/products/snapdragon/processors/410) | [i.MX 6 제품군](https://aka.ms/iotnxp) |
+| BCM2836 | [Intel® 셀러론® processor N3350 (아폴로 Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                                    | [Snapdragon 212 (APQ8009)](https://www.qualcomm.com/products/snapdragon/processors/212) | [i.MX 7 제품군](https://aka.ms/iotnxp)     |
+|         | [Intel® Pentium® processor N4200 platform (아폴로 Lake)](https://ark.intel.com/products/codename/80644/#@embedded)                           |                                                                                         | [i.MX 8M 및 8M 미니 제품군](https://aka.ms/iotnxp) |
 |         | [Intel® Pentium® 및 셀러론® Processor N3000 시리즈 (Braswell)](http://ark.intel.com/products/codename/66094/#@embedded)                    |                                                                                         |      |
 |         | [Intel® Atom® x5-E8000 Processor (Braswell)](http://ark.intel.com/products/codename/66094/#@embedded)                                        |                                                                                         |  |
 |         | [Intel® Atom® x5-Z8350 프로세서 (Cherry-pick 트레일)](https://ark.intel.com/products/93361/Intel-Atom-x5-Z8350-Processor-2M-Cache-up-to-1_92-GHz) |                                                                                         |     |
@@ -59,7 +59,7 @@ Microsoft는 Broadcom, Intel, NXP 및 Qualcomm와 함께 작동 하 여 여러 �
 > | TPM | x | x | x | x | x | 해당 없음 |
 > | 보안 부팅 | x | x | 개발 중 | 개발 중 | 개발 중 | |
 > | 최대 절전 모드 | x | | | | | | 
-> | PWM) | x | 해당 없음 | x | x | x | |
+> | PWM | x | 해당 없음 | x | x | x | |
 > | JTAG | x | 해당 없음 | x | x | x | |
 > | eMMC | x | x | x | x | x | |
 > | SDHC | x | x | x | x | x | x |
@@ -110,7 +110,7 @@ BSP 패키지에는 acpi를 변경 해야 하는 단순한 하드웨어 사용�
 > [!IMPORTANT] 
 > 특정 MIPI를 사용 하는 등의 추가 하드웨어 사용자 지정이 필요한 경우 플랫폼 보안 부팅, RF 보정 및 인증을 사용 하도록 설정 합니다 (예: FCC, CE), 액세스 권한이 있는 공급자 (아래에서 숙련 된 파트너 참조)로 작업 하려면 Qualcomm BSP 소스 코드 정식 사용자가 되어야 합니다.
 
-관련
+권장 사항:
 
 1. 가능 하면 숙련 된 SoM 공급 업체와 협력 하 여 사용자 지정 디자인을 사용 하도록 설정 합니다.
 2. 사용자 지정 보드를 빌드하는 경우에는 SoM 공급 업체 또는 숙련 된 Qualcomm BSP 사용자 지정 서비스 공급자 (예: BSP 사용자 지정 및 디자인 지원에 대 한 [Intrinsyc](https://www.intrinsyc.com/) 또는 [Thundersoft](http://www.thundersoft.com/) )를 사용 하세요.
@@ -125,7 +125,7 @@ BSP 패키지에는 acpi를 변경 해야 하는 단순한 하드웨어 사용�
 
 ### <a name="nxp-preview"></a>**NXP 미리 보기**
 
-NXP for Windows 10 IoT Core는 공개 미리 보기로 제공 됩니다. 자세한 내용은 BSP에 액세스 하거나 하드웨어 파트너를 찾으려면 [Nxp SoC 페이지로](http://aka.ms/iotnxp)이동 하세요.
+NXP for Windows 10 IoT Core는 공개 미리 보기로 제공 됩니다. 자세한 내용은 BSP에 액세스 하거나 하드웨어 파트너를 찾으려면 [Nxp SoC 페이지로](https://aka.ms/iotnxp)이동 하세요.
 
 작업 중인 파트너에 게 연락할 수도 있습니다.
 

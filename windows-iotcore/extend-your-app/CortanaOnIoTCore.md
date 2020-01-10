@@ -4,18 +4,18 @@ ms.date: 08/28/2017
 ms.topic: article
 description: Windows IoT Core에서 Cortana에 대 한 업데이트를 시작 하 고 설치 하는 방법을 알아봅니다.
 keywords: windows iot, Cortana, 음성, AI, 디지털 길잡이, 언어
-ms.openlocfilehash: b3a4699a762f158671459c8bc592007def6d9621
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 8f89a697efb445807ac74a2c08e87a43d77a33c5
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918174"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721766"
 ---
 # <a name="cortana-on-iot-core"></a>IoT Core의 Cortana
 
 Cortana는 매일의 일상 업무에 도움이 되도록 모든 장치에서 작동 하는 개인 디지털 길잡이입니다. 사용자를 학습 합니다. 작업을 완료 하 여 작업을 수행 하는 데 도움이 됩니다. 일관 된 상황별 방식으로 자연어를 사용 하 여 상호 작용 합니다. 및는 항상 사용자를 확인 합니다. Cortana에는 일관적인 시각적 id, 개성 및 음성이 있습니다.
 
-Cortana 장치 SDK를 사용 하 여 장치에서 핸 즈 프리 인텔리전트 지원을 사용 하려면 [Cortana 개발자 센터](http://www.aka.ms/cortanadevices)를 방문 하세요.
+Cortana 장치 SDK를 사용 하 여 장치에서 핸 즈 프리 인텔리전트 지원을 사용 하려면 [Cortana 개발자 센터](https://aka.ms/cortanadevices)를 방문 하세요.
 
 IoT Core의 Cortana는 향후 상업적 시나리오에 중점을 둡니다. 업데이트가 곧 제공 될 예정입니다. 
 

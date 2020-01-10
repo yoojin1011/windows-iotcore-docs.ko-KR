@@ -4,12 +4,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 장치에 대해 Windows IoT Core를 구성 하는 방법에 대해 알아봅니다.
 keywords: windows iot, 화면, 양방향, 헤드리스, UI
-ms.openlocfilehash: 138bc19b355e39db7e6bd4f4441159b03fde26c1
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 2fb41d2981b74436ba88ca573407b0ddbcf35566
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918097"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721788"
 ---
 # <a name="headed-and-headless-devices"></a>양방향 및 헤드리스 장치
 
@@ -49,7 +49,7 @@ Windows PowerShell 세션 또는 SSH 세션에서 장치의 양방향/헤드리�
 
 ## <a name="finding-your-headless-device"></a>헤드리스 장치 찾기
 
-헤드리스 모드에 있는 IoT Core 장치는 **Windows 10 Iot Core 대시보드** 응용 프로그램을 사용 하 여 검색할 수 있습니다.  IoT 대시보드를 다운로드 하려면 [다운로드](http://go.microsoft.com/fwlink/?LinkID=708576) 페이지를 참조 하세요.
+헤드리스 모드에 있는 IoT Core 장치는 **Windows 10 Iot Core 대시보드** 응용 프로그램을 사용 하 여 검색할 수 있습니다.  IoT 대시보드를 다운로드 하려면 [다운로드](https://go.microsoft.com/fwlink/?LinkID=708576) 페이지를 참조 하세요.
 응용 프로그램을 실행 하면 로컬 네트워크의 모든 IoT Core 장치에서 ping을 수신 대기 하 고 이름, IP 주소 등의 장치 정보를 표시 합니다.
 
 ![Windows 10 IoT Core 대시보드](../media/HeadlessMode/selectDevice.png)

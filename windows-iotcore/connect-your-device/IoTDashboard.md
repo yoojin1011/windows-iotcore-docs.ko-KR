@@ -4,18 +4,18 @@ ms.date: 08/28/2017
 ms.topic: article
 description: Windows 10 IoT Core 대시보드의 기능 및 시작 하는 방법에 대해 알아봅니다.
 keywords: windows iot, windows 10 iot core 대시보드, windows iot 대시보드, 장치
-ms.openlocfilehash: e244dd4705fa85707468f284b9a5d070c91720d8
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 53a8be4e29f93ab3f6d9979e247c598ea5e637c8
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918615"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721488"
 ---
 # <a name="windows-10-iot-core-dashboard"></a>Windows 10 IoT Core 대시보드
 
 Windows 10 IoT Core 대시보드는 PC에서 Windows 10 IoT Core 장치를 다운로드 하 고 설정 하 고 연결 하는 가장 좋은 방법입니다.
 
-[IoT Core 대시보드는 여기](http://go.microsoft.com/fwlink/?LinkID=708576)에서 다운로드할 수 있습니다.
+[IoT Core 대시보드는 여기](https://go.microsoft.com/fwlink/?LinkID=708576)에서 다운로드할 수 있습니다.
 
 > [!NOTE]
 > 다운로드 한 후 IoT 대시보드를 열 때 흰색 화면이 표시 되는 경우 드라이버 문제 때문일 수 있습니다. 이 문제를 해결 하려면 Intel Graphics Driver의 [zip 형식을](https://downloadmirror.intel.com/27894/a08/win64_24.20.100.6229.zip) 다운로드 하 고 드라이버를 수동으로 설치 해야 합니다. 
@@ -23,13 +23,13 @@ Windows 10 IoT Core 대시보드는 PC에서 Windows 10 IoT Core 장치를 다�
 ## <a name="set-up-a-new-device"></a>새 장치 설정
 
 > [!NOTE]
-> 대시보드는 Raspberry Pi 3B+를 설정하는 데 사용할 수 없습니다. 3B+ 디바이스가 있는 경우 [3B+ 기술 미리 보기](https://www.microsoft.com/en-us/software-download/windowsiot)를 사용해야 합니다. 기술 미리 보기의 [알려진 제한 사항](https://docs.microsoft.com/en-us/windows/iot-core/troubleshooting)을 확인하여 개발 작업에 적합한지 알아보세요.
+> 대시보드는 Raspberry Pi 3B+를 설정하는 데 사용할 수 없습니다. 3B+ 디바이스가 있는 경우 [3B+ 기술 미리 보기](https://www.microsoft.com/software-download/windowsiot)를 사용해야 합니다. 기술 미리 보기의 [알려진 제한 사항](https://docs.microsoft.com/windows/iot-core/troubleshooting)을 확인하여 개발 작업에 적합한지 알아보세요.
 
 > [!NOTE]
 > 현재 OS가 SD 카드의 파티션을 통해 이동 하 고 ' 형식. '를 요청 하는 알려진 문제가 있습니다. 파일 시스템을 포함 하지 않는 특정 데이터 파티션에 대 한 메시지입니다. [취소]를 눌러이 프롬프트를 해제 하십시오. 솔루션에서 작업 하는 동안 ' 지금 서식 '을 클릭 하면 경감 하기 위해가 업데이트 프로세스에 영향을 주는 형식 작업이 업데이트 프로세스에 영향을 주므로 장치를 업데이트 하지 못하여 SD 카드를 다시 FFU 이미지로 다시 설정 하는 것이 좋습니다.
 
 
-IoT 대시보드를 사용 하면 새 장치를 쉽게 설정할 수 있습니다. 시작 하는 방법에 대 한 자세한 내용은 [시작](https://docs.microsoft.com/en-us/windows/iot-core/getstarted) 페이지를 참조 하세요.
+IoT 대시보드를 사용 하면 새 장치를 쉽게 설정할 수 있습니다. 시작 하는 방법에 대 한 자세한 내용은 [시작](https://docs.microsoft.com/windows/iot-core/getstarted) 페이지를 참조 하세요.
 
 ![IoT 대시보드 설정 페이지](../media/IoTDashboard/IoTDashboard_SetupPage.PNG)
 
@@ -63,7 +63,7 @@ IoT Core 장치를 인터넷에 연결 하는 것이 필수적입니다. 최신 
 > Wi-fi에 연결 하는 경우 공식 Raspberry Pi 2 Wi-fi 어댑터를 불안정 하 게 만들 수 있습니다.
 
 
-## <a name="my-devices"></a>내 장치
+## <a name="my-devices"></a>내 디바이스
 ___
 장치가 인터넷에 연결 되 면 IoT 대시보드가 자동으로 장치를 검색 합니다.
 장치를 찾으려면 **내 장치**로 이동 합니다. 장치가 나열 되지 않으면 장치를 다시 부팅 합니다. 네트워크에 장치가 둘 이상 있는지 확인 하 고 각각에 고유한 이름을 지정 합니다. 또한 다음 단계를 수행 하 여 **windows10iotcoredashboard** 가 Windows 방화벽을 통해 통신할 수 있도록 합니다.
@@ -75,7 +75,7 @@ ___
 5. **허용 되는 앱 및 기능** 에서 **windows10iotcoredashboard** 을 찾은 다음 적절 한 네트워크 확인란을 사용 하도록 설정 합니다 (예: 1 단계에서 찾은 네트워크 유형).
 
 
-### <a name="connect-to-your-device"></a>장치에 연결
+### <a name="connect-to-your-device"></a>디바이스에 연결
 
 > [!NOTE]
 > 대시보드에서 장치를 찾을 수 없는 경우 [IP 주소] 및 [: 8080]를 브라우저에 입력 하 여 Windows 장치 포털을 시작 하 고 실행 하세요. 대시보드에 장치를 표시 하려면 장치를 다시 부팅 합니다.

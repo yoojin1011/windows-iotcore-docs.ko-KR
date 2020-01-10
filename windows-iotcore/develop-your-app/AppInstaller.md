@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: Windows 장치 포털을 사용 하거나 IoT core 이미지의 일부로 앱을 설치 하는 방법에 대해 알아봅니다.
 keywords: windows iot, 앱 설치, Windows 장치 포털, 장치
-ms.openlocfilehash: 23df6bec04395eb31f066eb3befc84a4ff4bbe56
-ms.sourcegitcommit: 5a103405cbc5c61101139aff6aaa709bd4ef9582
+ms.openlocfilehash: 93afe3f13e5248876303a12f34e1ab2a73f510a5
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66694160"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721646"
 ---
 # <a name="install-your-app-on-an-iot-core-device"></a>IoT Core 장치에 앱 설치
 아래에 나열 된 두 가지 방법 중 하나를 사용 하 여 앱을 설치할 수 있습니다.
@@ -24,7 +24,7 @@ ms.locfileid: "66694160"
 
 > [!NOTE]
 > Windows 장치 포털에는 .appx 또는 .appxbundle가 필요 합니다. SDK 및 도구의 버전 17763부터 응용 프로그램 > 프로젝트의 최소 대상 버전이 17763 이상인 경우 도구에서 [. msix 또는. a n x 번들](https://developercommunity.visualstudio.com/content/problem/391934/makeappx-now-creates-msix-files-instead-of-appx.html)을 만듭니다.
-> .Appx 또는 .appxbundle를 만들려면 최소 버전을 17763 보다 작은 버전으로 설정 하거나 [makeappx .exe를 직접 실행](https://docs.microsoft.com/en-us/windows/desktop/appxpkg/make-appx-package--makeappx-exe-#command-line-syntax)합니다. 또한. m 6에서 .appx 또는. m x x로 이름을 바꿀 수 있습니다.
+> .Appx 또는 .appxbundle를 만들려면 최소 버전을 17763 보다 작은 버전으로 설정 하거나 [makeappx .exe를 직접 실행](https://docs.microsoft.com/windows/desktop/appxpkg/make-appx-package--makeappx-exe-#command-line-syntax)합니다. 또한. m 6에서 .appx 또는. m x x로 이름을 바꿀 수 있습니다.
 
 이 방법에서는 사용자가 인터넷에 연결 되어 있는지 확인 해야 합니다. 인터넷에 액세스할 수 없는 경우 오픈 인터넷에 액세스 하는 경로를 포함 하지 않는 장치와 클라이언트 컴퓨터 간에 피어 투 피어 이더넷 연결을 사용할 수도 있습니다. 그러나 후자의 방법으로 앱이 설치 되지만 앱이 스토어 서명 된 경우에는 시작 되지 않습니다.
 
@@ -32,7 +32,7 @@ ms.locfileid: "66694160"
 
 1. IoT 장치에 대 한 [Windows 장치 포털](https://docs.microsoft.com/windows/iot-core/manage-your-device/deviceportal) 을 엽니다.
 
-2. 앱 메뉴 에서 응용 프로그램 파일을 선택 하 고 **설치**를 클릭 하 여 앱을 설치 합니다.
+2. **앱 메뉴에서** 응용 프로그램 파일을 선택 하 고 **설치**를 클릭 하 여 앱을 설치 합니다.
 
 3. **파일 선택** 을 클릭 합니다.
 
@@ -40,7 +40,7 @@ ms.locfileid: "66694160"
 
 5. **프레임 워크 패키지 선택 허용을 선택 합니다** .
 
-6. **다음**을 클릭합니다.
+6. **다음** 클릭
 
 7. .Appx의 **종속성** 폴더에 있는 각 항목에 대해 7.1 및 7.2 단계를 반복 합니다.
 
@@ -55,7 +55,7 @@ ms.locfileid: "66694160"
  ![앱 설치](../media/AppInstaller/install-app.gif)
 
 10. 이제 응용 프로그램이 장치의 응용 프로그램 목록에 표시 됩니다.
- ![앱 설치](../media/AppInstaller/install-app.gif)
+ ![앱](../media/AppInstaller/install-app.gif) 설치
 
 
 ## <a name="using-provisioning-package-from-wcd"></a>WCD에서 프로 비전 패키지 사용

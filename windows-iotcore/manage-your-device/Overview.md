@@ -6,18 +6,18 @@ ms.prod: windows-iot
 ms.technology: IoT
 description: Windows 10 IoT Core를 디버그할 수 있는 여러 가지 방법에 대해 알아봅니다.
 keywords: windows iot, 디버깅, PowerShell, SSH
-ms.openlocfilehash: 455d8a90fc655b2deda4a09a661c849ff852b65c
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 2fbfbbd9b181455b56964678d105f106acefa789
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72917244"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721598"
 ---
 # <a name="debugging-on-windows-iot-core"></a>Windows IoT Core에서 디버깅
 응용 프로그램을 실행 하 여 IoT Core 이미지를 설치한 후에는 필요에 따라 응용 프로그램 또는 시스템을 디버그할 수 있는 것이 중요 합니다. 시스템을 디버깅 하 고 테스트 하는 데 가장 적합 한 시기는 테스트 이미지 상태입니다. IoT 코어 기반 시스템이 야생 경우 디버깅이 challanging 될 수 있습니다. 이는 수행할 수 없으며 테스트 단계와의 비교를 디버그 하기 위해 추가 어려움이 추가 된 것입니다. 테스트 모드에서 다음을 사용 하 여 응용 프로그램 또는 이미지를 디버그할 수 있습니다.
 
 ## <a name="device-portal"></a>장치 포털
-WDP (Windows 장치 포털)를 사용 하면 로컬 네트워크를 통해 IoT 장치 remoately을 구성 하 고 관리할 수 있습니다. IoT 장치의 로컬 ip를 통해 WDP에 연결할 수 있습니다. IoT의 WDP에 대 한 추가 정보는 [여기](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/DevicePortal)에서 찾을 수 있습니다.
+WDP (Windows 장치 포털)를 사용 하면 로컬 네트워크를 통해 IoT 장치 remoately을 구성 하 고 관리할 수 있습니다. IoT 장치의 로컬 ip를 통해 WDP에 연결할 수 있습니다. IoT의 WDP에 대 한 추가 정보는 [여기](https://docs.microsoft.com/windows/iot-core/manage-your-device/DevicePortal)에서 찾을 수 있습니다.
 
 ### <a name="collecting-etw--wpp-logs"></a>ETW/WPP 로그 수집 
 -----
@@ -42,4 +42,4 @@ Visual Studio를 사용 하면 응용 프로그램을 간편 하 게 배포 하 
 
 -----
 ## <a name="live-app-debug"></a>라이브 앱 디버그
-Visual Studio (2015 이상)에서는 Azure 애플리케이션 Insights의 원격 분석을 사용 하 여 디버깅 및 프로덕션 환경에서 ASP.NET 웹 앱의 성능을 분석 하 고 문제를 진단할 수 있습니다. 이 기능은 나중에 Visual Studio 2017 및 Azure Portal을 통해 데스크톱 및 UWP 응용 프로그램을 포함 하도록 확장 되었습니다. 프로젝트를 디버그 하는 방법에 대 한 추가 정보는 [여기](https://docs.microsoft.com/en-us/azure/azure-monitor/app/visual-studio) 에서 확인할 수 있으며, 데스크톱 또는 UWP 응용 프로그램의 성능 및 모니터링은 [여기](https://docs.microsoft.com/en-us/azure/azure-monitor/app/windows-desktop)에서 확인할 수 있습니다.
+Visual Studio (2015 이상)에서는 Azure 애플리케이션 Insights의 원격 분석을 사용 하 여 디버깅 및 프로덕션 환경에서 ASP.NET 웹 앱의 성능을 분석 하 고 문제를 진단할 수 있습니다. 이 기능은 나중에 Visual Studio 2017 및 Azure Portal을 통해 데스크톱 및 UWP 응용 프로그램을 포함 하도록 확장 되었습니다. 프로젝트를 디버그 하는 방법에 대 한 추가 정보는 [여기](https://docs.microsoft.com/azure/azure-monitor/app/visual-studio) 에서 확인할 수 있으며, 데스크톱 또는 UWP 응용 프로그램의 성능 및 모니터링은 [여기](https://docs.microsoft.com/azure/azure-monitor/app/windows-desktop)에서 확인할 수 있습니다.
