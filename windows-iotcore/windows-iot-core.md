@@ -4,12 +4,12 @@ ms.date: 01/18/2018
 ms.topic: article
 description: Windows 10 IoT Core가 무엇인지와 이를 통해 수행할 수 있는 작업에 대해 알아봅니다.
 keywords: Windows 10 IoT Core, 작은 사용 공간, 헤드리스
-ms.openlocfilehash: 31e16be3784be6f33438ae8907997a0a58828620
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 837b9ba8b7f6fa4d36014f4ff5ae2669a73e6e6c
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918471"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721824"
 ---
 # <a name="an-overview-of-windows-10-iot-core"></a>Windows 10 IoT Core 개요
 
@@ -19,7 +19,7 @@ ms.locfileid: "72918471"
 ## <a name="what-is-windows-10-iot-core"></a>Windows 10 IoT Core란?
 Windows 10 IoT Core는 ARM과 x86/x64 디바이스에서 실행되는 디스플레이가 있거나 없는 소형 디바이스에 최적화된 Windows 10 버전입니다. Windows IoT Core 설명서는 디바이스 연결, 관리, 업데이트, 보안 등에 대한 정보를 제공합니다. 
 
-다음 수준으로 이동하여 솔루션 상용화를 시작할 준비가 된 경우 [Windows 10 IoT Core 제조 가이드](https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)를 통해 Windows 10 IoT Core로 제조하는 방법을 알아볼 수 있습니다. 
+다음 수준으로 이동하여 솔루션 상용화를 시작할 준비가 된 경우 [Windows 10 IoT Core 제조 가이드](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)를 통해 Windows 10 IoT Core로 제조하는 방법을 알아볼 수 있습니다. 
 
 ## <a name="getting-started"></a>시작
 
@@ -36,7 +36,7 @@ Windows 10 IoT Core는 ARM과 x86/x64 디바이스에서 실행되는 디스플�
 <tbody>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/tutorials/quickstarter/PrototypeBoards"
+<td align="left"><p><a href="https://docs.microsoft.com/windows/iot-core/tutorials/quickstarter/PrototypeBoards"
 >1. 프로토타입 보드 선택</a></p></td>
 <td align="left"><p>일반 프로토타입 보드를 살펴보고 프로토타입 제작에 사용할 프로토타입 보드를 선택합니다.</p></td>
 </tr>
@@ -47,12 +47,12 @@ Windows 10 IoT Core는 ARM과 x86/x64 디바이스에서 실행되는 디스플�
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appinstaller">2. 3. 앱 설치</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/iot-core/develop-your-app/appinstaller">2. 3. 앱 설치</a></p></td>
 <td align="left"><p>다양한 도구를 사용하여 앱을 설치하는 방법을 알아봅니다.</p></td>
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appdeployment">4. 앱 배포</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/iot-core/develop-your-app/appdeployment">4. 앱 배포</a></p></td>
 <td align="left"><p>Visual Studio를 사용하여 앱을 배포하는 방법을 알아봅니다.</p></td>
 </tr>
 
@@ -63,9 +63,9 @@ Windows 10 IoT Core는 ARM과 x86/x64 디바이스에서 실행되는 디스플�
 
 ### <a name="different-features-available-on-desktop-and-iot-core"></a>데스크톱 및 IoT Core에서 사용할 수 있는 다양한 기능
 
-* 받은 편지함 Cortana는 버전 1809(17763) 이후 Windows 10 IoT Core에서 더 이상 사용할 수 없습니다. 음성 사용 디바이스를 빠르게 출시하려는 경우 [Cortana 디바이스 SDK의 미리 보기](https://developer.microsoft.com/en-us/cortana/devices)를 사용하여 Cortana 지원을 디바이스에 통합할 수 있습니다.
-* [FileOpenPicker API](https://docs.microsoft.com/en-us/uwp/api/windows.storage.pickers.fileopenpicker)는 Windows 10 IoT Core에서 지원되지 않습니다. 로컬 드라이브 또는 이동식 스토리지에 액세스하려면 이를 자신의 애플리케이션에서 구현합니다.
-* 기본적으로 Windows 10 IoT Core 디바이스가 데스크톱과 같은 PC 대신 [기본 앱](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoredefaultapp)으로 부팅됩니다. 그러나 상용화를 위해서는 이 기본 앱을 수정할 수 있는 사용자 지정 앱이나 기본 앱으로 대체**해야** 합니다. 이 애플리케이션의 목적은 최초 부팅 시 상호 작용할 수 있는 친숙한 셸을 제공할 뿐만 아니라, 이 애플리케이션에 대해 [오픈 소스 코드](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)를 사용할 수 있도록 함으로써 이러한 기능을 사용하여 고유한 사용자 지정 애플리케이션을 플러그 앤 플레이할 수 있습니다.
+* 받은 편지함 Cortana는 버전 1809(17763) 이후 Windows 10 IoT Core에서 더 이상 사용할 수 없습니다. 음성 사용 디바이스를 빠르게 출시하려는 경우 [Cortana 디바이스 SDK의 미리 보기](https://developer.microsoft.com/cortana/devices)를 사용하여 Cortana 지원을 디바이스에 통합할 수 있습니다.
+* [FileOpenPicker API](https://docs.microsoft.com/uwp/api/windows.storage.pickers.fileopenpicker)는 Windows 10 IoT Core에서 지원되지 않습니다. 로컬 드라이브 또는 이동식 스토리지에 액세스하려면 이를 자신의 애플리케이션에서 구현합니다.
+* 기본적으로 Windows 10 IoT Core 디바이스가 데스크톱과 같은 PC 대신 [기본 앱](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp)으로 부팅됩니다. 그러나 상용화를 위해서는 이 기본 앱을 수정할 수 있는 사용자 지정 앱이나 기본 앱으로 대체**해야** 합니다. 이 애플리케이션의 목적은 최초 부팅 시 상호 작용할 수 있는 친숙한 셸을 제공할 뿐만 아니라, 이 애플리케이션에 대해 [오픈 소스 코드](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)를 사용할 수 있도록 함으로써 이러한 기능을 사용하여 고유한 사용자 지정 애플리케이션을 플러그 앤 플레이할 수 있습니다.
 
 ### <a name="differences-in-driver-supported-areas"></a>드라이버 지원 영역의 차이점
 

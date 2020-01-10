@@ -4,12 +4,12 @@ ms.date: 01/18/2018
 ms.topic: article
 description: Windows 10 IoT Enterprise가 무엇인지와 이를 통해 수행할 수 있는 작업에 대해 알아봅니다.
 keywords: Windows 10 IoT Enterprise, Enterprise, 이진, Windows
-ms.openlocfilehash: ea8a3b2395052beaa722ad0c83e1fe7386a3e628
-ms.sourcegitcommit: 833f64e5c9ef8edc6ea62824d5f4f0b7d5a03270
+ms.openlocfilehash: da4621a46ae5769ac28c00f2eb3c2d461f3d74ac
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74154975"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721813"
 ---
 # <a name="an-overview-of-windows-10-iot-enterprise"></a>Windows 10 IoT Enterprise 개요
 
@@ -25,7 +25,7 @@ Windows 10 IoT Enterprise로 제조 과정을 시작하려면 [이 목록](https
 
 또한 [여기](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise)에서 Windows 10 IoT Enterprise 평가판을 사용해 볼 수도 있습니다.
 
-거기에서 [Windows 10 IoT Enterprise 제조 가이드](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/iot-ent-overview)를 통해 Windows 10 IoT Enterprise로 제조하는 방법을 배울 수 있습니다. 
+거기에서 [Windows 10 IoT Enterprise 제조 가이드](https://docs.microsoft.com/windows-hardware/manufacture/desktop/iot-ent-overview)를 통해 Windows 10 IoT Enterprise로 제조하는 방법을 배울 수 있습니다. 
 
 ## <a name="fixed-purpose-devices"></a>고정된 용도 디바이스 
 

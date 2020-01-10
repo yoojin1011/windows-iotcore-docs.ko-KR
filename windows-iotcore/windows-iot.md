@@ -4,12 +4,12 @@ ms.date: 01/30/2018
 ms.topic: article
 description: Windows 10 IoT와 이를 통해 수행할 수 있는 작업을 알아봅니다.
 keywords: Windows 10 IoT Enterprise, Windows 10 IoT Core, 헤드리스, 음성, 기능, 이진 버전, 버전
-ms.openlocfilehash: 0c4c0a17ef979d00e1c01a231ab4d49bd8072240
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 9ef9562e93dbaa71b97f75689adc3eed28ac1f9f
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918458"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721799"
 ---
 # <a name="an-overview-of-windows-10-iot"></a>Windows 10 IoT 개요 
 
@@ -26,18 +26,18 @@ Windows 10 IoT는 두 가지 버전으로 제공됩니다.  Windows 10 IoT Core�
 
 Windows 10 IoT Core 및 Windows 10 IoT Enterprise는 이름이 유사하지만 제공하는 것과 지원하는 것에 차이점이 있습니다. 다음은 버전 차이를 강조 표시하는 기능 목록입니다.
 
-> |             | Windows 10 IoT Core K  |  Windows 10 IoT Enterprise  |
+> |             | Windows 10 IoT Core  |  Windows 10 IoT Enterprise  |
 > |-------------|----------|---------|
-> | 사용자 환경 | 포그라운드 내 UWP 앱 하나(회당, 앱 BackStack 처리는 [IoT 셸 설명서](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoreshell) 참조). 지원 백그라운드 앱 및 서비스 포함 | 고급 잠금 기능이 있는 기존 Windows 셸 |
+> | 사용자 환경 | 포그라운드 내 UWP 앱 하나(회당, 앱 BackStack 처리는 [IoT 셸 설명서](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoreshell) 참조). 지원 백그라운드 앱 및 서비스 포함 | 고급 잠금 기능이 있는 기존 Windows 셸 |
 > | 헤드리스 지원 | 예 | 예 |
 > | 앱 아키텍처 지원 | UWP UI 전용 | 전체 Windows UI 지원(예: UWP, WinForms 등) |
-> | Cortana | [*Cortana SDK*](https://developer.microsoft.com/en-us/cortana/devices) | 예 |
+> | Cortana | [*Cortana SDK*](https://developer.microsoft.com/cortana/devices) | 예 |
 > | 도메인 가입 | AAD 전용 | AAD 및 기존 도메인 |
-> | Management | MDM | MDM |
+> | 관리 | MDM | MDM |
 > | 디바이스 보안 기술 | [TPM](https://docs.microsoft.com/windows/iot-core/secure-your-device/tpm), [보안 부팅, BitLocker, Device Guard](https://docs.microsoft.com/windows/iot-core/secure-your-device/securebootandbitlocker) 및 디바이스 상태 증명 | [TPM](https://docs.microsoft.com/windows/iot-core/secure-your-device/tpm), [보안 부팅, BitLocker, Device Guard](https://docs.microsoft.com/windows/iot-core/secure-your-device/securebootandbitlocker) 및 디바이스 상태 증명 |
 > | CPU 아키텍처 지원 | x86, x64 및 ARM | x86 및 x64 |
 > | 라이선싱 | 온라인 라이선싱 계약 및 포함된 OEM 계약, 로열티 없음 | 직접 및 간접 포함된 OEM 계약 |
-> | 사용 시나리오 | [디지털 사이니지](https://www.microsoft.com/en-us/windowsforbusiness/digital-signage), 스마트 빌딩, IoT 게이트웨이, HMI, 스마트 홈, 착용식 장치 | 업계 태블릿, 소매 서비스 지점, 키오스크, [디지털 사이니지](https://www.microsoft.com/en-us/windowsforbusiness/digital-signage), ATM, 의료 디바이스, 제조 디바이스, 씬 클라이언트 |
+> | 사용 시나리오 | [디지털 사이니지](https://www.microsoft.com/windowsforbusiness/digital-signage), 스마트 빌딩, IoT 게이트웨이, HMI, 스마트 홈, 착용식 장치 | 업계 태블릿, 소매 서비스 지점, 키오스크, [디지털 사이니지](https://www.microsoft.com/windowsforbusiness/digital-signage), ATM, 의료 디바이스, 제조 디바이스, 씬 클라이언트 |
 
 최소 요구 사항 세부 정보는 [Windows 하드웨어 사이트](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview)를 방문하세요.
 
@@ -47,9 +47,9 @@ Windows 10 IoT Core 및 Windows 10 IoT Enterprise는 이름이 유사하지만 �
 
 ### <a name="different-features-available-on-desktop-and-iot-core"></a>데스크톱 및 IoT Core에서 사용할 수 있는 다양한 기능
 
-* 받은 편지함 Cortana는 버전 1809(17763) 이후 Windows 10 IoT Core에서 더 이상 사용할 수 없습니다. 음성 사용 디바이스를 빠르게 출시하려는 경우 [Cortana 디바이스 SDK의 미리 보기](https://developer.microsoft.com/en-us/cortana/devices)를 사용하여 Cortana 지원을 디바이스에 통합할 수 있습니다.
-* [FileOpenPicker API](https://docs.microsoft.com/en-us/uwp/api/windows.storage.pickers.fileopenpicker)는 Windows 10 IoT Core에서 지원되지 않습니다. 로컬 드라이브 또는 이동식 스토리지에 액세스하려면 이를 자신의 애플리케이션에서 구현합니다.
-* Windows 10 IoT Core 디바이스가 데스크톱과 같은 PC 대신 [기본 앱](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/iotcoredefaultapp)으로 부팅됩니다. 이 애플리케이션의 목적은 최초 부팅 시 상호 작용할 수 있는 친숙한 셸을 제공할 뿐만 아니라, 이 애플리케이션에 대해 [오픈 소스 코드](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)를 사용할 수 있도록 함으로써 이러한 기능을 사용하여 고유한 사용자 지정 애플리케이션을 플러그 앤 플레이할 수 있습니다.
+* 받은 편지함 Cortana는 버전 1809(17763) 이후 Windows 10 IoT Core에서 더 이상 사용할 수 없습니다. 음성 사용 디바이스를 빠르게 출시하려는 경우 [Cortana 디바이스 SDK의 미리 보기](https://developer.microsoft.com/cortana/devices)를 사용하여 Cortana 지원을 디바이스에 통합할 수 있습니다.
+* [FileOpenPicker API](https://docs.microsoft.com/uwp/api/windows.storage.pickers.fileopenpicker)는 Windows 10 IoT Core에서 지원되지 않습니다. 로컬 드라이브 또는 이동식 스토리지에 액세스하려면 이를 자신의 애플리케이션에서 구현합니다.
+* Windows 10 IoT Core 디바이스가 데스크톱과 같은 PC 대신 [기본 앱](https://docs.microsoft.com/windows/iot-core/develop-your-app/iotcoredefaultapp)으로 부팅됩니다. 이 애플리케이션의 목적은 최초 부팅 시 상호 작용할 수 있는 친숙한 셸을 제공할 뿐만 아니라, 이 애플리케이션에 대해 [오픈 소스 코드](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/IoTCoreDefaultApp)를 사용할 수 있도록 함으로써 이러한 기능을 사용하여 고유한 사용자 지정 애플리케이션을 플러그 앤 플레이할 수 있습니다.
 
 ### <a name="differences-in-driver-supported-areas"></a>드라이버 지원 영역의 차이점
 
@@ -91,7 +91,7 @@ REG ADD "HKCU\Control Panel\Accessibility" /v DynamicScrollbars /t REG_DWORD \d 
 이 게시물에 표시된 명령은 Windows 10 IoT Core가 계속 업데이트되므로 시간이 지남에 따라 변경될 수 있습니다.
 
 ## <a name="iot-edge-support-for-windows-10-iot"></a>Windows 10 IoT에 대한 IoT Edge 지원
-Windows 10 IoT에 대한 IoT Edge 지원에 대해 알아보려면 Azure IoT Edge 문서 [여기](https://docs.microsoft.com/en-us/azure/iot-edge/support#operating-systems)에서 "운영 체제"에 대해 자세히 알아보세요.
+Windows 10 IoT에 대한 IoT Edge 지원에 대해 알아보려면 Azure IoT Edge 문서 [여기](https://docs.microsoft.com/azure/iot-edge/support#operating-systems)에서 "운영 체제"에 대해 자세히 알아보세요.
 
 
 ## <a name="helpful-resources"></a>유용한 리소스

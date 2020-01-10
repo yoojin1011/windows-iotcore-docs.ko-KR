@@ -4,12 +4,12 @@ ms.date: 02/07/2019
 ms.topic: article
 description: Windows Server IoT 2019의 기능과 이를 통해 수행할 수 있는 작업에 대해 알아봅니다.
 keywords: Windows Server IoT 2019, 엔터프라이즈 관리 효율성, Windows 에코시스템, IoT
-ms.openlocfilehash: c02dfb5887c53769baae54955f1208d2ae7f88ff
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: 8ed21ae695bff2386346dfe15de9cb83e2697a90
+ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72918597"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75721778"
 ---
 # <a name="an-overview-of-windows-server-iot-2019"></a>Windows Server IoT 2019 개요
 
@@ -30,10 +30,10 @@ Windows Server는 전 세계 중소기업과 대기업이 사용하는 서버 �
 
 이는 2~3년마다 새로운 Windows Server의 주 버전이 출시되는, 이미 여러분에게 친숙한 릴리스 모델(이전의 “장기 서비스 분기”라고 함)입니다. 사용자는 5년 동안 일반 지원을 받고 지원 기간을 5년 연장할 수 있습니다. 이 채널은 보다 장기적인 서비스 옵션과 기능적 안정성이 요구되는 시스템에 적절합니다. Windows Server IoT 2019 이하 버전의 Windows Server 배포는 새 반기 채널 릴리스의 영향을 받지 않습니다. 장기 서비스 채널은 보안 및 비보안 업데이트를 계속해서 수신하지만, 새로운 기능은 수신하지 않습니다.
 
-* [LTSC에 대해 자세히 알아보기](https://docs.microsoft.com/en-us/windows-server/get-started-19/servicing-channels-19#long-term-servicing-channel-ltsc)
+* [LTSC에 대해 자세히 알아보기](https://docs.microsoft.com/windows-server/get-started-19/servicing-channels-19#long-term-servicing-channel-ltsc)
 
 ## <a name="helpful-resources"></a>유용한 리소스
 > [!NOTE]
 > 추가 리소스는 배포자 또는 Microsoft 담당자에게 확인 후 사용할 수 있습니다.
 
-* [Windows Server 2019 설명서](https://docs.microsoft.com/en-us/windows-server/index)
+* [Windows Server 2019 설명서](https://docs.microsoft.com/windows-server/index)
