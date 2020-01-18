@@ -4,55 +4,55 @@ ms.date: 08/28/2017
 ms.topic: article
 description: Dragonboard에 대 한 pin 매핑 기능에 대해 알아봅니다.
 keywords: windows iot, Dragonboard, pin 매핑, GPIO
-ms.openlocfilehash: 170b14ce640fed33754f90bd4df188f4629f04c2
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: f0a811c05b371d9f7a85c1f86b0f69de4d750487
+ms.sourcegitcommit: 0fa10fafb13788496674d13e0ae810a6d93e3483
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72917970"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258545"
 ---
-# <a name="dragonboard-pin-mappings"></a><span data-ttu-id="52967-104">Dragonboard Pin 매핑</span><span class="sxs-lookup"><span data-stu-id="52967-104">Dragonboard Pin Mappings</span></span>
+# <a name="dragonboard-pin-mappings"></a><span data-ttu-id="c4360-104">Dragonboard Pin 매핑</span><span class="sxs-lookup"><span data-stu-id="c4360-104">Dragonboard Pin Mappings</span></span>
 
 ![Dragonboard Pin 헤더](../../media/PinMappingsDB/DB_Pinout.png)
 
-<span data-ttu-id="52967-106">Dragonboard에 대 한 하드웨어 인터페이스는 보드의 40 핀 헤더를 통해 노출 됩니다.</span><span class="sxs-lookup"><span data-stu-id="52967-106">Hardware interfaces for the Dragonboard are exposed through the 40-pin header on the board.</span></span> <span data-ttu-id="52967-107">기능은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="52967-107">Functionality includes:</span></span>
+<span data-ttu-id="c4360-106">Dragonboard에 대 한 하드웨어 인터페이스는 보드의 40 핀 헤더를 통해 노출 됩니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-106">Hardware interfaces for the Dragonboard are exposed through the 40-pin header on the board.</span></span> <span data-ttu-id="c4360-107">기능은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-107">Functionality includes:</span></span>
 
-* <span data-ttu-id="52967-108">**11x** -GPIO 핀</span><span class="sxs-lookup"><span data-stu-id="52967-108">**11x** - GPIO pins</span></span>
-* <span data-ttu-id="52967-109">**2x** -직렬 uarts</span><span class="sxs-lookup"><span data-stu-id="52967-109">**2x** - Serial UARTs</span></span>
-* <span data-ttu-id="52967-110">**1x** -SPI 버스</span><span class="sxs-lookup"><span data-stu-id="52967-110">**1x** - SPI bus</span></span>
-* <span data-ttu-id="52967-111">**2** -I2C 버스</span><span class="sxs-lookup"><span data-stu-id="52967-111">**2x** - I2C bus</span></span>
-* <span data-ttu-id="52967-112">**1x** -5v 전원 pin</span><span class="sxs-lookup"><span data-stu-id="52967-112">**1x** - 5V power pin</span></span>
-* <span data-ttu-id="52967-113">**1x** -1.8 v 전원 pin</span><span class="sxs-lookup"><span data-stu-id="52967-113">**1x** - 1.8V power pin</span></span>
-* <span data-ttu-id="52967-114">**4x** -접지 핀</span><span class="sxs-lookup"><span data-stu-id="52967-114">**4x** - Ground pins</span></span>
+* <span data-ttu-id="c4360-108">**11x** -GPIO 핀</span><span class="sxs-lookup"><span data-stu-id="c4360-108">**11x** - GPIO pins</span></span>
+* <span data-ttu-id="c4360-109">**2x** -직렬 uarts</span><span class="sxs-lookup"><span data-stu-id="c4360-109">**2x** - Serial UARTs</span></span>
+* <span data-ttu-id="c4360-110">**1x** -SPI 버스</span><span class="sxs-lookup"><span data-stu-id="c4360-110">**1x** - SPI bus</span></span>
+* <span data-ttu-id="c4360-111">**2** -I2C 버스</span><span class="sxs-lookup"><span data-stu-id="c4360-111">**2x** - I2C bus</span></span>
+* <span data-ttu-id="c4360-112">**1x** -5v 전원 pin</span><span class="sxs-lookup"><span data-stu-id="c4360-112">**1x** - 5V power pin</span></span>
+* <span data-ttu-id="c4360-113">**1x** -1.8 v 전원 pin</span><span class="sxs-lookup"><span data-stu-id="c4360-113">**1x** - 1.8V power pin</span></span>
+* <span data-ttu-id="c4360-114">**4x** -접지 핀</span><span class="sxs-lookup"><span data-stu-id="c4360-114">**4x** - Ground pins</span></span>
 
-<span data-ttu-id="52967-115">Dragonboard에서는 모든 IO 핀에서 1.8 V 논리 수준을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="52967-115">Note that the Dragonboard uses 1.8V logic levels on all IO pins.</span></span> 
+<span data-ttu-id="c4360-115">Dragonboard에서는 모든 IO 핀에서 1.8 V 논리 수준을 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-115">Note that the Dragonboard uses 1.8V logic levels on all IO pins.</span></span> 
 
-## <a name="gpio-pins"></a><span data-ttu-id="52967-116">GPIO 핀</span><span class="sxs-lookup"><span data-stu-id="52967-116">GPIO Pins</span></span>
+## <a name="gpio-pins"></a><span data-ttu-id="c4360-116">GPIO 핀</span><span class="sxs-lookup"><span data-stu-id="c4360-116">GPIO Pins</span></span>
 
-<span data-ttu-id="52967-117">이 장치에서 사용 가능한 GPIO를 살펴보겠습니다.</span><span class="sxs-lookup"><span data-stu-id="52967-117">Let's look at the GPIO available on this device.</span></span>
+<span data-ttu-id="c4360-117">이 장치에서 사용 가능한 GPIO를 살펴보겠습니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-117">Let's look at the GPIO available on this device.</span></span>
 
-### <a name="gpio-pin-table"></a><span data-ttu-id="52967-118">GPIO 고정 테이블</span><span class="sxs-lookup"><span data-stu-id="52967-118">GPIO Pin Table</span></span>
+### <a name="gpio-pin-table"></a><span data-ttu-id="c4360-118">GPIO 고정 테이블</span><span class="sxs-lookup"><span data-stu-id="c4360-118">GPIO Pin Table</span></span>
 
-<span data-ttu-id="52967-119">다음 GPIO pin은 Api를 통해 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="52967-119">The following GPIO pins are accessible through APIs:</span></span>
+<span data-ttu-id="c4360-119">다음 GPIO pin은 Api를 통해 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-119">The following GPIO pins are accessible through APIs:</span></span>
 
-> | <span data-ttu-id="52967-120">GPIO #</span><span class="sxs-lookup"><span data-stu-id="52967-120">GPIO#</span></span> | <span data-ttu-id="52967-121">헤더 Pin</span><span class="sxs-lookup"><span data-stu-id="52967-121">Header Pin</span></span>         |
+> | <span data-ttu-id="c4360-120">GPIO #</span><span class="sxs-lookup"><span data-stu-id="c4360-120">GPIO#</span></span> | <span data-ttu-id="c4360-121">헤더 Pin</span><span class="sxs-lookup"><span data-stu-id="c4360-121">Header Pin</span></span>         |
 > |-------|--------------------|
-> | <span data-ttu-id="52967-122">36</span><span class="sxs-lookup"><span data-stu-id="52967-122">36</span></span>    | <span data-ttu-id="52967-123">23</span><span class="sxs-lookup"><span data-stu-id="52967-123">23</span></span>                 |
-> | <span data-ttu-id="52967-124">12</span><span class="sxs-lookup"><span data-stu-id="52967-124">12</span></span>    | <span data-ttu-id="52967-125">24</span><span class="sxs-lookup"><span data-stu-id="52967-125">24</span></span>                 |
-> | <span data-ttu-id="52967-126">13</span><span class="sxs-lookup"><span data-stu-id="52967-126">13</span></span>    | <span data-ttu-id="52967-127">25일</span><span class="sxs-lookup"><span data-stu-id="52967-127">25</span></span>                 |
-> | <span data-ttu-id="52967-128">69</span><span class="sxs-lookup"><span data-stu-id="52967-128">69</span></span>    | <span data-ttu-id="52967-129">26</span><span class="sxs-lookup"><span data-stu-id="52967-129">26</span></span>                 |
-> | <span data-ttu-id="52967-130">115</span><span class="sxs-lookup"><span data-stu-id="52967-130">115</span></span>   | <span data-ttu-id="52967-131">27</span><span class="sxs-lookup"><span data-stu-id="52967-131">27</span></span>                 |
-> | <span data-ttu-id="52967-132">24</span><span class="sxs-lookup"><span data-stu-id="52967-132">24</span></span>    | <span data-ttu-id="52967-133">29</span><span class="sxs-lookup"><span data-stu-id="52967-133">29</span></span>                 |
-> | <span data-ttu-id="52967-134">25일</span><span class="sxs-lookup"><span data-stu-id="52967-134">25</span></span>    | <span data-ttu-id="52967-135">30</span><span class="sxs-lookup"><span data-stu-id="52967-135">30</span></span>                 |
-> | <span data-ttu-id="52967-136">35</span><span class="sxs-lookup"><span data-stu-id="52967-136">35</span></span>    | <span data-ttu-id="52967-137">31</span><span class="sxs-lookup"><span data-stu-id="52967-137">31</span></span>                 |
-> | <span data-ttu-id="52967-138">34</span><span class="sxs-lookup"><span data-stu-id="52967-138">34</span></span>    | <span data-ttu-id="52967-139">32</span><span class="sxs-lookup"><span data-stu-id="52967-139">32</span></span>                 |
-> | <span data-ttu-id="52967-140">28</span><span class="sxs-lookup"><span data-stu-id="52967-140">28</span></span>    | <span data-ttu-id="52967-141">33</span><span class="sxs-lookup"><span data-stu-id="52967-141">33</span></span>                 |
-> | <span data-ttu-id="52967-142">33</span><span class="sxs-lookup"><span data-stu-id="52967-142">33</span></span>    | <span data-ttu-id="52967-143">34</span><span class="sxs-lookup"><span data-stu-id="52967-143">34</span></span>                 |
-> | <span data-ttu-id="52967-144">RD 세션 호스트 서버 팜의 이름을 지정하는 새 RD RAP 만들기</span><span class="sxs-lookup"><span data-stu-id="52967-144">21</span></span>    | <span data-ttu-id="52967-145">사용자 LED 1</span><span class="sxs-lookup"><span data-stu-id="52967-145">User LED 1</span></span>         | 
-> | <span data-ttu-id="52967-146">120</span><span class="sxs-lookup"><span data-stu-id="52967-146">120</span></span>   | <span data-ttu-id="52967-147">사용자 LED 2</span><span class="sxs-lookup"><span data-stu-id="52967-147">User LED 2</span></span>         |         
+> | <span data-ttu-id="c4360-122">36</span><span class="sxs-lookup"><span data-stu-id="c4360-122">36</span></span>    | <span data-ttu-id="c4360-123">23</span><span class="sxs-lookup"><span data-stu-id="c4360-123">23</span></span>                 |
+> | <span data-ttu-id="c4360-124">12</span><span class="sxs-lookup"><span data-stu-id="c4360-124">12</span></span>    | <span data-ttu-id="c4360-125">24</span><span class="sxs-lookup"><span data-stu-id="c4360-125">24</span></span>                 |
+> | <span data-ttu-id="c4360-126">13</span><span class="sxs-lookup"><span data-stu-id="c4360-126">13</span></span>    | <span data-ttu-id="c4360-127">25일</span><span class="sxs-lookup"><span data-stu-id="c4360-127">25</span></span>                 |
+> | <span data-ttu-id="c4360-128">69</span><span class="sxs-lookup"><span data-stu-id="c4360-128">69</span></span>    | <span data-ttu-id="c4360-129">26</span><span class="sxs-lookup"><span data-stu-id="c4360-129">26</span></span>                 |
+> | <span data-ttu-id="c4360-130">115</span><span class="sxs-lookup"><span data-stu-id="c4360-130">115</span></span>   | <span data-ttu-id="c4360-131">27</span><span class="sxs-lookup"><span data-stu-id="c4360-131">27</span></span>                 |
+> | <span data-ttu-id="c4360-132">24</span><span class="sxs-lookup"><span data-stu-id="c4360-132">24</span></span>    | <span data-ttu-id="c4360-133">29</span><span class="sxs-lookup"><span data-stu-id="c4360-133">29</span></span>                 |
+> | <span data-ttu-id="c4360-134">25일</span><span class="sxs-lookup"><span data-stu-id="c4360-134">25</span></span>    | <span data-ttu-id="c4360-135">30</span><span class="sxs-lookup"><span data-stu-id="c4360-135">30</span></span>                 |
+> | <span data-ttu-id="c4360-136">35</span><span class="sxs-lookup"><span data-stu-id="c4360-136">35</span></span>    | <span data-ttu-id="c4360-137">31</span><span class="sxs-lookup"><span data-stu-id="c4360-137">31</span></span>                 |
+> | <span data-ttu-id="c4360-138">34</span><span class="sxs-lookup"><span data-stu-id="c4360-138">34</span></span>    | <span data-ttu-id="c4360-139">32</span><span class="sxs-lookup"><span data-stu-id="c4360-139">32</span></span>                 |
+> | <span data-ttu-id="c4360-140">28</span><span class="sxs-lookup"><span data-stu-id="c4360-140">28</span></span>    | <span data-ttu-id="c4360-141">33</span><span class="sxs-lookup"><span data-stu-id="c4360-141">33</span></span>                 |
+> | <span data-ttu-id="c4360-142">33</span><span class="sxs-lookup"><span data-stu-id="c4360-142">33</span></span>    | <span data-ttu-id="c4360-143">34</span><span class="sxs-lookup"><span data-stu-id="c4360-143">34</span></span>                 |
+> | <span data-ttu-id="c4360-144">RD 세션 호스트 서버 팜의 이름을 지정하는 새 RD RAP 만들기</span><span class="sxs-lookup"><span data-stu-id="c4360-144">21</span></span>    | <span data-ttu-id="c4360-145">사용자 LED 1</span><span class="sxs-lookup"><span data-stu-id="c4360-145">User LED 1</span></span>         | 
+> | <span data-ttu-id="c4360-146">120</span><span class="sxs-lookup"><span data-stu-id="c4360-146">120</span></span>   | <span data-ttu-id="c4360-147">사용자 LED 2</span><span class="sxs-lookup"><span data-stu-id="c4360-147">User LED 2</span></span>         |         
 
 
-<span data-ttu-id="52967-148">예를 들어 다음 코드는 **GPIO 35** 을 출력으로 열고 pin에 디지털 '**1**'을 기록 합니다.</span><span class="sxs-lookup"><span data-stu-id="52967-148">As an example, the following code opens **GPIO 35** as an output and writes a digital '**1**' out on the pin:</span></span>
+<span data-ttu-id="c4360-148">예를 들어 다음 코드는 **GPIO 35** 을 출력으로 열고 pin에 디지털 '**1**'을 기록 합니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-148">As an example, the following code opens **GPIO 35** as an output and writes a digital '**1**' out on the pin:</span></span>
          
 ```C#
 using Windows.Devices.Gpio;
@@ -67,32 +67,32 @@ public void GPIO()
 }
 ```
 
-### <a name="gpio-issues"></a><span data-ttu-id="52967-149">GPIO 문제</span><span class="sxs-lookup"><span data-stu-id="52967-149">GPIO Issues</span></span>
+### <a name="gpio-issues"></a><span data-ttu-id="c4360-149">GPIO 문제</span><span class="sxs-lookup"><span data-stu-id="c4360-149">GPIO Issues</span></span>
 
-* <span data-ttu-id="52967-150">GPIO 24에서는 출력이 작동 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="52967-150">Output doesn't work on GPIO 24.</span></span> <span data-ttu-id="52967-151">입력이 제대로 작동 합니다.</span><span class="sxs-lookup"><span data-stu-id="52967-151">Input works fine.</span></span>
-* <span data-ttu-id="52967-152">Pin은 부팅 시 InputPullDown로 구성 되지만 처음 열릴 때 입력 (부동)으로 변경 됩니다.</span><span class="sxs-lookup"><span data-stu-id="52967-152">Pins are configured as InputPullDown at boot, but will change to Input (floating) the first time they are opened</span></span>
-* <span data-ttu-id="52967-153">닫히면 pin은 기본 상태로 되돌아가지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="52967-153">Pins do not revert to their default state when closed</span></span>
-* <span data-ttu-id="52967-154">여러 핀에서 인터럽트를 사용 하는 경우 의사 인터럽트가 표시 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="52967-154">Spurious interrupts may be seen when interrupts are enabled on multiple pins</span></span>
-
-
-## <a name="serial-uart"></a><span data-ttu-id="52967-155">직렬 UART</span><span class="sxs-lookup"><span data-stu-id="52967-155">Serial UART</span></span>
-
-<span data-ttu-id="52967-156">Dragonboard **UART0** 및 **UART1** 에는 두 개의 직렬 uarts를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="52967-156">There are two Serial UARTS available on the Dragonboard **UART0** and **UART1**</span></span>
-
-<span data-ttu-id="52967-157">**UART0** 에는 표준 **UART0 TX** 및 **UART0 RX** 회선이 있으며,이는 CTS 및 **UART0 RTS**를 **UART0** 하는 흐름 제어 신호와 함께 있습니다.</span><span class="sxs-lookup"><span data-stu-id="52967-157">**UART0** has the standard **UART0 TX** and **UART0 RX** lines, along with flow control signals **UART0 CTS** and **UART0 RTS**.</span></span>
-
-* <span data-ttu-id="52967-158">핀 5- **UART0 TX**</span><span class="sxs-lookup"><span data-stu-id="52967-158">Pin 5  - **UART0 TX**</span></span>
-* <span data-ttu-id="52967-159">Pin 7- **UART0 RX**</span><span class="sxs-lookup"><span data-stu-id="52967-159">Pin 7  - **UART0 RX**</span></span>
-* <span data-ttu-id="52967-160">Pin 3- **UART0 CTS**</span><span class="sxs-lookup"><span data-stu-id="52967-160">Pin 3 - **UART0 CTS**</span></span>
-* <span data-ttu-id="52967-161">Pin 9- **UART0 RTS**</span><span class="sxs-lookup"><span data-stu-id="52967-161">Pin 9 - **UART0 RTS**</span></span>
+* <span data-ttu-id="c4360-150">GPIO 24에서는 출력이 작동 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-150">Output doesn't work on GPIO 24.</span></span> <span data-ttu-id="c4360-151">입력이 제대로 작동 합니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-151">Input works fine.</span></span>
+* <span data-ttu-id="c4360-152">Pin은 부팅 시 InputPullDown로 구성 되지만 처음 열릴 때 입력 (부동)으로 변경 됩니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-152">Pins are configured as InputPullDown at boot, but will change to Input (floating) the first time they are opened</span></span>
+* <span data-ttu-id="c4360-153">닫히면 pin은 기본 상태로 되돌아가지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-153">Pins do not revert to their default state when closed</span></span>
+* <span data-ttu-id="c4360-154">여러 핀에서 인터럽트를 사용 하는 경우 의사 인터럽트가 표시 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-154">Spurious interrupts may be seen when interrupts are enabled on multiple pins</span></span>
 
 
-<span data-ttu-id="52967-162">**UART1** 에는 **UART1 TX** 및 **UART1 RX** 줄만 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="52967-162">**UART1** includes just the **UART1 TX** and **UART1 RX** lines.</span></span>
+## <a name="serial-uart"></a><span data-ttu-id="c4360-155">직렬 UART</span><span class="sxs-lookup"><span data-stu-id="c4360-155">Serial UART</span></span>
 
-* <span data-ttu-id="52967-163">핀 11- **UART1 TX**</span><span class="sxs-lookup"><span data-stu-id="52967-163">Pin 11  - **UART1 TX**</span></span>
-* <span data-ttu-id="52967-164">Pin 13- **UART1 RX**</span><span class="sxs-lookup"><span data-stu-id="52967-164">Pin 13  - **UART1 RX**</span></span>
+<span data-ttu-id="c4360-156">Dragonboard **UART0** 및 **UART1** 에는 두 개의 직렬 uarts를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-156">There are two Serial UARTS available on the Dragonboard **UART0** and **UART1**</span></span>
 
-<span data-ttu-id="52967-165">아래 예제에서는 **UART1** 를 초기화 하 고 쓰기 후에 읽기를 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="52967-165">The example below initializes **UART1** and performs a write followed by a read:</span></span>
+<span data-ttu-id="c4360-157">**UART0** 에는 표준 **UART0 TX** 및 **UART0 RX** 회선이 있으며,이는 CTS 및 **UART0 RTS**를 **UART0** 하는 흐름 제어 신호와 함께 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-157">**UART0** has the standard **UART0 TX** and **UART0 RX** lines, along with flow control signals **UART0 CTS** and **UART0 RTS**.</span></span>
+
+* <span data-ttu-id="c4360-158">핀 5- **UART0 TX**</span><span class="sxs-lookup"><span data-stu-id="c4360-158">Pin 5  - **UART0 TX**</span></span>
+* <span data-ttu-id="c4360-159">Pin 7- **UART0 RX**</span><span class="sxs-lookup"><span data-stu-id="c4360-159">Pin 7  - **UART0 RX**</span></span>
+* <span data-ttu-id="c4360-160">Pin 3- **UART0 CTS**</span><span class="sxs-lookup"><span data-stu-id="c4360-160">Pin 3 - **UART0 CTS**</span></span>
+* <span data-ttu-id="c4360-161">Pin 9- **UART0 RTS**</span><span class="sxs-lookup"><span data-stu-id="c4360-161">Pin 9 - **UART0 RTS**</span></span>
+
+
+<span data-ttu-id="c4360-162">**UART1** 에는 **UART1 TX** 및 **UART1 RX** 줄만 포함 됩니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-162">**UART1** includes just the **UART1 TX** and **UART1 RX** lines.</span></span>
+
+* <span data-ttu-id="c4360-163">핀 11- **UART1 TX**</span><span class="sxs-lookup"><span data-stu-id="c4360-163">Pin 11  - **UART1 TX**</span></span>
+* <span data-ttu-id="c4360-164">Pin 13- **UART1 RX**</span><span class="sxs-lookup"><span data-stu-id="c4360-164">Pin 13  - **UART1 RX**</span></span>
+
+<span data-ttu-id="c4360-165">아래 예제에서는 **UART1** 를 초기화 하 고 쓰기 후에 읽기를 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-165">The example below initializes **UART1** and performs a write followed by a read:</span></span>
 
 ```C#
 using Windows.Storage.Streams;
@@ -127,9 +127,9 @@ public async void Serial()
 }
 ```
 > [!NOTE]
-> <span data-ttu-id="52967-166">Visual Studio 2017에는 매니페스트 디자이너 (appxmanifest.xml 파일용 시각적 편집기)에서 serialcommunication 기능에 영향을 주는 알려진 버그가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="52967-166">Visual Studio 2017 has a known bug in the Manifest Designer (the visual editor for appxmanifest files) that affects the serialcommunication capability.</span></span>  <span data-ttu-id="52967-167">Appxmanifest.xml가 serialcommunication 기능을 추가 하는 경우 디자이너를 사용 하 여 appxmanifest.xml를 수정 하면 appxmanifest.xml가 손상 됩니다 (장치 xml 자식은 손실 됨).</span><span class="sxs-lookup"><span data-stu-id="52967-167">If your appxmanifest adds the serialcommunication capability, modifying your appxmanifest with the designer will corrupt your appxmanifest (the Device xml child will be lost).</span></span>  <span data-ttu-id="52967-168">Appxmanifest.xml를 마우스 오른쪽 단추로 클릭 하 고 상황에 맞는 메뉴에서 코드 보기를 선택 하 여 appxmanifest.xml를 직접 편집이 문제를 해결할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="52967-168">You can workaround this problem by hand editting the appxmanifest by right-clicking your appxmanifest and selecting View Code from the context menu.</span></span>
+> <span data-ttu-id="c4360-166">Visual Studio 2017에는 매니페스트 디자이너 (appxmanifest.xml 파일용 시각적 편집기)에서 serialcommunication 기능에 영향을 주는 알려진 버그가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-166">Visual Studio 2017 has a known bug in the Manifest Designer (the visual editor for appxmanifest files) that affects the serialcommunication capability.</span></span>  <span data-ttu-id="c4360-167">Appxmanifest.xml가 serialcommunication 기능을 추가 하는 경우 디자이너를 사용 하 여 appxmanifest.xml를 수정 하면 appxmanifest.xml가 손상 됩니다 (장치 xml 자식은 손실 됨).</span><span class="sxs-lookup"><span data-stu-id="c4360-167">If your appxmanifest adds the serialcommunication capability, modifying your appxmanifest with the designer will corrupt your appxmanifest (the Device xml child will be lost).</span></span>  <span data-ttu-id="c4360-168">Appxmanifest.xml를 마우스 오른쪽 단추로 클릭 하 고 상황에 맞는 메뉴에서 코드 보기를 선택 하 여 appxmanifest.xml를 직접 편집이 문제를 해결할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-168">You can workaround this problem by hand editting the appxmanifest by right-clicking your appxmanifest and selecting View Code from the context menu.</span></span>
 
-<span data-ttu-id="52967-169">다음 기능을 UWP 프로젝트의 **appxmanifest.xml** 파일에 추가 하 여 직렬 UART 코드를 실행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="52967-169">You must add the following capability to the **Package.appxmanifest** file in your UWP project to run Serial UART code:</span></span>
+<span data-ttu-id="c4360-169">다음 기능을 UWP 프로젝트의 **appxmanifest.xml** 파일에 추가 하 여 직렬 UART 코드를 실행 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-169">You must add the following capability to the **Package.appxmanifest** file in your UWP project to run Serial UART code:</span></span>
 
 ```xml
   <Capabilities>
@@ -141,25 +141,25 @@ public async void Serial()
   </Capabilities>
 ```
 
-## <a name="i2c-bus"></a><span data-ttu-id="52967-170">I2C 버스</span><span class="sxs-lookup"><span data-stu-id="52967-170">I2C Bus</span></span>
+## <a name="i2c-bus"></a><span data-ttu-id="c4360-170">I2C 버스</span><span class="sxs-lookup"><span data-stu-id="c4360-170">I2C Bus</span></span>
 
-<span data-ttu-id="52967-171">이 장치에서 사용할 수 있는 I2C 버스를 살펴보겠습니다.</span><span class="sxs-lookup"><span data-stu-id="52967-171">Let's look at the I2C busses available on this device.</span></span>
+<span data-ttu-id="c4360-171">이 장치에서 사용할 수 있는 I2C 버스를 살펴보겠습니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-171">Let's look at the I2C busses available on this device.</span></span>
 
-### <a name="i2c-pins"></a><span data-ttu-id="52967-172">I2C 핀</span><span class="sxs-lookup"><span data-stu-id="52967-172">I2C Pins</span></span>
+### <a name="i2c-pins"></a><span data-ttu-id="c4360-172">I2C 핀</span><span class="sxs-lookup"><span data-stu-id="c4360-172">I2C Pins</span></span>
 
-<span data-ttu-id="52967-173">**I2C0** 는 두 줄 **Sda** 와 **SCL** 을 사용 하 여 pin 헤더에 노출 됩니다.</span><span class="sxs-lookup"><span data-stu-id="52967-173">**I2C0** exposed on the pin header with two lines **SDA** and **SCL**</span></span>
+<span data-ttu-id="c4360-173">**I2C0** 는 두 줄 **Sda** 와 **SCL** 을 사용 하 여 pin 헤더에 노출 됩니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-173">**I2C0** exposed on the pin header with two lines **SDA** and **SCL**</span></span>
 
-* <span data-ttu-id="52967-174">Pin 17- **I2C0 SDA**</span><span class="sxs-lookup"><span data-stu-id="52967-174">Pin 17 - **I2C0 SDA**</span></span>
-* <span data-ttu-id="52967-175">Pin 15- **I2C0 SCL**</span><span class="sxs-lookup"><span data-stu-id="52967-175">Pin 15 - **I2C0 SCL**</span></span>
+* <span data-ttu-id="c4360-174">Pin 17- **I2C0 SDA**</span><span class="sxs-lookup"><span data-stu-id="c4360-174">Pin 17 - **I2C0 SDA**</span></span>
+* <span data-ttu-id="c4360-175">Pin 15- **I2C0 SCL**</span><span class="sxs-lookup"><span data-stu-id="c4360-175">Pin 15 - **I2C0 SCL**</span></span>
 
-<span data-ttu-id="52967-176">**I2C1** 는 두 줄 **Sda** 와 **SCL** 을 사용 하 여 pin 헤더에 노출 됩니다.</span><span class="sxs-lookup"><span data-stu-id="52967-176">**I2C1** exposed on the pin header with two lines **SDA** and **SCL**</span></span>
+<span data-ttu-id="c4360-176">**I2C1** 는 두 줄 **Sda** 와 **SCL** 을 사용 하 여 pin 헤더에 노출 됩니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-176">**I2C1** exposed on the pin header with two lines **SDA** and **SCL**</span></span>
 
-* <span data-ttu-id="52967-177">핀 21- **I2C1 SDA**</span><span class="sxs-lookup"><span data-stu-id="52967-177">Pin 21 - **I2C1 SDA**</span></span>
-* <span data-ttu-id="52967-178">Pin 19- **I2C1 SCL**</span><span class="sxs-lookup"><span data-stu-id="52967-178">Pin 19 - **I2C1 SCL**</span></span>
+* <span data-ttu-id="c4360-177">핀 21- **I2C1 SDA**</span><span class="sxs-lookup"><span data-stu-id="c4360-177">Pin 21 - **I2C1 SDA**</span></span>
+* <span data-ttu-id="c4360-178">Pin 19- **I2C1 SCL**</span><span class="sxs-lookup"><span data-stu-id="c4360-178">Pin 19 - **I2C1 SCL**</span></span>
 
-### <a name="i2c-sample"></a><span data-ttu-id="52967-179">I2C 샘플</span><span class="sxs-lookup"><span data-stu-id="52967-179">I2C Sample</span></span>
+### <a name="i2c-sample"></a><span data-ttu-id="c4360-179">I2C 샘플</span><span class="sxs-lookup"><span data-stu-id="c4360-179">I2C Sample</span></span>
 
-<span data-ttu-id="52967-180">아래 예제에서는 **I2C0** 를 초기화 하 고 주소가 **0x40**인 I2C 장치에 데이터를 씁니다.</span><span class="sxs-lookup"><span data-stu-id="52967-180">The example below initializes **I2C0** and writes data to an I2C device with address **0x40**:</span></span>
+<span data-ttu-id="c4360-180">아래 예제에서는 **I2C0** 를 초기화 하 고 주소가 **0x40**인 I2C 장치에 데이터를 씁니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-180">The example below initializes **I2C0** and writes data to an I2C device with address **0x40**:</span></span>
 
 ```C#
 using Windows.Devices.Enumeration;
@@ -188,29 +188,29 @@ public async void I2C()
 ```
 
 
-## <a name="spi-bus"></a><span data-ttu-id="52967-181">SPI 버스</span><span class="sxs-lookup"><span data-stu-id="52967-181">SPI Bus</span></span>
+## <a name="spi-bus"></a><span data-ttu-id="c4360-181">SPI 버스</span><span class="sxs-lookup"><span data-stu-id="c4360-181">SPI Bus</span></span>
 
-<span data-ttu-id="52967-182">이 장치에서 사용할 수 있는 SPI bus를 살펴보겠습니다.</span><span class="sxs-lookup"><span data-stu-id="52967-182">Let's look at the SPI bus available on this device.</span></span>
+<span data-ttu-id="c4360-182">이 장치에서 사용할 수 있는 SPI bus를 살펴보겠습니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-182">Let's look at the SPI bus available on this device.</span></span>
 
-### <a name="spi-pins"></a><span data-ttu-id="52967-183">SPI Pin</span><span class="sxs-lookup"><span data-stu-id="52967-183">SPI Pins</span></span>
+### <a name="spi-pins"></a><span data-ttu-id="c4360-183">SPI Pin</span><span class="sxs-lookup"><span data-stu-id="c4360-183">SPI Pins</span></span>
 
-<span data-ttu-id="52967-184">DB에서 사용할 수 있는 SPI 컨트롤러 **SPI0** 하나 있습니다.</span><span class="sxs-lookup"><span data-stu-id="52967-184">There is one SPI controller **SPI0** available on the DB</span></span>
+<span data-ttu-id="c4360-184">DB에서 사용할 수 있는 SPI 컨트롤러 **SPI0** 하나 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-184">There is one SPI controller **SPI0** available on the DB</span></span>
 
-* <span data-ttu-id="52967-185">Pin 10- **SPI0 miso**</span><span class="sxs-lookup"><span data-stu-id="52967-185">Pin 10 - **SPI0 MISO**</span></span>
-* <span data-ttu-id="52967-186">Pin 14- **SPI0 MOSI**</span><span class="sxs-lookup"><span data-stu-id="52967-186">Pin 14 - **SPI0 MOSI**</span></span>
-* <span data-ttu-id="52967-187">Pin 8- **SPI0 SCLK**</span><span class="sxs-lookup"><span data-stu-id="52967-187">Pin 8 - **SPI0 SCLK**</span></span>
-* <span data-ttu-id="52967-188">Pin 12- **SPI0 CS0**</span><span class="sxs-lookup"><span data-stu-id="52967-188">Pin 12 - **SPI0 CS0**</span></span>
+* <span data-ttu-id="c4360-185">Pin 10- **SPI0 miso**</span><span class="sxs-lookup"><span data-stu-id="c4360-185">Pin 10 - **SPI0 MISO**</span></span>
+* <span data-ttu-id="c4360-186">Pin 14- **SPI0 MOSI**</span><span class="sxs-lookup"><span data-stu-id="c4360-186">Pin 14 - **SPI0 MOSI**</span></span>
+* <span data-ttu-id="c4360-187">Pin 8- **SPI0 SCLK**</span><span class="sxs-lookup"><span data-stu-id="c4360-187">Pin 8 - **SPI0 SCLK**</span></span>
+* <span data-ttu-id="c4360-188">Pin 12- **SPI0 CS0**</span><span class="sxs-lookup"><span data-stu-id="c4360-188">Pin 12 - **SPI0 CS0**</span></span>
 
-### <a name="spi-issues"></a><span data-ttu-id="52967-189">SPI 문제</span><span class="sxs-lookup"><span data-stu-id="52967-189">SPI Issues</span></span>
+### <a name="spi-issues"></a><span data-ttu-id="c4360-189">SPI 문제</span><span class="sxs-lookup"><span data-stu-id="c4360-189">SPI Issues</span></span>
 
-<span data-ttu-id="52967-190">SPI clock은 4.8 mhz에서 고정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="52967-190">The SPI clock is fixed at 4.8mhz.</span></span> <span data-ttu-id="52967-191">요청 된 SPI clock은 무시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="52967-191">The requested SPI clock will be ignored.</span></span> 
+<span data-ttu-id="c4360-190">SPI clock은 4.8 mhz에서 고정 됩니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-190">The SPI clock is fixed at 4.8mhz.</span></span> <span data-ttu-id="c4360-191">요청 된 SPI clock은 무시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-191">The requested SPI clock will be ignored.</span></span> 
 
 
-### <a name="spi-sample"></a><span data-ttu-id="52967-192">SPI 샘플</span><span class="sxs-lookup"><span data-stu-id="52967-192">SPI Sample</span></span>
+### <a name="spi-sample"></a><span data-ttu-id="c4360-192">SPI 샘플</span><span class="sxs-lookup"><span data-stu-id="c4360-192">SPI Sample</span></span>
 
-<span data-ttu-id="52967-193">다음은 bus **SPI0** 에서 SPI 쓰기를 수행 하는 방법에 대 한 예제입니다.</span><span class="sxs-lookup"><span data-stu-id="52967-193">An example on how to perform a SPI write on bus **SPI0** is shown below:</span></span>
+<span data-ttu-id="c4360-193">다음은 bus **SPI0** 에서 SPI 쓰기를 수행 하는 방법에 대 한 예제입니다.</span><span class="sxs-lookup"><span data-stu-id="c4360-193">An example on how to perform a SPI write on bus **SPI0** is shown below:</span></span>
 
-```C3
+```C#
 using Windows.Devices.Enumeration;
 using Windows.Devices.Spi;
 
