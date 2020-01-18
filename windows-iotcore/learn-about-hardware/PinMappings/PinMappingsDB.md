@@ -4,12 +4,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: Dragonboard에 대 한 pin 매핑 기능에 대해 알아봅니다.
 keywords: windows iot, Dragonboard, pin 매핑, GPIO
-ms.openlocfilehash: 170b14ce640fed33754f90bd4df188f4629f04c2
-ms.sourcegitcommit: d84ba83c412d5c245e89880a4fca6155d98c8f52
+ms.openlocfilehash: f0a811c05b371d9f7a85c1f86b0f69de4d750487
+ms.sourcegitcommit: 0fa10fafb13788496674d13e0ae810a6d93e3483
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72917970"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258545"
 ---
 # <a name="dragonboard-pin-mappings"></a>Dragonboard Pin 매핑
 
@@ -210,7 +210,7 @@ SPI clock은 4.8 mhz에서 고정 됩니다. 요청 된 SPI clock은 무시 됩�
 
 다음은 bus **SPI0** 에서 SPI 쓰기를 수행 하는 방법에 대 한 예제입니다.
 
-```C3
+```C#
 using Windows.Devices.Enumeration;
 using Windows.Devices.Spi;
 

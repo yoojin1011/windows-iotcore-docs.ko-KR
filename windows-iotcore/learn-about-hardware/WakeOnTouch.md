@@ -7,12 +7,12 @@ ms.topic: article
 description: 장치를 켜 켜 켜 지도록 구성
 keywords: windows iot, 화면, 절전 모드, 절전 모드 해제, 터치, 대기, 전원
 ms.custom: RS5
-ms.openlocfilehash: 7c0fc9613f1b1ed45fb8d69a18d82b034eb366fb
-ms.sourcegitcommit: 2b4ce105834c294dcdd8f332ac8dd2732f4b5af8
+ms.openlocfilehash: 11aaaeed721ff3df7d4b78a29ddb3d0f1b4aa732
+ms.sourcegitcommit: 0fa10fafb13788496674d13e0ae810a6d93e3483
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "60167641"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258532"
 ---
 # <a name="configure-your-device-to-wake-on-touch"></a>장치를 켜 켜 켜 지도록 구성
 
@@ -22,7 +22,7 @@ ms.locfileid: "60167641"
 
 비디오 유휴 시간 제한을 설정 하 여 비활성 기간 후에 화면을 해제 하도록 구성할 수 있습니다. 사용자가 지정 된 시간 동안 장치와 상호 작용 하지 않으면 화면이 꺼집니다. 이렇게 하면 디스플레이와 관련 된 구성 요소의 전원을 켜는 방식으로 장치에서 절전 모드로 전환 될 수 있습니다.
 
-```
+```powershell
     powercfg.exe /setacvalueindex SCHEME_CURRENT SUB_VIDEO VIDEOIDLE 10
     powercfg.exe /setdcvalueindex SCHEME_CURRENT SUB_VIDEO VIDEOIDLE 10
     powercfg.exe /setactive SCHEME_CURRENT
@@ -34,7 +34,7 @@ ms.locfileid: "60167641"
 
 AoAC 시스템 (모든 ARM 시스템 포함)에서는 디스플레이가 꺼진 경우 시스템이 자동으로 [최신 대기 모드로](/windows-hardware/design/device-experiences/modern-standby) 전환 됩니다. 시스템이 최신 대기 상태 이면 특정 입력에 의해서만 해제 수 있습니다. 이 목록은 완전 한 목록이 아니지만 이러한 입력에는 전원 단추를 누르거나 랩톱에서 덮개를 열거나 마우스를 클릭 하는 작업이 포함 됩니다. 화면 터치는 최신 대기에서 장치를 절전 모드에서 해제 하지 않습니다. 장치를 터치 하 여 절전 모드를 해제 하려면 최신 대기 모드로 들어가지 않도록 장치를 구성 해야 합니다. 최신 대기를 사용 하지 않도록 설정 하려면 다음 레지스트리 키를 설정 하 고 다시 부팅 합니다.
 
-```
+```powershell
     reg add HKLM\System\CurrentControlSet\Control\Power /v PlatformAoAcOverride /t REG_DWORD /d 0
 ```
     
