@@ -4,12 +4,12 @@ ms.date: 01/18/2018
 ms.topic: article
 description: Windows 10 IoT Core가 무엇인지와 이를 통해 수행할 수 있는 작업에 대해 알아봅니다.
 keywords: Windows 10 IoT Core, 작은 사용 공간, 헤드리스
-ms.openlocfilehash: 837b9ba8b7f6fa4d36014f4ff5ae2669a73e6e6c
-ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
+ms.openlocfilehash: 266fab5749ebb5886183fa79914cd8d1ee8c4bd4
+ms.sourcegitcommit: 34928850d3b1b2fe22a92ebd1d75c01b3d4bf0aa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75721824"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "76894370"
 ---
 # <a name="an-overview-of-windows-10-iot-core"></a>Windows 10 IoT Core 개요
 
@@ -47,7 +47,7 @@ Windows 10 IoT Core는 ARM과 x86/x64 디바이스에서 실행되는 디스플�
 </tr>
 
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows/iot-core/develop-your-app/appinstaller">2. 3. 앱 설치</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/iot-core/develop-your-app/appinstaller">3. 앱 설치</a></p></td>
 <td align="left"><p>다양한 도구를 사용하여 앱을 설치하는 방법을 알아봅니다.</p></td>
 </tr>
 
