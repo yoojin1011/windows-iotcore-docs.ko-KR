@@ -6,7 +6,7 @@ description: Windows 10 IoT 용 4 월 2018 업데이트의 새로운 기능에 �
 keywords: Windows IoT, 4 월 2018 업데이트, 릴리스 정보
 ms.openlocfilehash: b06378db14ba78fc5a3eb60e842e1555e56a66ac
 ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/07/2020
 ms.locfileid: "75721756"
