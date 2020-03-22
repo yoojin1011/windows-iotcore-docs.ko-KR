@@ -4,12 +4,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 드라이버 패키지를 만들고 장치에 타사 드라이버를 설치 하는 방법에 대해 알아봅니다.
 keywords: windows iot, USB 드라이버, 주변 장치, USB
-ms.openlocfilehash: 4e3b77466e2bacb9bf8e06bc3a0dc081db2ee5f9
-ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
+ms.openlocfilehash: 36b11d06d860b169503ecc5979a8cfb1b1fa1fea
+ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75721478"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80080538"
 ---
 # <a name="install-usb-peripheral-drivers"></a>USB 주변 장치 드라이버 설치
 USB 모바일 광대역 모뎀, 프린터, 스캐너 등의 주변 장치에 대 한 타사 드라이버 (usb)를 추가 하려면 다음 단계를 수행 합니다. 
@@ -33,7 +33,7 @@ ___
 ## <a name="step-2-create-a-driver-package"></a>2 단계: 드라이버 패키지 만들기
 ___
 
-드라이버 패키지에는 드라이버의 Inf 파일에 대 한 참조 (InfSource)가 포함 되며, Inf 파일에서 참조 되는 모든 파일도 나열 됩니다. [새 IoTDriverPackage 패키지](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Add-IoTDriverPackage.md)를 사용 하 여 드라이버를 제작할 수 있습니다.
+드라이버 패키지에는 드라이버의 Inf 파일에 대 한 참조 (InfSource)가 포함 되며, Inf 파일에서 참조 되는 모든 파일도 나열 됩니다. [IoTDriverPackage 추가](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/Add-IoTDriverPackage.md)를 사용 하 여 드라이버를 제작할 수 있습니다.
 
 [IoTInf2Cab](https://github.com/ms-iot/iot-adk-addonkit/tree/master/Tools/IoTCoreImaging/Docs/New-IoTInf2Cab.md) 는 패키지 xml 파일을 만들고 cab 파일도 직접 빌드합니다.
 

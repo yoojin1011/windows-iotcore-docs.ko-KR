@@ -6,12 +6,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: PowerShell을 사용 하 여 장치에 연결 하 고 장치를 관리 하는 방법을 알아봅니다.
 keywords: windows iot, PowerShell, Windows PowerShell, 명령줄, 명령줄 셸
-ms.openlocfilehash: fb8ec04365e330c2466c1287b446a5d3b15729a1
-ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
+ms.openlocfilehash: f12fd88ee7c53937d92f163ae5acedc4197dbc8a
+ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75721588"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80080574"
 ---
 # <a name="using-powershell-for-windows-iot"></a>Windows IoT 용 PowerShell 사용
 
@@ -33,7 +33,7 @@ Visual Studio 2017에서 잘 작동 하도록 Windows 10 IoT Core를 실행 하�
 
 3. 관리자 권한으로 PowerShell을 시작 하려면 **Windows powershell**을 마우스 오른쪽 단추로 클릭 한 다음 **관리자 권한으로 실행**을 선택 합니다.
 
-    ![관리자 권한으로 PowerShell을 실행합니다.](../media/PowerShell/start-ps2.png)
+    ![관리자 권한으로 PowerShell 실행](../media/PowerShell/start-ps2.png)
 
    이제 PowerShell 콘솔이 표시 됩니다.
 
@@ -48,12 +48,12 @@ Visual Studio 2017에서 잘 작동 하도록 Windows 10 IoT Core를 실행 하�
         Set-Item WSMan:\localhost\Client\TrustedHosts -Value <machine-name or IP Address>
 
 6. `Y`를 입력 하 여 변경 내용을 확인 합니다.
-
-> [!NOTE]
-> 여러 장치를 연결 하려는 경우 쉼표와 따옴표를 사용 하 여 각 장치를 구분할 수 있습니다.
         
         Set-Item WSMan:\localhost\Client\TrustedHosts -Value "<machine1-name or IP Address>,<machine2-name or IP Address>"
     
+> [!NOTE]
+> 여러 장치를 연결 하려는 경우 쉼표와 따옴표를 사용 하 여 각 장치를 구분할 수 있습니다.
+
 7. 이제 Windows IoT Core 장치를 사용 하 여 세션을 시작할 수 있습니다. 관리자 PowerShell 콘솔에서 다음을 입력 합니다.
 
         Enter-PSSession -ComputerName <machine-name or IP Address> -Credential <machine-name or IP Address or localhost>\Administrator
