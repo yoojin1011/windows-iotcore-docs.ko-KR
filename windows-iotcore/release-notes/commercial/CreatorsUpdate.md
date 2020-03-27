@@ -4,12 +4,12 @@ ms.date: 08/28/2017
 ms.topic: article
 description: 크리에이터스 업데이트의 새로운 기능을 참조하여 자세히 알아봅니다.
 keywords: Windows IoT, 크리에이터스 업데이트, 릴리스 정보
-ms.openlocfilehash: 5946d97cd84992f62213d71c59374aa7f9a5779b
-ms.sourcegitcommit: 34928850d3b1b2fe22a92ebd1d75c01b3d4bf0aa
+ms.openlocfilehash: 09157cb634de971bfe57f549c3c87354f814f9e9
+ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "75721858"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80080556"
 ---
 # <a name="creators-update-release-notes-for-windows-10-iot-core"></a>Windows 10 IoT용 크리에이터스 업데이트 릴리스 정보
 빌드 번호 15063. 2017년 4월
@@ -22,7 +22,7 @@ Windows 10 IoT Core는 임베디드 또는 전용 디바이스를 개발할 수 
 
 [다른 플랫폼 및 프로세서](../../learn-about-hardware/SoCsAndCustomBoards.md)는 파트너에서 사용할 수 있습니다.
 
-## <a name="privacy-statement"></a>개인정보취급방침
+## <a name="privacy-statement"></a>개인 정보 취급 방침
 
 이 Windows 운영 체제 버전의 개인정보처리방침은 [여기](https://go.microsoft.com/fwlink/?LinkId=506737)서 볼 수 있습니다.
 
@@ -137,7 +137,7 @@ SoftAP를 통해 UAP 애플리케이션을 공개하려면 디바이스의 콘�
 
 #### <a name="sensor-driver-conflict-in-pre-built-ffus"></a>미리 빌드된 FFU의 센서 드라이버 충돌 
 제공된 FFU의 센서 드라이버가 충돌합니다. 원격 센서 프레임워크는 나침반, 자력계, 가속도계 및 자이로스코프의 드라이버를 설치합니다. 애플리케이션에서 이러한 도구에 액세스하는 데 사용되는 UWP API는 1개만 설치된 것으로 가정합니다. 물리적으로 연결되는 디바이스의 드라이버를 개발하는 경우 Microsoft에서 제공한 FFU의 원격 드라이버가 충돌합니다.  
-해결 방법: SSH 또는 PowerShell을 통해 디바이스에 연결하고 devcon.exe 도구에서 "devcon.exe remove @"ROOT\REMOTESENSORDRIVER*"를 입력하여 원격 센서 드라이버를 제거함으로써 충돌하는 드라이버를 제거할 수 있습니다. 원격 센서 드라이버는 OEM에서 만든 FFU에 영향을 주지 않습니다. 
+해상도: SSH 또는 PowerShell을 통해 디바이스에 연결하고 devcon.exe 도구에서 "devcon.exe remove @"ROOT\REMOTESENSORDRIVER*"를 입력하여 원격 센서 드라이버를 제거함으로써 충돌하는 드라이버를 제거할 수 있습니다. 원격 센서 드라이버는 OEM에서 만든 FFU에 영향을 주지 않습니다. 
  
 #### <a name="default-administrator-user-name-and-password"></a>기본 관리자 사용자 이름 및 암호 
 기본 관리자 사용자 이름 및 암호는 Windows 10 IoT Core 이미지에 하드 코딩됩니다. 이는 디바이스의 보안에 위험 요소로 작동하며, 암호가 변경되기 전에는 열린 인터넷 연결에 노출되면 안 됩니다. 
@@ -222,7 +222,7 @@ delay = (dword) ((float)BaseRetryDelayMs * (crashes_seen ** Fallback_exponent))
  
 이 설명서는 “있는 그대로” 제공됩니다.  URL 및 기타 인터넷 웹 사이트 참조를 포함하여 이 문서에 표현된 정보와 보기는 예고 없이 변경될 수 있습니다. 
 
-여기에서 설명한 일부 예시는 설명을 위한 것이며 실제가 아닙니다.  어떠한 실제 사례와도 연관시킬 의도가 없으며 그렇게 유추해서도 안 됩니다.  
+여기에서 설명한 일부 예시는 설명을 위한 것이며 실제가 아닙니다.  실제 연관이나 관련성을 나타낼 의도가 없으며 그렇게 유추해서도 안됩니다.  
 
 이 문서는 Microsoft 제품의 지적 재산권에 대한 어떠한 법적 권한도 제공하지 않습니다.  이 문서는 내부 참조용으로 사용할 수 있습니다. 
   
@@ -230,7 +230,7 @@ Microsoft는 어떠한 명시적 또는 묵시적 보증도 하지 않습니다.
 
 상표권이 있는 제품의 목록은 Microsoft 상표를 참조하세요. 
 
-다른 모든 상표는 해당 소유자의 재산입니다.  
+다른 모든 상표는 해당 소유자의 자산입니다.  
 
 UPnP™은 UPnP™ Implementers Corporation의 인증 표시입니다. 
 
