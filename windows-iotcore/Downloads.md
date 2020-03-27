@@ -5,12 +5,12 @@ ms.date: 10/05/2018
 ms.topic: article
 ms.prod: windows-iot
 ms.technology: IoT
-ms.openlocfilehash: c2ba5b9151400774c236bab612b877c4e5a360f3
-ms.sourcegitcommit: ea060254f9c4c25afcd0245c897b9e1425321859
+ms.openlocfilehash: 44e1b03ce9e7e9eb4e9bdad6f90ef803a00094f6
+ms.sourcegitcommit: 9fb86fb605d6a8feb5c226a391045b908117a90a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75721458"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80080546"
 ---
 # <a name="downloads"></a>다운로드
 Windows 10 IoT Core를 시작하는 데 필요한 도구와 소프트웨어를 다운로드합니다.
@@ -31,11 +31,11 @@ _Windows 10 IoT Core 대시보드를 다운로드하여 사용하는 것은 Wind
 > [!WARNING]
 > 상용화에 제조사 이미지를 사용하지 마세요. 디바이스를 상용화하려는 경우 최적의 보안을 위해 사용자 지정 FFU를 사용해야 합니다. [여기](https://docs.microsoft.com/windows-hardware/manufacture/iot/iot-core-manufacturing-guide)에서 자세한 내용을 알아보세요.
 
-IoT 솔루션을 상용화할 때 [Microsoft 소프트웨어 다운로드 사이트](https://www.microsoft.com/software-download/windows10IoTCore#!)에서 빌드를 다운로드해야 합니다. 디바이스의 이전 Windows 10 IoT Core 빌드가 필요한 경우를 대비하여 아래에 이전 릴리스를 준비해 두었습니다. 
+IoT 솔루션을 상용화할 때 [Microsoft 소프트웨어 다운로드 사이트](https://aka.ms/iotcoredownloads)에서 빌드를 다운로드해야 합니다. 디바이스의 이전 Windows 10 IoT Core 빌드가 필요한 경우를 대비하여 아래에 이전 릴리스를 준비해 두었습니다. 
 
 ### <a name="october-2018-release"></a>2018년 10월 릴리스
 
-* [Windows 10 IoT Core 패키지](https://www.microsoft.com/en-us/software-download/windows10IoTCore#!)
+* [Windows 10 IoT Core 패키지](https://aka.ms/iotcoredownloads)
 * [Raspberry Pi 2 및 3](https://go.microsoft.com/fwlink/?LinkId=846058)
 * [DragonBoard 410c](https://go.microsoft.com/fwlink/?LinkId=846059)
 * [MinnowBoard Turbot/Max](https://go.microsoft.com/fwlink/?linkid=846057)
@@ -61,17 +61,17 @@ IoT 솔루션을 상용화할 때 [Microsoft 소프트웨어 다운로드 사이
 
 ## <a name="other-downloads"></a>기타 다운로드
 
-### <a name="mdns-responderhttpsgomicrosoftcomfwlinklinkid2077676"></a>[mDNS Responder](https://go.microsoft.com/fwlink/?linkid=2077676)
+### <a name="mdns-responder"></a>[mDNS Responder](https://go.microsoft.com/fwlink/?linkid=2077676)
 Windows IoT용 Bonjour 호환 mDNS Responder를 다운로드하세요(샘플 소스). [여기](mDNS.md)에서 자세한 내용을 알아보세요.
 
-### <a name="firmware-updatehttpfirmwareintelcomprojectsminnowboard-max"></a>[펌웨어 업데이트](http://firmware.intel.com/projects/minnowboard-max)
+### <a name="firmware-update"></a>[펌웨어 업데이트](http://firmware.intel.com/projects/minnowboard-max)
 Intel의 MinnowBoard Max 참조 보드용 펌웨어 구성 요소 및 업데이트를 다운로드하세요.
 
-### <a name="visual-studio-2017httpswwwvisualstudiocomdownloads"></a>[Visual Studio 2017](https://www.visualstudio.com/downloads/)
+### <a name="visual-studio-2017"></a>[Visual Studio 2017](https://www.visualstudio.com/downloads/)
 멋진 IoT 앱을 만드는 데 사용할 수 있는 첨단 IDE, 도구 및 서비스를 제공합니다.
 
-### <a name="windows-driver-kit-2017httpsmsdnmicrosoftcomwindowshardwarehh852365aspx"></a>[Windows Driver Kit 2017](https://msdn.microsoft.com/windows/hardware/hh852365.aspx)
+### <a name="windows-driver-kit-2017"></a>[Windows Driver Kit 2017](https://msdn.microsoft.com/windows/hardware/hh852365.aspx)
 Windows 10을 실행하는 디바이스를 위한 효율적인 고품질 드라이버를 만들 수 있는 통합 개발 환경을 제공합니다.
 
-### <a name="windows-developer-tools-for-visual-studiohttpsdevwindowscomen-usdownloads"></a>[Windows Developer Tools for Visual Studio](https://dev.windows.com/en-us/downloads)
-Visual Studio 2017과 통합된 도구이며 유니버설 Windows 앱 플랫폼을 개발하는 데 필요합니다. 
+### <a name="windows-developer-tools-for-visual-studio"></a>[Windows Developer Tools for Visual Studio](https://developer.microsoft.com/windows/downloads/)
+Visual Studio 2017과 통합된 도구이며 유니버설 Windows 앱 플랫폼을 개발하는 데 필요합니다.
